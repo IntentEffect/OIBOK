@@ -35,3 +35,12 @@
 .starter-prompt-block:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
 .clipboard-fallback{position:fixed;inset:0 auto auto 0;width:1px;height:1px;padding:0;border:0;opacity:0;pointer-events:none}
 @media print{.prompt-actions{display:none!important}}
+
+/* Inline founder credit and a right-aligned licence badge. */
+.footer-bottom{align-items:center}
+.founder-credit{flex:1;min-width:0}
+.founder-credit>p{margin:0;max-width:none;line-height:2}
+.founder-credit .ie-brand{vertical-align:middle;margin-inline:.3em .15em}
+.licence-credit{flex:none;max-width:none;margin-left:auto;text-align:right}
+.licence-badge{display:inline-flex;justify-content:flex-end;min-height:44px}
+@media(max-width:800px){.footer-bottom{align-items:stretch;gap:18px}.licence-credit{width:100%}}
