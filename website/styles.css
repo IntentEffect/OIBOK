@@ -12,3 +12,12 @@
 
 /* Keep the short closing phrase together at reading widths. */
 .hero h1 em{white-space:nowrap}
+
+/* Repository access beside Search and in the publication footer. */
+.github-link{display:inline-flex;align-items:center;gap:8px}
+.github-icon{display:block;flex:none}
+.primary-navigation>.github-link{justify-content:center;min-width:44px;min-height:44px;padding:12px}
+.primary-navigation .github-label{display:none}
+.footer-github-link{justify-self:start}
+.footer-github-link .github-icon{width:16px;height:16px}
+@media(max-width:800px){.primary-navigation>.github-link{justify-content:flex-start;padding:11px 0}.primary-navigation .github-label{display:inline}}
