@@ -1,5 +1,13 @@
 [
   {
+    "source": "content/blog/index.md",
+    "path": "/blog/",
+    "title": "Blog",
+    "description": "Perspectives, practical guides and updates from OIBOK.",
+    "section": "Blog",
+    "kind": "blog-index"
+  },
+  {
     "source": "content/agents/instructions.md",
     "path": "/for-agents/",
     "title": "Use the OIBOK with your AI assistant or agent",

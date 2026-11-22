@@ -10,6 +10,7 @@ OIBOK is an open body of knowledge and practical toolkit for understanding how o
 
 - [Read the body of knowledge](https://intenteffect.github.io/OIBOK/knowledge/).
 - [Explore practical tools and A3 canvases](https://intenteffect.github.io/OIBOK/tools/).
+- [Read the OIBOK blog](https://intenteffect.github.io/OIBOK/blog/).
 - [Use OIBOK with an AI assistant or agent](https://intenteffect.github.io/OIBOK/for-agents/).
 - [Inspect the research sources and limitations](https://intenteffect.github.io/OIBOK/research/).
 - [Contribute evidence, corrections or improvements](CONTRIBUTING.md).
@@ -42,6 +43,7 @@ See [versions and corrections](CHANGELOG.md), [research methodology](METHODOLOGY
 | `content/research/` | Research registers, release records and reader guidance |
 | `content/tools/` | Practical toolkit guides and overview |
 | `content/agents/` | Shared source for the readable agent guide and Markdown instructions |
+| `content/blog/` | Blog introduction and article sources |
 | `downloads/` | Original release archives, research registers, PDFs and editable resources |
 | `website/` | Static build, page routes, templates, styles and browser search |
 | `assets/` | Approved founder artwork and Creative Commons badge |
@@ -87,6 +89,16 @@ The workflow uses the site's URL and base path returned by GitHub Pages. A futur
 Add or edit a Markdown file and its route entry in `website/imported-pages.json`, `website/policy-pages.json` or `website/extra-pages.json` as appropriate. Use root-relative website links, such as `/knowledge/` or `/tools/`; the build prefixes the configured base path.
 
 Historical research sources are checked against `sources/import-checksums.json`. Preserve released source bytes. Prepare substantive revisions as a new edition with updated provenance and a recorded editorial decision. Do not change a checksum merely to make an unexplained source change pass.
+
+## Publishing a blog article
+
+Write the article in `content/blog/` and register its source, URL, title, description, author, publication date and category in `website/blog-posts.json`, following the existing entries. That metadata drives the article listing and RSS feed. The build also includes the article in website search, the sitemap and the agent source catalogue.
+
+Blog metadata uses `published` for the Australia/Sydney display date and `published_at` for the explicit UTC publication instant used by RSS.
+
+Use a descriptive title and excerpt, cite sources for factual claims, and identify editorial interpretation and hypothetical examples. Use the actual publication date, rather than the date an earlier draft was discussed. Disclose material AI assistance and distinguish an adapted earlier draft from newly written material. See the [blog contribution guidance](https://intenteffect.github.io/OIBOK/contribute/#blog-articles).
+
+Run the normal build and checks before publication. Record material corrections in the article and changelog; publishing a blog article does not create a new OIBOK research edition. The feed is available at `https://intenteffect.github.io/OIBOK/blog/feed.xml`.
 
 ## Licence and attribution
 

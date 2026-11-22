@@ -16,6 +16,7 @@ For a substantial conceptual change, open an issue before drafting a large repla
 | Conceptual amendment | Existing passage and version, proposed wording, supporting and contradictory evidence, counterexamples, and affected chapters or registers |
 | Practitioner case | An authorised, de-identified account of the context, intervention, observations, timeframe, alternative explanations and limits of transferability |
 | Tool feedback | Tool version, workflow type, what helped, what was confusing, changes made and what happened afterwards |
+| Blog article | A clear organisational question, useful argument or practical guide, supporting sources and a proposed author credit |
 | Correction | The error, evidence for the correction and a suggested replacement where possible |
 | Translation or accessibility improvement | Source version, intended audience, scope and how meaning or usability has been checked |
 
@@ -24,6 +25,14 @@ For a substantial conceptual change, open an issue before drafting a large repla
 Separate what a source reports from your interpretation. Say whether you inspected the full text or only an abstract. Identify study design, sample, organisational setting and relevant conflicts of interest. A persuasive example can suggest a useful hypothesis; it does not establish a general effect.
 
 Check the existing source register and earlier issues before proposing research already covered. Explain what has changed if there is a replication, correction, retraction, new dataset or materially different finding. Map the proposal to the relevant chapter and proposition where possible. The [research methodology](/methodology/) explains the evidence standard in more detail.
+
+## Blog articles
+
+The [OIBOK blog](/blog/) welcomes perspectives, practical guidance and authorised accounts of using the ideas in real work. Propose a topic through the issue tracker or submit a draft with a short summary, intended audience, relevant OIBOK chapters and supporting sources. Suggest the author credit and disclose material AI assistance, relevant interests and any previous publication.
+
+Distinguish opinion from research findings, and identify hypothetical examples clearly. Practical accounts should explain their context, evidence, competing explanations and limits. Only include organisational information you are authorised to publish. The existing contributor copyright and CC BY-SA 4.0 terms apply to original blog contributions.
+
+Blog articles follow editorial review and can be corrected with a dated explanation. Publishing an article does not amend the released research chapters or establish that a method has been validated.
 
 ## How a contribution becomes part of the publication
 

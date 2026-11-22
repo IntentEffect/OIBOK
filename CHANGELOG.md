@@ -1,5 +1,11 @@
 # Versions and corrections
 
+## Blog launch | 23 November 2026
+
+The [OIBOK blog](/blog/) opens with three editorial articles: [Why OIBOK exists](/blog/why-oibok-exists/), [From AI tools to organisational capability](/blog/from-ai-tools-to-organisational-capability/), and [Start with one workflow](/blog/start-with-one-workflow/). They develop earlier project writing, positioning discussions and practical toolkit guidance into standalone articles, with sources and adaptation notes.
+
+The section includes article dates, author credits, an [RSS feed](/blog/feed.xml), navigation links and [contribution guidance](/contribute/#blog-articles). Articles are searchable and appear in the agent source catalogue as editorial material. This addition does not amend the OIBOK 1.0 research release or change Toolkit 0.1.
+
 ## Agent guidance 0.1 | 22 November 2026
 
 The [For agents guide](/for-agents/) explains how an assistant or agent can apply OIBOK to an organisational question, select relevant chapters, assess evidence, compare explanations and produce a practical tool or action record. It includes a starter prompt and guidance on citation, authority and retained learning.

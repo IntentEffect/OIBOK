@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import { prepareBlogPosts } from './blog.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const dist=path.join(root,'dist');
 const info=JSON.parse(fs.readFileSync(path.join(dist,'build-info.json'),'utf8'));
@@ -56,7 +57,7 @@ for(const result of search){if(!result.title || typeof result.text!=='string' ||
 // Check the independently consumable agent sources, not just their HTML links.
 const cataloguePath=path.join(dist,'agents/manifest.json');
 const catalogue=JSON.parse(fs.readFileSync(cataloguePath,'utf8'));
-const expectedPages=['website/imported-pages.json','website/policy-pages.json','website/extra-pages.json'].flatMap(file=>JSON.parse(fs.readFileSync(path.join(root,file),'utf8')));
+const expectedPages=['website/imported-pages.json','website/policy-pages.json','website/extra-pages.json','website/blog-posts.json'].flatMap(file=>JSON.parse(fs.readFileSync(path.join(root,file),'utf8')));
 const expectedSources=new Set(expectedPages.map(page=>page.source));
 const documentIds=new Set();
 const documentSources=new Set();
@@ -102,5 +103,55 @@ for(const url of discoveryLinks)localSource(url);
 for(const doc of catalogue.documents)if(!discoveryLinks.includes(doc.markdown_url))errors.push(`Agent discovery: missing source ${doc.id}`);
 if(!discoveryLinks.includes(`${info.siteUrl}/agents/manifest.json`))errors.push('Agent discovery: missing source catalogue');
 if(!discovery.startsWith('# Organisation Intelligence Body of Knowledge (OIBOK)\n'))errors.push('Agent discovery: missing project title');
+
+// Blog output must retain editorial status and agree with the one post catalogue.
+const posts=prepareBlogPosts(JSON.parse(fs.readFileSync(path.join(root,'website/blog-posts.json'),'utf8')));
+const blogIndexPath=path.join(dist,'blog/index.html');
+const blogIndex=fs.readFileSync(blogIndexPath,'utf8');
+const blogCatalogue=catalogue.documents.filter(doc=>doc.kind==='blog-post');
+const blogOverview=catalogue.documents.find(doc=>doc.repository_path==='content/blog/index.md');
+if(!blogOverview || blogOverview.kind!=='blog-index' || blogOverview.status!=='editorial-commentary' || blogOverview.publication_edition!==null || blogOverview.toolkit_version!==null)errors.push('Blog index: incorrectly classified as research or toolkit content');
+if(blogCatalogue.length!==posts.length || info.blogPosts!==posts.length)errors.push('Blog catalogue: post count does not match metadata');
+const blogDiscovery=discovery.match(/(?:^|\n)## Blog\n([\s\S]*?)(?=\n## |$)/)?.[1] || '';
+if(blogOverview && !blogDiscovery.includes(blogOverview.markdown_url))errors.push('Blog discovery: missing index in Blog section');
+const xmlDecode=value=>String(value).replace(/&(amp|lt|gt|quot|apos);/g,(_,entity)=>({amp:'&',lt:'<',gt:'>',quot:'"',apos:"'"}[entity]));
+const sitemap=fs.readFileSync(path.join(dist,'sitemap.xml'),'utf8');
+const sitemapUrls=new Set([...sitemap.matchAll(/<loc>([^<]*)<\/loc>/g)].map(match=>xmlDecode(match[1])));
+if(!sitemapUrls.has(`${info.siteUrl}/blog/`))errors.push('Blog index: missing from sitemap');
+for(const post of posts){
+ const doc=blogCatalogue.find(entry=>entry.repository_path===post.source);
+ if(!doc || doc.publication_edition!==null || doc.toolkit_version!==null || doc.status!=='editorial-commentary' || doc.component_version!==post.component_version || doc.version_label!==post.version || doc.author!==post.author || doc.published!==post.published || doc.published_at!==post.published_at || doc.category!==post.category)errors.push(`Blog catalogue: incorrect editorial metadata for ${post.path}`);
+ if(doc && !blogDiscovery.includes(doc.markdown_url))errors.push(`Blog discovery: missing article in Blog section ${post.path}`);
+ if(!blogIndex.includes(`href="${base}${post.path}"`))errors.push(`Blog index: missing article ${post.path}`);
+ if(!search.some(entry=>entry.section==='Blog' && (entry.url===base+post.path || entry.url.startsWith(base+post.path+'#'))))errors.push(`Blog search: missing article ${post.path}`);
+ if(!sitemapUrls.has(info.siteUrl+post.path))errors.push(`Blog sitemap: missing article ${post.path}`);
+}
+const feedPath=path.join(dist,'blog/feed.xml');
+const feed=fs.readFileSync(feedPath,'utf8');
+if(!/<rss\b[^>]*version="2\.0"/.test(feed) || !feed.includes('xmlns:atom="http://www.w3.org/2005/Atom"') || !feed.includes('xmlns:dc="http://purl.org/dc/elements/1.1/"') || /&(?!amp;|lt;|gt;|quot;|apos;)/.test(feed))errors.push('Blog feed: invalid RSS declarations or unescaped text');
+const self=xmlDecode(feed.match(/<atom:link\b[^>]*href="([^"]+)"[^>]*rel="self"/)?.[1] || '');
+if(self!==`${info.siteUrl}/blog/feed.xml`)errors.push('Blog feed: incorrect canonical feed URL');
+else checkLink(feedPath,self);
+const itemBlocks=[...feed.matchAll(/<item>([\s\S]*?)<\/item>/g)].map(match=>match[1]);
+if(itemBlocks.length!==posts.length)errors.push('Blog feed: item count does not match published posts');
+const xmlTag=(block,tag)=>{
+ const value=block.match(new RegExp(`<${tag}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${tag}>`))?.[1];
+ if(value===undefined || value.includes('<'))return null;
+ return xmlDecode(value);
+};
+const channel=feed.split('<item>')[0];
+if(xmlTag(channel,'link')!==`${info.siteUrl}/blog/`)errors.push('Blog feed: incorrect channel URL');
+if(posts.length && Date.parse(xmlTag(channel,'lastBuildDate'))!==Date.parse(posts[0].published_at))errors.push('Blog feed: incorrect latest publication timestamp');
+const feedIds=new Set();
+for(let index=0;index<itemBlocks.length;index++){
+ const item=itemBlocks[index],post=posts[index];
+ if(!post)continue;
+ const url=xmlTag(item,'link'),guid=xmlTag(item,'guid');
+ if(url!==info.siteUrl+post.path || guid!==url || feedIds.has(guid))errors.push(`Blog feed: incorrect or duplicate article URL at item ${index+1}`);
+ else checkLink(feedPath,url);
+ feedIds.add(guid);
+ if(xmlTag(item,'title')!==post.title || xmlTag(item,'description')!==post.description || xmlTag(item,'dc:creator')!==post.author || xmlTag(item,'category')!==post.category)errors.push(`Blog feed: incorrect article metadata for ${post.path}`);
+ if(Date.parse(xmlTag(item,'pubDate'))!==Date.parse(post.published_at))errors.push(`Blog feed: incorrect publication timestamp for ${post.path}`);
+}
 if(errors.length){console.error(errors.slice(0,50).join('\n'));console.error(`${errors.length} checks failed.`);process.exit(1);}
-console.log(`Verified ${htmlFiles.length} HTML pages, ${checked} internal links and anchors, ${manifest.files.length} unchanged source files, ${search.length} searchable sections, and ${catalogue.documents.length} agent source records.`);
+console.log(`Verified ${htmlFiles.length} HTML pages, ${checked} internal links and anchors, ${manifest.files.length} unchanged source files, ${search.length} searchable sections, ${catalogue.documents.length} agent source records, and ${posts.length} blog posts with RSS.`);

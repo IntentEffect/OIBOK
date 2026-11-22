@@ -5,6 +5,7 @@ import { spawnSync } from 'node:child_process';
 import crypto from 'node:crypto';
 import { renderHome, renderLayout, renderSearch } from './layout.mjs';
 import { buildAgentResources } from './agents.mjs';
+import { prepareBlogPosts, renderBlogIndex, renderBlogFeed } from './blog.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
@@ -14,7 +15,9 @@ const basePath = (process.env.BASE_PATH ?? config.basePath).replace(/\/+$/, '');
 if (basePath && !/^\/[A-Za-z0-9_/-]+$/.test(basePath)) throw new Error('BASE_PATH must be empty or a URL path beginning with /.');
 const siteUrl = (process.env.SITE_URL || `${config.origin}${basePath}`).replace(/\/+$/, '');
 if (!/^https?:\/\//.test(siteUrl)) throw new Error('SITE_URL must be an absolute HTTP(S) URL.');
-const pages = [...json('website/imported-pages.json'), ...json('website/policy-pages.json'), ...json('website/extra-pages.json')];
+const blogPosts = prepareBlogPosts(json('website/blog-posts.json'));
+const pages = [...json('website/imported-pages.json'), ...json('website/policy-pages.json'), ...json('website/extra-pages.json'), ...blogPosts];
+if (!pages.some(page => page.path === '/blog/' && page.source === 'content/blog/index.md')) throw new Error('Register the blog index at /blog/.');
 const escape = (value) => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const unescape = (value) => String(value).replace(/&#(x[\da-f]+|\d+);/gi, (_, n) => String.fromCodePoint(n[0].toLowerCase() === 'x' ? parseInt(n.slice(1),16) : Number(n))).replace(/&(?:amp|lt|gt|quot|apos|nbsp|#39);/g, c => ({'&amp;':'&','&lt;':'<','&gt;':'>','&quot;':'"','&apos;':"'",'&#39;':"'",'&nbsp;':' '}[c]));
 const plain = (html) => unescape(html.replace(/<[^>]*>/g, ' ')).replace(/\s+/g, ' ').trim();
@@ -94,6 +97,7 @@ function indexPage(page, html) {
 for (const page of pages) {
   const source = fs.readFileSync(path.join(root, page.source), 'utf8');
   let content = renderMarkdown(source);
+  if (page.path === '/blog/') content += renderBlogIndex({posts:blogPosts,basePath});
   indexPage(page, content);
   const toc = [...content.matchAll(/<h([23])\b[^>]*id="([^"]+)"[^>]*>([\s\S]*?)<\/h\1>/g)].map(m=>({level:Number(m[1]),id:m[2],text:plain(m[3])}));
   const sourceDownload = `/downloads/source/${page.source}`;
@@ -118,6 +122,8 @@ fs.writeFileSync(path.join(dist,'.nojekyll'),'');
 fs.writeFileSync(path.join(dist,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${siteUrl}/sitemap.xml\n`);
 const sitemap=['/',...pages.map(page=>page.path),'/search/'].map(p=>`  <url><loc>${escape(siteUrl+p)}</loc></url>`).join('\n');
 fs.writeFileSync(path.join(dist,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemap}\n</urlset>\n`);
+fs.mkdirSync(path.join(dist,'blog'),{recursive:true});
+fs.writeFileSync(path.join(dist,'blog/feed.xml'),renderBlogFeed({posts:blogPosts,siteUrl}));
 const agents = buildAgentResources({root,dist,pages,config,siteUrl});
-fs.writeFileSync(path.join(dist,'build-info.json'),JSON.stringify({basePath,siteUrl,pages:pageRecords.length,searchEntries:search.length,sourceCommit:agents.sourceCommit,agentDocuments:agents.documents},null,2)+'\n');
+fs.writeFileSync(path.join(dist,'build-info.json'),JSON.stringify({basePath,siteUrl,pages:pageRecords.length,searchEntries:search.length,sourceCommit:agents.sourceCommit,agentDocuments:agents.documents,blogPosts:blogPosts.length},null,2)+'\n');
 console.log(`Built ${pageRecords.length} pages and ${search.length} search sections at ${basePath || '/'}.`);

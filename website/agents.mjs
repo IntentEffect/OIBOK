@@ -24,15 +24,19 @@ function describeDocument(page) {
   const tool = /^content\/tools\/\d{2}-/.test(page.source);
   const agent = page.path === '/for-agents/';
   const index = page.source.endsWith('/index.md');
+  const blogPost = page.kind === 'blog-post';
+  const blogIndex = page.path === '/blog/';
+  const researchIndex = page.path === '/knowledge/' || page.path === '/research/';
   return {
     id: chapter?.[1] || research?.[1] || page.path.replace(/^\/|\/$/g, '').replaceAll('/', '-'),
-    kind: chapter ? 'chapter' : research ? (page.path === '/research/release-record/' ? 'release-record' : 'research-register') : tool ? 'tool' : agent ? 'agent-guide' : index ? 'index' : page.path === '/releases/' ? 'release-notes' : 'policy',
+    kind: chapter ? 'chapter' : research ? (page.path === '/research/release-record/' ? 'release-record' : 'research-register') : tool ? 'tool' : agent ? 'agent-guide' : blogPost ? 'blog-post' : blogIndex ? 'blog-index' : index ? 'index' : page.path === '/releases/' ? 'release-notes' : 'policy',
     ...(chapter ? { chapter: Number(chapter[2]) } : {}),
-    publication_edition: chapter || research || (index && page.section !== 'Tools') ? researchRelease.version : null,
+    ...(blogPost ? { author: page.author, published: page.published, published_at: page.published_at, category: page.category } : {}),
+    publication_edition: chapter || research || researchIndex ? researchRelease.version : null,
     toolkit_version: tool || page.path === '/tools/' ? toolkitRelease.version : null,
-    component_version: component || (agent ? agentGuide.version : null),
+    component_version: component || page.component_version || (agent ? agentGuide.version : null),
     version_label: page.version,
-    status: chapter || research ? 'released-working-synthesis' : tool ? 'practice-resource-for-piloting' : 'current-editorial-guidance',
+    status: chapter || research ? 'released-working-synthesis' : tool ? 'practice-resource-for-piloting' : blogPost || blogIndex ? 'editorial-commentary' : 'current-editorial-guidance',
   };
 }
 
@@ -83,6 +87,7 @@ export function buildAgentResources({ root, dist, pages, config, siteUrl }) {
       'OIBOK is a literature-grounded working synthesis. The whole model has not been independently field validated.',
       'Toolkit 0.1 and agent guidance are practice resources, not validated maturity measures or certification.',
       'The proposed 1.1 editorial amendment has not been applied to the research release.',
+      'Blog articles are editorial commentary and practical interpretation, not components or amendments of the research release.',
       'Retrieve the original document before relying on a search excerpt. Cite sources actually consulted.',
       'Publication content is subject to the licensing policy, including third-party material and brand exceptions.',
     ],
@@ -102,6 +107,7 @@ export function buildAgentResources({ root, dist, pages, config, siteUrl }) {
     ['Knowledge', documents.filter(doc => doc.kind === 'chapter' || doc.html_url === absolute('/knowledge/') || doc.html_url === absolute('/knowledge/glossary/'))],
     ['Practical tools', documents.filter(doc => doc.kind === 'tool' || doc.html_url === absolute('/tools/'))],
     ['Research and evidence', documents.filter(doc => (doc.kind === 'research-register' || doc.html_url === absolute('/research/')) && !startIds.has(doc.id) && doc.html_url !== absolute('/knowledge/glossary/'))],
+    ['Blog', documents.filter(doc => doc.kind === 'blog-post' || doc.kind === 'blog-index')],
     ['Project and reuse', documents.filter(doc => (doc.kind === 'policy' || doc.kind === 'release-notes') && !startIds.has(doc.id))],
   ];
   const discovery = [
@@ -114,6 +120,8 @@ export function buildAgentResources({ root, dist, pages, config, siteUrl }) {
     `Research edition: OIBOK ${researchRelease.version} (${researchRelease.date}). Its chapters retain component version 0.3. Practical Toolkit ${toolkitRelease.version} (${toolkitRelease.date}). Agent guide ${agentGuide.version} (${agentGuide.date}). The proposed 1.1 editorial amendment is not a released research edition.`,
     '',
     'The research is a working synthesis; the whole model has not been independently field validated. Tools do not provide a validated maturity score or certification. Search results help locate sources; retrieve the relevant Markdown before making evidence claims. Keep organisational evidence separate from OIBOK propositions and agent inference. Access to OIBOK grants no organisational action authority.',
+    '',
+    'Blog articles provide editorial commentary and practical interpretation. They do not amend the research release or establish new empirical findings.',
     '',
     'Original publication content: CC BY-SA 4.0, subject to the licensing policy and third-party exceptions. Founded by Intent & Effect, developed by the OIBOK community.',
     '',

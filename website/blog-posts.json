@@ -1,0 +1,44 @@
+[
+  {
+    "source": "content/blog/why-oibok-exists.md",
+    "path": "/blog/why-oibok-exists/",
+    "title": "Why OIBOK exists",
+    "description": "A shared body of knowledge for connecting organisational knowledge, decisions, coordinated work and lasting learning.",
+    "section": "Blog",
+    "author": "OIBOK",
+    "published": "2026-11-23",
+    "published_at": "2026-11-22T13:00:00Z",
+    "category": "Perspective",
+    "kind": "blog-post",
+    "version": "Article 1.0",
+    "component_version": "1.0"
+  },
+  {
+    "source": "content/blog/from-ai-tools-to-organisational-capability.md",
+    "path": "/blog/from-ai-tools-to-organisational-capability/",
+    "title": "From AI tools to organisational capability",
+    "description": "How work design, authority, coordination and evaluation help organisations turn AI use into capability that persists.",
+    "section": "Blog",
+    "author": "OIBOK",
+    "published": "2026-11-23",
+    "published_at": "2026-11-22T13:00:00Z",
+    "category": "AI and organisations",
+    "kind": "blog-post",
+    "version": "Article 1.0",
+    "component_version": "1.0"
+  },
+  {
+    "source": "content/blog/start-with-one-workflow.md",
+    "path": "/blog/start-with-one-workflow/",
+    "title": "Start with one workflow",
+    "description": "A practical way to investigate a recurring workflow, compare improvements and learn from the results using OIBOK’s tools.",
+    "section": "Blog",
+    "author": "OIBOK",
+    "published": "2026-11-23",
+    "published_at": "2026-11-22T13:00:00Z",
+    "category": "Practice",
+    "kind": "blog-post",
+    "version": "Article 1.0",
+    "component_version": "1.0"
+  }
+]
