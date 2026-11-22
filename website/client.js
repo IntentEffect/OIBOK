@@ -21,13 +21,125 @@
   const contents = document.querySelector('.contents');
   if (contents && window.matchMedia('(max-width: 800px)').matches) contents.removeAttribute('open');
 
+  const basePath = document.body.dataset.basePath || '';
+  const pagePath = String(window.location.pathname || '').replace(/\/index\.html$/, '').replace(/\/+$/, '');
+  if (pagePath === `${basePath}/for-agents`) {
+    const heading = document.querySelector('.prose #starter-prompt');
+    let sibling = heading?.nextElementSibling;
+    let promptBlock;
+    while (sibling && !/^H[1-6]$/.test(sibling.tagName)) {
+      const candidate = sibling.matches('pre') ? sibling : sibling.querySelector('pre');
+      const code = candidate?.querySelector('code');
+      if (code && [...candidate.classList, ...code.classList].every((name) => /^(?:sourceCode|text|plain|plaintext|language-(?:text|plain|plaintext))$/.test(name))) {
+        promptBlock = candidate;
+        break;
+      }
+      sibling = sibling.nextElementSibling;
+    }
+    if (promptBlock && promptBlock.textContent.trim()) {
+      const code = promptBlock.querySelector('code');
+      promptBlock.classList.add('starter-prompt-block');
+      promptBlock.id ||= 'starter-prompt-text';
+      promptBlock.tabIndex = 0;
+      promptBlock.setAttribute('aria-label', 'Starter prompt');
+      const actions = document.createElement('div');
+      actions.className = 'prompt-actions';
+      const copyButton = document.createElement('button');
+      copyButton.type = 'button';
+      copyButton.className = 'prompt-copy-button';
+      copyButton.textContent = 'Copy prompt';
+      copyButton.setAttribute('aria-controls', promptBlock.id);
+      const selectButton = document.createElement('button');
+      selectButton.type = 'button';
+      selectButton.className = 'prompt-select-button';
+      selectButton.textContent = 'Select prompt';
+      selectButton.hidden = true;
+      selectButton.setAttribute('aria-controls', promptBlock.id);
+      const feedback = document.createElement('p');
+      feedback.className = 'prompt-copy-status';
+      feedback.id = 'starter-prompt-copy-status';
+      feedback.setAttribute('role', 'status');
+      feedback.setAttribute('aria-live', 'polite');
+      feedback.setAttribute('aria-atomic', 'true');
+      copyButton.setAttribute('aria-describedby', feedback.id);
+      selectButton.setAttribute('aria-describedby', feedback.id);
+      actions.append(copyButton, selectButton, feedback);
+      promptBlock.before(actions);
+
+      const selectPrompt = () => {
+        try {
+          const selection = window.getSelection();
+          if (!selection) return false;
+          const range = document.createRange();
+          range.selectNodeContents(code);
+          promptBlock.focus({ preventScroll: true });
+          selection.removeAllRanges();
+          selection.addRange(range);
+          return true;
+        } catch {
+          return false;
+        }
+      };
+
+      const copyWithSelection = (text) => {
+        const field = document.createElement('textarea');
+        field.className = 'clipboard-fallback';
+        field.value = text;
+        field.readOnly = true;
+        field.tabIndex = -1;
+        field.setAttribute('aria-label', 'Starter prompt to copy');
+        const previousFocus = document.activeElement;
+        document.body.append(field);
+        try {
+          field.select();
+          return typeof document.execCommand === 'function' && document.execCommand('copy');
+        } catch {
+          return false;
+        } finally {
+          field.remove();
+          previousFocus?.focus({ preventScroll: true });
+        }
+      };
+
+      selectButton.addEventListener('click', () => {
+        feedback.textContent = selectPrompt()
+          ? 'The prompt is selected. Use your browser’s Copy command or keyboard shortcut.'
+          : 'Select the prompt text below, then use your browser’s Copy command.';
+      });
+      copyButton.addEventListener('click', async () => {
+        copyButton.disabled = true;
+        feedback.textContent = 'Copying prompt…';
+        const text = code.textContent;
+        let copied = false;
+        try {
+          if (navigator.clipboard?.writeText) {
+            await navigator.clipboard.writeText(text);
+            copied = true;
+          }
+        } catch {
+          // A browser permission or secure-context restriction can block this API.
+        }
+        if (!copied) copied = copyWithSelection(text);
+        copyButton.disabled = false;
+        selectButton.hidden = copied;
+        if (copied) {
+          feedback.textContent = 'Prompt copied. Paste it into your AI tool.';
+          copyButton.focus({ preventScroll: true });
+        } else {
+          feedback.textContent = selectPrompt()
+            ? 'Automatic copying is unavailable. The prompt is selected; use your browser’s Copy command or keyboard shortcut.'
+            : 'Automatic copying is unavailable. Select the prompt text below and use your browser’s Copy command.';
+        }
+      });
+    }
+  }
+
   const searchRoot = document.querySelector('[data-search-root]');
   if (!searchRoot) return;
   const form = searchRoot.querySelector('form');
   const input = searchRoot.querySelector('input[name="q"]');
   const status = searchRoot.querySelector('.search-status');
   const results = searchRoot.querySelector('.search-results');
-  const basePath = document.body.dataset.basePath || '';
   let indexPromise;
   let queryNumber = 0;
 

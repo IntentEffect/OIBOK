@@ -1,5 +1,13 @@
 # Versions and corrections
 
+## Agent guidance 0.1 | 22 November 2026
+
+The [For agents guide](/for-agents/) explains how an assistant or agent can apply OIBOK to an organisational question, select relevant chapters, assess evidence, compare explanations and produce a practical tool or action record. It includes a starter prompt and guidance on citation, authority and retained learning.
+
+The same source is available as [Markdown instructions](/agents/instructions.md). Generated [discovery guidance](/llms.txt) and a [source catalogue](/agents/manifest.json) provide exact document links, publication and component versions, content hashes and deployment commit. The footer, Tools page and repository README link to the guide.
+
+This is a website and practice addition. It does not amend the preserved OIBOK 1.0 research sources, release the proposed 1.1 revision or validate the model or toolkit. Original publication content remains under CC BY-SA 4.0 with the existing attribution and exceptions.
+
 ## Website and practical toolkit | 22 November 2026
 
 This website brings the existing OIBOK research release and the practical toolkit into one publication repository. It adds readable chapter pages, searchable text, downloadable resources and public contribution guidance.

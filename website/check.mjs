@@ -24,7 +24,11 @@ for(const file of htmlFiles){
 }
 let checked=0;
 function checkLink(file,ref){
- if(/^(?:https?:|mailto:|tel:|data:|\/\/)/i.test(ref))return;
+ if(/^(?:mailto:|tel:|data:)/i.test(ref))return;
+ if(/^(?:https?:|\/\/)/i.test(ref)){
+  try{if(new URL(ref,info.siteUrl).origin!==new URL(info.siteUrl).origin)return;}
+  catch{errors.push(`${file}: malformed absolute link ${ref}`);return;}
+ }
  if(/^(?:javascript|vbscript):/i.test(ref)){errors.push(`${file}: unsafe link`);return;}
  const rel=path.relative(dist,file).split(path.sep).join('/');
  let url;
@@ -47,5 +51,55 @@ const manifest=JSON.parse(fs.readFileSync(path.join(root,'sources/import-checksu
 for(const source of manifest.files){const data=fs.readFileSync(path.join(root,source.path));if(data.length!==source.bytes || crypto.createHash('sha256').update(data).digest('hex')!==source.sha256)errors.push(`Imported source changed: ${source.path}`);}
 const search=JSON.parse(fs.readFileSync(path.join(dist,'search-index.json'),'utf8'));
 for(const result of search){if(!result.title || typeof result.text!=='string' || !result.url)errors.push('Invalid search entry');else checkLink(path.join(dist,'index.html'),result.url);}
+
+// Check the independently consumable agent sources, not just their HTML links.
+const cataloguePath=path.join(dist,'agents/manifest.json');
+const catalogue=JSON.parse(fs.readFileSync(cataloguePath,'utf8'));
+const expectedPages=['website/imported-pages.json','website/policy-pages.json','website/extra-pages.json'].flatMap(file=>JSON.parse(fs.readFileSync(path.join(root,file),'utf8')));
+const expectedSources=new Set(expectedPages.map(page=>page.source));
+const documentIds=new Set();
+const documentSources=new Set();
+function localSource(url){
+ let parsed;
+ try{parsed=new URL(url);}catch{errors.push(`Agent catalogue: invalid absolute URL ${url}`);return null;}
+ const canonical=new URL(info.siteUrl);
+ if(parsed.origin!==canonical.origin || (base && !parsed.pathname.startsWith(base+'/'))){errors.push(`Agent catalogue: URL outside publication ${url}`);return null;}
+ checkLink(cataloguePath,url);
+ let name=path.join(dist,decodeURIComponent(parsed.pathname.slice(base.length)));
+ if(parsed.pathname.endsWith('/'))name=path.join(name,'index.html');
+ return fs.existsSync(name)?name:null;
+}
+if(catalogue.site_url!==info.siteUrl || catalogue.schema_version!=='1.0')errors.push('Agent catalogue: invalid site or schema version');
+if(catalogue.source_commit!==info.sourceCommit)errors.push('Agent catalogue: build and source commits differ');
+if(catalogue.source_commit!==null && !/^[a-f0-9]{40}$/i.test(catalogue.source_commit))errors.push('Agent catalogue: invalid source commit');
+if(process.env.GITHUB_ACTIONS==='true' && catalogue.source_commit!==process.env.GITHUB_SHA)errors.push('Agent catalogue: missing or incorrect deployment commit');
+if(catalogue.research_release.version!=='1.0' || catalogue.toolkit_release.version!=='0.1')errors.push('Agent catalogue: research and toolkit editions are incorrect');
+for(const doc of catalogue.documents){
+ if(!doc.id || documentIds.has(doc.id))errors.push(`Agent catalogue: missing or duplicate document ID ${doc.id}`);
+ documentIds.add(doc.id);
+ if(!expectedSources.has(doc.repository_path) || documentSources.has(doc.repository_path))errors.push(`Agent catalogue: unexpected or repeated source ${doc.repository_path}`);
+ documentSources.add(doc.repository_path);
+ localSource(doc.html_url);
+ const markdown=localSource(doc.markdown_url);
+ const original=path.join(root,doc.repository_path);
+ if(markdown && fs.existsSync(original)){
+  const bytes=fs.readFileSync(markdown);
+  if(!bytes.equals(fs.readFileSync(original)) || bytes.length!==doc.bytes || crypto.createHash('sha256').update(bytes).digest('hex')!==doc.sha256)errors.push(`Agent catalogue: source bytes or hash mismatch for ${doc.id}`);
+ }
+ if(doc.kind==='chapter' && (doc.publication_edition!=='1.0' || doc.component_version!=='0.3' || doc.toolkit_version!==null))errors.push(`Agent catalogue: incorrect chapter versions for ${doc.id}`);
+ if(doc.kind==='tool' && (doc.toolkit_version!=='0.1' || doc.component_version!=='0.1' || doc.publication_edition!==null))errors.push(`Agent catalogue: incorrect toolkit versions for ${doc.id}`);
+ const expectedRepositoryUrl=`${catalogue.repository_url}/blob/${catalogue.source_commit || 'main'}/${doc.repository_path}`;
+ if(doc.repository_url!==expectedRepositoryUrl)errors.push(`Agent catalogue: incorrect repository revision for ${doc.id}`);
+}
+if(documentSources.size!==expectedSources.size || catalogue.documents.length!==info.agentDocuments)errors.push('Agent catalogue: document coverage does not match registered pages');
+const guideSource=fs.readFileSync(path.join(root,'content/agents/instructions.md'));
+const guideAlias=fs.readFileSync(path.join(dist,'agents/instructions.md'));
+if(!guideSource.equals(guideAlias))errors.push('Agent instructions alias differs from its authored source');
+const discovery=fs.readFileSync(path.join(dist,'llms.txt'),'utf8');
+const discoveryLinks=[...discovery.matchAll(/\]\((https?:\/\/[^)]+)\)/g)].map(match=>match[1]);
+for(const url of discoveryLinks)localSource(url);
+for(const doc of catalogue.documents)if(!discoveryLinks.includes(doc.markdown_url))errors.push(`Agent discovery: missing source ${doc.id}`);
+if(!discoveryLinks.includes(`${info.siteUrl}/agents/manifest.json`))errors.push('Agent discovery: missing source catalogue');
+if(!discovery.startsWith('# Organisation Intelligence Body of Knowledge (OIBOK)\n'))errors.push('Agent discovery: missing project title');
 if(errors.length){console.error(errors.slice(0,50).join('\n'));console.error(`${errors.length} checks failed.`);process.exit(1);}
-console.log(`Verified ${htmlFiles.length} HTML pages, ${checked} internal links and anchors, ${manifest.files.length} unchanged source files, and ${search.length} searchable sections.`);
+console.log(`Verified ${htmlFiles.length} HTML pages, ${checked} internal links and anchors, ${manifest.files.length} unchanged source files, ${search.length} searchable sections, and ${catalogue.documents.length} agent source records.`);

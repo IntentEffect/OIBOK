@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import { renderHome, renderLayout, renderSearch } from './layout.mjs';
+import { buildAgentResources } from './agents.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
@@ -95,15 +96,17 @@ for (const page of pages) {
     content += `<nav class="chapter-pagination" aria-label="Chapter navigation">${previous ? `<a href="${basePath}${previous.path}"><small>Previous chapter</small>${escape(previous.title)}</a>` : `<a href="${basePath}/knowledge/"><small>Explore</small>All chapters</a>`}${next ? `<a href="${basePath}${next.path}"><small>Next chapter</small>${escape(next.title)}</a>` : `<a href="${basePath}/tools/"><small>Put it into practice</small>Explore the toolkit</a>`}</nav>`;
   }
   content += `<p class="source-download"><a href="${basePath}${sourceDownload}" download>Download this page’s Markdown source</a></p>`;
-  writePage(page.path, renderLayout({...page,content,toc,sourcePath:page.source,basePath}));
+  const markdown = `${siteUrl}${page.path === '/for-agents/' ? '/agents/instructions.md' : sourceDownload}`;
+  writePage(page.path, renderLayout({...page,content,toc,sourcePath:page.source,basePath,siteUrl,markdown}));
 }
-writePage('/',renderLayout({title:config.title,description:config.description,content:renderHome({basePath}),basePath,isHome:true}));
-writePage('/search/',renderLayout({title:'Search OIBOK',description:'Find a concept, question, chapter or practical resource.',content:renderSearch({basePath}),basePath,section:'search'}));
-writePage('/404.html',renderLayout({title:'Page not found',description:'This address does not match a page in the current website.',content:`<p>Visit the <a href="${basePath}/knowledge/">body of knowledge</a>, browse the <a href="${basePath}/tools/">practical tools</a> or <a href="${basePath}/search/">search the publication</a>.</p>`,basePath}));
+writePage('/',renderLayout({title:config.title,description:config.description,content:renderHome({basePath}),basePath,siteUrl,isHome:true}));
+writePage('/search/',renderLayout({title:'Search OIBOK',description:'Find a concept, question, chapter or practical resource.',content:renderSearch({basePath}),basePath,siteUrl,section:'search'}));
+writePage('/404.html',renderLayout({title:'Page not found',description:'This address does not match a page in the current website.',content:`<p>Visit the <a href="${basePath}/knowledge/">body of knowledge</a>, browse the <a href="${basePath}/tools/">practical tools</a> or <a href="${basePath}/search/">search the publication</a>.</p>`,basePath,siteUrl}));
 fs.writeFileSync(path.join(dist,'search-index.json'),JSON.stringify(search));
 fs.writeFileSync(path.join(dist,'.nojekyll'),'');
 fs.writeFileSync(path.join(dist,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${siteUrl}/sitemap.xml\n`);
 const sitemap=['/',...pages.map(page=>page.path),'/search/'].map(p=>`  <url><loc>${escape(siteUrl+p)}</loc></url>`).join('\n');
 fs.writeFileSync(path.join(dist,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemap}\n</urlset>\n`);
-fs.writeFileSync(path.join(dist,'build-info.json'),JSON.stringify({basePath,siteUrl,pages:pageRecords.length,searchEntries:search.length},null,2)+'\n');
+const agents = buildAgentResources({root,dist,pages,config,siteUrl});
+fs.writeFileSync(path.join(dist,'build-info.json'),JSON.stringify({basePath,siteUrl,pages:pageRecords.length,searchEntries:search.length,sourceCommit:agents.sourceCommit,agentDocuments:agents.documents},null,2)+'\n');
 console.log(`Built ${pageRecords.length} pages and ${search.length} search sections at ${basePath || '/'}.`);

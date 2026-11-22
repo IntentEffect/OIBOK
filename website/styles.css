@@ -21,3 +21,17 @@
 .footer-github-link{justify-self:start}
 .footer-github-link .github-icon{width:16px;height:16px}
 @media(max-width:800px){.primary-navigation>.github-link{justify-content:flex-start;padding:11px 0}.primary-navigation .github-label{display:inline}}
+
+/* Progressive enhancement for the single starter prompt on the agents guide. */
+.prompt-actions{display:flex;align-items:center;flex-wrap:wrap;gap:10px 16px;margin:22px 0 10px}
+.prompt-copy-button,.prompt-select-button{min-height:44px;padding:10px 15px;border:1px solid var(--line);border-radius:0;background:transparent;color:var(--ink);font-size:14px;line-height:1.5;font-weight:600}
+.prompt-copy-button:hover,.prompt-select-button:hover{border-color:var(--accent);color:var(--accent)}
+.prompt-copy-button:disabled{cursor:wait;opacity:.7}
+.prompt-select-button{border-color:transparent;text-decoration:underline;text-underline-offset:.2em}
+.prose .prompt-copy-status{flex-basis:100%;margin:0;color:var(--muted);font-size:14px;line-height:1.65}
+.prompt-copy-status:empty{display:none}
+.prose .starter-prompt-block{margin-top:0;white-space:pre-wrap;overflow-wrap:anywhere}
+.prose .starter-prompt-block code{white-space:inherit;overflow-wrap:inherit}
+.starter-prompt-block:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+.clipboard-fallback{position:fixed;inset:0 auto auto 0;width:1px;height:1px;padding:0;border:0;opacity:0;pointer-events:none}
+@media print{.prompt-actions{display:none!important}}

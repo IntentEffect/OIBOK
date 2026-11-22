@@ -10,10 +10,21 @@ OIBOK is an open body of knowledge and practical toolkit for understanding how o
 
 - [Read the body of knowledge](https://intenteffect.github.io/OIBOK/knowledge/).
 - [Explore practical tools and A3 canvases](https://intenteffect.github.io/OIBOK/tools/).
+- [Use OIBOK with an AI assistant or agent](https://intenteffect.github.io/OIBOK/for-agents/).
 - [Inspect the research sources and limitations](https://intenteffect.github.io/OIBOK/research/).
 - [Contribute evidence, corrections or improvements](CONTRIBUTING.md).
 
-The initial GitHub Pages address is `https://intenteffect.github.io/OIBOK/` once the deployment completes. The site can later use `oibok.org` through GitHub Pages settings and the domain's DNS records.
+The website is published at `https://intenteffect.github.io/OIBOK/`. The site can later use `oibok.org` through GitHub Pages settings and the domain's DNS records.
+
+## Use OIBOK with agents
+
+Give your assistant the [agent instructions](https://intenteffect.github.io/OIBOK/agents/instructions.md) and describe the organisational question. The guide explains how to select chapters, assess evidence, compare explanations, draft a practical tool and cite the sources actually used. Agents need access to the sources or copies supplied in their own environment.
+
+- [Copy the starter prompt](https://intenteffect.github.io/OIBOK/for-agents/#starter-prompt).
+- [Discover the sources through llms.txt](https://intenteffect.github.io/OIBOK/llms.txt).
+- [Read the source catalogue](https://intenteffect.github.io/OIBOK/agents/manifest.json) for document URLs, versions, content hashes and deployment commit.
+
+Agent guidance 0.1 is a website and practice addition. It does not change the OIBOK 1.0 research release. Publishing these resources does not grant agents organisational authority or guarantee automatic discovery by every assistant.
 
 ## Publication status
 
@@ -30,6 +41,7 @@ See [versions and corrections](CHANGELOG.md), [research methodology](METHODOLOGY
 | `content/knowledge/` | Authoritative research chapters and reader introduction |
 | `content/research/` | Research registers, release records and reader guidance |
 | `content/tools/` | Practical toolkit guides and overview |
+| `content/agents/` | Shared source for the readable agent guide and Markdown instructions |
 | `downloads/` | Original release archives, research registers, PDFs and editable resources |
 | `website/` | Static build, page routes, templates, styles and browser search |
 | `assets/` | Approved founder artwork and Creative Commons badge |
@@ -50,12 +62,14 @@ npm run check
 The output is `dist/`. The default path is `/OIBOK`, suitable for the GitHub project site. To preview from the root of a local static server:
 
 ```sh
-BASE_PATH='' npm run build
+BASE_PATH='' SITE_URL='http://localhost:8000' npm run build
 npm run check
 python3 -m http.server 8000 --directory dist
 ```
 
-The check verifies internal page/download links and footnote anchors, one main heading per page, attribution, source-byte integrity and search-index destinations.
+The check verifies internal page/download links and footnote anchors, one main heading per page, attribution, source-byte integrity, search-index destinations and agent source catalogue integrity.
+
+The build generates `llms.txt` and `agents/manifest.json` from the same registered pages, and copies `content/agents/instructions.md` unchanged to `agents/instructions.md`. The catalogue covers published Markdown documents; their linked pages provide archives, PDFs and CSV registers. It records `GITHUB_SHA` on deployment. A local build with uncommitted changes records a null source commit rather than claiming those changes belong to an existing commit.
 
 ## Publish with GitHub Pages
 

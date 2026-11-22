@@ -1,5 +1,13 @@
 [
   {
+    "source": "content/agents/instructions.md",
+    "path": "/for-agents/",
+    "title": "Use the OIBOK with your AI assistant or agent",
+    "description": "Apply the OIBOK to an organisational question with a starter prompt, source guidance and a practical working method.",
+    "section": "Agents",
+    "version": "Agent guide 0.1"
+  },
+  {
     "source": "CHANGELOG.md",
     "path": "/releases/",
     "title": "Versions and corrections",

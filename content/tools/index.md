@@ -6,6 +6,8 @@ Start with one recurring decision or workflow. Use the OIBOK toolkit to investig
 
 ## Choose a starting point
 
+**Working with an AI assistant?** [Use these tools with an AI assistant or agent](/for-agents/) for a starter prompt and a method for selecting sources, comparing explanations and drafting a practical working record.
+
 | Resource | Use it to | Guidance |
 | --- | --- | --- |
 | Organisational Intelligence Practice Review | Identify the problem, evidence, unknowns and a worthwhile improvement. | [Read the review and worked example](/tools/practice-review/) |

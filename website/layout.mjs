@@ -59,10 +59,13 @@ export function renderSearch({ basePath = '' } = {}) {
   return `<section class="search-panel" data-search-root aria-label="Search the publication"><form class="site-search" role="search"><label for="search-query">Search OIBOK</label><div class="search-field"><input id="search-query" type="search" name="q" autocomplete="off" placeholder="Search a concept, question or chapter"><button class="button" type="submit">Search</button></div></form><p class="search-status" role="status" aria-live="polite">Enter a word or phrase to search the publication.</p><ol class="search-results"></ol><noscript><p>Search requires JavaScript. You can also browse the <a href="${basePath}/knowledge/">body of knowledge</a>.</p></noscript></section>`;
 }
 
-export function renderLayout({ title, description = '', content, basePath = '', section = '', toc = [], sourcePath = '', version = '', isHome = false }) {
+export function renderLayout({ title, description = '', content, basePath = '', section = '', toc = [], sourcePath = '', version = '', isHome = false, markdown = '', siteUrl = '' }) {
   const url = (path) => `${basePath}${path}`;
   const sectionKey = String(section).toLowerCase().replace(/\s+/g, '-');
-  const sectionLabel = links.find(([key]) => key === sectionKey)?.[1] || ({methodology:'Research methodology', governance:'Governance', licensing:'Licensing', releases:'Versions and corrections', search:'Search'})[sectionKey] || section;
+  const sectionLabel = links.find(([key]) => key === sectionKey)?.[1] || ({methodology:'Research methodology', governance:'Governance', licensing:'Licensing', releases:'Versions and corrections', search:'Search', agents:'For agents', 'for-agents':'For agents'})[sectionKey] || section;
+  const markdownPath = String(markdown);
+  const markdownHref = /^https?:\/\//.test(markdownPath) || (basePath && markdownPath.startsWith(`${basePath}/`)) ? markdownPath : url(markdownPath.startsWith('/') ? markdownPath : `/${markdownPath}`);
+  const llmsHref = /^https?:\/\//.test(siteUrl) ? `${siteUrl.replace(/\/+$/, '')}/llms.txt` : url('/llms.txt');
   const navigation = links.map(([key, label, path]) => `<a href="${url(path)}"${sectionKey === key ? ' aria-current="page"' : ''}>${label}</a>`).join('');
   const contents = toc.filter((item) => item.level === 2 || item.level === 3);
   const tocHtml = contents.length > 1 ? `<aside class="page-aside"><details class="contents" open><summary>On this page</summary><nav aria-label="On this page"><ol>${contents.map((item) => `<li class="toc-level-${item.level}"><a href="#${encodeURIComponent(item.id)}">${escape(item.text)}</a></li>`).join('')}</ol></nav></details></aside>` : '';
@@ -80,6 +83,8 @@ export function renderLayout({ title, description = '', content, basePath = '', 
   <meta property="og:title" content="${escape(title)} | OIBOK">
   <meta property="og:description" content="${escape(description)}">
   <title>${escape(title)} | OIBOK</title>
+  ${markdown ? `<link rel="alternate" type="text/markdown" href="${escape(markdownHref)}" title="Markdown source">` : ''}
+  <link rel="describedby" type="text/plain" href="${escape(llmsHref)}" title="OIBOK guide for AI agents">
   <link rel="stylesheet" href="${url('/assets/styles.css')}">
   <script src="${url('/assets/client.js')}" defer></script>
 </head>
@@ -96,7 +101,7 @@ export function renderLayout({ title, description = '', content, basePath = '', 
     ${isHome ? content : `<div class="page-header"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="${url('/')}">OIBOK</a><span aria-hidden="true">/</span><span>${escape(sectionLabel || 'Publication')}</span></nav><h1>${escape(title)}</h1>${description ? `<p class="page-introduction">${escape(description)}</p>` : ''}${metadata}</div><div class="reading-layout${tocHtml ? ' has-toc' : ''}">${tocHtml}<article class="prose">${searchPanel}${content}</article></div>`}
   </main>
   <footer class="site-footer">
-    <div class="footer-top"><div><a class="brand footer-brand" href="${url('/')}">OIBOK<span class="brand-dot" aria-hidden="true">.</span></a><p class="footer-title">Organisation Intelligence<br>Body of Knowledge</p></div><nav aria-label="Publication information"><a href="${url('/about/')}">About OIBOK</a><a href="${url('/methodology/')}">Research methodology</a><a href="${url('/governance/')}">Governance</a><a href="${url('/releases/')}">Versions and corrections</a><a href="${url('/licensing/')}">Licensing and attribution</a><a class="github-link footer-github-link" href="${repositoryUrl}">${githubIcon}<span>GitHub</span> ${arrow}</a></nav></div>
+    <div class="footer-top"><div><a class="brand footer-brand" href="${url('/')}">OIBOK<span class="brand-dot" aria-hidden="true">.</span></a><p class="footer-title">Organisation Intelligence<br>Body of Knowledge</p></div><nav aria-label="Publication information"><a href="${url('/about/')}">About OIBOK</a><a href="${url('/methodology/')}">Research methodology</a><a href="${url('/governance/')}">Governance</a><a href="${url('/releases/')}">Versions and corrections</a><a href="${url('/licensing/')}">Licensing and attribution</a><a href="${url('/for-agents/')}">For agents</a><a class="github-link footer-github-link" href="${repositoryUrl}">${githubIcon}<span>GitHub</span> ${arrow}</a></nav></div>
     <div class="footer-bottom"><div class="founder-credit"><p>Founded by Intent &amp; Effect, developed by the OIBOK community.</p><span class="ie-brand" role="img" aria-label="Intent & Effect"><img class="ie-brand-mark" src="${url('/assets/intent-effect-mark.svg')}" alt="" aria-hidden="true" width="77" height="62"><span class="ie-brand-wordmark" aria-hidden="true">Intent <span class="ie-brand-amp">&amp;</span> Effect<span class="ie-brand-period">.</span></span></span></div><div class="licence-credit"><a class="licence-badge" rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="${url('/assets/cc-by-sa.svg')}" alt="Creative Commons Attribution-ShareAlike 4.0" width="88" height="31"><span>CC BY-SA 4.0</span></a><p>Publication content. <a href="${url('/licensing/')}">See licence scope and exceptions.</a></p></div></div>
   </footer>
 </body>
