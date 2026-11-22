@@ -59,7 +59,7 @@ export function renderSearch({ basePath = '' } = {}) {
   return `<section class="search-panel" data-search-root aria-label="Search the publication"><form class="site-search" role="search"><label for="search-query">Search OIBOK</label><div class="search-field"><input id="search-query" type="search" name="q" autocomplete="off" placeholder="Search a concept, question or chapter"><button class="button" type="submit">Search</button></div></form><p class="search-status" role="status" aria-live="polite">Enter a word or phrase to search the publication.</p><ol class="search-results"></ol><noscript><p>Search requires JavaScript. You can also browse the <a href="${basePath}/knowledge/">body of knowledge</a>.</p></noscript></section>`;
 }
 
-export function renderLayout({ title, description = '', content, basePath = '', section = '', toc = [], sourcePath = '', version = '', isHome = false, markdown = '', siteUrl = '' }) {
+export function renderLayout({ title, description = '', content, basePath = '', section = '', toc = [], sourcePath = '', version = '', isHome = false, markdown = '', siteUrl = '', assetPaths = {} }) {
   const url = (path) => `${basePath}${path}`;
   const sectionKey = String(section).toLowerCase().replace(/\s+/g, '-');
   const sectionLabel = links.find(([key]) => key === sectionKey)?.[1] || ({methodology:'Research methodology', governance:'Governance', licensing:'Licensing', releases:'Versions and corrections', search:'Search', agents:'For agents', 'for-agents':'For agents'})[sectionKey] || section;
@@ -85,8 +85,8 @@ export function renderLayout({ title, description = '', content, basePath = '', 
   <title>${escape(title)} | OIBOK</title>
   ${markdown ? `<link rel="alternate" type="text/markdown" href="${escape(markdownHref)}" title="Markdown source">` : ''}
   <link rel="describedby" type="text/plain" href="${escape(llmsHref)}" title="OIBOK guide for AI agents">
-  <link rel="stylesheet" href="${url('/assets/styles.css')}">
-  <script src="${url('/assets/client.js')}" defer></script>
+  <link rel="stylesheet" href="${url(assetPaths['styles.css'] || '/assets/styles.css')}">
+  <script src="${url(assetPaths['client.js'] || '/assets/client.js')}" defer></script>
 </head>
 <body data-base-path="${escape(basePath)}" class="${isHome ? 'home' : 'reading-page'}">
   <a class="skip-link" href="#main">Skip to content</a>

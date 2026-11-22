@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
+import crypto from 'node:crypto';
 import { renderHome, renderLayout, renderSearch } from './layout.mjs';
 import { buildAgentResources } from './agents.mjs';
 
@@ -29,7 +30,17 @@ if (pandocVersion.error || pandocVersion.status !== 0) throw new Error('Install 
 fs.rmSync(dist, { recursive: true, force: true });
 fs.mkdirSync(dist, { recursive: true });
 for (const folder of ['assets', 'downloads']) fs.cpSync(path.join(root, folder), path.join(dist, folder), { recursive: true });
-for (const file of ['styles.css', 'client.js']) fs.copyFileSync(path.join(root, 'website', file), path.join(dist, 'assets', file));
+const assetPaths = {};
+for (const file of ['styles.css', 'client.js']) {
+  const data = fs.readFileSync(path.join(root, 'website', file));
+  const version = crypto.createHash('sha256').update(data).digest('hex').slice(0, 12);
+  const extension = path.extname(file);
+  const versioned = `${path.basename(file, extension)}.${version}${extension}`;
+  fs.writeFileSync(path.join(dist, 'assets', versioned), data);
+  // Retain the old URLs for readers with a previously cached HTML page.
+  fs.writeFileSync(path.join(dist, 'assets', file), data);
+  assetPaths[file] = `/assets/${versioned}`;
+}
 const search = [];
 const pageRecords = [];
 const chapterPages = pages.filter(page => /^content\/knowledge\/Project-OI-BOK-\d{3}-/.test(page.source));
@@ -97,11 +108,11 @@ for (const page of pages) {
   }
   content += `<p class="source-download"><a href="${basePath}${sourceDownload}" download>Download this page’s Markdown source</a></p>`;
   const markdown = `${siteUrl}${page.path === '/for-agents/' ? '/agents/instructions.md' : sourceDownload}`;
-  writePage(page.path, renderLayout({...page,content,toc,sourcePath:page.source,basePath,siteUrl,markdown}));
+  writePage(page.path, renderLayout({...page,content,toc,sourcePath:page.source,basePath,siteUrl,markdown,assetPaths}));
 }
-writePage('/',renderLayout({title:config.title,description:config.description,content:renderHome({basePath}),basePath,siteUrl,isHome:true}));
-writePage('/search/',renderLayout({title:'Search OIBOK',description:'Find a concept, question, chapter or practical resource.',content:renderSearch({basePath}),basePath,siteUrl,section:'search'}));
-writePage('/404.html',renderLayout({title:'Page not found',description:'This address does not match a page in the current website.',content:`<p>Visit the <a href="${basePath}/knowledge/">body of knowledge</a>, browse the <a href="${basePath}/tools/">practical tools</a> or <a href="${basePath}/search/">search the publication</a>.</p>`,basePath,siteUrl}));
+writePage('/',renderLayout({title:config.title,description:config.description,content:renderHome({basePath}),basePath,siteUrl,assetPaths,isHome:true}));
+writePage('/search/',renderLayout({title:'Search OIBOK',description:'Find a concept, question, chapter or practical resource.',content:renderSearch({basePath}),basePath,siteUrl,assetPaths,section:'search'}));
+writePage('/404.html',renderLayout({title:'Page not found',description:'This address does not match a page in the current website.',content:`<p>Visit the <a href="${basePath}/knowledge/">body of knowledge</a>, browse the <a href="${basePath}/tools/">practical tools</a> or <a href="${basePath}/search/">search the publication</a>.</p>`,basePath,siteUrl,assetPaths}));
 fs.writeFileSync(path.join(dist,'search-index.json'),JSON.stringify(search));
 fs.writeFileSync(path.join(dist,'.nojekyll'),'');
 fs.writeFileSync(path.join(dist,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${siteUrl}/sitemap.xml\n`);
