@@ -1,0 +1,51 @@
+OIBOK A3 CANVASES
+Practical Toolkit v0.1 | 22 November 2026
+
+Founded by Intent & Effect, developed by the OIBOK community.
+
+CONTENTS
+01  Organisational Intelligence Practice Review
+02  Context and Knowledge Map
+03  Decision and Coordination Canvas
+04  AI Opportunity and Work Design Canvas
+05  Outcome and Learning Record
+
+Each canvas is one A3 landscape page (420 x 297 mm).
+OIBOK-A3-Canvases-v0.1.pdf contains all five pages in that order.
+
+PRINTING
+Choose A3 paper, landscape orientation and Actual size / 100% scale.
+Check the print preview so the page is not reduced to A4.
+Print single-sided when using the canvases in a workshop.
+
+TYPING INTO THE PDF
+The individual PDFs and combined PDF contain fillable form fields.
+Use a PDF viewer that supports saving PDF forms, then save a working copy.
+Enter concise notes in the blank areas below the prompts or in table cells.
+Use the linked-records field to reference fuller evidence and action records.
+Fields have finite space. Confirm that all entered text is visible before printing.
+If a browser preview does not retain entries, download the PDF and use a form-capable PDF viewer.
+
+USING THE SET
+Begin with a real, bounded decision or workflow in the Practice Review.
+Use the Context and Knowledge Map and Decision and Coordination Canvas where they help explain the problem.
+Use the AI Opportunity and Work Design Canvas when AI is one of the options worth considering.
+Complete the first row of the Outcome and Learning Record before making the change.
+Record results after the observation period, then decide what to retain, change or investigate.
+The tools can be revisited; they do not prescribe a fixed sequence.
+
+These sheets condense the blank worksheets in OIBOK Practical Toolkit v0.1.
+Use the companion toolkit guide for facilitation guidance and worked examples.
+Record sources and dates. Separate observations, interpretations and unknowns.
+These are practice resources for piloting, not a validated intelligence score or certification.
+
+LICENCE
+The original template content is licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
+Licence: https://creativecommons.org/licenses/by-sa/4.0/
+When sharing or adapting the template content, provide attribution, link to the licence, identify changes and apply the licence's ShareAlike conditions to adaptations you distribute.
+The licence does not require organisations to publish completed worksheets or their internal records.
+Contributors retain copyright in their contributions and license them to the project.
+The official CC BY-SA badge and a link to the licence appear on every canvas.
+
+Suggested attribution:
+OIBOK A3 Canvases, Practical Toolkit v0.1. Founded by Intent & Effect, developed by the OIBOK community. Licensed under CC BY-SA 4.0. https://creativecommons.org/licenses/by-sa/4.0/

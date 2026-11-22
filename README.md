@@ -1,2 +1,81 @@
 # OIBOK
-The Organisation Intelligence Body of Knowledge
+
+**Organisation Intelligence Body of Knowledge**
+
+Founded by Intent & Effect, developed by the OIBOK community.
+
+OIBOK is an open body of knowledge and practical toolkit for understanding how organisations orient, coordinate and improve. It helps people examine how knowledge, decisions, collective action and learning fit together, including when organisations introduce AI into work.
+
+## Read and use
+
+- [Read the body of knowledge](https://intenteffect.github.io/OIBOK/knowledge/).
+- [Explore practical tools and A3 canvases](https://intenteffect.github.io/OIBOK/tools/).
+- [Inspect the research sources and limitations](https://intenteffect.github.io/OIBOK/research/).
+- [Contribute evidence, corrections or improvements](CONTRIBUTING.md).
+
+The initial GitHub Pages address is `https://intenteffect.github.io/OIBOK/` once the deployment completes. The site can later use `oibok.org` through GitHub Pages settings and the domain's DNS records.
+
+## Publication status
+
+**OIBOK 1.0**, released 15 August 2026, is a literature-grounded working synthesis. Its ten chapter files preserve component version 0.3, as promoted by the release completion record. The whole model has not been independently field validated.
+
+**Practical toolkit 0.1**, dated 22 November 2026, provides methods for piloting in real work. It does not provide a validated OI scale or maturity score. The proposed 1.1 editorial revision has not been applied to the research release.
+
+See [versions and corrections](CHANGELOG.md), [research methodology](METHODOLOGY.md) and [governance](GOVERNANCE.md).
+
+## One repository, one source of publication content
+
+| Location | Purpose |
+| --- | --- |
+| `content/knowledge/` | Authoritative research chapters and reader introduction |
+| `content/research/` | Research registers, release records and reader guidance |
+| `content/tools/` | Practical toolkit guides and overview |
+| `downloads/` | Original release archives, research registers, PDFs and editable resources |
+| `website/` | Static build, page routes, templates, styles and browser search |
+| `assets/` | Approved founder artwork and Creative Commons badge |
+| `sources/` | Source provenance and imported-file checksums |
+| `.github/` | Contribution forms, pull request template and build/deploy workflow |
+
+The website is generated from the canonical Markdown and root policy files. Generated HTML belongs in the Pages deployment artifact, not in the source branch. No application server or paid hosting service is required.
+
+## Build locally
+
+Install Node.js 24 and Pandoc 3. No npm dependencies are required.
+
+```sh
+npm run build
+npm run check
+```
+
+The output is `dist/`. The default path is `/OIBOK`, suitable for the GitHub project site. To preview from the root of a local static server:
+
+```sh
+BASE_PATH='' npm run build
+npm run check
+python3 -m http.server 8000 --directory dist
+```
+
+The check verifies internal page/download links and footnote anchors, one main heading per page, attribution, source-byte integrity and search-index destinations.
+
+## Publish with GitHub Pages
+
+1. The repository owner grants the publishing account collaborator access.
+2. Under **Settings → Pages → Build and deployment**, select **GitHub Actions** as the source.
+3. Push the publication and workflow to `main`.
+4. The workflow builds and checks the site, uploads the Pages artifact and deploys it. Inspect the **Build and publish OIBOK** run in Actions for the final URL.
+
+Pull requests run build and integrity checks without deploying. Only a push to `main` or a manual run from `main` should publish the official website. Configure the `github-pages` environment to allow deployment from `main`.
+
+The workflow uses the site's URL and base path returned by GitHub Pages. A future custom domain therefore does not require editing chapter links. Set the domain in Pages settings and complete DNS verification before changing public links. A custom domain is not preconfigured in this repository.
+
+## Editing and releases
+
+Add or edit a Markdown file and its route entry in `website/imported-pages.json`, `website/policy-pages.json` or `website/extra-pages.json` as appropriate. Use root-relative website links, such as `/knowledge/` or `/tools/`; the build prefixes the configured base path.
+
+Historical research sources are checked against `sources/import-checksums.json`. Preserve released source bytes. Prepare substantive revisions as a new edition with updated provenance and a recorded editorial decision. Do not change a checksum merely to make an unexplained source change pass.
+
+## Licence and attribution
+
+Original publication content is licensed under **[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)**. Contributors retain copyright. See [LICENSE](LICENSE) and the [licensing policy](content/licensing.md) for scope, attribution, third-party material, brand assets, software and the initial CC0 repository files.
+
+The separate licence for original website software has not yet been adopted. Third-party tools retain their own terms.

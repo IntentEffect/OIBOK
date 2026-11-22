@@ -1,0 +1,32 @@
+name: Correction or accessibility issue
+description: Identify an error, unclear passage, broken link or access barrier.
+title: "Correction: "
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Page, file and version
+      description: Link the affected page and identify the edition or toolkit version.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What needs correcting?
+      description: Include the relevant passage, expected behaviour or accessibility barrier.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and suggested correction
+      description: Link supporting sources and distinguish observations from interpretation.
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Publication contribution
+      options:
+        - label: I have permission to share this material and have removed confidential information.
+          required: true
+        - label: I retain copyright and license my original publication contribution for inclusion under CC BY-SA 4.0.
+          required: true

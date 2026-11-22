@@ -1,0 +1,42 @@
+[
+  {
+    "source": "content/about.md",
+    "path": "/about/",
+    "title": "About OIBOK",
+    "description": "An open body of knowledge and practical toolkit for understanding how organisations orient, coordinate and improve.",
+    "section": "About",
+    "version": "Website edition 1.0"
+  },
+  {
+    "source": "CONTRIBUTING.md",
+    "path": "/contribute/",
+    "title": "Contribute to OIBOK",
+    "description": "Bring evidence, criticism and practical experience to the development of Organisation Intelligence.",
+    "section": "Contribute",
+    "version": "Policy 1.0"
+  },
+  {
+    "source": "GOVERNANCE.md",
+    "path": "/governance/",
+    "title": "Editorial governance",
+    "description": "How OIBOK is stewarded, how decisions are reviewed and how the publication evolves.",
+    "section": "About",
+    "version": "Policy 1.0"
+  },
+  {
+    "source": "METHODOLOGY.md",
+    "path": "/methodology/",
+    "title": "Research methodology",
+    "description": "How evidence is discovered, assessed, challenged and carried into a traceable research publication.",
+    "section": "Research",
+    "version": "Editorial standard 1.0"
+  },
+  {
+    "source": "content/licensing.md",
+    "path": "/licensing/",
+    "title": "Licensing and reuse",
+    "description": "Use and adapt original OIBOK publication content under Creative Commons Attribution-ShareAlike 4.0 International.",
+    "section": "About",
+    "version": "Policy 1.0"
+  }
+]

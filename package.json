@@ -1,0 +1,12 @@
+{
+  "name": "oibok-publication",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The OIBOK publication and GitHub Pages website",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node website/build.mjs",
+    "check": "node website/check.mjs"
+  }
+}

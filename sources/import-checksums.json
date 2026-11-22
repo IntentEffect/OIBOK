@@ -1,0 +1,321 @@
+{
+  "research_release": "OIBOK 1.0",
+  "research_release_date": "2026-08-15",
+  "toolkit_release": "0.1",
+  "toolkit_release_date": "2026-11-22",
+  "note": "Hashes identify imported source bytes. Website overview pages are new editorial introductions and are not part of the historical release.",
+  "files": [
+    {
+      "path": "content/knowledge/Project-OI-BOK-001-Signals-and-Attention-v0.3.md",
+      "original": "chapters/Project-OI-BOK-001-Signals-and-Attention-v0.3.md",
+      "bytes": 27832,
+      "sha256": "971c75d074017a21dcfcce938404489c67204ec5df8143784feda70fd2cbd243"
+    },
+    {
+      "path": "content/knowledge/Project-OI-BOK-002-Organisational-Context-v0.3.md",
+      "original": "chapters/Project-OI-BOK-002-Organisational-Context-v0.3.md",
+      "bytes": 49877,
+      "sha256": "d8148eaebfbde0172b98a1fbb568fdc1724381aff252682b3e823db7b6509cb1"
+    },
+    {
+      "path": "content/knowledge/Project-OI-BOK-003-Knowledge-and-Expertise-v0.3.md",
+      "original": "chapters/Project-OI-BOK-003-Knowledge-and-Expertise-v0.3.md",
+      "bytes": 60233,
+      "sha256": "11c42cac7b2b15349825a2320f04792ff2bbf3605e23b5080bbdfb762d8e1cad"
+    },
+    {
+      "path": "content/knowledge/Project-OI-BOK-004-Decision-and-Authority-v0.3.md",
+      "original": "chapters/Project-OI-BOK-004-Decision-and-Authority-v0.3.md",
+      "bytes": 72183,
+      "sha256": "1453dc423f2b5a45b0101ac8dc53b47d72505957242002185576ad213ae53238"
+    },
+    {
+      "path": "content/knowledge/Project-OI-BOK-005-Coordination-and-Collective-Action-v0.3.md",
+      "original": "chapters/Project-OI-BOK-005-Coordination-and-Collective-Action-v0.3.md",
+      "bytes": 74912,
+      "sha256": "5d9898b35bbcf24c65345b0336edaa7173920b13fdb7e0cd7c8b3bc464d33d91"
+    },
+    {
+      "path": "content/knowledge/Project-OI-BOK-006-Execution-and-Operational-Reliability-v0.3.md",
+      "original": "chapters/Project-OI-BOK-006-Execution-and-Operational-Reliability-v0.3.md",
+      "bytes": 90671,
+      "sha256": "75bcc5576217b01f13b20c1a6359783625c1a5cb151f879cb337da65cb9e517c"
+    },
+    {
+      "path": "content/knowledge/Project-OI-BOK-007-Outcomes-Feedback-and-Evaluation-v0.3.md",
+      "original": "chapters/Project-OI-BOK-007-Outcomes-Feedback-and-Evaluation-v0.3.md",
+      "bytes": 84160,
+      "sha256": "d665679292f54e25416551b4ca583767e3deb9a4808dd2407943a53aa83fea18"
+    },
+    {
+      "path": "content/knowledge/Project-OI-BOK-008-Organisational-Memory-Reflection-and-Learning-v0.3.md",
+      "original": "chapters/Project-OI-BOK-008-Organisational-Memory-Reflection-and-Learning-v0.3.md",
+      "bytes": 101052,
+      "sha256": "2041b22ecc050e776d38791bdd349439f1277162db20f79156ab2fe3434e0d6d"
+    },
+    {
+      "path": "content/knowledge/Project-OI-BOK-009-Capability-Development-and-Adaptation-v0.3.md",
+      "original": "chapters/Project-OI-BOK-009-Capability-Development-and-Adaptation-v0.3.md",
+      "bytes": 107419,
+      "sha256": "3cd7b22ce1c0b2fdeb0e531cdf6315066cfe33ffb44f10995c17aca10fbad3bd"
+    },
+    {
+      "path": "content/knowledge/Project-OI-BOK-010-Integrated-and-Responsible-Organisational-Intelligence-v0.3.md",
+      "original": "chapters/Project-OI-BOK-010-Integrated-and-Responsible-Organisational-Intelligence-v0.3.md",
+      "bytes": 99259,
+      "sha256": "2d2d57159a423780fdb184a7cafb593f8edf8fa59cd5e84c6b0e2e999c721c70"
+    },
+    {
+      "path": "downloads/research/Project-OI-BOK-CORR-002-AI-Evidence-Lifecycle-Register-v0.1.csv",
+      "original": "sources/Project-OI-BOK-CORR-002-AI-Evidence-Lifecycle-Register-v0.1.csv",
+      "bytes": 11326,
+      "sha256": "ef0e6a638cd06d8cdbf466b2741524f5569bcd6be7218ced02b29c4152d4ff17"
+    },
+    {
+      "path": "downloads/research/Project-OI-BOK-CORR-002-Bibliographic-Verification-Register-v0.1.csv",
+      "original": "sources/Project-OI-BOK-CORR-002-Bibliographic-Verification-Register-v0.1.csv",
+      "bytes": 339894,
+      "sha256": "12fe880254bc0d6d990e4e45a3eb776de485341207c7bd979de4be84a730b41f"
+    },
+    {
+      "path": "content/research/Project-OI-BOK-DIAG-001-Consolidated-Failure-Mode-Quality-and-Indicator-Index-v0.2.md",
+      "original": "registers/Project-OI-BOK-DIAG-001-Consolidated-Failure-Mode-Quality-and-Indicator-Index-v0.2.md",
+      "bytes": 108437,
+      "sha256": "12dade106216ea085f8b355442796f671e4c3758aea3c1cf74c4c3f83016faac"
+    },
+    {
+      "path": "content/research/Project-OI-BOK-GLO-001-Consolidated-Project-OI-Glossary-v0.2.md",
+      "original": "registers/Project-OI-BOK-GLO-001-Consolidated-Project-OI-Glossary-v0.2.md",
+      "bytes": 175147,
+      "sha256": "ec314eddf94287be46b41feeaed4f4935238aed16dfd79f9adfd24494ac70c18"
+    },
+    {
+      "path": "content/research/Project-OI-BOK-INDEX-001-BOK-Index-and-Source-Manifest-v1.0.md",
+      "original": "index/Project-OI-BOK-INDEX-001-BOK-Index-and-Source-Manifest-v1.0.md",
+      "bytes": 7549,
+      "sha256": "d265b7b035bd9213b77866e846bf7b2f35d988a4c9890513d0cee93ebdc6d9ab"
+    },
+    {
+      "path": "downloads/research/Project-OI-BOK-INDEX-001-Source-Occurrence-Crosswalk-v0.2.csv",
+      "original": "sources/Project-OI-BOK-INDEX-001-Source-Occurrence-Crosswalk-v0.2.csv",
+      "bytes": 155467,
+      "sha256": "bb2a510fbc9ef8dcb5975cd5f93ab3984610302cb796c3c9d85df8977ea7c27d"
+    },
+    {
+      "path": "downloads/research/Project-OI-BOK-INDEX-001-Unique-Source-Manifest-v0.2.csv",
+      "original": "sources/Project-OI-BOK-INDEX-001-Unique-Source-Manifest-v0.2.csv",
+      "bytes": 155430,
+      "sha256": "95b2ea11c5f48f18f1e45a597fcf8382e70a10abbeefaec77b4abaef0ede4a98"
+    },
+    {
+      "path": "content/research/Project-OI-BOK-OPEN-001-Consolidated-Research-Limitations-and-Open-Questions-Register-v0.2.md",
+      "original": "registers/Project-OI-BOK-OPEN-001-Consolidated-Research-Limitations-and-Open-Questions-Register-v0.2.md",
+      "bytes": 54611,
+      "sha256": "545d91a3b0057407eb1f655cca3cdfbf125e852829c340f5a881fd9d671685de"
+    },
+    {
+      "path": "content/research/Project-OI-BOK-PROP-001-Consolidated-Proposition-and-Evidence-Register-v0.2.md",
+      "original": "registers/Project-OI-BOK-PROP-001-Consolidated-Proposition-and-Evidence-Register-v0.2.md",
+      "bytes": 121995,
+      "sha256": "c7f0ec9fb2172f13ae46771071e1bd9d2d4320b947ee9e7be19b0517978241b8"
+    },
+    {
+      "path": "content/research/Project-OI-BOK-RELEASE-001-Body-of-Knowledge-Completion-Record-v1.0.md",
+      "original": "release/Project-OI-BOK-RELEASE-001-Body-of-Knowledge-Completion-Record-v1.0.md",
+      "bytes": 12965,
+      "sha256": "dd8fe8e908d5b05375587b5e8a9e43684ab94ff616f651aafd63529b48c92366"
+    },
+    {
+      "path": "downloads/research/Project-OI-BOK-RELEASE-001-Claims-and-Limitations-Register-v1.0.csv",
+      "original": "release/Project-OI-BOK-RELEASE-001-Claims-and-Limitations-Register-v1.0.csv",
+      "bytes": 6629,
+      "sha256": "9a1803e7d5db6df8879adcaae18cb650692491e86265c89ba7c173d886f3e0f1"
+    },
+    {
+      "path": "downloads/research/Project-OI-BOK-RELEASE-001-Correction-Closure-Register-v1.0.csv",
+      "original": "release/Project-OI-BOK-RELEASE-001-Correction-Closure-Register-v1.0.csv",
+      "bytes": 8904,
+      "sha256": "02e2d180ed0a764148dc96d445d343f2573b0eb0394abd230a3c5df822645c20"
+    },
+    {
+      "path": "downloads/research/Project-OI-BOK-RELEASE-001-Release-Manifest-v1.0.csv",
+      "original": "release/Project-OI-BOK-RELEASE-001-Release-Manifest-v1.0.csv",
+      "bytes": 11575,
+      "sha256": "2238c5c2df9f8af3163808729743e7152c100f7865aadadb26272b622b2c4b39"
+    },
+    {
+      "path": "downloads/research/Project-OI-BOK-RELEASE-001-Review-Finding-Closure-Register-v1.0.csv",
+      "original": "release/Project-OI-BOK-RELEASE-001-Review-Finding-Closure-Register-v1.0.csv",
+      "bytes": 12543,
+      "sha256": "ff6076ee1a11cbb0db7c41e0d4d0bf544b3a3f12796cfa6d4ba7a0c312714375"
+    },
+    {
+      "path": "content/research/Project-OI-BOK-TRACE-001-Cross-Chapter-Traceability-Matrix-v0.2.md",
+      "original": "registers/Project-OI-BOK-TRACE-001-Cross-Chapter-Traceability-Matrix-v0.2.md",
+      "bytes": 23024,
+      "sha256": "a79cf005feddbefea7ce80f73f847049ada3727ccdab83411152e977f42341bd"
+    },
+    {
+      "path": "content/research/Project-OI-BOK-VALIDATION-001-Final-Source-to-Derived-Consistency-Proof-v1.0.md",
+      "original": "release/Project-OI-BOK-VALIDATION-001-Final-Source-to-Derived-Consistency-Proof-v1.0.md",
+      "bytes": 9455,
+      "sha256": "22e7ec7d8390f43717378521e0a81ffca1b5de325ee6287d083fbb1cf44b593e"
+    },
+    {
+      "path": "downloads/research/Project-OI-BOK-VALIDATION-001-Test-Register-v1.0.csv",
+      "original": "release/Project-OI-BOK-VALIDATION-001-Test-Register-v1.0.csv",
+      "bytes": 5046,
+      "sha256": "5ffd17583305cc40304ab1537930323bc5c1b433aa7788d08caf718e12f5507d"
+    },
+    {
+      "path": "downloads/research/Project-OI-BOK-GLO-001-Term-Tier-Register-v0.2.csv",
+      "original": "registers/Project-OI-BOK-GLO-001-Term-Tier-Register-v0.2.csv",
+      "bytes": 118618,
+      "sha256": "2a7502373303d917afeb48abda832c06de1dc56191442dd7c884b4e870f0b2d1"
+    },
+    {
+      "path": "downloads/research/Project-OI-BOK-PROP-001-Proposition-Register-v0.2.csv",
+      "original": "registers/Project-OI-BOK-PROP-001-Proposition-Register-v0.2.csv",
+      "bytes": 94375,
+      "sha256": "a55e9e23ca21d900aa3ed410d698e93e1bd4f5cf6c8354f457be514d573f181f"
+    },
+    {
+      "path": "downloads/research/Project-OI-BOK-OPEN-001-Integrated-Open-Question-Register-v0.2.csv",
+      "original": "registers/Project-OI-BOK-OPEN-001-Integrated-Open-Question-Register-v0.2.csv",
+      "bytes": 25834,
+      "sha256": "243f155d22fd44a58a91b8dfbcd92ba2ca294fd31213bba30c2ecc7097073a0d"
+    },
+    {
+      "path": "downloads/research/Project-OI-BOK-TRACE-001-Transition-Register-v0.2.csv",
+      "original": "registers/Project-OI-BOK-TRACE-001-Transition-Register-v0.2.csv",
+      "bytes": 14922,
+      "sha256": "75d115e78a6b9c9c4d500884c56aa4bbe147ed83fc3e7a920aefa80559fde094"
+    },
+    {
+      "path": "downloads/research/Project-OI-BOK-RELEASE-001-Chapter-Set-v1.0.zip",
+      "original": "Project-OI-BOK-RELEASE-001-Chapter-Set-v1.0.zip",
+      "bytes": 253007,
+      "sha256": "b75f8a4a3a5f22e16396a2448ec4eb4f8161ed492247b6d71c78b74faa42c8b9"
+    },
+    {
+      "path": "downloads/research/Project-OI-BOK-RELEASE-001-Complete-Research-Release-v1.0.zip",
+      "original": "Project-OI-BOK-RELEASE-001-Complete-Research-Release-v1.0.zip",
+      "bytes": 1030188,
+      "sha256": "503ea0a59109123827813864c3682d5166286578171b655a4e872119f6167560"
+    },
+    {
+      "path": "downloads/research/Project-OI-BOK-RELEASE-001-Core-Reader-Pack-v1.0.zip",
+      "original": "Project-OI-BOK-RELEASE-001-Core-Reader-Pack-v1.0.zip",
+      "bytes": 338973,
+      "sha256": "41f859cfb9d9e43b657b1a930f04c61febcdffa26080da48bd065ac6b5028792"
+    },
+    {
+      "path": "downloads/research/Project-OI-BOK-RELEASE-001-SHA256SUMS-v1.0.txt",
+      "original": "Project-OI-BOK-RELEASE-001-SHA256SUMS-v1.0.txt",
+      "bytes": 7513,
+      "sha256": "0c617e01aa3db602f6c39497c1fd8ae829575d0cbeba3ca494f0e9b7f5767ec6"
+    },
+    {
+      "path": "content/tools/00-OIBOK-Practical-Toolkit-Guide-v0.1.md",
+      "original": "00-OIBOK-Practical-Toolkit-Guide-v0.1.md",
+      "bytes": 6811,
+      "sha256": "b39b4539c83ef67d87c7302dbd488974a3d08ece8037b393b466089d24fe36d2"
+    },
+    {
+      "path": "content/tools/01-OIBOK-Practice-Review-v0.1.md",
+      "original": "01-OIBOK-Practice-Review-v0.1.md",
+      "bytes": 11147,
+      "sha256": "389c992f5445c0d00096bdcddd8711618df93ac602418aea0c281845cb1e093e"
+    },
+    {
+      "path": "content/tools/02-OIBOK-AI-Opportunity-and-Work-Design-Canvas-v0.1.md",
+      "original": "02-OIBOK-AI-Opportunity-and-Work-Design-Canvas-v0.1.md",
+      "bytes": 10202,
+      "sha256": "00c7491736524e3354cda33f2429a7ff73b6d468d061685cc1537f002d1a2754"
+    },
+    {
+      "path": "content/tools/03-OIBOK-Outcome-and-Learning-Record-v0.1.md",
+      "original": "03-OIBOK-Outcome-and-Learning-Record-v0.1.md",
+      "bytes": 11402,
+      "sha256": "77b7ecf23464061e00ba58f91e647ce07d0574101afb8a9ef58ab4f46be52642"
+    },
+    {
+      "path": "downloads/toolkit/00-OIBOK-Practical-Toolkit-Guide-v0.1.docx",
+      "original": "00-OIBOK-Practical-Toolkit-Guide-v0.1.docx",
+      "bytes": 65302,
+      "sha256": "e33a4011cee29d75d47c29ed5b9312ec1336632007b3ab5c3bff125ac0f6f5cf"
+    },
+    {
+      "path": "downloads/toolkit/01-OIBOK-Practice-Review-v0.1.docx",
+      "original": "01-OIBOK-Practice-Review-v0.1.docx",
+      "bytes": 67612,
+      "sha256": "2a6f2b27e58949fa95f599303c86fb90f957c4472fc3a25751013845ba00bda6"
+    },
+    {
+      "path": "downloads/toolkit/02-OIBOK-AI-Opportunity-and-Work-Design-Canvas-v0.1.docx",
+      "original": "02-OIBOK-AI-Opportunity-and-Work-Design-Canvas-v0.1.docx",
+      "bytes": 66480,
+      "sha256": "6db44b403d16a66159ab6addc030af2d519c9e50226bb3cd72ffa06f88113a33"
+    },
+    {
+      "path": "downloads/toolkit/03-OIBOK-Outcome-and-Learning-Record-v0.1.docx",
+      "original": "03-OIBOK-Outcome-and-Learning-Record-v0.1.docx",
+      "bytes": 67167,
+      "sha256": "34b42336a1b71f20163ed18b68d1f515dcf5fb2f0b742b0cae7089da31a9d136"
+    },
+    {
+      "path": "downloads/toolkit/OIBOK-Practical-Toolkit-v0.1.zip",
+      "original": "OIBOK-Practical-Toolkit-v0.1.zip",
+      "bytes": 282371,
+      "sha256": "6fe0e4206bb44a73c29b241d1948d6219863f96088b5a6a528a6a3e7adf1e058"
+    },
+    {
+      "path": "downloads/toolkit/01-OIBOK-Practice-Review-A3.pdf",
+      "original": "01-OIBOK-Practice-Review-A3.pdf",
+      "bytes": 76892,
+      "sha256": "fa302fae2b8b2d100356d74dbd46d09cc635cd589ecba38aef23f3c63035d1bd"
+    },
+    {
+      "path": "downloads/toolkit/02-OIBOK-Context-and-Knowledge-Map-A3.pdf",
+      "original": "02-OIBOK-Context-and-Knowledge-Map-A3.pdf",
+      "bytes": 82786,
+      "sha256": "0a362b33cead3b837542a87375d1241f0fb2602096bb8a13c42cd8e221cf7d56"
+    },
+    {
+      "path": "downloads/toolkit/03-OIBOK-Decision-and-Coordination-Canvas-A3.pdf",
+      "original": "03-OIBOK-Decision-and-Coordination-Canvas-A3.pdf",
+      "bytes": 85029,
+      "sha256": "984db41c41dec210c22b35bac06c500783ccee691fa72640bb5942d3f9d5b35a"
+    },
+    {
+      "path": "downloads/toolkit/04-OIBOK-AI-Opportunity-and-Work-Design-Canvas-A3.pdf",
+      "original": "04-OIBOK-AI-Opportunity-and-Work-Design-Canvas-A3.pdf",
+      "bytes": 78307,
+      "sha256": "5f8ece777a21ff2291391e0ffaed939b7a7a29d0a01c5af0770e6e1f5754f441"
+    },
+    {
+      "path": "downloads/toolkit/05-OIBOK-Outcome-and-Learning-Record-A3.pdf",
+      "original": "05-OIBOK-Outcome-and-Learning-Record-A3.pdf",
+      "bytes": 78606,
+      "sha256": "6d8da3239da60c6d3dbe26a37f8b8a9e8688906fca4f7e22129aadf7baffa4bb"
+    },
+    {
+      "path": "downloads/toolkit/OIBOK-A3-Canvases-v0.1.pdf",
+      "original": "OIBOK-A3-Canvases-v0.1.pdf",
+      "bytes": 399181,
+      "sha256": "69c3d826f4277168f3bed39246cb7e323a675ecc4220bc8765ffee4cebb91434"
+    },
+    {
+      "path": "downloads/toolkit/OIBOK-A3-Canvases-v0.1.zip",
+      "original": "OIBOK-A3-Canvases-v0.1.zip",
+      "bytes": 602533,
+      "sha256": "d2824a428df853fe0f22b7836be300351aab33f077888782c87b8c9999c5c9b4"
+    },
+    {
+      "path": "downloads/toolkit/A3-canvas-instructions.txt",
+      "original": "A3 canvases README.txt",
+      "bytes": 2848,
+      "sha256": "126bc24b9cffc465e5b10f6fa1a5b591c808223c9553e61d9762a770f2f0cb89"
+    }
+  ]
+}

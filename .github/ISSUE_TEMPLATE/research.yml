@@ -1,0 +1,38 @@
+name: Research or conceptual proposal
+description: Submit substantive evidence, a competing explanation or a research gap.
+title: "Research: "
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Source title and stable URL or identifier
+    validations:
+      required: true
+  - type: textarea
+    id: findings
+    attributes:
+      label: Findings and evidence quality
+      description: Describe methods, sample, findings, limitations and whether you reviewed full text or an abstract.
+    validations:
+      required: true
+  - type: textarea
+    id: implications
+    attributes:
+      label: What should change in OIBOK?
+      description: Map to chapters or propositions. Explain competing interpretations, research gaps and whether this supports, qualifies or challenges the current text.
+    validations:
+      required: true
+  - type: textarea
+    id: disclosures
+    attributes:
+      label: Provenance, interests and AI assistance
+      description: Identify third-party material, relevant interests, material AI assistance and any prior OIBOK coverage.
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Publication contribution
+      options:
+        - label: I have permission to share this material and have removed confidential information.
+          required: true
+        - label: I retain copyright and license my original publication contribution for inclusion under CC BY-SA 4.0.
+          required: true

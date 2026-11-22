@@ -1,0 +1,227 @@
+[
+  {
+    "source": "content/knowledge/Project-OI-BOK-001-Signals-and-Attention-v0.3.md",
+    "path": "/knowledge/signals-and-attention/",
+    "title": "1. Signals and Attention",
+    "description": "How material events become visible, receive attention and enter organisational response.",
+    "section": "Knowledge",
+    "version": "OIBOK 1.0",
+    "preserve": true
+  },
+  {
+    "source": "content/knowledge/Project-OI-BOK-002-Organisational-Context-v0.3.md",
+    "path": "/knowledge/organisational-context/",
+    "title": "2. Organisational Context",
+    "description": "The purpose, conditions and constraints that make signals, knowledge and decisions meaningful.",
+    "section": "Knowledge",
+    "version": "OIBOK 1.0",
+    "preserve": true
+  },
+  {
+    "source": "content/knowledge/Project-OI-BOK-003-Knowledge-and-Expertise-v0.3.md",
+    "path": "/knowledge/knowledge-and-expertise/",
+    "title": "3. Knowledge and Expertise",
+    "description": "How knowledge across people, practices, relationships and records becomes available when it matters.",
+    "section": "Knowledge",
+    "version": "OIBOK 1.0",
+    "preserve": true
+  },
+  {
+    "source": "content/knowledge/Project-OI-BOK-004-Decision-and-Authority-v0.3.md",
+    "path": "/knowledge/decision-and-authority/",
+    "title": "4. Decision and Authority",
+    "description": "How organisations form legitimate commitments, establish decision rights and remain accountable.",
+    "section": "Knowledge",
+    "version": "OIBOK 1.0",
+    "preserve": true
+  },
+  {
+    "source": "content/knowledge/Project-OI-BOK-005-Coordination-and-Collective-Action-v0.3.md",
+    "path": "/knowledge/coordination-and-collective-action/",
+    "title": "5. Coordination and Collective Action",
+    "description": "How authorised decisions become coherent work across teams, systems, partners and AI.",
+    "section": "Knowledge",
+    "version": "OIBOK 1.0",
+    "preserve": true
+  },
+  {
+    "source": "content/knowledge/Project-OI-BOK-006-Execution-and-Operational-Reliability-v0.3.md",
+    "path": "/knowledge/execution-and-operational-reliability/",
+    "title": "6. Execution and Operational Reliability",
+    "description": "How authorised work is performed reliably, including exceptions, recovery and operational control.",
+    "section": "Knowledge",
+    "version": "OIBOK 1.0",
+    "preserve": true
+  },
+  {
+    "source": "content/knowledge/Project-OI-BOK-007-Outcomes-Feedback-and-Evaluation-v0.3.md",
+    "path": "/knowledge/outcomes-feedback-and-evaluation/",
+    "title": "7. Outcomes, Feedback and Evaluation",
+    "description": "How to distinguish activity and outputs from outcomes and produce credible evaluative feedback.",
+    "section": "Knowledge",
+    "version": "OIBOK 1.0",
+    "preserve": true
+  },
+  {
+    "source": "content/knowledge/Project-OI-BOK-008-Organisational-Memory-Reflection-and-Learning-v0.3.md",
+    "path": "/knowledge/organisational-memory-reflection-and-learning/",
+    "title": "8. Organisational Memory, Reflection and Learning",
+    "description": "How experience is preserved, reconstructed and interpreted to change future understanding and response.",
+    "section": "Knowledge",
+    "version": "OIBOK 1.0",
+    "preserve": true
+  },
+  {
+    "source": "content/knowledge/Project-OI-BOK-009-Capability-Development-and-Adaptation-v0.3.md",
+    "path": "/knowledge/capability-development-and-adaptation/",
+    "title": "9. Capability Development and Adaptation",
+    "description": "How learning becomes durable organisational capability and how that capability changes with conditions.",
+    "section": "Knowledge",
+    "version": "OIBOK 1.0",
+    "preserve": true
+  },
+  {
+    "source": "content/knowledge/Project-OI-BOK-010-Integrated-and-Responsible-Organisational-Intelligence-v0.3.md",
+    "path": "/knowledge/integrated-and-responsible-organisational-intelligence/",
+    "title": "10. Integrated and Responsible Organisational Intelligence",
+    "description": "The integrated definition, proposed mechanism, responsible exercise and limits of the whole model.",
+    "section": "Knowledge",
+    "version": "OIBOK 1.0",
+    "preserve": true
+  },
+  {
+    "source": "content/research/Project-OI-BOK-DIAG-001-Consolidated-Failure-Mode-Quality-and-Indicator-Index-v0.2.md",
+    "path": "/research/diagnostic-index/",
+    "title": "Diagnostic and indicator index",
+    "description": "Research evidence roles, failure classes and quality families. These are not a validated score or front-line checklist.",
+    "section": "Research",
+    "version": "OIBOK 1.0",
+    "preserve": true
+  },
+  {
+    "source": "content/research/Project-OI-BOK-GLO-001-Consolidated-Project-OI-Glossary-v0.2.md",
+    "path": "/knowledge/glossary/",
+    "title": "Glossary",
+    "description": "Core and extended terminology, with distinctions between established constructs and OIBOK working terms.",
+    "section": "Knowledge",
+    "version": "OIBOK 1.0",
+    "preserve": true
+  },
+  {
+    "source": "content/research/Project-OI-BOK-INDEX-001-BOK-Index-and-Source-Manifest-v1.0.md",
+    "path": "/research/reader-index/",
+    "title": "Release 1.0 reader index",
+    "description": "The original reading path, component versions and source boundary of the release.",
+    "section": "Research",
+    "version": "OIBOK 1.0",
+    "preserve": true
+  },
+  {
+    "source": "content/research/Project-OI-BOK-OPEN-001-Consolidated-Research-Limitations-and-Open-Questions-Register-v0.2.md",
+    "path": "/research/open-questions/",
+    "title": "Open questions and limitations",
+    "description": "The unresolved conceptual, empirical and practical questions retained in the released body of knowledge.",
+    "section": "Research",
+    "version": "OIBOK 1.0",
+    "preserve": true
+  },
+  {
+    "source": "content/research/Project-OI-BOK-PROP-001-Consolidated-Proposition-and-Evidence-Register-v0.2.md",
+    "path": "/research/propositions/",
+    "title": "Propositions and evidence",
+    "description": "Registered propositions, evidence status and research needed to test or qualify the synthesis.",
+    "section": "Research",
+    "version": "OIBOK 1.0",
+    "preserve": true
+  },
+  {
+    "source": "content/research/Project-OI-BOK-RELEASE-001-Body-of-Knowledge-Completion-Record-v1.0.md",
+    "path": "/research/release-record/",
+    "title": "Release 1.0 completion record",
+    "description": "The governing record for the 15 August 2026 release, including permitted claims and retained limitations.",
+    "section": "Research",
+    "version": "OIBOK 1.0",
+    "preserve": true
+  },
+  {
+    "source": "content/research/Project-OI-BOK-TRACE-001-Cross-Chapter-Traceability-Matrix-v0.2.md",
+    "path": "/research/traceability/",
+    "title": "Cross-chapter traceability",
+    "description": "How chapters, capabilities, stages and transitions relate within the released working model.",
+    "section": "Research",
+    "version": "OIBOK 1.0",
+    "preserve": true
+  },
+  {
+    "source": "content/research/Project-OI-BOK-VALIDATION-001-Final-Source-to-Derived-Consistency-Proof-v1.0.md",
+    "path": "/research/consistency-record/",
+    "title": "Source and register consistency record",
+    "description": "Checks of internal consistency and traceability. These checks do not establish empirical validity.",
+    "section": "Research",
+    "version": "OIBOK 1.0",
+    "preserve": true
+  },
+  {
+    "source": "content/tools/00-OIBOK-Practical-Toolkit-Guide-v0.1.md",
+    "path": "/tools/guide/",
+    "title": "Practical toolkit guide",
+    "description": "Choose a starting point, prepare the evidence and understand the chapter map, examples and reuse terms.",
+    "section": "Tools",
+    "version": "Toolkit 0.1",
+    "preserve": true
+  },
+  {
+    "source": "content/tools/01-OIBOK-Practice-Review-v0.1.md",
+    "path": "/tools/practice-review/",
+    "title": "Organisational Intelligence Practice Review",
+    "description": "Investigate one recurring decision or workflow, including its knowledge, authority and coordination.",
+    "section": "Tools",
+    "version": "Toolkit 0.1",
+    "preserve": true
+  },
+  {
+    "source": "content/tools/02-OIBOK-AI-Opportunity-and-Work-Design-Canvas-v0.1.md",
+    "path": "/tools/ai-opportunity-and-work-design/",
+    "title": "AI Opportunity and Work Design Canvas",
+    "description": "Compare options and design a bounded intervention, including context, controls, roles and pilot conditions.",
+    "section": "Tools",
+    "version": "Toolkit 0.1",
+    "preserve": true
+  },
+  {
+    "source": "content/tools/03-OIBOK-Outcome-and-Learning-Record-v0.1.md",
+    "path": "/tools/outcome-and-learning/",
+    "title": "Outcome and Learning Record",
+    "description": "Plan evaluation before a change, review effects and assign changes to working practice.",
+    "section": "Tools",
+    "version": "Toolkit 0.1",
+    "preserve": true
+  },
+  {
+    "source": "content/knowledge/index.md",
+    "path": "/knowledge/",
+    "title": "Body of knowledge",
+    "description": "Ten connected chapters on how organisations orient, coordinate and improve.",
+    "section": "Knowledge",
+    "version": "OIBOK 1.0",
+    "preserve": false
+  },
+  {
+    "source": "content/research/index.md",
+    "path": "/research/",
+    "title": "Research and evidence",
+    "description": "Inspect the evidence, trace the claims and explore the questions that remain open.",
+    "section": "Research",
+    "version": "OIBOK 1.0",
+    "preserve": false
+  },
+  {
+    "source": "content/tools/index.md",
+    "path": "/tools/",
+    "title": "Practical tools",
+    "description": "Investigate a workflow, design a change and learn from its effects.",
+    "section": "Tools",
+    "version": "Toolkit 0.1",
+    "preserve": false
+  }
+]
