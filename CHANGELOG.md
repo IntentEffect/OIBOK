@@ -1,5 +1,11 @@
 # Versions and corrections
 
+## Blog article expansions | 23 November 2026
+
+The three launch articles have been expanded to explain the ideas more fully and make their practical use clearer. [Why OIBOK exists](/blog/why-oibok-exists/) develops the organisational gap and the connections between knowledge, decisions and lasting capability. [From AI tools to organisational capability](/blog/from-ai-tools-to-organisational-capability/) examines the work around an AI task, including responsibilities, handoffs and evaluation. [Start with one workflow](/blog/start-with-one-workflow/) adds more guidance for using the tools with a recurring workflow.
+
+Each article includes a dated expansion note and is recorded as Article 1.1. Original publication dates are retained. OIBOK research release 1.0 and Practical Toolkit 0.1 remain the underlying sources.
+
 ## Blog launch | 23 November 2026
 
 The [OIBOK blog](/blog/) opens with three editorial articles: [Why OIBOK exists](/blog/why-oibok-exists/), [From AI tools to organisational capability](/blog/from-ai-tools-to-organisational-capability/), and [Start with one workflow](/blog/start-with-one-workflow/). They develop earlier project writing, positioning discussions and practical toolkit guidance into standalone articles, with sources and adaptation notes.

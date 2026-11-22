@@ -10,8 +10,8 @@
     "published_at": "2026-11-22T13:00:00Z",
     "category": "Perspective",
     "kind": "blog-post",
-    "version": "Article 1.0",
-    "component_version": "1.0"
+    "version": "Article 1.1",
+    "component_version": "1.1"
   },
   {
     "source": "content/blog/from-ai-tools-to-organisational-capability.md",
@@ -24,8 +24,8 @@
     "published_at": "2026-11-22T13:00:00Z",
     "category": "AI and organisations",
     "kind": "blog-post",
-    "version": "Article 1.0",
-    "component_version": "1.0"
+    "version": "Article 1.1",
+    "component_version": "1.1"
   },
   {
     "source": "content/blog/start-with-one-workflow.md",
@@ -38,7 +38,7 @@
     "published_at": "2026-11-22T13:00:00Z",
     "category": "Practice",
     "kind": "blog-post",
-    "version": "Article 1.0",
-    "component_version": "1.0"
+    "version": "Article 1.1",
+    "component_version": "1.1"
   }
 ]
