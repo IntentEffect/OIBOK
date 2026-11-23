@@ -23,8 +23,8 @@ for(const file of htmlFiles){
  ids.set(file,new Set(found));
  if((html.match(/<h1\b/g)||[]).length!==1)errors.push(`${path.relative(dist,file)}: expected one page h1`);
  if(!html.includes('lang="en-AU"'))errors.push(`${file}: missing page language`);
- const founderCredit=html.match(/<div class="founder-credit">([\s\S]*?)<\/div>/)?.[1] || '';
- if(!founderCredit.includes('Founded by ') || !founderCredit.includes('aria-label="Intent &amp; Effect"') || !founderCredit.includes(' Developed by the OIBOK community.'))errors.push(`${file}: missing accessible founder attribution`);
+ const communityCredit=html.match(/<div class="community-credit">([\s\S]*?)<\/div>/)?.[1] || '';
+ if(!communityCredit.includes('Developed by the OIBOK community.'))errors.push(`${file}: missing community attribution`);
  if(/sandbox:|oai-library:|chatgpt\.com\/api\/library|turn\d+(?:search|view)\d/.test(html))errors.push(`${file}: internal-only source reference`);
  if(rewritePublicationLinks(html,info.siteUrl,config.legacySiteUrls)!==html)errors.push(`${file}: historical publication URL remains in rendered content`);
  const relative=path.relative(dist,file).split(path.sep).join('/');
