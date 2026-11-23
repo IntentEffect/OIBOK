@@ -24,6 +24,6 @@ The collection contains five practical diagrams, three supporting visuals and a 
 
 The diagrams explain the Guide and the current research synthesis. They are drafts for practitioner review, with no validated maturity score or certification. Practice routes can be revisited. Local workflow results support bounded claims. Fictional examples and planning assumptions provide no empirical evidence.
 
-OIBOK release 1.0 and Practical Toolkit 0.1 remain the source editions. The illustrated Guide and Working Companion are draft 0.3. The existing interactive model remains draft 0.2.
+OIBOK release 1.0 and Practical Toolkit 0.1 remain the source editions. The illustrated Guide and Working Companion are draft 0.4. The existing interactive model remains draft 0.2.
 
 Original publication content is [CC BY-SA 4.0](/licensing/). Feedback and corrections are welcome through the [contribution process](/contribute/) or [info@oibok.org](mailto:info@oibok.org).

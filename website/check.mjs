@@ -142,7 +142,7 @@ if(modelMetadata.version!=='0.2' || modelMetadata.researchEdition!=='1.0' || mod
 const modelPage=fs.readFileSync(path.join(dist,'model/index.html'),'utf8');
 if(!/src="[^\"]*model\.[a-f0-9]+\.js"/.test(modelPage) || !/href="[^\"]*model\.[a-f0-9]+\.css"/.test(modelPage))errors.push('Interactive model: missing versioned assets');
 if(modelPage.includes('class="page-aside"') || (modelPage.match(/data-key="/g)||[]).length!==13)errors.push('Interactive model: unusable navigation or missing selectable area');
-for(const name of ['OIBOK-Guide-Draft-0.2','OIBOK-Working-Companion-Draft-0.2','OIBOK-Guide-Draft-0.3','OIBOK-Working-Companion-Draft-0.3']){
+for(const name of ['OIBOK-Guide-Draft-0.2','OIBOK-Working-Companion-Draft-0.2','OIBOK-Guide-Draft-0.3','OIBOK-Working-Companion-Draft-0.3','OIBOK-Guide-Draft-0.4','OIBOK-Working-Companion-Draft-0.4']){
  for(const extension of ['pdf','docx','md']){
   const file=path.join(dist,'downloads/guide',`${name}.${extension}`);
   if(!fs.existsSync(file))errors.push(`Draft download: missing ${name}.${extension}`);
