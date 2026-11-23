@@ -61,7 +61,7 @@ export function renderHome({ basePath = '' } = {}) {
 </section>
 
 <section class="framework-section" aria-labelledby="framework-title">
-  <div class="framework-intro"><p class="eyebrow">What organisational intelligence means</p><h2 id="framework-title">Understand the situation.<br>Act together.<br>Learn and improve.</h2><p>Organisational intelligence concerns how an organisation understands a situation, coordinates a response and improves future responses over time. OIBOK connects this through three recurring transformations.<br><a class="text-link" href="${url('/model/')}">Explore the interactive model <small class="draft-label">Draft</small></a></p></div>
+  <div class="framework-intro"><p class="eyebrow">What organisational intelligence means</p><h2 id="framework-title">Understand the situation.<br> Act together.<br> Learn and improve.</h2><p>Organisational intelligence concerns how an organisation understands a situation, coordinates a response and improves future responses over time. OIBOK connects this through three recurring transformations.<br><a class="text-link" href="${url('/model/')}">Explore the interactive model <small class="draft-label">Draft</small></a></p></div>
   <div class="transformations">
     <div><span class="transformation-number">01 /</span><h3>Orient</h3><p>Notice relevant signals. Understand the context. Bring knowledge and expertise to the situation.</p></div>
     <div><span class="transformation-number">02 /</span><h3>Coordinate</h3><p>Make decisions with clear authority. Connect people, systems and work. Follow through reliably.</p></div>
