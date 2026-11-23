@@ -1,5 +1,9 @@
 # Versions and corrections
 
+## Contact details | 23 November 2026
+
+Added [info@oibok.org](mailto:info@oibok.org) to the website footer and the About, contribution, editorial governance, licensing and correction guidance as the project contact address.
+
 ## Blog article expansions | 23 November 2026
 
 The three launch articles have been expanded to explain the ideas more fully and make their practical use clearer. [Why OIBOK exists](/blog/why-oibok-exists/) develops the organisational gap and the connections between knowledge, decisions and lasting capability. [From AI tools to organisational capability](/blog/from-ai-tools-to-organisational-capability/) examines the work around an AI task, including responsibilities, handoffs and evaluation. [Start with one workflow](/blog/start-with-one-workflow/) adds more guidance for using the tools with a recurring workflow.
@@ -52,6 +56,6 @@ An editorial amendment proposal dated 21 November 2026 remains under considerati
 
 ## Corrections
 
-[Report a correction](https://github.com/IntentEffect/OIBOK/issues/new?template=correction.yml) with the page, edition, relevant passage, supporting source and proposed correction. Material corrections should explain the change and preserve a record of the superseded version.
+[Report a correction](https://github.com/IntentEffect/OIBOK/issues/new?template=correction.yml) with the page, edition, relevant passage, supporting source and proposed correction. You can also email [info@oibok.org](mailto:info@oibok.org) with the same details. Material corrections should explain the change and preserve a record of the superseded version.
 
 Founded by Intent & Effect, developed by the OIBOK community.

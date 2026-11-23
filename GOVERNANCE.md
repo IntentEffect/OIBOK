@@ -45,7 +45,7 @@ Editorial review and internal consistency checking have a different scope from i
 
 Contributors can request reconsideration in the relevant [GitHub issue](https://github.com/IntentEffect/OIBOK/issues), identifying a factual error, process concern or new evidence. The response should address the stated grounds and record the outcome. An uninvolved reviewer should assess the request where possible. If the project cannot provide independent reconsideration, it should say so.
 
-Do not place sensitive personal information or confidential complaints in a public issue.
+Do not place sensitive personal information or confidential complaints in a public issue. For a process concern that is unsuitable for a public issue, contact [info@oibok.org](mailto:info@oibok.org). Include enough context to identify the matter without sending unnecessary personal or confidential information.
 
 ## Changes to the model
 

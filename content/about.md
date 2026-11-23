@@ -52,3 +52,6 @@ OIBOK maintains its own publication identity and welcomes external contributors.
 
 Original publication content is shared under [CC BY-SA 4.0](/licensing/). Contributors retain copyright in their original work and license their contributions to the project. Research, criticism, competing explanations and practical feedback are all welcome through the [contribution process](/contribute/).
 
+## Contact
+
+For questions about OIBOK, feedback or contribution enquiries, email [info@oibok.org](mailto:info@oibok.org). To suggest a change or share research, see the [contribution process](/contribute/).

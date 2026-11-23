@@ -8,6 +8,8 @@ Help make Organisation Intelligence more useful, better evidenced and easier to 
 
 Use the [OIBOK issue tracker](https://github.com/IntentEffect/OIBOK/issues) to suggest research, identify a problem or propose a substantial change. Include the page or chapter, its version, and the passage or claim you want to discuss. For a small correction, you can [submit a pull request](https://github.com/IntentEffect/OIBOK/pulls) directly.
 
+If you prefer to start by email, contact [info@oibok.org](mailto:info@oibok.org) with the same details. Maintainers can help you prepare a contribution for review.
+
 For a substantial conceptual change, open an issue before drafting a large replacement. This gives maintainers and other contributors a place to examine the evidence and agree the scope.
 
 | Contribution | What to include |

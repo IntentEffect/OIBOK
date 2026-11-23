@@ -60,5 +60,5 @@ A valid CC BY-SA 4.0 grant also continues for distributed material while its con
 
 OIBOK is a research publication and practical resource. Its working model and tools do not provide certification or guarantee organisational outcomes. The Creative Commons legal code includes warranty and liability provisions to the extent permitted by law.
 
-For an unclear rights notice or a missing source credit, open a [repository issue](https://github.com/IntentEffect/OIBOK/issues) identifying the resource and concern. Keep confidential information out of public submissions.
+For an unclear rights notice or a missing source credit, email [info@oibok.org](mailto:info@oibok.org) or open a [repository issue](https://github.com/IntentEffect/OIBOK/issues), identifying the resource and concern. Keep confidential information out of public submissions.
 
