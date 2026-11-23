@@ -38,16 +38,12 @@ export function renderHome({ basePath = '' } = {}) {
   <p class="hero-access">Free to read and use. Publication content is shared under <a href="${url('/licensing/')}">CC BY-SA 4.0</a>. <a href="${url('/contribute/')}">Contributions welcome.</a></p>
 </section>
 
-<section class="problem-section" aria-labelledby="problem-title">
-  <div class="section-heading"><p class="eyebrow">The problem OIBOK helps address</p><h2 id="problem-title">The gap between an AI pilot and reliable everyday work.</h2></div>
-  <div class="problem-content">
-    <p>For an AI idea to become useful everyday work, people need relevant knowledge, clear authority, reliable handoffs and a way to evaluate what happens. OIBOK helps teams examine the organisational problems that can get in the way.</p>
-    <ul class="problem-list">
-      <li><h3>The right knowledge is hard to use.</h3><p>Identify which sources and expertise apply, what context is missing and what needs to be checked before people or AI rely on an answer.</p></li>
-      <li><h3>Decisions and work get stuck between teams.</h3><p>Clarify who can decide, who is responsible for acting, how handoffs are accepted and what happens when something goes wrong.</p></li>
-      <li><h3>A pilot looks promising, but its value or staying power is unclear.</h3><p>Plan how to evaluate outcomes, examine competing explanations and turn useful learning into future practice.</p></li>
-    </ul>
-    <p class="problem-scope">These questions also apply to work without AI. Start with one recurring decision or workflow, investigate the evidence and decide what needs to change.</p>
+<section id="problem-title" class="entry-section" aria-labelledby="practice-title">
+  <div class="section-heading"><p class="eyebrow">Start with the work</p><h2 id="practice-title">From understanding<br> to useful practice.</h2></div>
+  <div class="entry-list">
+    <a class="entry" href="${url('/knowledge/')}"><span class="entry-number">01</span><span><strong>Understand the organisation</strong><span>Read ten connected chapters on signals, knowledge, decisions, coordination, learning and adaptation.</span></span>${arrow}</a>
+    <a class="entry" href="${url('/guide/')}"><span class="entry-number">02</span><span><strong>Apply the OIBOK Guide <small class="draft-label">Draft</small></strong><span>Follow the draft Guide to examine real work, compare changes, evaluate outcomes and retain learning.</span></span>${arrow}</a>
+    <a class="entry" href="${url('/research/')}"><span class="entry-number">03</span><span><strong>Examine the evidence</strong><span>Explore the research approach, supporting sources, limitations and questions still to be answered.</span></span>${arrow}</a>
   </div>
 </section>
 
