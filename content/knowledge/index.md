@@ -8,6 +8,8 @@ This is the working definition in **OIBOK 1.0, released 15 August 2026**. It des
 
 ## Start with a question
 
+Explore the [interactive OIBOK model, draft 0.2](/model/) for a visual map of the capabilities and their connections. For practical application, read [the OIBOK Guide, draft 0.2](/guide/). Both are drafts for practitioner review, based on the research release below.
+
 For an overview of the complete model, start with [Chapter 10](/knowledge/integrated-and-responsible-organisational-intelligence/), then use the [glossary](/knowledge/glossary/) for its terminology. For a practical investigation, choose a recurring decision or workflow and open the [practical toolkit](/tools/).
 
 The organising transformations are **Orient, Coordinate and Improve**. The six operational capabilities are **Sense, Know, Choose, Mobilise, Learn and Adapt**. These are connected and can recur. Chapter 10 integrates the model rather than adding another operational stage.

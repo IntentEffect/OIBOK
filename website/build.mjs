@@ -6,6 +6,7 @@ import crypto from 'node:crypto';
 import { renderHome, renderLayout, renderSearch } from './layout.mjs';
 import { buildAgentResources, rewritePublicationLinks } from './agents.mjs';
 import { prepareBlogPosts, renderBlogIndex, renderBlogFeed } from './blog.mjs';
+import { renderModel } from './model.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
@@ -36,7 +37,7 @@ fs.rmSync(dist, { recursive: true, force: true });
 fs.mkdirSync(dist, { recursive: true });
 for (const folder of ['assets', 'downloads']) fs.cpSync(path.join(root, folder), path.join(dist, folder), { recursive: true });
 const assetPaths = {};
-for (const file of ['styles.css', 'client.js']) {
+for (const file of ['styles.css', 'client.js', 'model.css', 'model.js']) {
   const data = fs.readFileSync(path.join(root, 'website', file));
   const version = crypto.createHash('sha256').update(data).digest('hex').slice(0, 12);
   const extension = path.extname(file);
@@ -103,6 +104,7 @@ for (const page of pages) {
   if (page.path === '/blog/') content += renderBlogIndex({posts:blogPosts,basePath});
   indexPage(page, content);
   const toc = [...content.matchAll(/<h([23])\b[^>]*id="([^"]+)"[^>]*>([\s\S]*?)<\/h\1>/g)].map(m=>({level:Number(m[1]),id:m[2],text:plain(m[3])}));
+  if (page.kind === 'interactive-model') content += renderModel({basePath});
   const sourceDownload = `/downloads/source/${page.source}`;
   const sourceTarget = path.join(dist, sourceDownload);
   fs.mkdirSync(path.dirname(sourceTarget), {recursive:true});

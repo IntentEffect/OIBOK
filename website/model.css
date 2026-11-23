@@ -1,0 +1,67 @@
+/* Native OIBOK presentation for the draft model. Scope every rule to the model. */
+#oibok-detailed-model{display:grid;gap:20px;min-width:0;color:var(--ink);font-size:1rem;line-height:1.6;container-type:inline-size}
+#oibok-detailed-model .oi-heading{display:grid;gap:7px}
+#oibok-detailed-model h2,#oibok-detailed-model h3,#oibok-detailed-model h4{margin:0;padding:0;font-weight:500}
+#oibok-detailed-model h2{font:400 1.8rem/1.2 var(--serif);letter-spacing:-.025em}
+#oibok-detailed-model h3{font:400 1.5rem/1.25 var(--serif);letter-spacing:-.02em}
+#oibok-detailed-model h4{font:600 1rem/1.5 var(--sans);letter-spacing:0}
+#oibok-detailed-model .oi-small{font-size:.875rem;line-height:1.55}
+#oibok-detailed-model .oi-muted{color:var(--muted)}
+#oibok-detailed-model .oi-spanning{display:grid;justify-items:center;gap:8px;text-align:center;min-width:0}
+#oibok-detailed-model .oi-model{position:relative;min-width:0;padding:0 46px;display:grid;gap:56px}
+#oibok-detailed-model .oi-connectors{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+#oibok-detailed-model .oi-entry{text-align:center;margin-bottom:-18px}
+#oibok-detailed-model .oi-transform{min-width:0}
+#oibok-detailed-model .oi-transform-heading{display:grid;gap:5px;margin-bottom:20px}
+#oibok-detailed-model .oi-context{display:flex;justify-content:center;margin-bottom:26px}
+#oibok-detailed-model .oi-capabilities{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+#oibok-detailed-model .oi-capability{display:grid;align-content:start;gap:7px;min-width:0;text-align:center}
+#oibok-detailed-model .oi-button{display:inline-flex;align-items:center;justify-content:center;max-width:100%;min-height:44px;padding:9px 14px;background:var(--tint);color:var(--ink);border:1px solid var(--line);border-radius:0;text-align:center;white-space:normal;overflow-wrap:normal;font:600 .9375rem/1.4 var(--sans);cursor:pointer}
+#oibok-detailed-model .oi-button-block{width:100%}
+#oibok-detailed-model .oi-button-quiet{background:transparent;border-color:transparent;font-weight:500;text-decoration:underline;text-underline-offset:.22em;text-decoration-thickness:1px}
+#oibok-detailed-model .oi-button:not(:disabled):not([aria-pressed="true"]):hover{border-color:var(--accent);color:var(--accent)}
+#oibok-detailed-model .oi-button[aria-pressed="true"]{color:var(--paper);background:var(--ink);border-color:var(--ink);text-decoration:none}
+#oibok-detailed-model .oi-button:disabled{cursor:default}
+#oibok-detailed-model .oi-button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+#oibok-detailed-model .oi-bridge{display:grid;justify-items:center;gap:6px;margin-top:42px;min-width:0;text-align:center}
+#oibok-detailed-model .oi-outcome-flow{display:flex;flex-wrap:wrap;justify-content:center;gap:5px 8px;padding:0;margin:0;list-style:none}
+#oibok-detailed-model .oi-outcome-flow li{display:flex;gap:8px;padding:0;margin:0}
+#oibok-detailed-model .oi-outcome-flow li:not(:last-child)::after{content:'→';color:var(--muted)}
+#oibok-detailed-model .oi-memory{padding-top:12px}
+#oibok-detailed-model .oi-shared{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:20px}
+#oibok-detailed-model .oi-caption{text-align:center}
+#oibok-detailed-model .oi-provenance{display:grid;gap:5px}
+#oibok-detailed-model .oi-path{fill:none;stroke:var(--line);stroke-width:1.5}
+#oibok-detailed-model .oi-path[data-active="true"]{stroke:var(--accent);stroke-width:2}
+#oibok-detailed-model .oi-path-label{fill:var(--muted);font-family:var(--sans)}
+#oibok-detailed-model .oi-detail{display:grid;gap:18px;margin-top:24px;min-width:0}
+#oibok-detailed-model [hidden]{display:none!important}
+#oibok-detailed-model .oi-detail-heading{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:start}
+#oibok-detailed-model .oi-detail-heading>div{flex:1 1 180px;min-width:0}
+#oibok-detailed-model .oi-detail-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:20px 28px}
+#oibok-detailed-model .oi-detail-grid>div{min-width:0;display:grid;gap:7px;align-content:start}
+#oibok-detailed-model .oi-label,#oibok-detailed-model dt{font-weight:600}
+#oibok-detailed-model .oi-detail ul{margin:0;padding-left:21px;display:grid;gap:7px}
+#oibok-detailed-model .oi-detail li{padding:0;margin:0}
+#oibok-detailed-model .oi-checks{display:grid;gap:14px;margin:0}
+#oibok-detailed-model .oi-checks>div{display:grid;grid-template-columns:minmax(0,1fr);gap:4px}
+#oibok-detailed-model dd{margin:0}
+#oibok-detailed-model .oi-references{display:grid;gap:12px}
+#oibok-detailed-model .oi-links{display:flex;flex-wrap:wrap;gap:7px 16px;margin-top:4px}
+#oibok-detailed-model [data-detail-slot]:empty{display:none}
+#oibok-detailed-model hr{width:100%;border:0;border-top:1px solid var(--line);margin:4px 0}
+#oibok-detailed-model .oi-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@container (max-width:540px){
+  #oibok-detailed-model .oi-model{padding-inline:34px}
+  #oibok-detailed-model .oi-capabilities{gap:22px}
+  #oibok-detailed-model .oi-button{padding-inline:9px}
+  #oibok-detailed-model .oi-transform-heading{margin-bottom:18px}
+}
+@container (min-width:620px){
+  #oibok-detailed-model .oi-checks>div{grid-template-columns:158px minmax(0,1fr);gap:16px}
+}
+@media print{
+  #oibok-detailed-model .oi-button{color:var(--ink);background:transparent}
+  #oibok-detailed-model #oi-close{display:none}
+  #oibok-detailed-model .oi-transform,#oibok-detailed-model .oi-spanning{break-inside:avoid}
+}

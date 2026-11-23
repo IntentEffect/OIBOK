@@ -1,0 +1,445 @@
+{
+  "version": "0.2",
+  "status": "draft-for-practitioner-review",
+  "date": "2026-11-23",
+  "researchEdition": "1.0",
+  "chapters": {
+    "1": [
+      "1 · Signals and Attention",
+      "signals-and-attention"
+    ],
+    "2": [
+      "2 · Organisational Context",
+      "organisational-context"
+    ],
+    "3": [
+      "3 · Knowledge and Expertise",
+      "knowledge-and-expertise"
+    ],
+    "4": [
+      "4 · Decision and Authority",
+      "decision-and-authority"
+    ],
+    "5": [
+      "5 · Coordination and Collective Action",
+      "coordination-and-collective-action"
+    ],
+    "6": [
+      "6 · Execution and Operational Reliability",
+      "execution-and-operational-reliability"
+    ],
+    "7": [
+      "7 · Outcomes, Feedback and Evaluation",
+      "outcomes-feedback-and-evaluation"
+    ],
+    "8": [
+      "8 · Organisational Memory, Reflection and Learning",
+      "organisational-memory-reflection-and-learning"
+    ],
+    "9": [
+      "9 · Capability Development and Adaptation",
+      "capability-development-and-adaptation"
+    ],
+    "10": [
+      "10 · Integrated and Responsible Organisational Intelligence",
+      "integrated-and-responsible-organisational-intelligence"
+    ]
+  },
+  "resources": {
+    "review": [
+      "Practice Review",
+      "tools/practice-review/"
+    ],
+    "context": [
+      "Context and Knowledge Map, within the Practice Review",
+      "tools/practice-review/"
+    ],
+    "decision": [
+      "Decision and Coordination Canvas, within the Practice Review",
+      "tools/practice-review/"
+    ],
+    "ai": [
+      "AI Opportunity and Work Design Canvas, where AI proceeds to design",
+      "tools/ai-opportunity-and-work-design/"
+    ],
+    "outcome": [
+      "Outcome and Learning Record",
+      "tools/outcome-and-learning/"
+    ],
+    "toolkit": [
+      "Practical Toolkit Guide",
+      "tools/guide/"
+    ]
+  },
+  "areas": {
+    "sense": {
+      "title": "Sense",
+      "kind": "Operational capability · Orient",
+      "purpose": "Notice, capture, recognise, qualify and route material signals and experience for organisational attention.",
+      "work": [
+        "Notice relevant changes, weak signals, complaints and experience.",
+        "Qualify source, timing, uncertainty and possible significance.",
+        "Route the signal to people or roles able to investigate or respond."
+      ],
+      "evidence": [
+        "A traceable signal, its context and a reason it matters.",
+        "A recipient, an acknowledgement and a route for exceptions.",
+        "Evidence that missing or underrepresented signals can be raised."
+      ],
+      "people": "Judge materiality, contribute lived experience and challenge what receives attention.",
+      "ai": "Detect patterns, classify incoming information and assist routing within an agreed scope.",
+      "boundary": "Alert volume does not establish effective sensing. Automated prioritisation needs a route for challenge.",
+      "breakdown": "Alerts increase, but an important problem still fails to reach anyone able to act.",
+      "question": "Which signals are being missed, suppressed or routed to the wrong place?",
+      "sources": [
+        1,
+        10
+      ],
+      "tools": [
+        "review"
+      ]
+    },
+    "know": {
+      "title": "Know",
+      "kind": "Operational capability · Orient",
+      "purpose": "Create, validate, locate, combine and apply relevant knowledge and expertise in context.",
+      "work": [
+        "Find relevant sources and people with applicable expertise.",
+        "Validate currency, provenance, scope and disagreements.",
+        "Combine explicit information with experience to support this situation."
+      ],
+      "evidence": [
+        "Sources and expertise connected to the actual work.",
+        "Current versions, applicability checks and unresolved uncertainty.",
+        "A route to correct an answer or seek additional expertise."
+      ],
+      "people": "Interpret circumstances, supply expertise and distinguish evidence from inference.",
+      "ai": "Retrieve and synthesise sources, suggest expertise and generate hypotheses for checking.",
+      "boundary": "A fluent answer or successful retrieval does not establish truth, applicable expertise or decision authority.",
+      "breakdown": "A plausible answer is used without checking whether its policy or source applies to this case.",
+      "question": "What do we need to know, and how do we know it is applicable here?",
+      "sources": [
+        2,
+        3,
+        10
+      ],
+      "tools": [
+        "context"
+      ]
+    },
+    "choose": {
+      "title": "Choose",
+      "kind": "Operational capability · Coordinate",
+      "purpose": "Frame a response, evaluate alternatives and make an attributable, authorised commitment under uncertainty.",
+      "work": [
+        "Frame the problem, purpose, constraints and credible alternatives.",
+        "Consider trade-offs, uncertainty, dissent and who bears consequences.",
+        "Commit, delay, monitor, experiment, escalate or deliberately take no action."
+      ],
+      "evidence": [
+        "An identifiable decision owner and legitimate authority.",
+        "The decision, rationale, conditions and unresolved uncertainty.",
+        "A review trigger and a route for challenge or escalation."
+      ],
+      "people": "Exercise decision rights, assess alternatives and own the organisational commitment.",
+      "ai": "Generate options, predictions, recommendations and challenges to the reasoning.",
+      "boundary": "Model capability confers no organisational authority by default. Any delegation needs an explicit scope.",
+      "breakdown": "A recommendation is treated as approval, with no accountable decision owner.",
+      "question": "Who may commit the organisation, to what, under which conditions?",
+      "sources": [
+        4,
+        10
+      ],
+      "tools": [
+        "decision"
+      ]
+    },
+    "mobilise": {
+      "title": "Mobilise",
+      "kind": "Operational capability · Coordinate",
+      "purpose": "Translate an authorised commitment into coordinated, governed and reliable collective action and execution.",
+      "work": [
+        "Agree responsibilities, dependencies, resources and accepted handoffs.",
+        "Execute permitted actions using the current operational state.",
+        "Detect exceptions, escalate, stop, recover and verify what happened."
+      ],
+      "evidence": [
+        "Accepted responsibilities and handoffs that recipients can use.",
+        "Action records, dependencies, state and reliable completion evidence.",
+        "Defined exception, override, stop and recovery arrangements."
+      ],
+      "people": "Accept responsibility, coordinate across boundaries and exercise action and recovery authority.",
+      "ai": "Support planning and dependency monitoring; perform tool actions inside a defined execution envelope.",
+      "boundary": "Specify the acting principal, tools, data, authority, limits, evidence, approval and stop conditions, and recovery.",
+      "breakdown": "Work is marked complete while the receiving team cannot act or an exception remains unresolved.",
+      "question": "Can the commitment be carried through reliably, including when something goes wrong?",
+      "sources": [
+        5,
+        6,
+        10
+      ],
+      "tools": [
+        "decision",
+        "ai"
+      ]
+    },
+    "learn": {
+      "title": "Learn",
+      "kind": "Operational capability · Improve",
+      "purpose": "Revise organisationally available understanding, memory, routines and future response through credible feedback, reflection and inquiry.",
+      "work": [
+        "Interpret evaluated consequences and compare them with expectations.",
+        "Examine rival explanations, exceptions and decision-time context.",
+        "Make warranted lessons available for subsequent decisions and work."
+      ],
+      "evidence": [
+        "A scoped lesson linked to observations and its limits.",
+        "Named stewardship, correction and supersession arrangements.",
+        "Later evidence that relevant work can access and use the learning."
+      ],
+      "people": "Interpret consequences, contest the account, examine alternatives and steward organisational memory.",
+      "ai": "Analyse records, detect recurrence, retrieve previous experience and draft lessons for review.",
+      "boundary": "Feedback, a retrospective document or stored conversation history does not establish organisational learning by itself.",
+      "breakdown": "A lesson is recorded, but the next relevant case repeats the same unsupported assumptions.",
+      "question": "What have we learned, why do we believe it, and where will it change future work?",
+      "sources": [
+        7,
+        8,
+        10
+      ],
+      "tools": [
+        "outcome"
+      ]
+    },
+    "adapt": {
+      "title": "Adapt",
+      "kind": "Operational capability · Improve",
+      "purpose": "Develop, retire or reconfigure capability, authority, structure and resources in response to credible learning and changed conditions.",
+      "work": [
+        "Translate learning into implications for capability and its dependencies.",
+        "Change, stabilise or deliberately retain arrangements as evidence warrants.",
+        "Assign ownership and examine later use, reliability and unintended effects."
+      ],
+      "evidence": [
+        "An explicit capability decision and accountable owner.",
+        "Changes to work, authority, resources or routines, where warranted.",
+        "Evidence from relevant later work over a stated review horizon."
+      ],
+      "people": "Own resource and capability choices, institutionalisation, retirement and continued review.",
+      "ai": "Propose changes, examine scenarios and support bounded experiments.",
+      "boundary": "A successful pilot or scheduled review does not demonstrate persistent capability. Consider skill loss and dependency as well as speed.",
+      "breakdown": "New technology or training is introduced, but work and ownership remain unchanged.",
+      "question": "What should be changed or retained, and what later evidence would show that it lasts?",
+      "sources": [
+        9,
+        10
+      ],
+      "tools": [
+        "outcome"
+      ]
+    },
+    "context": {
+      "title": "Contextualise",
+      "kind": "Connective mechanism · Revisited throughout",
+      "purpose": "Relate attended signals and information to the organisational circumstances that give them meaning.",
+      "work": [
+        "Connect purpose, entities, relationships and the current state.",
+        "Check history, time, evidence, relevant expertise and uncertainty.",
+        "Respect authority, access, permissions and purpose limitations."
+      ],
+      "evidence": [
+        "Relevant context with source, time, scope and permission.",
+        "Material missing or disputed context made explicit.",
+        "Reconsideration when a decision, exception or condition changes."
+      ],
+      "people": "Explain local meaning, tacit knowledge, stakeholder experience and disputed interpretations.",
+      "ai": "Retrieve and assemble purpose-bound context with source and provenance.",
+      "boundary": "Contextualise connects Sense and Know and recurs across the model. It is not a seventh capability or a requirement to install a knowledge graph.",
+      "breakdown": "An accurate fact is applied to the wrong customer, policy version, time period or authority boundary.",
+      "question": "What would we need to know about this situation to interpret the information correctly?",
+      "sources": [
+        2,
+        10
+      ],
+      "tools": [
+        "context"
+      ]
+    },
+    "orientation": {
+      "title": "Organisational orientation",
+      "kind": "Integrated state · Sufficiently shared or aligned",
+      "purpose": "An account of what is happening, why it matters, what remains uncertain and what should shape response.",
+      "work": [
+        "Situation and significance: what is believed to be happening, why it matters and to whom.",
+        "Uncertainty and constraints: unknowns, disagreements, purpose, authority, resources and rights.",
+        "Response conditions: what should shape action, monitoring or further inquiry."
+      ],
+      "evidence": [
+        "Relevant roles can explain the situation and their response conditions.",
+        "Material disagreement and uncertainty remain visible.",
+        "The account connects to the next decision and can be revised."
+      ],
+      "people": "Bring perspectives into sufficient alignment for coordinated response while preserving legitimate disagreement.",
+      "ai": "Assemble evidence, compare interpretations and identify gaps for people to resolve or retain explicitly.",
+      "boundary": "A document, an AI summary or unanimous agreement alone does not establish organisational orientation.",
+      "breakdown": "Teams share a summary but interpret its implications differently and make incompatible commitments.",
+      "question": "Do the relevant people understand what matters, what is uncertain and what should shape the response?",
+      "sources": [
+        1,
+        2,
+        3,
+        10
+      ],
+      "tools": [
+        "review",
+        "context"
+      ]
+    },
+    "feedback": {
+      "title": "Outcomes and feedback",
+      "kind": "Connective bridge · Mobilise to Learn",
+      "purpose": "Turn evidence about consequences into feedback suitable for learning: output → consequence → observation → evaluation → feedback.",
+      "work": [
+        "Observe intended, adverse, delayed and redistributed consequences.",
+        "Compare with a baseline or credible alternative and check implementation.",
+        "Evaluate competing explanations and state the warranted conclusion."
+      ],
+      "evidence": [
+        "Whose outcomes, which work and what time horizon are covered.",
+        "Traceable observations, comparison logic and missing evidence.",
+        "Uncertainty, rival explanations and a proportionate follow-up decision."
+      ],
+      "people": "Bring domain and evaluation expertise, represent affected groups and challenge favourable interpretations.",
+      "ai": "Analyse records, detect differences across groups and suggest alternative explanations for testing.",
+      "boundary": "A completed output or a favourable metric does not establish benefit or causality. Observation and evaluation are distinct.",
+      "breakdown": "Faster handling is attributed to AI even though easier cases, staffing or policy changes may explain it.",
+      "question": "What changed for whom, compared with what, and what else could explain the result?",
+      "sources": [
+        7,
+        10
+      ],
+      "tools": [
+        "outcome"
+      ]
+    },
+    "memory": {
+      "title": "Organisational memory",
+      "kind": "Continuity infrastructure · Across all three transformations",
+      "purpose": "Supply prior signals, context, decisions, relationships, routines and lessons, and retain what current learning produces.",
+      "work": [
+        "Preserve provenance, decision-time context and applicability.",
+        "Assign stewardship, permissions, correction and supersession.",
+        "Make relevant memory available when subsequent work needs it."
+      ],
+      "evidence": [
+        "Records and routines with ownership, source, time and scope.",
+        "Current and superseded knowledge clearly distinguished.",
+        "Evidence of appropriate use, correction and transfer into later work."
+      ],
+      "people": "Steward memory, explain historical conditions and judge when an earlier lesson applies.",
+      "ai": "Retrieve and organise permitted material, identify recurrence and surface superseded information.",
+      "boundary": "A repository or an AI agent’s recall is not organisational memory by itself. Persistent recall creates no authority.",
+      "breakdown": "An old decision is reused without its assumptions, context or record of supersession.",
+      "question": "Can the organisation recover the right lesson, with its limits, when the next relevant situation arises?",
+      "sources": [
+        8,
+        10
+      ],
+      "tools": [
+        "outcome",
+        "context"
+      ]
+    },
+    "governance": {
+      "title": "Purpose, governance and responsible exercise",
+      "kind": "Spanning conditions · Every capability and transition",
+      "purpose": "Make the purpose and exercise of organisational capacity legitimate, attributable, proportionate and open to challenge.",
+      "work": [
+        "Make purpose, rights, representation and consequences explicit.",
+        "Define authority, evidence expectations and accountability through handoffs.",
+        "Provide challenge, appeal, correction, stop and recovery routes."
+      ],
+      "evidence": [
+        "Who may decide, act, question and correct, with what authority.",
+        "Whose signals and expertise enter, and who bears consequences.",
+        "Evidence and review proportionate to the decision and its stakes."
+      ],
+      "people": "Exercise accountable authority, represent affected interests and maintain legitimate challenge.",
+      "ai": "Assist traceability, identify missing evidence and flag possible exceptions for accountable review.",
+      "boundary": "Effective coordination alone does not establish a legitimate purpose or acceptable consequences. Accountability must survive delegation.",
+      "breakdown": "A fast, coordinated process shifts harm to a group that cannot question the decision.",
+      "question": "Who can question the purpose, the decision and its consequences, and secure a correction?",
+      "sources": [
+        4,
+        10
+      ],
+      "tools": [
+        "review",
+        "decision",
+        "ai"
+      ]
+    },
+    "people-ai": {
+      "title": "People and AI in organisational work",
+      "kind": "Participation across the model · AI is optional",
+      "purpose": "Design the contribution of people and AI around the actual work, expertise, authority and consequences.",
+      "work": [
+        "Define the problem, eligible cases and a credible non-AI alternative.",
+        "Specify people’s roles and any AI objective, principal, data, tools and action limits.",
+        "Set review, challenge, stop, recovery and lifecycle ownership."
+      ],
+      "evidence": [
+        "Which person reviews what, with which expertise and evidence.",
+        "Explicit authority, permitted actions and attributable records.",
+        "Outcome evaluation that includes review effort, failure and dependency."
+      ],
+      "people": "Provide expertise and accountable decisions, redesign the work and retain the ability to intervene effectively.",
+      "ai": "May support any capability through retrieval, analysis, recommendations or explicitly permitted actions.",
+      "boundary": "AI use is not a prerequisite for organisational intelligence. “Human oversight” needs a named role, evidence, authority and ability to alter the result.",
+      "breakdown": "A nominal reviewer approves recommendations without the time, expertise or authority to challenge them.",
+      "question": "Where does AI help this work, what remains with people, and how do we respond when it is wrong?",
+      "sources": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        10
+      ],
+      "tools": [
+        "ai",
+        "review"
+      ]
+    },
+    "connections": {
+      "title": "Connection quality",
+      "kind": "Provisional diagnostic lens · No universal score",
+      "purpose": "Examine whether meaning, authority, state, evidence and accountability survive the transitions between capabilities.",
+      "work": [
+        "Trace a real episode across signals, knowledge, commitments and action.",
+        "Inspect handoffs and the return of evaluated feedback to later work.",
+        "Compare connection problems with workload, incentives, resources and other explanations."
+      ],
+      "evidence": [
+        "Source and recipient accounts of what was transferred and understood.",
+        "Usable context, accepted responsibility and traceable action.",
+        "Exceptions, lost information, rework and unresolved accountability."
+      ],
+      "people": "Reconcile meanings, accept handoffs and resolve mismatches in expertise, incentives or authority.",
+      "ai": "Help trace dependencies, compare records and flag inconsistencies for investigation.",
+      "boundary": "This is a research and diagnostic lens, not a validated universal score or the sole explanation for organisational performance.",
+      "breakdown": "Each team meets its own target, while authority or context disappears between teams.",
+      "question": "Where does the next person, team or system lose what it needs to respond well?",
+      "sources": [
+        4,
+        5,
+        6,
+        10
+      ],
+      "tools": [
+        "review",
+        "decision"
+      ]
+    }
+  }
+}

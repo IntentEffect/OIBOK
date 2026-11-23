@@ -1,5 +1,15 @@
 # Versions and corrections
 
+## Draft Guide and interactive model | 23 November 2026
+
+Published [the OIBOK Guide, draft 0.2](/guide/), with the complete online text, a Working Companion, and PDF, Word and Markdown downloads. The documents carry explicit draft notices on their covers and running footers. The Guide connects practical inquiry, work design, evaluation and retained learning, with three fictional examples and mappings to the existing chapters and tools.
+
+Published [the interactive OIBOK model, draft 0.2](/model/), with selectable detail for the six capabilities, connective mechanisms, memory, governance, people and AI, and connection quality. Its [complete readable reference](/model/reference/) makes the same content available without JavaScript.
+
+Both resources are **DRAFT · For practitioner review**. The pages, downloadable documents and agent source catalogue make that status explicit. External practitioner review and field validation remain pending. Feedback can be sent to [info@oibok.org](mailto:info@oibok.org) or through the [contribution process](/contribute/).
+
+These are practice and presentation additions based on OIBOK 1.0 and Practical Toolkit 0.1. They do not change the preserved research release, release the proposed 1.1 revision, or introduce a validated intelligence or maturity score. Publication content remains under CC BY-SA 4.0 with the existing scope and exceptions.
+
 ## Contact details | 23 November 2026
 
 Added [info@oibok.org](mailto:info@oibok.org) to the website footer and the About, contribution, editorial governance, licensing and correction guidance as the project contact address.

@@ -42,16 +42,18 @@ function describeDocument(page) {
   const blogPost = page.kind === 'blog-post';
   const blogIndex = page.path === '/blog/';
   const researchIndex = page.path === '/knowledge/' || page.path === '/research/';
+  const draft = page.status === 'draft-for-practitioner-review';
   return {
     id: chapter?.[1] || research?.[1] || page.path.replace(/^\/|\/$/g, '').replaceAll('/', '-'),
-    kind: chapter ? 'chapter' : research ? (page.path === '/research/release-record/' ? 'release-record' : 'research-register') : tool ? 'tool' : agent ? 'agent-guide' : blogPost ? 'blog-post' : blogIndex ? 'blog-index' : index ? 'index' : page.path === '/releases/' ? 'release-notes' : 'policy',
+    kind: chapter ? 'chapter' : research ? (page.path === '/research/release-record/' ? 'release-record' : 'research-register') : tool ? 'tool' : agent ? 'agent-guide' : blogPost ? 'blog-post' : blogIndex ? 'blog-index' : draft ? page.kind : index ? 'index' : page.path === '/releases/' ? 'release-notes' : 'policy',
     ...(chapter ? { chapter: Number(chapter[2]) } : {}),
     ...(blogPost ? { author: page.author, published: page.published, published_at: page.published_at, category: page.category } : {}),
     publication_edition: chapter || research || researchIndex ? researchRelease.version : null,
     toolkit_version: tool || page.path === '/tools/' ? toolkitRelease.version : null,
     component_version: component || page.component_version || (agent ? agentGuide.version : null),
     version_label: page.version,
-    status: chapter || research ? 'released-working-synthesis' : tool ? 'practice-resource-for-piloting' : blogPost || blogIndex ? 'editorial-commentary' : 'current-editorial-guidance',
+    status: draft ? 'draft-for-practitioner-review' : chapter || research ? 'released-working-synthesis' : tool ? 'practice-resource-for-piloting' : blogPost || blogIndex ? 'editorial-commentary' : 'current-editorial-guidance',
+    ...(draft ? { based_on_research_edition: researchRelease.version, review_status: 'External practitioner review and field validation pending.' } : {}),
   };
 }
 
@@ -113,6 +115,7 @@ export function buildAgentResources({ root, dist, pages, config, siteUrl }) {
       'Toolkit 0.1 and agent guidance are practice resources, not validated maturity measures or certification.',
       'The proposed 1.1 editorial amendment has not been applied to the research release.',
       'Blog articles are editorial commentary and practical interpretation, not components or amendments of the research release.',
+      'Guide 0.2, its Working Companion and Visual Model 0.2 are drafts for practitioner review. Their publication does not amend the research release or establish field validation.',
       'Retrieve the original document before relying on a search excerpt. Cite sources actually consulted.',
       'Original Markdown downloads preserve authored source bytes, including historical website links. The agent instructions copy updates publication links to the current site; its sha256 identifies the served copy and source_sha256 identifies the original source.',
       'Publication content is subject to the licensing policy, including third-party material and brand exceptions.',
@@ -132,6 +135,7 @@ export function buildAgentResources({ root, dist, pages, config, siteUrl }) {
     ['Start here', startRoutes.map(byRoute)],
     ['Knowledge', documents.filter(doc => doc.kind === 'chapter' || doc.html_url === absolute('/knowledge/') || doc.html_url === absolute('/knowledge/glossary/'))],
     ['Practical tools', documents.filter(doc => doc.kind === 'tool' || doc.html_url === absolute('/tools/'))],
+    ['Draft guide and visual model', documents.filter(doc => doc.status === 'draft-for-practitioner-review')],
     ['Research and evidence', documents.filter(doc => (doc.kind === 'research-register' || doc.html_url === absolute('/research/')) && !startIds.has(doc.id) && doc.html_url !== absolute('/knowledge/glossary/'))],
     ['Blog', documents.filter(doc => doc.kind === 'blog-post' || doc.kind === 'blog-index')],
     ['Project and reuse', documents.filter(doc => (doc.kind === 'policy' || doc.kind === 'release-notes') && !startIds.has(doc.id))],
@@ -148,6 +152,8 @@ export function buildAgentResources({ root, dist, pages, config, siteUrl }) {
     'The research is a working synthesis; the whole model has not been independently field validated. Tools do not provide a validated maturity score or certification. Search results help locate sources; retrieve the relevant Markdown before making evidence claims. Keep organisational evidence separate from OIBOK propositions and agent inference. Access to OIBOK grants no organisational action authority.',
     '',
     'Blog articles provide editorial commentary and practical interpretation. They do not amend the research release or establish new empirical findings.',
+    '',
+    'Guide 0.2, the Working Companion and Visual Model 0.2 are DRAFT resources for practitioner review, based on OIBOK 1.0. External practitioner review and field validation remain pending. Preserve this draft status when quoting, adapting or recommending them.',
     '',
     'Original publication content: CC BY-SA 4.0, subject to the licensing policy and third-party exceptions. Founded by Intent & Effect, developed by the OIBOK community.',
     '',

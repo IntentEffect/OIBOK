@@ -4,6 +4,7 @@ import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { prepareBlogPosts } from './blog.mjs';
 import { rewritePublicationLinks } from './agents.mjs';
+import { renderModelReference, modelMetadata } from './model.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const dist=path.join(root,'dist');
 const info=JSON.parse(fs.readFileSync(path.join(dist,'build-info.json'),'utf8'));
@@ -120,6 +121,34 @@ for(const url of discoveryLinks)localSource(url);
 for(const doc of catalogue.documents)if(!discoveryLinks.includes(doc.markdown_url))errors.push(`Agent discovery: missing source ${doc.id}`);
 if(!discoveryLinks.includes(`${info.siteUrl}/agents/manifest.json`))errors.push('Agent discovery: missing source catalogue');
 if(!discovery.startsWith('# Organisation Intelligence Body of Knowledge (OIBOK)\n'))errors.push('Agent discovery: missing project title');
+
+// Draft practice resources must retain their status in every published representation.
+const draftPages=expectedPages.filter(page=>page.status==='draft-for-practitioner-review');
+const expectedDraftRoutes=['/guide/','/guide/read/','/guide/companion/','/model/','/model/reference/'];
+if(draftPages.length!==expectedDraftRoutes.length || expectedDraftRoutes.some(route=>!draftPages.some(page=>page.path===route)))errors.push('Draft publication: missing or unexpected draft route');
+for(const page of draftPages){
+ const file=path.join(dist,page.path,'index.html');
+ const html=fs.readFileSync(file,'utf8');
+ const doc=catalogue.documents.find(item=>item.repository_path===page.source);
+ if(!html.includes('aria-label="Draft publication status"') || !html.includes('DRAFT · For practitioner review'))errors.push(`Draft publication: missing visible status for ${page.path}`);
+ if(!/draft/i.test(page.version) || !/\bdraft\b/i.test(fs.readFileSync(path.join(root,page.source),'utf8')))errors.push(`Draft publication: missing source/version status for ${page.path}`);
+ if(!doc || doc.status!=='draft-for-practitioner-review' || doc.kind!==page.kind || doc.component_version!=='0.2' || doc.publication_edition!==null || doc.toolkit_version!==null || doc.based_on_research_edition!=='1.0')errors.push(`Draft publication: incorrect agent metadata for ${page.path}`);
+ if(!search.some(entry=>entry.url===base+page.path || entry.url.startsWith(base+page.path+'#')))errors.push(`Draft publication: missing search entry for ${page.path}`);
+}
+if(!discovery.includes('## Draft guide and visual model\n') || !discovery.includes('DRAFT resources for practitioner review'))errors.push('Draft publication: missing agent discovery status');
+if(fs.readFileSync(path.join(root,'content/model/reference.md'),'utf8')!==renderModelReference())errors.push('Model reference: readable content differs from interactive source');
+if(modelMetadata.version!=='0.2' || modelMetadata.researchEdition!=='1.0' || modelMetadata.areas.length!==13)errors.push('Model reference: unexpected version, research edition or area count');
+const modelPage=fs.readFileSync(path.join(dist,'model/index.html'),'utf8');
+if(!/src="[^\"]*model\.[a-f0-9]+\.js"/.test(modelPage) || !/href="[^\"]*model\.[a-f0-9]+\.css"/.test(modelPage))errors.push('Interactive model: missing versioned assets');
+if(modelPage.includes('class="page-aside"') || (modelPage.match(/data-key="/g)||[]).length!==13)errors.push('Interactive model: unusable navigation or missing selectable area');
+for(const name of ['OIBOK-Guide-Draft-0.2','OIBOK-Working-Companion-Draft-0.2']){
+ for(const extension of ['pdf','docx','md']){
+  const file=path.join(dist,'downloads/guide',`${name}.${extension}`);
+  if(!fs.existsSync(file))errors.push(`Draft download: missing ${name}.${extension}`);
+  else if(extension==='pdf' && fs.readFileSync(file).subarray(0,5).toString()!=='%PDF-')errors.push(`Draft download: invalid PDF ${name}`);
+  else if(extension==='md' && !fs.readFileSync(file,'utf8').includes('DRAFT · For practitioner review'))errors.push(`Draft download: missing explicit status ${name}`);
+ }
+}
 
 // Blog output must retain editorial status and agree with the one post catalogue.
 const posts=prepareBlogPosts(JSON.parse(fs.readFileSync(path.join(root,'website/blog-posts.json'),'utf8')));

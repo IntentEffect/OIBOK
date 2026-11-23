@@ -9,6 +9,8 @@ OIBOK is an open body of knowledge and practical toolkit for understanding how o
 ## Read and use
 
 - [Read the body of knowledge](https://oibok.org/knowledge/).
+- [Read or download the OIBOK Guide, draft 0.2](https://oibok.org/guide/).
+- [Explore the interactive model, draft 0.2](https://oibok.org/model/).
 - [Explore practical tools and A3 canvases](https://oibok.org/tools/).
 - [Read the OIBOK blog](https://oibok.org/blog/).
 - [Use OIBOK with an AI assistant or agent](https://oibok.org/for-agents/).
@@ -29,6 +31,8 @@ Agent guidance 0.1 is a website and practice addition. It does not change the OI
 
 ## Publication status
 
+**Guide 0.2 and Visual Model 0.2, 23 November 2026, are drafts for practitioner review.** The Guide, its Working Companion, the interactive model and its readable reference are published with explicit draft notices. External practitioner review and field validation remain pending. They provide guidance based on OIBOK 1.0 and do not amend the research release.
+
 **OIBOK 1.0**, released 15 August 2026, is a literature-grounded working synthesis. Its ten chapter files preserve component version 0.3, as promoted by the release completion record. The whole model has not been independently field validated.
 
 **Practical toolkit 0.1**, dated 22 November 2026, provides methods for piloting in real work. It does not provide a validated OI scale or maturity score. The proposed 1.1 editorial revision has not been applied to the research release.
@@ -42,6 +46,8 @@ See [versions and corrections](CHANGELOG.md), [research methodology](METHODOLOGY
 | `content/knowledge/` | Authoritative research chapters and reader introduction |
 | `content/research/` | Research registers, release records and reader guidance |
 | `content/tools/` | Practical toolkit guides and overview |
+| `content/guide/` | Draft practitioner Guide, Working Companion and download introduction |
+| `content/model/` | Draft interactive model introduction and complete readable reference |
 | `content/agents/` | Shared source for the readable agent guide and Markdown instructions |
 | `content/blog/` | Blog introduction and article sources |
 | `downloads/` | Original release archives, research registers, PDFs and editable resources |
@@ -72,6 +78,8 @@ python3 -m http.server 8000 --directory dist
 The check verifies internal page/download links and footnote anchors, one main heading per page, attribution, source-byte integrity, search-index destinations and agent source catalogue integrity.
 
 The build generates `llms.txt` and `agents/manifest.json` from the same registered pages, and publishes `content/agents/instructions.md` at `agents/instructions.md`, updating legacy website URLs to the configured site URL. The catalogue records separate hashes for the served instructions and the original Markdown source; original source downloads remain unchanged. The catalogue covers published Markdown documents; their linked pages provide archives, PDFs and CSV registers. It records `GITHUB_SHA` on deployment. A local build with uncommitted changes records a null source commit rather than claiming those changes belong to an existing commit.
+
+Draft resources carry `draft-for-practitioner-review` in the source catalogue and a visible draft notice on their pages. The model's full readable reference provides the same practical detail without requiring JavaScript.
 
 ## Publish with GitHub Pages
 

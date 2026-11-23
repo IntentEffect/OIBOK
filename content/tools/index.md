@@ -6,6 +6,8 @@ Start with one recurring decision or workflow. Use the OIBOK toolkit to investig
 
 ## Choose a starting point
 
+**New draft resources for practitioner review:** [The OIBOK Guide 0.2](/guide/) connects the chapters and tools into a practical working method. [Explore the interactive model](/model/) for the six capabilities, their connections, evidence questions and chapter mapping. Both drafts welcome feedback and remain open to review and field evaluation.
+
 **Working with an AI assistant?** [Use these tools with an AI assistant or agent](/for-agents/) for a starter prompt and a method for selecting sources, comparing explanations and drafting a practical working record.
 
 | Resource | Use it to | Guidance |

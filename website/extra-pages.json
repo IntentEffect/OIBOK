@@ -1,5 +1,60 @@
 [
   {
+    "source": "content/guide/index.md",
+    "path": "/guide/",
+    "title": "The OIBOK Guide",
+    "description": "Draft 0.2 for practitioner review: apply organisational intelligence to real work, with or without AI.",
+    "section": "Guide",
+    "kind": "guide-index",
+    "version": "Draft 0.2 · For practitioner review · 23 November 2026",
+    "component_version": "0.2",
+    "status": "draft-for-practitioner-review"
+  },
+  {
+    "source": "content/guide/guide-draft-0.2.md",
+    "path": "/guide/read/",
+    "title": "Read the OIBOK Guide",
+    "description": "The complete draft Guide, from investigating a worthwhile problem to designing work, evaluating outcomes and retaining learning.",
+    "section": "Guide",
+    "kind": "practitioner-guide",
+    "version": "Draft 0.2 · For practitioner review · 23 November 2026",
+    "component_version": "0.2",
+    "status": "draft-for-practitioner-review"
+  },
+  {
+    "source": "content/guide/working-companion-draft-0.2.md",
+    "path": "/guide/companion/",
+    "title": "OIBOK Working Companion",
+    "description": "Draft preparation, handoff, evaluation, retention and feedback guidance to use alongside the OIBOK Guide.",
+    "section": "Guide",
+    "kind": "working-companion",
+    "version": "Draft 0.2 · For practitioner review · 23 November 2026",
+    "component_version": "0.2",
+    "status": "draft-for-practitioner-review"
+  },
+  {
+    "source": "content/model/index.md",
+    "path": "/model/",
+    "title": "Explore the OIBOK model",
+    "description": "An interactive draft map of the six capabilities, their connections, people and AI participation, and relevant chapters and tools.",
+    "section": "Knowledge",
+    "kind": "interactive-model",
+    "version": "Draft visual 0.2 · For practitioner review · 23 November 2026",
+    "component_version": "0.2",
+    "status": "draft-for-practitioner-review"
+  },
+  {
+    "source": "content/model/reference.md",
+    "path": "/model/reference/",
+    "title": "OIBOK model reference",
+    "description": "The complete readable draft reference for the interactive model, including activities, evidence, examples, boundaries and chapter mapping.",
+    "section": "Knowledge",
+    "kind": "model-reference",
+    "version": "Draft visual 0.2 · For practitioner review · 23 November 2026",
+    "component_version": "0.2",
+    "status": "draft-for-practitioner-review"
+  },
+  {
     "source": "content/blog/index.md",
     "path": "/blog/",
     "title": "Blog",

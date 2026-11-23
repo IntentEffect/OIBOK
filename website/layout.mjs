@@ -2,6 +2,7 @@ const escape = (value = '') => String(value).replace(/[&<>"']/g, (character) => 
 
 const links = [
   ['knowledge', 'Knowledge', '/knowledge/'],
+  ['guide', 'Guide', '/guide/'],
   ['tools', 'Tools', '/tools/'],
   ['research', 'Research', '/research/'],
   ['blog', 'Blog', '/blog/'],
@@ -40,13 +41,13 @@ export function renderHome({ basePath = '' } = {}) {
   <div class="section-heading"><p class="eyebrow">Start with the work</p><h2 id="start-title">From understanding<br>to useful practice.</h2></div>
   <div class="entry-list">
     <a class="entry" href="${url('/knowledge/')}"><span class="entry-number">01</span><span><strong>Understand the organisation</strong><span>Read ten connected chapters on signals, knowledge, decisions, coordination, learning and adaptation.</span></span>${arrow}</a>
-    <a class="entry" href="${url('/tools/')}"><span class="entry-number">02</span><span><strong>Work through a real opportunity</strong><span>Use practical reviews and canvases to examine work, design a response and record what you learn.</span></span>${arrow}</a>
+    <a class="entry" href="${url('/guide/')}"><span class="entry-number">02</span><span><strong>Apply the OIBOK Guide <small class="draft-label">Draft</small></strong><span>Follow the draft Guide to examine real work, compare changes, evaluate outcomes and retain learning.</span></span>${arrow}</a>
     <a class="entry" href="${url('/research/')}"><span class="entry-number">03</span><span><strong>Examine the evidence</strong><span>Explore the research approach, supporting sources, limitations and questions still to be answered.</span></span>${arrow}</a>
   </div>
 </section>
 
 <section class="framework-section" aria-labelledby="framework-title">
-  <div class="framework-intro"><p class="eyebrow">A connected view</p><h2 id="framework-title">Intelligence is an<br>organisational capability.</h2><p>AI can help with particular tasks. OIBOK asks how an organisation builds and sustains the capacity to understand its circumstances, act together and improve over time.</p></div>
+  <div class="framework-intro"><p class="eyebrow">A connected view</p><h2 id="framework-title">Intelligence is an<br>organisational capability.</h2><p>AI can help with particular tasks. OIBOK asks how an organisation builds and sustains the capacity to understand its circumstances, act together and improve over time.<br><a class="text-link" href="${url('/model/')}">Explore the interactive model <small class="draft-label">Draft</small></a></p></div>
   <div class="transformations">
     <div><span class="transformation-number">01 /</span><h3>Orient</h3><p>Notice relevant signals. Understand the context. Bring knowledge and expertise to the situation.</p></div>
     <div><span class="transformation-number">02 /</span><h3>Coordinate</h3><p>Make decisions with clear authority. Connect people, systems and work. Follow through reliably.</p></div>
@@ -64,9 +65,11 @@ export function renderSearch({ basePath = '' } = {}) {
   return `<section class="search-panel" data-search-root aria-label="Search the publication"><form class="site-search" role="search"><label for="search-query">Search OIBOK</label><div class="search-field"><input id="search-query" type="search" name="q" autocomplete="off" placeholder="Search a concept, question or chapter"><button class="button" type="submit">Search</button></div></form><p class="search-status" role="status" aria-live="polite">Enter a word or phrase to search the publication.</p><ol class="search-results"></ol><noscript><p>Search requires JavaScript. You can also browse the <a href="${basePath}/knowledge/">body of knowledge</a>.</p></noscript></section>`;
 }
 
-export function renderLayout({ title, description = '', content, basePath = '', section = '', toc = [], sourcePath = '', version = '', isHome = false, markdown = '', siteUrl = '', assetPaths = {}, kind = '', author = '', published = '', published_at = '', category = '' }) {
+export function renderLayout({ title, description = '', content, basePath = '', section = '', toc = [], sourcePath = '', version = '', isHome = false, markdown = '', siteUrl = '', assetPaths = {}, kind = '', author = '', published = '', published_at = '', category = '', status = '' }) {
   const url = (path) => `${basePath}${path}`;
   const isBlogPost = kind === 'blog-post';
+  const isModel = kind === 'interactive-model';
+  const isDraft = status === 'draft-for-practitioner-review';
   const sectionKey = String(section).toLowerCase().replace(/\s+/g, '-');
   const sectionLabel = links.find(([key]) => key === sectionKey)?.[1] || ({methodology:'Research methodology', governance:'Governance', licensing:'Licensing', releases:'Versions and corrections', search:'Search', agents:'For agents', 'for-agents':'For agents'})[sectionKey] || section;
   const markdownPath = String(markdown);
@@ -74,7 +77,7 @@ export function renderLayout({ title, description = '', content, basePath = '', 
   const llmsHref = /^https?:\/\//.test(siteUrl) ? `${siteUrl.replace(/\/+$/, '')}/llms.txt` : url('/llms.txt');
   const feedHref = /^https?:\/\//.test(siteUrl) ? `${siteUrl.replace(/\/+$/, '')}/blog/feed.xml` : url('/blog/feed.xml');
   const navigation = links.map(([key, label, path]) => `<a href="${url(path)}"${sectionKey === key ? ' aria-current="page"' : ''}>${label}</a>`).join('');
-  const contents = isBlogPost ? [] : toc.filter((item) => item.level === 2 || item.level === 3);
+  const contents = isBlogPost || isModel ? [] : toc.filter((item) => item.level === 2 || item.level === 3);
   const tocHtml = contents.length > 1 ? `<aside class="page-aside"><details class="contents" open><summary>On this page</summary><nav aria-label="On this page"><ol>${contents.map((item) => `<li class="toc-level-${item.level}"><a href="#${encodeURIComponent(item.id)}">${escape(item.text)}</a></li>`).join('')}</ol></nav></details></aside>` : '';
   const sourceUrl = sourcePath ? `https://github.com/IntentEffect/OIBOK/blob/main/${sourcePath.split('/').map(encodeURIComponent).join('/')}` : '';
   const blogMetadata = isBlogPost ? [
@@ -86,6 +89,7 @@ export function renderLayout({ title, description = '', content, basePath = '', 
   const breadcrumb = isBlogPost ? `<a href="${url('/')}">OIBOK</a><span aria-hidden="true">/</span><a href="${url('/blog/')}">Blog</a><span aria-hidden="true">/</span><span aria-current="page">Article</span>` : `<a href="${url('/')}">OIBOK</a><span aria-hidden="true">/</span><span>${escape(sectionLabel || 'Publication')}</span>`;
   const blogFooter = isBlogPost ? `<nav class="blog-post-footer" aria-label="More from OIBOK"><a class="blog-all-link" href="${url('/blog/')}">All articles</a><div><a href="${url('/methodology/')}">Research methodology</a><a href="${url('/licensing/')}">Licensing and attribution</a></div></nav>` : '';
   const searchPanel = sectionKey === 'search' && !String(content).includes('data-search-root') ? renderSearch({ basePath }) : '';
+  const draftNote = isDraft ? `<aside class="publication-note draft-note" aria-label="Draft publication status"><strong>DRAFT · For practitioner review</strong><p>This resource is an evolving draft based on OIBOK 1.0. External practitioner review and field validation remain pending. <a href="${url('/contribute/')}">Feedback and corrections are welcome</a>, or email <a href="mailto:info@oibok.org">info@oibok.org</a> with the resource name and version.</p></aside>` : '';
   return `<!doctype html>
 <html lang="en-AU">
 <head>
@@ -105,8 +109,9 @@ export function renderLayout({ title, description = '', content, basePath = '', 
   <link rel="alternate" type="application/rss+xml" href="${escape(feedHref)}" title="OIBOK Blog">
   <link rel="stylesheet" href="${url(assetPaths['styles.css'] || '/assets/styles.css')}">
   <script src="${url(assetPaths['client.js'] || '/assets/client.js')}" defer></script>
+  ${isModel ? `<link rel="stylesheet" href="${url(assetPaths['model.css'] || '/assets/model.css')}"><script src="${url(assetPaths['model.js'] || '/assets/model.js')}" defer></script>` : ''}
 </head>
-<body data-base-path="${escape(basePath)}" class="${isHome ? 'home' : 'reading-page'}${isBlogPost ? ' blog-post-page' : sectionKey === 'blog' ? ' blog-index-page' : ''}">
+<body data-base-path="${escape(basePath)}" class="${isHome ? 'home' : 'reading-page'}${isBlogPost ? ' blog-post-page' : sectionKey === 'blog' ? ' blog-index-page' : ''}${isModel ? ' model-page' : ''}">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="header-inner">
@@ -116,7 +121,7 @@ export function renderLayout({ title, description = '', content, basePath = '', 
     </div>
   </header>
   <main id="main" class="main-content" tabindex="-1">
-    ${isHome ? content : `<div class="page-header"><nav class="breadcrumb" aria-label="Breadcrumb">${breadcrumb}</nav><h1>${escape(title)}</h1>${description ? `<p class="page-introduction">${escape(description)}</p>` : ''}${metadata}</div><div class="reading-layout${tocHtml ? ' has-toc' : ''}">${tocHtml}<article class="prose">${searchPanel}${content}${blogFooter}</article></div>`}
+    ${isHome ? content : `<div class="page-header"><nav class="breadcrumb" aria-label="Breadcrumb">${breadcrumb}</nav><h1>${escape(title)}</h1>${description ? `<p class="page-introduction">${escape(description)}</p>` : ''}${metadata}</div><div class="reading-layout${tocHtml ? ' has-toc' : ''}">${tocHtml}<article class="prose">${draftNote}${searchPanel}${content}${blogFooter}</article></div>`}
   </main>
   <footer class="site-footer">
     <div class="footer-top"><div><a class="brand footer-brand" href="${url('/')}">OIBOK<span class="brand-dot" aria-hidden="true">.</span></a><p class="footer-title">Organisation Intelligence<br>Body of Knowledge<br><a href="mailto:info@oibok.org">info@oibok.org</a></p></div><nav aria-label="Publication information"><a href="${url('/about/')}">About OIBOK</a><a href="${url('/blog/')}">Blog</a><a href="${url('/methodology/')}">Research methodology</a><a href="${url('/governance/')}">Governance</a><a href="${url('/releases/')}">Versions and corrections</a><a href="${url('/licensing/')}">Licensing and attribution</a><a href="${url('/for-agents/')}">For agents</a><a class="github-link footer-github-link" href="${repositoryUrl}">${githubIcon}<span>GitHub</span> ${arrow}</a></nav></div>
