@@ -44,7 +44,8 @@
 .footer-bottom{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:6px 24px;padding-top:12px}
 .founder-credit{min-width:0}
 .founder-credit>p{margin:0;max-width:none;line-height:1.5}
-.founder-credit .ie-brand{align-items:baseline;vertical-align:baseline;margin-inline:.3em .15em}
+.founder-credit .ie-brand{align-items:center;vertical-align:middle;margin-inline:.3em .15em}
+.founder-credit .ie-brand-wordmark{transform:translateY(-.125em)}
 .licence-credit{display:flex;justify-content:flex-end;max-width:none;margin-left:auto;text-align:right}
 .licence-badge{display:inline-flex;align-items:flex-end;justify-content:flex-end;min-height:44px}
 .licence-scope{grid-column:1/-1;margin:0;font-size:12px;line-height:1.5;text-align:right;color:var(--muted)}
