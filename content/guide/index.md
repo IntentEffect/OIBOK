@@ -20,6 +20,28 @@ This is the complete draft Guide, accompanied by a Working Companion with prepar
 
 The [interactive OIBOK model](/model/) provides another way to explore the six capabilities, their connections and the relevant research and tools. It is also a draft.
 
+## Draft diagram downloads
+
+**Visual set 0.1 · Draft for practitioner review**
+
+These nine diagrams accompany the Guide. Use them to discuss one organisational problem, clarify work and authority, plan evaluation and retain useful learning. Each PDF is A3 landscape.
+
+[Download all nine diagrams in one A3 PDF](/downloads/diagrams/OIBOK-Diagrams-Draft-0.1-A3.pdf).
+
+| Diagram | Use it to |
+| --- | --- |
+| [The OIBOK working model](/downloads/diagrams/overview.pdf) | Connect the six capabilities with context, orientation, governance and memory. |
+| [Applying OIBOK to one real problem](/downloads/diagrams/applying-oibok.pdf) | Follow one inquiry through investigation, work design, evaluation and retained learning. |
+| [From handoff to accepted commitment](/downloads/diagrams/accepted-handoff.pdf) | Make acceptance, ownership and unresolved conditions explicit. |
+| [People, AI and authority in one workflow](/downloads/diagrams/people-and-ai.pdf) | Distinguish AI assistance, human review, authority and escalation. |
+| [Evaluating the change and AI contribution](/downloads/diagrams/evaluating-change.pdf) | Compare credible options and examine competing explanations. |
+| [From a lesson to lasting capability](/downloads/diagrams/lasting-capability.pdf) | Retain a useful change and check its later use. |
+| [A shared vocabulary for one workflow](/downloads/diagrams/shared-vocabulary.pdf) | Explore the relationships between evidence, cases, decisions, policy, roles and action. |
+| [One inquiry across the OIBOK tools](/downloads/diagrams/connected-records.pdf) | Connect working records around the same inquiry. |
+| [How review effort changes the resource case](/downloads/diagrams/resource-comparison.pdf) | Examine the fictional Wattle Supply example's sensitivity to review effort. |
+
+The diagrams are working explanations. Fictional cases add no empirical evidence, pending checks remain pending, and the vocabulary example is a local illustration rather than a validated OIBOK ontology. The publication's [CC BY-SA 4.0 licence and scope](/licensing/) apply.
+
 ## What the Guide covers
 
 The Guide begins with a practical question: which recurring decision or workflow would benefit from a more coherent organisational response? It then connects the OIBOK research to the work of investigation, design, evaluation and learning.
