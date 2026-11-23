@@ -12,9 +12,6 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
 @media print{body{background:white;font-size:11pt}.site-header,.site-footer,.page-aside,.skip-link,.hero-actions,.page-meta a,.breadcrumb,.menu-toggle{display:none!important}.site-header,.main-content,.site-footer{width:100%;max-width:none}.page-header{padding:0 0 20px}.page-header h1{font-size:28pt}.page-introduction{font-size:12pt}.reading-layout.has-toc{display:block}.prose{font-size:10.5pt;line-height:1.5}.prose h2{font-size:19pt;break-after:avoid}.prose h3{font-size:14pt;break-after:avoid}.prose table{display:table;font-size:8pt;overflow:visible}.prose th,.prose td{min-width:0;padding:7px}.prose a{color:inherit}.prose pre{white-space:pre-wrap}.hero h1{font-size:38pt}.hero-grid,.entry-section,.open-section{display:block}.framework-section{padding:24px;background:none}.hero-intro{margin-top:24px}.transformations{display:block}.transformations>div{margin-top:24px}}
 
-/* Keep the short closing phrase together at reading widths. */
-.hero h1 em{white-space:nowrap}
-
 /* Repository access beside Search and in the publication footer. */
 .github-link{display:inline-flex;align-items:center;gap:8px}
 .github-icon{display:block;flex:none}
