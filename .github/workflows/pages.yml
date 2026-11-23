@@ -39,7 +39,9 @@ jobs:
         env:
           BASE_PATH: ${{ steps.pages.outputs.base_path }}
           SITE_URL: ${{ steps.pages.outputs.base_url }}
-        run: npm run build
+        run: |
+          # Pages can report HTTP while provisioning the custom domain certificate.
+          SITE_URL="${SITE_URL/#http:/https:}" npm run build
       - name: Check links, footnotes and source integrity
         run: npm run check
       - name: Upload the website
