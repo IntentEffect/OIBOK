@@ -1,5 +1,11 @@
 # Versions and corrections
 
+## Homepage clarity | 23 November 2026
+
+Revised the homepage to state what OIBOK is: a free, openly licensed research publication, practical Guide and toolkit. The opening now explains the organisational problems it helps teams investigate, including knowledge that is difficult to apply, unclear decisions and handoffs, and limited evidence of lasting improvement when adopting AI.
+
+Added concrete problem examples, clearer descriptions of the available resources, direct starting points for the draft Guide and model, and a plain-language explanation of organisational intelligence. The homepage also states that OIBOK can be applied to work without AI and retains the current draft and evidence status.
+
 ## Draft Guide and interactive model | 23 November 2026
 
 Published [the OIBOK Guide, draft 0.2](/guide/), with the complete online text, a Working Companion, and PDF, Word and Markdown downloads. The documents carry explicit draft notices on their covers and running footers. The Guide connects practical inquiry, work design, evaluation and retained learning, with three fictional examples and mappings to the existing chapters and tools.

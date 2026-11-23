@@ -24,30 +24,44 @@ export function renderHome({ basePath = '' } = {}) {
   return `<section class="hero" aria-labelledby="home-title">
   <p class="eyebrow"><span class="small-square" aria-hidden="true"></span>Organisation Intelligence Body of Knowledge</p>
   <div class="hero-grid">
-    <h1 id="home-title">Build the organisational capability to <em>prosper with AI.</em></h1>
+    <h1 id="home-title">Make AI useful in <em>everyday organisational work.</em></h1>
     <div class="hero-intro">
-      <p class="hero-summary">Better decisions.<br>Coordinated work.<br>Lasting improvement.</p>
-      <p>OIBOK is an open body of knowledge and practical toolkit for connecting knowledge, decisions, collective action and learning.</p>
-      <p>Use it to explore worthwhile opportunities, design how people and AI work together, and evaluate whether changes improve organisational performance.</p>
+      <p class="hero-summary">What is OIBOK?</p>
+      <p>OIBOK is a free, openly licensed research publication, practical Guide and toolkit for improving how organisations use knowledge, make decisions, coordinate work and learn.</p>
+      <p>It helps leaders and teams investigate the organisational gaps that can hold AI adoption back, then design and evaluate changes to the work.</p>
     </div>
   </div>
   <div class="hero-actions">
-    <a class="button" href="${url('/knowledge/')}">Read the body of knowledge <span aria-hidden="true">→</span></a>
-    <a class="text-link" href="${url('/tools/')}">Explore practical tools <span aria-hidden="true">→</span></a>
+    <a class="button" href="${url('/guide/')}">Start with the draft Guide</a>
+    <a class="text-link" href="${url('/model/')}">Explore the OIBOK model <small class="draft-label">Draft</small></a>
+  </div>
+  <p class="hero-access">Free to read and use. Publication content is shared under <a href="${url('/licensing/')}">CC BY-SA 4.0</a>. <a href="${url('/contribute/')}">Contributions welcome.</a></p>
+</section>
+
+<section class="problem-section" aria-labelledby="problem-title">
+  <div class="section-heading"><p class="eyebrow">The problem OIBOK helps address</p><h2 id="problem-title">The gap between an AI pilot and reliable everyday work.</h2></div>
+  <div class="problem-content">
+    <p>For an AI idea to become useful everyday work, people need relevant knowledge, clear authority, reliable handoffs and a way to evaluate what happens. OIBOK helps teams examine the organisational problems that can get in the way.</p>
+    <ul class="problem-list">
+      <li><h3>The right knowledge is hard to use.</h3><p>Identify which sources and expertise apply, what context is missing and what needs to be checked before people or AI rely on an answer.</p></li>
+      <li><h3>Decisions and work get stuck between teams.</h3><p>Clarify who can decide, who is responsible for acting, how handoffs are accepted and what happens when something goes wrong.</p></li>
+      <li><h3>A pilot looks promising, but its value or staying power is unclear.</h3><p>Plan how to evaluate outcomes, examine competing explanations and turn useful learning into future practice.</p></li>
+    </ul>
+    <p class="problem-scope">These questions also apply to work without AI. Start with one recurring decision or workflow, investigate the evidence and decide what needs to change.</p>
   </div>
 </section>
 
 <section class="entry-section" aria-labelledby="start-title">
-  <div class="section-heading"><p class="eyebrow">Start with the work</p><h2 id="start-title">From understanding<br>to useful practice.</h2></div>
+  <div class="section-heading"><p class="eyebrow">Research and practical resources</p><h2 id="start-title">What you can use.</h2></div>
   <div class="entry-list">
-    <a class="entry" href="${url('/knowledge/')}"><span class="entry-number">01</span><span><strong>Understand the organisation</strong><span>Read ten connected chapters on signals, knowledge, decisions, coordination, learning and adaptation.</span></span>${arrow}</a>
-    <a class="entry" href="${url('/guide/')}"><span class="entry-number">02</span><span><strong>Apply the OIBOK Guide <small class="draft-label">Draft</small></strong><span>Follow the draft Guide to examine real work, compare changes, evaluate outcomes and retain learning.</span></span>${arrow}</a>
-    <a class="entry" href="${url('/research/')}"><span class="entry-number">03</span><span><strong>Examine the evidence</strong><span>Explore the research approach, supporting sources, limitations and questions still to be answered.</span></span>${arrow}</a>
+    <a class="entry" href="${url('/knowledge/')}"><span class="entry-number">01</span><span><strong>The body of knowledge</strong><span>Ten research chapters explaining how signals, knowledge, decisions, collective action and learning connect, with supporting sources and limitations.</span></span>${arrow}</a>
+    <a class="entry" href="${url('/guide/')}"><span class="entry-number">02</span><span><strong>The OIBOK Guide <small class="draft-label">Draft</small></strong><span>A practical method for investigating a workplace problem, comparing options, designing work and evaluating a change.</span></span>${arrow}</a>
+    <a class="entry" href="${url('/tools/')}"><span class="entry-number">03</span><span><strong>Tools and canvases</strong><span>Working templates to map knowledge, clarify decisions and handoffs, design an AI contribution and record outcomes and learning.</span></span>${arrow}</a>
   </div>
 </section>
 
 <section class="framework-section" aria-labelledby="framework-title">
-  <div class="framework-intro"><p class="eyebrow">A connected view</p><h2 id="framework-title">Intelligence is an<br>organisational capability.</h2><p>AI can help with particular tasks. OIBOK asks how an organisation builds and sustains the capacity to understand its circumstances, act together and improve over time.<br><a class="text-link" href="${url('/model/')}">Explore the interactive model <small class="draft-label">Draft</small></a></p></div>
+  <div class="framework-intro"><p class="eyebrow">What organisational intelligence means</p><h2 id="framework-title">Understand the situation.<br>Act together.<br>Learn and improve.</h2><p>Organisational intelligence concerns how an organisation understands a situation, coordinates a response and improves future responses over time. OIBOK connects this through three recurring transformations.<br><a class="text-link" href="${url('/model/')}">Explore the interactive model <small class="draft-label">Draft</small></a></p></div>
   <div class="transformations">
     <div><span class="transformation-number">01 /</span><h3>Orient</h3><p>Notice relevant signals. Understand the context. Bring knowledge and expertise to the situation.</p></div>
     <div><span class="transformation-number">02 /</span><h3>Coordinate</h3><p>Make decisions with clear authority. Connect people, systems and work. Follow through reliably.</p></div>
@@ -56,8 +70,8 @@ export function renderHome({ basePath = '' } = {}) {
 </section>
 
 <section class="open-section" aria-labelledby="open-title">
-  <p class="eyebrow">Open by design</p>
-  <div><h2 id="open-title">A working synthesis.<br>An invitation to contribute.</h2><p>OIBOK brings research and practice into a shared, evolving body of knowledge. Its claims, assumptions and limitations are open to scrutiny. Contributions can strengthen the evidence, challenge an explanation or improve a practical resource.</p><div class="inline-links"><a class="text-link" href="${url('/methodology/')}">How OIBOK is researched <span aria-hidden="true">→</span></a><a class="text-link" href="${url('/contribute/')}">Contribute to OIBOK <span aria-hidden="true">→</span></a></div></div>
+  <p class="eyebrow">An open community project</p>
+  <div><h2 id="open-title">Free to use.<br>Open to improvement.</h2><p>OIBOK is developed by the OIBOK community. Read the research, try the practical resources, challenge an explanation or contribute an improvement.</p><p>The body of knowledge is a literature-grounded working synthesis. The Guide and visual model are drafts for practitioner review, and independent field validation of the complete model remains pending.</p><div class="inline-links"><a class="text-link" href="${url('/research/')}">Research and limitations</a><a class="text-link" href="${url('/contribute/')}">Contribute to OIBOK</a></div></div>
 </section>`;
 }
 
