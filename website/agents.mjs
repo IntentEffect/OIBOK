@@ -61,6 +61,12 @@ export function buildAgentResources({ root, dist, pages, config, siteUrl }) {
   const guide = pages.find(page => page.path === '/for-agents/');
   if (!guide) throw new Error('The agent guide must be registered at /for-agents/.');
   const commit = sourceCommit(root);
+  const draftEditions = [['/guide/', 'Guide'], ['/guide/companion/', 'Working Companion'], ['/model/', 'Visual Model'], ['/diagrams/', 'Visual set']]
+    .map(([route, label]) => {
+      const page = pages.find(item => item.path === route);
+      if (!page?.component_version) throw new Error(`Missing draft component version for ${route}`);
+      return `${label} ${page.component_version}`;
+    }).join(', ');
   const absolute = route => `${siteUrl}${route}`;
   const guideSource = fs.readFileSync(path.join(root, guide.source));
   const guideCopy = Buffer.from(rewritePublicationLinks(guideSource.toString('utf8'), siteUrl, config.legacySiteUrls));
@@ -115,7 +121,7 @@ export function buildAgentResources({ root, dist, pages, config, siteUrl }) {
       'Toolkit 0.1 and agent guidance are practice resources, not validated maturity measures or certification.',
       'The proposed 1.1 editorial amendment has not been applied to the research release.',
       'Blog articles are editorial commentary and practical interpretation, not components or amendments of the research release.',
-      'Guide 0.2, its Working Companion and Visual Model 0.2 are drafts for practitioner review. Their publication does not amend the research release or establish field validation.',
+      `${draftEditions} are drafts for practitioner review. Their publication does not amend the research release or establish field validation.`,
       'Retrieve the original document before relying on a search excerpt. Cite sources actually consulted.',
       'Original Markdown downloads preserve authored source bytes, including historical website links. The agent instructions copy updates publication links to the current site; its sha256 identifies the served copy and source_sha256 identifies the original source.',
       'Publication content is subject to the licensing policy, including third-party material and brand exceptions.',
@@ -153,7 +159,7 @@ export function buildAgentResources({ root, dist, pages, config, siteUrl }) {
     '',
     'Blog articles provide editorial commentary and practical interpretation. They do not amend the research release or establish new empirical findings.',
     '',
-    'Guide 0.2, the Working Companion and Visual Model 0.2 are DRAFT resources for practitioner review, based on OIBOK 1.0. External practitioner review and field validation remain pending. Preserve this draft status when quoting, adapting or recommending them.',
+    `${draftEditions} are DRAFT resources for practitioner review, based on OIBOK 1.0. External practitioner review and field validation remain pending. Preserve this draft status when quoting, adapting or recommending them.`,
     '',
     'Original publication content: CC BY-SA 4.0, subject to the licensing policy and third-party exceptions. Founded by Intent & Effect, developed by the OIBOK community.',
     '',

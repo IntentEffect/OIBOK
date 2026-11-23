@@ -9,7 +9,8 @@ OIBOK is an open body of knowledge and practical toolkit for understanding how o
 ## Read and use
 
 - [Read the body of knowledge](https://oibok.org/knowledge/).
-- [Read or download the OIBOK Guide, draft 0.2](https://oibok.org/guide/).
+- [Read or download the illustrated OIBOK Guide, draft 0.3](https://oibok.org/guide/).
+- [Explore the nine draft diagrams and download SVGs or A3 PDFs](https://oibok.org/diagrams/).
 - [Explore the interactive model, draft 0.2](https://oibok.org/model/).
 - [Explore practical tools and A3 canvases](https://oibok.org/tools/).
 - [Read the OIBOK blog](https://oibok.org/blog/).
@@ -31,7 +32,7 @@ Agent guidance 0.1 is a website and practice addition. It does not change the OI
 
 ## Publication status
 
-**Guide 0.2 and Visual Model 0.2, 23 November 2026, are drafts for practitioner review.** The Guide, its Working Companion, the interactive model and its readable reference are published with explicit draft notices. External practitioner review and field validation remain pending. They provide guidance based on OIBOK 1.0 and do not amend the research release.
+**Guide 0.3, Working Companion 0.3, Visual Model 0.2 and Visual set 0.1 are drafts for practitioner review.** The illustrated Guide and Companion, interactive model, readable reference and nine diagrams are published with explicit draft notices. External practitioner review and field validation remain pending. They provide guidance based on OIBOK 1.0 and do not amend the research release.
 
 **OIBOK 1.0**, released 15 August 2026, is a literature-grounded working synthesis. Its ten chapter files preserve component version 0.3, as promoted by the release completion record. The whole model has not been independently field validated.
 
@@ -48,11 +49,13 @@ See [versions and corrections](CHANGELOG.md), [research methodology](METHODOLOGY
 | `content/tools/` | Practical toolkit guides and overview |
 | `content/guide/` | Draft practitioner Guide, Working Companion and download introduction |
 | `content/model/` | Draft interactive model introduction and complete readable reference |
+| `content/diagrams/` | Draft diagram collection, readable explanations and source mappings |
 | `content/agents/` | Shared source for the readable agent guide and Markdown instructions |
 | `content/blog/` | Blog introduction and article sources |
 | `downloads/` | Original release archives, research registers, PDFs and editable resources |
 | `website/` | Static build, page routes, templates, styles and browser search |
-| `assets/` | Approved founder artwork and Creative Commons badge |
+| `assets/` | Site artwork, Creative Commons badge and diagram SVGs |
+| `scripts/diagrams/` | Sources for regenerating the diagram SVGs and A3 PDFs |
 | `sources/` | Source provenance and imported-file checksums |
 | `.github/` | Contribution forms, pull request template and build/deploy workflow |
 
