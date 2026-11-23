@@ -7,6 +7,7 @@ import { renderHome, renderLayout, renderSearch } from './layout.mjs';
 import { buildAgentResources, rewritePublicationLinks } from './agents.mjs';
 import { prepareBlogPosts, renderBlogIndex, renderBlogFeed } from './blog.mjs';
 import { renderModel } from './model.mjs';
+import { renderHome as renderPreviousHome, renderLayout as renderPreviousLayout, archiveMetadata } from './archives/homepage-previous.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
@@ -24,7 +25,7 @@ if (!pages.some(page => page.path === '/blog/' && page.source === 'content/blog/
 const escape = (value) => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const unescape = (value) => String(value).replace(/&#(x[\da-f]+|\d+);/gi, (_, n) => String.fromCodePoint(n[0].toLowerCase() === 'x' ? parseInt(n.slice(1),16) : Number(n))).replace(/&(?:amp|lt|gt|quot|apos|nbsp|#39);/g, c => ({'&amp;':'&','&lt;':'<','&gt;':'>','&quot;':'"','&apos;':"'",'&#39;':"'",'&nbsp;':' '}[c]));
 const plain = (html) => unescape(html.replace(/<[^>]*>/g, ' ')).replace(/\s+/g, ' ').trim();
-const routes = new Set(['/', '/search/', '/404.html']);
+const routes = new Set(['/', '/homepage-previous/', '/search/', '/404.html']);
 for (const page of pages) {
   if (!/^\/[a-z0-9/-]*\/$/.test(page.path) || routes.has(page.path)) throw new Error(`Invalid or duplicate page route: ${page.path}`);
   routes.add(page.path);
@@ -120,6 +121,13 @@ for (const page of pages) {
   writePage(page.path, renderLayout({...page,content,toc,sourcePath:page.source,basePath,siteUrl,markdown,assetPaths}));
 }
 writePage('/',renderLayout({title:config.title,description:config.description,content:renderHome({basePath}),basePath,siteUrl,assetPaths,isHome:true}));
+// Retain the previous homepage for comparison without indexing it as publication content.
+const previousStyles = fs.readFileSync(path.join(root, 'website/archives/homepage-previous.css'));
+const previousStylesVersion = crypto.createHash('sha256').update(previousStyles).digest('hex').slice(0, 12);
+const previousStylesPath = `/assets/homepage-previous.${previousStylesVersion}.css`;
+fs.writeFileSync(path.join(dist, previousStylesPath), previousStyles);
+const previousHome = renderPreviousLayout({title:archiveMetadata.title,description:archiveMetadata.description,content:renderPreviousHome({basePath}),basePath,siteUrl,assetPaths:{...assetPaths,'styles.css':previousStylesPath},isHome:true});
+writePage('/homepage-previous/',previousHome.replace('</head>', '  <meta name="robots" content="noindex,follow">\n</head>'));
 writePage('/search/',renderLayout({title:'Search OIBOK',description:'Find a concept, question, chapter or practical resource.',content:renderSearch({basePath}),basePath,siteUrl,assetPaths,section:'search'}));
 writePage('/404.html',renderLayout({title:'Page not found',description:'This address does not match a page in the current website.',content:`<p>Visit the <a href="${basePath}/knowledge/">body of knowledge</a>, browse the <a href="${basePath}/tools/">practical tools</a> or <a href="${basePath}/search/">search the publication</a>.</p>`,basePath,siteUrl,assetPaths}));
 fs.writeFileSync(path.join(dist,'search-index.json'),JSON.stringify(search));

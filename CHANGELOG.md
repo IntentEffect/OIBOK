@@ -1,5 +1,9 @@
 # Versions and corrections
 
+## Previous homepage for comparison | 23 November 2026
+
+Republished the homepage from immediately before the clarity update at [the previous homepage](/homepage-previous/). Its wording, layout and stylesheet are preserved from commit `2b1a70c632249a16f16dde43a1f29bbe974df616`. The current homepage remains at the main website address. The comparison page is excluded from search indexing and the sitemap.
+
 ## Homepage clarity | 23 November 2026
 
 Revised the homepage to state what OIBOK is: a free, openly licensed research publication, practical Guide and toolkit. The opening now explains the organisational problems it helps teams investigate, including knowledge that is difficult to apply, unclear decisions and handoffs, and limited evidence of lasting improvement when adopting AI.
