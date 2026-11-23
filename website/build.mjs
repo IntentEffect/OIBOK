@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import crypto from 'node:crypto';
 import { renderHome, renderLayout, renderSearch } from './layout.mjs';
-import { buildAgentResources } from './agents.mjs';
+import { buildAgentResources, rewritePublicationLinks } from './agents.mjs';
 import { prepareBlogPosts, renderBlogIndex, renderBlogFeed } from './blog.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -15,6 +15,8 @@ const basePath = (process.env.BASE_PATH ?? config.basePath).replace(/\/+$/, '');
 if (basePath && !/^\/[A-Za-z0-9_/-]+$/.test(basePath)) throw new Error('BASE_PATH must be empty or a URL path beginning with /.');
 const siteUrl = (process.env.SITE_URL || `${config.origin}${basePath}`).replace(/\/+$/, '');
 if (!/^https?:\/\//.test(siteUrl)) throw new Error('SITE_URL must be an absolute HTTP(S) URL.');
+const parsedSiteUrl = new URL(siteUrl);
+if (parsedSiteUrl.search || parsedSiteUrl.hash || parsedSiteUrl.pathname.replace(/\/+$/, '') !== basePath) throw new Error('SITE_URL must have the same path as BASE_PATH and no query or fragment.');
 const blogPosts = prepareBlogPosts(json('website/blog-posts.json'));
 const pages = [...json('website/imported-pages.json'), ...json('website/policy-pages.json'), ...json('website/extra-pages.json'), ...blogPosts];
 if (!pages.some(page => page.path === '/blog/' && page.source === 'content/blog/index.md')) throw new Error('Register the blog index at /blog/.');
@@ -58,6 +60,7 @@ function writePage(pagePath, html) {
 }
 
 function renderMarkdown(source) {
+  source = rewritePublicationLinks(source, siteUrl, config.legacySiteUrls);
   // Remove the historical cover headings in the rendered copy only. Source bytes stay unchanged.
   let body = source.replace(/^(?:\uFEFF)?(?:\s*# [^\n]*\n)+\s*/, '');
   // Separate adjacent fields only in the opening metadata block before its rule.

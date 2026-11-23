@@ -3,11 +3,14 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { prepareBlogPosts } from './blog.mjs';
+import { rewritePublicationLinks } from './agents.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const dist=path.join(root,'dist');
 const info=JSON.parse(fs.readFileSync(path.join(dist,'build-info.json'),'utf8'));
+const config=JSON.parse(fs.readFileSync(path.join(root,'website/config.json'),'utf8'));
 const base=info.basePath;
 const errors=[];
+if(new URL(info.siteUrl).pathname.replace(/\/+$/,'')!==base)errors.push('Publication URL does not match its deployment base path');
 const all=[];
 function walk(dir){for(const item of fs.readdirSync(dir,{withFileTypes:true})){const name=path.join(dir,item.name);if(item.isDirectory())walk(name);else all.push(name);}}
 walk(dist);
@@ -23,6 +26,10 @@ for(const file of htmlFiles){
  const founderCredit=html.match(/<div class="founder-credit">([\s\S]*?)<\/div>/)?.[1] || '';
  if(!founderCredit.includes('Founded by ') || !founderCredit.includes('aria-label="Intent &amp; Effect"') || !founderCredit.includes(' Developed by the OIBOK community.'))errors.push(`${file}: missing accessible founder attribution`);
  if(/sandbox:|oai-library:|chatgpt\.com\/api\/library|turn\d+(?:search|view)\d/.test(html))errors.push(`${file}: internal-only source reference`);
+ if(rewritePublicationLinks(html,info.siteUrl,config.legacySiteUrls)!==html)errors.push(`${file}: historical publication URL remains in rendered content`);
+ const relative=path.relative(dist,file).split(path.sep).join('/');
+ const route=relative==='index.html'?'/':relative.endsWith('/index.html')?`/${relative.slice(0,-10)}`:`/${relative}`;
+ if(html.match(/<link rel="canonical" href="([^"]+)"/)?.[1]!==info.siteUrl+route)errors.push(`${relative}: incorrect canonical URL`);
 }
 let checked=0;
 function checkLink(file,ref){
@@ -86,7 +93,16 @@ for(const doc of catalogue.documents){
  const original=path.join(root,doc.repository_path);
  if(markdown && fs.existsSync(original)){
   const bytes=fs.readFileSync(markdown);
-  if(!bytes.equals(fs.readFileSync(original)) || bytes.length!==doc.bytes || crypto.createHash('sha256').update(bytes).digest('hex')!==doc.sha256)errors.push(`Agent catalogue: source bytes or hash mismatch for ${doc.id}`);
+  const source=fs.readFileSync(original);
+  const isGuide=doc.repository_path==='content/agents/instructions.md';
+  const expected=isGuide?Buffer.from(rewritePublicationLinks(source.toString('utf8'),info.siteUrl,config.legacySiteUrls)):source;
+  if(!bytes.equals(expected) || bytes.length!==doc.bytes || crypto.createHash('sha256').update(bytes).digest('hex')!==doc.sha256)errors.push(`Agent catalogue: served bytes or hash mismatch for ${doc.id}`);
+  if(isGuide){
+   const originalUrl=`${info.siteUrl}/downloads/source/${doc.repository_path}`;
+   const originalCopy=localSource(originalUrl);
+   if(doc.source_markdown_url!==originalUrl || doc.source_bytes!==source.length || doc.source_sha256!==crypto.createHash('sha256').update(source).digest('hex') || doc.content_transform!==(expected.equals(source)?null:'canonical-publication-links'))errors.push('Agent catalogue: original instructions provenance is incorrect');
+   if(!originalCopy || !fs.readFileSync(originalCopy).equals(source))errors.push('Agent instructions: original Markdown download changed');
+  }
  }
  if(doc.kind==='chapter' && (doc.publication_edition!=='1.0' || doc.component_version!=='0.3' || doc.toolkit_version!==null))errors.push(`Agent catalogue: incorrect chapter versions for ${doc.id}`);
  if(doc.kind==='tool' && (doc.toolkit_version!=='0.1' || doc.component_version!=='0.1' || doc.publication_edition!==null))errors.push(`Agent catalogue: incorrect toolkit versions for ${doc.id}`);
@@ -96,7 +112,8 @@ for(const doc of catalogue.documents){
 if(documentSources.size!==expectedSources.size || catalogue.documents.length!==info.agentDocuments)errors.push('Agent catalogue: document coverage does not match registered pages');
 const guideSource=fs.readFileSync(path.join(root,'content/agents/instructions.md'));
 const guideAlias=fs.readFileSync(path.join(dist,'agents/instructions.md'));
-if(!guideSource.equals(guideAlias))errors.push('Agent instructions alias differs from its authored source');
+const expectedGuide=Buffer.from(rewritePublicationLinks(guideSource.toString('utf8'),info.siteUrl,config.legacySiteUrls));
+if(!expectedGuide.equals(guideAlias))errors.push('Agent instructions differ from the source with canonical publication links');
 const discovery=fs.readFileSync(path.join(dist,'llms.txt'),'utf8');
 const discoveryLinks=[...discovery.matchAll(/\]\((https?:\/\/[^)]+)\)/g)].map(match=>match[1]);
 for(const url of discoveryLinks)localSource(url);
@@ -117,6 +134,8 @@ if(blogOverview && !blogDiscovery.includes(blogOverview.markdown_url))errors.pus
 const xmlDecode=value=>String(value).replace(/&(amp|lt|gt|quot|apos);/g,(_,entity)=>({amp:'&',lt:'<',gt:'>',quot:'"',apos:"'"}[entity]));
 const sitemap=fs.readFileSync(path.join(dist,'sitemap.xml'),'utf8');
 const sitemapUrls=new Set([...sitemap.matchAll(/<loc>([^<]*)<\/loc>/g)].map(match=>xmlDecode(match[1])));
+for(const url of sitemapUrls)localSource(url);
+if(!fs.readFileSync(path.join(dist,'robots.txt'),'utf8').includes(`Sitemap: ${info.siteUrl}/sitemap.xml\n`))errors.push('Robots file: incorrect sitemap URL');
 if(!sitemapUrls.has(`${info.siteUrl}/blog/`))errors.push('Blog index: missing from sitemap');
 for(const post of posts){
  const doc=blogCatalogue.find(entry=>entry.repository_path===post.source);

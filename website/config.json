@@ -1,7 +1,8 @@
 {
   "title": "Organisation Intelligence Body of Knowledge",
   "description": "An open body of knowledge and practical toolkit for organisational intelligence: better decisions, coordinated work and lasting improvement.",
-  "origin": "https://intenteffect.github.io",
-  "basePath": "/OIBOK",
+  "origin": "https://oibok.org",
+  "basePath": "",
+  "legacySiteUrls": ["https://intenteffect.github.io/OIBOK"],
   "repository": "https://github.com/IntentEffect/OIBOK"
 }

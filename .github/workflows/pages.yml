@@ -37,7 +37,7 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Build the website
         env:
-          BASE_PATH: ${{ github.event_name == 'pull_request' && '/OIBOK' || steps.pages.outputs.base_path }}
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
           SITE_URL: ${{ steps.pages.outputs.base_url }}
         run: npm run build
       - name: Check links, footnotes and source integrity

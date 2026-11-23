@@ -7,6 +7,21 @@ const researchRelease = { version: '1.0', date: '2026-08-15' };
 const toolkitRelease = { version: '0.1', date: '2026-11-22' };
 const agentGuide = { version: '0.1', date: '2026-11-22' };
 
+// Adapt publication links in served copies without changing the authored or imported sources.
+export function rewritePublicationLinks(text, siteUrl, legacySiteUrls = []) {
+  const boundaries = new Set(['/', '?', '#', ' ', '\t', '\r', '\n', '"', "'", '<', '>', ')', ']', '`']);
+  let result = text;
+  for (const previous of legacySiteUrls) {
+    const legacy = previous.replace(/\/+$/, '');
+    if (!/^https?:\/\//.test(legacy)) throw new Error('Legacy publication URLs must be absolute HTTP(S) URLs.');
+    result = result.replaceAll(legacy, (match, offset, source) => {
+      const next = source[offset + match.length];
+      return next === undefined || boundaries.has(next) ? siteUrl : match;
+    });
+  }
+  return result;
+}
+
 function sourceCommit(root) {
   const status = spawnSync('git', ['status', '--porcelain', '--untracked-files=normal'], { cwd: root, encoding: 'utf8' });
   if (status.status !== 0 || status.stdout.trim()) return null;
@@ -45,13 +60,17 @@ export function buildAgentResources({ root, dist, pages, config, siteUrl }) {
   if (!guide) throw new Error('The agent guide must be registered at /for-agents/.');
   const commit = sourceCommit(root);
   const absolute = route => `${siteUrl}${route}`;
+  const guideSource = fs.readFileSync(path.join(root, guide.source));
+  const guideCopy = Buffer.from(rewritePublicationLinks(guideSource.toString('utf8'), siteUrl, config.legacySiteUrls));
   const licence = {
     identifier: 'CC-BY-SA-4.0',
     url: 'https://creativecommons.org/licenses/by-sa/4.0/',
     scope_url: absolute('/licensing/'),
   };
   const documents = pages.map(page => {
-    const data = fs.readFileSync(path.join(root, page.source));
+    const isGuide = page.path === guide.path;
+    const source = isGuide ? guideSource : fs.readFileSync(path.join(root, page.source));
+    const data = isGuide ? guideCopy : source;
     return {
       ...describeDocument(page),
       title: page.title,
@@ -62,6 +81,12 @@ export function buildAgentResources({ root, dist, pages, config, siteUrl }) {
       repository_url: `${config.repository}/blob/${commit || 'main'}/${page.source}`,
       bytes: data.length,
       sha256: crypto.createHash('sha256').update(data).digest('hex'),
+      ...(isGuide ? {
+        source_markdown_url: absolute(`/downloads/source/${page.source}`),
+        source_bytes: source.length,
+        source_sha256: crypto.createHash('sha256').update(source).digest('hex'),
+        content_transform: data.equals(source) ? null : 'canonical-publication-links',
+      } : {}),
       preserved_import: Boolean(page.preserve),
       licence: licence.identifier,
     };
@@ -89,13 +114,14 @@ export function buildAgentResources({ root, dist, pages, config, siteUrl }) {
       'The proposed 1.1 editorial amendment has not been applied to the research release.',
       'Blog articles are editorial commentary and practical interpretation, not components or amendments of the research release.',
       'Retrieve the original document before relying on a search excerpt. Cite sources actually consulted.',
+      'Original Markdown downloads preserve authored source bytes, including historical website links. The agent instructions copy updates publication links to the current site; its sha256 identifies the served copy and source_sha256 identifies the original source.',
       'Publication content is subject to the licensing policy, including third-party material and brand exceptions.',
     ],
     documents,
   };
   const agentDirectory = path.join(dist, 'agents');
   fs.mkdirSync(agentDirectory, { recursive: true });
-  fs.copyFileSync(path.join(root, guide.source), path.join(agentDirectory, 'instructions.md'));
+  fs.writeFileSync(path.join(agentDirectory, 'instructions.md'), guideCopy);
   fs.writeFileSync(path.join(agentDirectory, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
 
   const entry = doc => `- [${doc.title}](${doc.markdown_url}): ${doc.description}`;
