@@ -20,7 +20,7 @@ Connect investigation, work design, evaluation and retained learning around one 
 
 ## Use it with the Guide
 
-[Read the relevant Guide section](/guide/read/#quick-start). Use the diagram to support discussion, then record the actual evidence, authority, decision and unresolved conditions in your working records.
+[Read this section in the OIBOK Guide (draft 0.4)](/guide/read/#quick-start). Use the diagram to support discussion, then record the actual evidence, authority, decision and unresolved conditions in your working records.
 
 - [Practice review](/tools/practice-review/)
 - [Ai opportunity and work design](/tools/ai-opportunity-and-work-design/)
@@ -28,7 +28,7 @@ Connect investigation, work design, evaluation and retained learning around one 
 
 ## Sources and status
 
-This draft visual is based on OIBOK release 1.0, Guide 0.3 and Practical Toolkit 0.1. It explains the existing working synthesis and practice guidance. Independent practitioner review and field validation remain pending.
+This figure was published with the [archived OIBOK Guide (draft 0.3)](/downloads/guide/OIBOK-Guide-Draft-0.3.pdf). Its research and toolkit sources are OIBOK release 1.0 and Practical Toolkit 0.1. Independent practitioner review and field validation remain pending.
 
 - [OIBOK research Chapter 1: Signals and Attention](/knowledge/signals-and-attention/)
 - [OIBOK research Chapter 2: Organisational Context](/knowledge/organisational-context/)

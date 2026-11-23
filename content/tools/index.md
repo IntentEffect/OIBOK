@@ -6,7 +6,7 @@ Start with one recurring decision or workflow. Use the OIBOK toolkit to investig
 
 ## Choose a starting point
 
-**New draft resources for practitioner review:** [The illustrated OIBOK Guide 0.3](/guide/) connects the chapters and tools into a practical working method. [Explore the interactive model](/model/) for the six capabilities, their connections, evidence questions and chapter mapping. [Browse the diagrams](/diagrams/) for practical figures and A3 downloads. These drafts welcome feedback and remain open to review and field evaluation.
+The [OIBOK Guide (draft 0.4)](/guide/read/) connects the chapters and tools into a practical working method. [Explore the interactive model](/model/) for the six capabilities, their connections, evidence questions and chapter mapping. [Browse the diagrams](/diagrams/) for practical figures and A3 downloads. These drafts welcome feedback and remain open to review and field evaluation.
 
 **Working with an AI assistant?** [Use these tools with an AI assistant or agent](/for-agents/) for a starter prompt and a method for selecting sources, comparing explanations and drafting a practical working record.
 
@@ -38,7 +38,7 @@ For printing, choose A3, landscape and actual size or 100% scale. For digital co
 
 The Word documents include facilitation guidance, blank worksheets and worked examples. Copy the blank sections into a working document and add rows or space as needed.
 
-- [Practical Toolkit Guide, Word](/downloads/toolkit/00-OIBOK-Practical-Toolkit-Guide-v0.1.docx)
+- [Practical Toolkit Guide 0.1, Word](/downloads/toolkit/00-OIBOK-Practical-Toolkit-Guide-v0.1.docx)
 - [Practice Review, Word](/downloads/toolkit/01-OIBOK-Practice-Review-v0.1.docx)
 - [AI Opportunity and Work Design Canvas, Word](/downloads/toolkit/02-OIBOK-AI-Opportunity-and-Work-Design-Canvas-v0.1.docx)
 - [Outcome and Learning Record, Word](/downloads/toolkit/03-OIBOK-Outcome-and-Learning-Record-v0.1.docx)
@@ -50,7 +50,7 @@ Bring contrasting cases, current guidance and available outcome data. Distinguis
 
 The Harbour Services worked example is fictional. Its records, counts, targets and results are instructional examples, not evidence of organisational outcomes. These resources were drafted with AI assistance and checked for source consistency and layout; independent editorial review and field evaluation remain future steps.
 
-Read the [toolkit guide](/tools/guide/) for preparation, evidence conventions, chapter mapping and source notes.
+Read the [Practical Toolkit Guide 0.1](/tools/guide/) for preparation, evidence conventions, chapter mapping and source notes.
 
 ## Reuse and contribute
 

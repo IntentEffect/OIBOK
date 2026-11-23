@@ -20,7 +20,7 @@ A fictional Harbour Services arrangement for source-linked drafting, review, esc
 
 ## Use it with the Guide
 
-[Read the relevant Guide section](/guide/read/#5-design-how-people-and-ai-work-together). Use the diagram to support discussion, then record the actual evidence, authority, decision and unresolved conditions in your working records.
+[Read this section in the OIBOK Guide (draft 0.4)](/guide/read/#5-design-how-people-and-ai-work-together). Use the diagram to support discussion, then record the actual evidence, authority, decision and unresolved conditions in your working records.
 
 - [Ai opportunity and work design](/tools/ai-opportunity-and-work-design/)
 
@@ -28,7 +28,7 @@ The detailed case is [Harbour Services](/guide/read/#a1-harbour-services).
 
 ## Sources and status
 
-This draft visual is based on OIBOK release 1.0, Guide 0.3 and Practical Toolkit 0.1. It explains the existing working synthesis and practice guidance. Independent practitioner review and field validation remain pending.
+This figure was published with the [archived OIBOK Guide (draft 0.3)](/downloads/guide/OIBOK-Guide-Draft-0.3.pdf). Its research and toolkit sources are OIBOK release 1.0 and Practical Toolkit 0.1. Independent practitioner review and field validation remain pending.
 
 - [OIBOK research Chapter 2: Organisational Context](/knowledge/organisational-context/)
 - [OIBOK research Chapter 3: Knowledge and Expertise](/knowledge/knowledge-and-expertise/)

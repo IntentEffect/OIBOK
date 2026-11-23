@@ -20,7 +20,7 @@ Fictional Wattle Supply assumptions show why total work matters when comparing a
 
 ## Use it with the Guide
 
-[Read the relevant Guide section](/guide/read/#a2-wattle-supply-business-decision). Use the diagram to support discussion, then record the actual evidence, authority, decision and unresolved conditions in your working records.
+[Read this section in the OIBOK Guide (draft 0.4)](/guide/read/#a2-wattle-supply-business-decision). Use the diagram to support discussion, then record the actual evidence, authority, decision and unresolved conditions in your working records.
 
 - [Ai opportunity and work design](/tools/ai-opportunity-and-work-design/)
 - [Outcome and learning](/tools/outcome-and-learning/)
@@ -40,7 +40,7 @@ The AI setup already includes the non-AI changes. Potential released staff time 
 
 ## Sources and status
 
-This draft visual is based on OIBOK release 1.0, Guide 0.3 and Practical Toolkit 0.1. It explains the existing working synthesis and practice guidance. Independent practitioner review and field validation remain pending.
+This figure was published with the [archived OIBOK Guide (draft 0.3)](/downloads/guide/OIBOK-Guide-Draft-0.3.pdf). Its research and toolkit sources are OIBOK release 1.0 and Practical Toolkit 0.1. Independent practitioner review and field validation remain pending.
 
 - [OIBOK research Chapter 7: Outcomes Feedback and Evaluation](/knowledge/outcomes-feedback-and-evaluation/)
 

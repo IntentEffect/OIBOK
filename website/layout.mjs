@@ -1,8 +1,10 @@
+import { guideVersion } from './guide-edition.mjs';
+
 const escape = (value = '') => String(value).replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 
 const links = [
   ['knowledge', 'Knowledge', '/knowledge/'],
-  ['guide', 'Guide', '/guide/'],
+  ['guide', `Guide ${guideVersion}`, '/guide/'],
   ['tools', 'Tools', '/tools/'],
   ['research', 'Research', '/research/'],
   ['blog', 'Blog', '/blog/'],
@@ -32,7 +34,7 @@ export function renderHome({ basePath = '' } = {}) {
     </div>
   </div>
   <div class="hero-actions">
-    <a class="button" href="${url('/guide/')}">Start with the draft Guide</a>
+    <a class="button" href="${url('/guide/read/')}">Read the Guide (draft ${guideVersion})</a>
     <a class="text-link" href="${url('/model/')}">Explore the OIBOK model <small class="draft-label">Draft</small></a>
   </div>
   <p class="hero-access">Free to read and use. Publication content is shared under <a href="${url('/licensing/')}">CC BY-SA 4.0</a>. <a href="${url('/contribute/')}">Contributions welcome.</a></p>
@@ -42,7 +44,7 @@ export function renderHome({ basePath = '' } = {}) {
   <div class="section-heading"><p class="eyebrow">Start with the work</p><h2 id="practice-title">From understanding<br> to useful practice.</h2></div>
   <div class="entry-list">
     <a class="entry" href="${url('/knowledge/')}"><span class="entry-number">01</span><span><strong>Understand the organisation</strong><span>Read ten connected chapters on signals, knowledge, decisions, coordination, learning and adaptation.</span></span>${arrow}</a>
-    <a class="entry" href="${url('/guide/')}"><span class="entry-number">02</span><span><strong>Apply the OIBOK Guide <small class="draft-label">Draft</small></strong><span>Follow the draft Guide to examine real work, compare changes, evaluate outcomes and retain learning.</span></span>${arrow}</a>
+    <a class="entry" href="${url('/guide/read/')}"><span class="entry-number">02</span><span><strong>Apply the OIBOK Guide <small class="draft-label">Draft ${guideVersion}</small></strong><span>Follow the draft Guide to examine real work, compare changes, evaluate outcomes and retain learning.</span></span>${arrow}</a>
     <a class="entry" href="${url('/research/')}"><span class="entry-number">03</span><span><strong>Examine the evidence</strong><span>Explore the research approach, supporting sources, limitations and questions still to be answered.</span></span>${arrow}</a>
   </div>
 </section>
@@ -51,7 +53,7 @@ export function renderHome({ basePath = '' } = {}) {
   <div class="section-heading"><p class="eyebrow">Research and practical resources</p><h2 id="start-title">What you can use.</h2></div>
   <div class="entry-list">
     <a class="entry" href="${url('/knowledge/')}"><span class="entry-number">01</span><span><strong>The body of knowledge</strong><span>Ten research chapters explaining how signals, knowledge, decisions, collective action and learning connect, with supporting sources and limitations.</span></span>${arrow}</a>
-    <a class="entry" href="${url('/guide/')}"><span class="entry-number">02</span><span><strong>The OIBOK Guide <small class="draft-label">Draft</small></strong><span>A practical method for investigating a workplace problem, comparing options, designing work and evaluating a change.</span></span>${arrow}</a>
+    <a class="entry" href="${url('/guide/')}"><span class="entry-number">02</span><span><strong>The OIBOK Guide <small class="draft-label">Draft ${guideVersion}</small></strong><span>A practical method for investigating a workplace problem, comparing options, designing work and evaluating a change.</span></span>${arrow}</a>
     <a class="entry" href="${url('/tools/')}"><span class="entry-number">03</span><span><strong>Tools and canvases</strong><span>Working templates to map knowledge, clarify decisions and handoffs, design an AI contribution and record outcomes and learning.</span></span>${arrow}</a>
   </div>
 </section>

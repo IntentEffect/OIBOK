@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import { guideVersion } from './guide-edition.mjs';
 
 // The interactive model and its readable reference use this one content record.
 const content = JSON.parse(fs.readFileSync(new URL('./model-data.json', import.meta.url), 'utf8'));
@@ -63,7 +64,7 @@ export function renderModelReference() {
     }
     lines.push('');
   }
-  lines.push('## Use, review and contribute', '', 'Use the [draft OIBOK Guide](/guide/) to connect this model to an organisational problem, a bounded change and an evaluation plan. Suitable existing organisational records can be reused.', '', `Send feedback to [info@oibok.org](mailto:info@oibok.org) or [contribute through GitHub](https://github.com/IntentEffect/OIBOK/issues). Include “Model draft ${content.version}”, the area you reviewed, the issue and your suggested change. Keep confidential organisational information out of public contributions.`, '', 'Original publication content is licensed under [CC BY-SA 4.0](/licensing/). Contributors retain copyright and license their contributions under the publication terms.', '');
+  lines.push('## Use, review and contribute', '', `Use the [OIBOK Guide (draft ${guideVersion})](/guide/read/) to connect this model to an organisational problem, a bounded change and an evaluation plan. Suitable existing organisational records can be reused.`, '', `Send feedback to [info@oibok.org](mailto:info@oibok.org) or [contribute through GitHub](https://github.com/IntentEffect/OIBOK/issues). Include “Model draft ${content.version}”, the area you reviewed, the issue and your suggested change. Keep confidential organisational information out of public contributions.`, '', 'Original publication content is licensed under [CC BY-SA 4.0](/licensing/). Contributors retain copyright and license their contributions under the publication terms.', '');
   return lines.join('\n');
 }
 

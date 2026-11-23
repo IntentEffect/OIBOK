@@ -2,7 +2,7 @@
   {
     "source": "content/guide/index.md",
     "path": "/guide/",
-    "title": "The OIBOK Guide",
+    "title": "OIBOK Guide (draft 0.4)",
     "description": "Draft 0.4 for practitioner review. Diagnose failures, follow a change into everyday use and decide what teams should share.",
     "section": "Guide",
     "kind": "guide-index",
@@ -13,7 +13,7 @@
   {
     "source": "content/guide/guide-draft-0.4.md",
     "path": "/guide/read/",
-    "title": "Read the OIBOK Guide",
+    "title": "Read the OIBOK Guide (draft 0.4)",
     "description": "The complete draft Guide, from investigating a worthwhile problem to designing work, evaluating outcomes and retaining learning.",
     "section": "Guide",
     "kind": "practitioner-guide",
@@ -24,8 +24,8 @@
   {
     "source": "content/guide/working-companion-draft-0.4.md",
     "path": "/guide/companion/",
-    "title": "OIBOK Working Companion",
-    "description": "Draft preparation, handoff, evaluation, retention and feedback guidance to use alongside the OIBOK Guide.",
+    "title": "OIBOK Working Companion (draft 0.4)",
+    "description": "Draft preparation, handoff, evaluation, retention and feedback guidance to use alongside the OIBOK Guide (draft 0.4).",
     "section": "Guide",
     "kind": "working-companion",
     "version": "Draft 0.4 \u00b7 Diagnostic and practice edition \u00b7 For practitioner review \u00b7 24 November 2026",

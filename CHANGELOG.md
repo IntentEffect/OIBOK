@@ -2,19 +2,19 @@
 
 ## Guide and Working Companion 0.4 | 24 November 2026
 
-Published the [diagnostic and practice edition](/guide/) with a practical chapter on the seven provisional failure classes, a four-stage fictional example at Silvergum Field Services and a worked decision about cross-team adoption. The [Companion](/guide/companion/) includes editable diagnostic, ownership-transfer and cross-team records. Web, Word, PDF and Markdown editions are available. Earlier downloads retain their original addresses. Research release 1.0, Toolkit 0.1 and Visual set 0.1 remain the source editions. External practitioner review and field validation are pending.
+Published the [OIBOK Guide (draft 0.4)](/downloads/guide/OIBOK-Guide-Draft-0.4.pdf) with a practical chapter on the seven provisional failure classes, a four-stage fictional example at Silvergum Field Services and a worked decision about cross-team adoption. The [OIBOK Working Companion (draft 0.4)](/downloads/guide/OIBOK-Working-Companion-Draft-0.4.pdf) includes editable diagnostic, ownership-transfer and cross-team records. Web, Word, PDF and Markdown editions are available. Earlier downloads retain their original addresses. Research release 1.0, Toolkit 0.1 and Visual set 0.1 remain the source editions. External practitioner review and field validation are pending.
 
 ## Illustrated Guide and practical diagrams | 24 November 2026
 
 Published [Visual Set 0.1](/diagrams/) with nine draft figures: the model overview, application route, accepted handoff, people and AI workflow, evaluation comparisons, lasting capability, a shared vocabulary, connected working records and the fictional Wattle Supply resource comparison. Each figure has a readable explanation, source mapping, editable SVG and A3 PDF. A combined nine-page PDF is available.
 
-Published the illustrated [Guide 0.3](/guide/) and [Working Companion 0.3](/guide/companion/), with matching online, PDF, Word and Markdown editions. Guide 0.3 embeds all nine figures; the Companion includes three relevant figures. Previous 0.2 downloads remain available at their existing addresses.
+Published the illustrated [OIBOK Guide (draft 0.3)](/downloads/guide/OIBOK-Guide-Draft-0.3.pdf) and [Working Companion (draft 0.3)](/downloads/guide/OIBOK-Working-Companion-Draft-0.3.pdf), with matching online, PDF, Word and Markdown editions. Guide 0.3 embeds all nine figures; the Companion includes three relevant figures. Previous 0.2 downloads remain available at their existing addresses.
 
 The new visuals explain existing draft practice guidance and retain fictional-example and pending-evidence boundaries. The research baseline remains OIBOK 1.0 and the canvases remain Practical Toolkit 0.1. Visual Set 0.1 and the illustrated Guide remain drafts for practitioner review, with independent field validation pending. Publication content remains CC BY-SA 4.0.
 
 ## Previous homepage for comparison | 23 November 2026
 
-Republished the homepage from immediately before the clarity update at [the previous homepage](/homepage-previous/). Its wording, layout and stylesheet are preserved from commit `2b1a70c632249a16f16dde43a1f29bbe974df616`. The current homepage remains at the main website address. The comparison page is excluded from search indexing and the sitemap.
+Republished the homepage from immediately before the clarity update at [the previous homepage](/homepage-previous/). The comparison uses the layout and stylesheet from commit `2b1a70c632249a16f16dde43a1f29bbe974df616`. Its Guide links identify the current draft. The comparison page is excluded from search indexing and the sitemap.
 
 ## Homepage clarity | 23 November 2026
 
@@ -24,7 +24,7 @@ Added concrete problem examples, clearer descriptions of the available resources
 
 ## Draft Guide and interactive model | 23 November 2026
 
-Published [the OIBOK Guide, draft 0.2](/guide/), with the complete online text, a Working Companion, and PDF, Word and Markdown downloads. The documents carry explicit draft notices on their covers and running footers. The Guide connects practical inquiry, work design, evaluation and retained learning, with three fictional examples and mappings to the existing chapters and tools.
+Published the [OIBOK Guide (draft 0.2)](/downloads/guide/OIBOK-Guide-Draft-0.2.pdf), with the complete online text, a [Working Companion (draft 0.2)](/downloads/guide/OIBOK-Working-Companion-Draft-0.2.pdf), and PDF, Word and Markdown downloads. The documents carry explicit draft notices on their covers and running footers. The Guide connects practical inquiry, work design, evaluation and retained learning, with three fictional examples and mappings to the existing chapters and tools.
 
 Published [the interactive OIBOK model, draft 0.2](/model/), with selectable detail for the six capabilities, connective mechanisms, memory, governance, people and AI, and connection quality. Its [complete readable reference](/model/reference/) makes the same content available without JavaScript.
 

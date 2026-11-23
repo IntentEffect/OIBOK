@@ -44,6 +44,7 @@ Return: scope; sources and versions; chapter mapping; findings and alternatives;
 | **OIBOK 1.0** | The research baseline released on 15 August 2026. It is a literature-grounded working synthesis. |
 | **Chapter components 0.3** | The ten source chapter files promoted into OIBOK 1.0. Their component version is not a separate research edition. |
 | **Practical Toolkit 0.1** | Practice resources dated 22 November 2026, intended for piloting in organisational work. |
+| [OIBOK Guide (draft 0.4)](https://oibok.org/guide/read/) and [OIBOK Working Companion (draft 0.4)](https://oibok.org/guide/companion/) | Practice guidance and worksheets for practitioner review. |
 | **Agent guide 0.1** | Guidance for using the publication and toolkit with an agent. It does not amend the research baseline. |
 | **Proposed OIBOK 1.1 amendments** | Proposals under consideration, not a released research edition. |
 
