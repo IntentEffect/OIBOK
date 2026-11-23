@@ -13,6 +13,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
 const json = (name) => JSON.parse(fs.readFileSync(path.join(root, name), 'utf8'));
 const config = json('website/config.json');
+const diagrams = json('website/diagrams.json');
 const basePath = (process.env.BASE_PATH ?? config.basePath).replace(/\/+$/, '');
 if (basePath && !/^\/[A-Za-z0-9_/-]+$/.test(basePath)) throw new Error('BASE_PATH must be empty or a URL path beginning with /.');
 const siteUrl = (process.env.SITE_URL || `${config.origin}${basePath}`).replace(/\/+$/, '');
@@ -77,6 +78,7 @@ function renderMarkdown(source) {
   const result = spawnSync('pandoc', ['--from=gfm+footnotes-raw_html', '--to=html5', '--wrap=none', '--email-obfuscation=none'], {input:body,encoding:'utf8',maxBuffer:20*1024*1024});
   if (result.error || result.status !== 0) throw new Error(result.stderr || String(result.error));
   return result.stdout
+    .replace(/<p>(<img src="([^"]*\/assets\/diagrams\/[^\"]+\.svg)"[^>]*>)<\/p>/g, (_, img, src) => `<figure class="guide-figure"><a href="${src}" aria-label="Open full-size diagram">${img}</a><figcaption>Select the diagram to open the full-size SVG. A text explanation and PDF download follow.</figcaption></figure>`)
     .replace(/<table\b([^>]*)>/g, '<div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable data table"><table$1>')
     .replace(/<\/table>/g, '</table></div>')
     .replace(/\b(href|src)="\/(?!\/)([^"]*)"/g, (_, attr, value) => `${attr}="${basePath}/${value}"`);
@@ -102,6 +104,10 @@ function indexPage(page, html) {
 for (const page of pages) {
   const source = fs.readFileSync(path.join(root, page.source), 'utf8');
   let content = renderMarkdown(source);
+  if (page.kind === 'diagram-index') {
+    const gallery = `<div class="diagram-gallery">${diagrams.figures.map(d => `<a class="diagram-card" href="${basePath}/diagrams/${escape(d.slug)}/"><img src="${basePath}/assets/diagrams/${escape(d.slug)}.svg" alt="${escape(d.title)}" width="1200" height="848" loading="lazy"><span class="diagram-card-kind">${escape(d.kind)}</span><strong>${escape(d.title)}</strong><span class="diagram-card-summary">${escape(d.summary)}</span></a>`).join('')}</div>`;
+    content = content.replace(/(<h2 id="browse-the-collection">[\s\S]*?<\/h2>)\s*<ul>[\s\S]*?<\/ul>/, (_, heading) => heading + gallery);
+  }
   if (page.path === '/blog/') content += renderBlogIndex({posts:blogPosts,basePath});
   indexPage(page, content);
   const toc = [...content.matchAll(/<h([23])\b[^>]*id="([^"]+)"[^>]*>([\s\S]*?)<\/h\1>/g)].map(m=>({level:Number(m[1]),id:m[2],text:plain(m[3])}));

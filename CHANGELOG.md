@@ -1,5 +1,13 @@
 # Versions and corrections
 
+## Illustrated Guide and practical diagrams | 24 November 2026
+
+Published [Visual Set 0.1](/diagrams/) with nine draft figures: the model overview, application route, accepted handoff, people and AI workflow, evaluation comparisons, lasting capability, a shared vocabulary, connected working records and the fictional Wattle Supply resource comparison. Each figure has a readable explanation, source mapping, editable SVG and A3 PDF. A combined nine-page PDF is available.
+
+Published the illustrated [Guide 0.3](/guide/) and [Working Companion 0.3](/guide/companion/), with matching online, PDF, Word and Markdown editions. Guide 0.3 embeds all nine figures; the Companion includes three relevant figures. Previous 0.2 downloads remain available at their existing addresses.
+
+The new visuals explain existing draft practice guidance and retain fictional-example and pending-evidence boundaries. The research baseline remains OIBOK 1.0 and the canvases remain Practical Toolkit 0.1. Visual Set 0.1 and the illustrated Guide remain drafts for practitioner review, with independent field validation pending. Publication content remains CC BY-SA 4.0.
+
 ## Previous homepage for comparison | 23 November 2026
 
 Republished the homepage from immediately before the clarity update at [the previous homepage](/homepage-previous/). Its wording, layout and stylesheet are preserved from commit `2b1a70c632249a16f16dde43a1f29bbe974df616`. The current homepage remains at the main website address. The comparison page is excluded from search indexing and the sitemap.

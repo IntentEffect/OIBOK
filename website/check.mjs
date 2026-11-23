@@ -124,7 +124,8 @@ if(!discovery.startsWith('# Organisation Intelligence Body of Knowledge (OIBOK)\
 
 // Draft practice resources must retain their status in every published representation.
 const draftPages=expectedPages.filter(page=>page.status==='draft-for-practitioner-review');
-const expectedDraftRoutes=['/guide/','/guide/read/','/guide/companion/','/model/','/model/reference/'];
+const diagramFigures=JSON.parse(fs.readFileSync(path.join(root,'website/diagrams.json'),'utf8')).figures;
+const expectedDraftRoutes=['/guide/','/guide/read/','/guide/companion/','/model/','/model/reference/','/diagrams/',...diagramFigures.map(d=>`/diagrams/${d.slug}/`)];
 if(draftPages.length!==expectedDraftRoutes.length || expectedDraftRoutes.some(route=>!draftPages.some(page=>page.path===route)))errors.push('Draft publication: missing or unexpected draft route');
 for(const page of draftPages){
  const file=path.join(dist,page.path,'index.html');
@@ -132,7 +133,7 @@ for(const page of draftPages){
  const doc=catalogue.documents.find(item=>item.repository_path===page.source);
  if(!html.includes('aria-label="Draft publication status"') || !html.includes('DRAFT · For practitioner review'))errors.push(`Draft publication: missing visible status for ${page.path}`);
  if(!/draft/i.test(page.version) || !/\bdraft\b/i.test(fs.readFileSync(path.join(root,page.source),'utf8')))errors.push(`Draft publication: missing source/version status for ${page.path}`);
- if(!doc || doc.status!=='draft-for-practitioner-review' || doc.kind!==page.kind || doc.component_version!=='0.2' || doc.publication_edition!==null || doc.toolkit_version!==null || doc.based_on_research_edition!=='1.0')errors.push(`Draft publication: incorrect agent metadata for ${page.path}`);
+ if(!doc || doc.status!=='draft-for-practitioner-review' || doc.kind!==page.kind || doc.component_version!==page.component_version || doc.publication_edition!==null || doc.toolkit_version!==null || doc.based_on_research_edition!=='1.0')errors.push(`Draft publication: incorrect agent metadata for ${page.path}`);
  if(!search.some(entry=>entry.url===base+page.path || entry.url.startsWith(base+page.path+'#')))errors.push(`Draft publication: missing search entry for ${page.path}`);
 }
 if(!discovery.includes('## Draft guide and visual model\n') || !discovery.includes('DRAFT resources for practitioner review'))errors.push('Draft publication: missing agent discovery status');
@@ -141,7 +142,7 @@ if(modelMetadata.version!=='0.2' || modelMetadata.researchEdition!=='1.0' || mod
 const modelPage=fs.readFileSync(path.join(dist,'model/index.html'),'utf8');
 if(!/src="[^\"]*model\.[a-f0-9]+\.js"/.test(modelPage) || !/href="[^\"]*model\.[a-f0-9]+\.css"/.test(modelPage))errors.push('Interactive model: missing versioned assets');
 if(modelPage.includes('class="page-aside"') || (modelPage.match(/data-key="/g)||[]).length!==13)errors.push('Interactive model: unusable navigation or missing selectable area');
-for(const name of ['OIBOK-Guide-Draft-0.2','OIBOK-Working-Companion-Draft-0.2']){
+for(const name of ['OIBOK-Guide-Draft-0.2','OIBOK-Working-Companion-Draft-0.2','OIBOK-Guide-Draft-0.3','OIBOK-Working-Companion-Draft-0.3']){
  for(const extension of ['pdf','docx','md']){
   const file=path.join(dist,'downloads/guide',`${name}.${extension}`);
   if(!fs.existsSync(file))errors.push(`Draft download: missing ${name}.${extension}`);
@@ -149,6 +150,19 @@ for(const name of ['OIBOK-Guide-Draft-0.2','OIBOK-Working-Companion-Draft-0.2'])
   else if(extension==='md' && !fs.readFileSync(file,'utf8').includes('DRAFT · For practitioner review'))errors.push(`Draft download: missing explicit status ${name}`);
  }
 }
+
+// Published figures must remain available as vectors, print files and readable sources.
+if(diagramFigures.length!==9)errors.push('Diagram collection: expected nine figures');
+for(const figure of diagramFigures){
+ const svg=path.join(dist,'assets/diagrams',figure.slug+'.svg');
+ const pdf=path.join(dist,'downloads/diagrams',figure.slug+'.pdf');
+ if(!fs.existsSync(svg) || !fs.readFileSync(svg,'utf8').includes('FOR PRACTITIONER REVIEW'))errors.push(`Diagram: missing vector or draft status for ${figure.slug}`);
+ if(!fs.existsSync(pdf) || fs.readFileSync(pdf).subarray(0,5).toString()!=='%PDF-')errors.push(`Diagram: missing PDF for ${figure.slug}`);
+ const source=fs.readFileSync(path.join(root,'content/diagrams',figure.slug+'.md'),'utf8');
+ if(!source.includes('## Read the diagram') || !source.includes('CC BY-SA 4.0'))errors.push(`Diagram: missing readable explanation or licence for ${figure.slug}`);
+}
+const illustratedGuide=fs.readFileSync(path.join(dist,'guide/read/index.html'),'utf8');
+if((illustratedGuide.match(/<figure class="guide-figure">/g)||[]).length!==9)errors.push('Illustrated Guide: expected nine embedded figures');
 
 // Blog output must retain editorial status and agree with the one post catalogue.
 const posts=prepareBlogPosts(JSON.parse(fs.readFileSync(path.join(root,'website/blog-posts.json'),'utf8')));

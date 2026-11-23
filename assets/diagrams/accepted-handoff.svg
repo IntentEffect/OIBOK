@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 848" width="1200" height="848" role="img" aria-labelledby="title desc"><title id="title">From handoff to accepted commitment</title><desc id="desc">A fictional Linden Studio example of acceptance, clarification, ownership and verified effects. Source: OIBOK 1.0 · Guide 0.3 · Research chapters 4, 5, 6 · oibok.org/diagrams/accepted-handoff/ Draft for practitioner review. CC BY-SA 4.0.</desc>
+<rect x="0" y="0" width="1200" height="848" rx="0" fill="#f6f5f0" stroke="none" stroke-width="1"/>
+<text x="44.00" y="48.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="22" font-weight="700">OIBOK</text>
+<text x="909.32" y="44.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="700">DRAFT 0.1  /  FOR PRACTITIONER REVIEW</text>
+<text x="44.00" y="105.00" fill="#232b2a" font-family="Liberation Serif, Georgia, serif" font-size="36" font-weight="400">From handoff to accepted commitment</text>
+<text x="44.00" y="131.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">A fictional Linden Studio example of acceptance, clarification, ownership and verified effects.</text>
+<polyline points="44,158 1156,158" fill="none" stroke="#c9cec5" stroke-width="1"/>
+<polyline points="44,764 1156,764" fill="none" stroke="#c9cec5" stroke-width="1"/>
+<text x="44.00" y="791.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="400">Fictional worked example · Visual set 0.1 · 23 November 2026</text>
+<text x="963.26" y="791.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="400">oibok.org/diagrams/ · CC BY-SA 4.0</text>
+<text x="44.00" y="812.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400">Source: OIBOK 1.0 · Guide 0.3 · Research chapters 4, 5, 6 · oibok.org/diagrams/accepted-handoff/</text>
+<text x="64.00" y="191.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">Linden Studio: a proposed arrangement for an agreed brief and an accepted delivery plan.</text>
+<polyline points="376,281 444,281" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="444,281 436.0,277.4 436.0,284.6" fill="#a3412c"/>
+<text x="388.00" y="269.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">Submit</text>
+<polyline points="756,281 824,281" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="824,281 816.0,277.4 816.0,284.6" fill="#a3412c"/>
+<text x="769.00" y="269.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">Accept</text>
+<polyline points="980,355 980,435" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="980,435 983.6,427.0 976.4,427.0" fill="#a3412c"/>
+<text x="998.00" y="396.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">Within authority</text>
+<polyline points="561,355 561,392 220,392 220,435" fill="none" stroke="#406e7c" stroke-width="1.7"/>
+<polygon points="220,435 223.6,427.0 216.4,427.0" fill="#406e7c"/>
+<text x="268.00" y="381.00" fill="#406e7c" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">Missing or incomplete input</text>
+<polyline points="680,355 680,435" fill="none" stroke="#406e7c" stroke-width="1.7"/>
+<polygon points="680,435 683.6,427.0 676.4,427.0" fill="#406e7c"/>
+<text x="692.00" y="397.00" fill="#406e7c" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">Exception</text>
+<polyline points="64,506 44,506 44,281 64,281" fill="none" stroke="#406e7c" stroke-width="1.7" stroke-dasharray="5 4"/>
+<polygon points="64,281 56.0,277.4 56.0,284.6" fill="#406e7c"/>
+<rect x="64" y="207" width="312" height="148" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="80.00" y="243.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="20" font-weight="700">Prepare the handoff</text>
+<text x="80.00" y="271.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Client lead records scope,</text>
+<text x="80.00" y="295.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">dependencies and proposed date.</text>
+<text x="80.00" y="319.60" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Keep provisional status explicit.</text>
+<rect x="444" y="207" width="312" height="148" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="460.00" y="243.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="20" font-weight="700">Review for acceptance</text>
+<text x="460.00" y="271.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Delivery lead checks scope,</text>
+<text x="460.00" y="295.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">dependencies, capacity and</text>
+<text x="460.00" y="319.60" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">applicable decision authority.</text>
+<rect x="824" y="207" width="312" height="148" rx="0" fill="#e7ece3" stroke="#c9cec5" stroke-width="1"/>
+<text x="840.00" y="243.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="20" font-weight="700">Accept and confirm</text>
+<text x="840.00" y="271.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Delivery lead accepts the work.</text>
+<text x="840.00" y="295.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Confirm the date within authority.</text>
+<text x="840.00" y="319.60" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Record the commitment.</text>
+<rect x="64" y="435" width="312" height="148" rx="0" fill="#e6eef0" stroke="#c9cec5" stroke-width="1"/>
+<text x="80.00" y="471.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="20" font-weight="700">Clarify and resubmit</text>
+<text x="80.00" y="499.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Client lead owns returned work.</text>
+<text x="80.00" y="523.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Record the reason, next action</text>
+<text x="80.00" y="547.60" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">and what is still missing.</text>
+<rect x="444" y="435" width="312" height="148" rx="0" fill="#e6eef0" stroke="#c9cec5" stroke-width="1"/>
+<text x="460.00" y="471.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="20" font-weight="700">Resolve the exception</text>
+<text x="460.00" y="499.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Owner resolves missing approval</text>
+<text x="460.00" y="523.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">or disputed commitment.</text>
+<text x="460.00" y="547.60" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Return the resolution to the record.</text>
+<rect x="824" y="435" width="312" height="148" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="840.00" y="471.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="20" font-weight="700">Act and verify the effect</text>
+<text x="840.00" y="499.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Identify the person performing</text>
+<text x="840.00" y="523.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">the work and the evidence needed</text>
+<text x="840.00" y="547.60" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">to verify what happened.</text>
+<polyline points="64,622 1136,622" fill="none" stroke="#c9cec5" stroke-width="1.5"/>
+<text x="64.00" y="654.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="700">WHILE WAITING</text>
+<text x="64.00" y="683.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">In this example, the sender retains</text>
+<text x="64.00" y="705.10" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">responsibility until the receiving owner</text>
+<text x="64.00" y="727.20" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">accepts.</text>
+<text x="444.00" y="654.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="700">STATE STAYS VISIBLE</text>
+<text x="444.00" y="683.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Requested, performed and verified are</text>
+<text x="444.00" y="705.10" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">distinct. An unresolved exception keeps</text>
+<text x="444.00" y="727.20" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">an owner.</text>
+<text x="824.00" y="654.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="700">UNCERTAIN RESULT</text>
+<text x="824.00" y="683.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Check the actual state before retrying.</text>
+<text x="824.00" y="705.10" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Agree recovery authority and record the</text>
+<text x="824.00" y="727.20" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">correction.</text>
+</svg>

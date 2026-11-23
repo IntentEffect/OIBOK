@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 848" width="1200" height="848" role="img" aria-labelledby="title desc"><title id="title">One inquiry across the OIBOK tools</title><desc id="desc">A fictional Harbour Services case showing what carries forward between working records. Source: OIBOK 1.0 · Guide 0.3 · Research chapters 4, 7, 8, 10 · oibok.org/diagrams/connected-records/ Draft for practitioner review. CC BY-SA 4.0.</desc>
+<rect x="0" y="0" width="1200" height="848" rx="0" fill="#f6f5f0" stroke="none" stroke-width="1"/>
+<text x="44.00" y="48.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="22" font-weight="700">OIBOK</text>
+<text x="909.32" y="44.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="700">DRAFT 0.1  /  FOR PRACTITIONER REVIEW</text>
+<text x="44.00" y="105.00" fill="#232b2a" font-family="Liberation Serif, Georgia, serif" font-size="36" font-weight="400">One inquiry across the OIBOK tools</text>
+<text x="44.00" y="131.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">A fictional Harbour Services case showing what carries forward between working records.</text>
+<polyline points="44,158 1156,158" fill="none" stroke="#c9cec5" stroke-width="1"/>
+<polyline points="44,764 1156,764" fill="none" stroke="#c9cec5" stroke-width="1"/>
+<text x="44.00" y="791.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="400">Fictional worked example · Visual set 0.1 · 23 November 2026</text>
+<text x="963.26" y="791.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="400">oibok.org/diagrams/ · CC BY-SA 4.0</text>
+<text x="44.00" y="812.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400">Source: OIBOK 1.0 · Guide 0.3 · Research chapters 4, 7, 8, 10 · oibok.org/diagrams/connected-records/</text>
+<rect x="44" y="181" width="1112" height="53" rx="0" fill="#e7ece3" stroke="#c9cec5" stroke-width="1"/>
+<text x="62.00" y="214.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="21" font-weight="700">One inquiry: HS-01</text>
+<text x="869.67" y="215.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Fictional Harbour Services example</text>
+<rect x="44" y="274" width="338" height="190" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="62.00" y="315.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="23" font-weight="700">Practice Review</text>
+<text x="62.00" y="342.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">PR-HS-01</text>
+<text x="62.00" y="364.95" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Problem, scope, case evidence,</text>
+<text x="62.00" y="387.90" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">alternative explanations and gaps.</text>
+<text x="62.00" y="410.85" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Context and Knowledge Map +</text>
+<text x="62.00" y="433.80" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Decision and Coordination Canvas.</text>
+<rect x="431" y="274" width="338" height="190" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="449.00" y="315.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="23" font-weight="700">AI work design</text>
+<text x="449.00" y="342.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">AI-HS-01</text>
+<text x="449.00" y="364.95" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Current policy + clearer authority +</text>
+<text x="449.00" y="387.90" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">accepted handoffs + draft assistance.</text>
+<text x="449.00" y="410.85" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Permissions, review, fallback and</text>
+<text x="449.00" y="433.80" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">conditions for the pilot.</text>
+<rect x="818" y="274" width="338" height="190" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="836.00" y="315.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="23" font-weight="700">Outcome and learning</text>
+<text x="836.00" y="342.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">OL-HS-01</text>
+<text x="836.00" y="364.95" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Original plan, eligible cases,</text>
+<text x="836.00" y="387.90" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">comparison and measures.</text>
+<text x="836.00" y="410.85" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Observed results, limits, next decision</text>
+<text x="836.00" y="433.80" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">and follow-up actions.</text>
+<polyline points="382,364 431,364" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="431,364 423.0,360.4 423.0,367.6" fill="#a3412c"/>
+<polyline points="769,364 818,364" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="818,364 810.0,360.4 810.0,367.6" fill="#a3412c"/>
+<text x="44.00" y="503.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="700">Carry forward</text>
+<text x="44.00" y="532.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Problem, sources, uncertainties, knowledge</text>
+<text x="44.00" y="554.10" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">and authority gaps.</text>
+<text x="431.00" y="503.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="700">Carry forward</text>
+<text x="431.00" y="532.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Complete change, exclusions, expected</text>
+<text x="431.00" y="554.10" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">benefit, measures and stop rules.</text>
+<text x="818.00" y="503.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="700">Carry forward</text>
+<text x="818.00" y="532.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Conditions, owners, completion evidence</text>
+<text x="818.00" y="554.10" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">and the later review.</text>
+<rect x="44" y="595" width="1112" height="100" rx="0" fill="#e6eef0" stroke="#c9cec5" stroke-width="1"/>
+<text x="63.00" y="628.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="20" font-weight="700">Keep status and evidence visible</text>
+<text x="63.00" y="660.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Adapt and extend only after corrections, retesting and confirmed named reviewers. Actions are not recorded complete. The week-eight</text>
+<text x="63.00" y="684.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">persistence check is pending.</text>
+<text x="44.00" y="732.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">Records can develop together. Reuse suitable existing records. Non-AI work can bypass the AI canvas.</text>
+<text x="44.00" y="754.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="400">The receiving owner checks usable evidence, permitted next action and unresolved conditions.</text>
+</svg>

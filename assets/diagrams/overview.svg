@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 848" width="1200" height="848" role="img" aria-labelledby="title desc"><title id="title">The OIBOK working model</title><desc id="desc">Three recurring transformations, six capabilities and the connections that support organisational response. Source: OIBOK 1.0 · Guide 0.3 · Research chapters 10 · oibok.org/diagrams/overview/ Draft for practitioner review. CC BY-SA 4.0.</desc>
+<rect x="0" y="0" width="1200" height="848" rx="0" fill="#f6f5f0" stroke="none" stroke-width="1"/>
+<text x="44.00" y="48.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="22" font-weight="700">OIBOK</text>
+<text x="909.32" y="44.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="700">DRAFT 0.1  /  FOR PRACTITIONER REVIEW</text>
+<text x="44.00" y="105.00" fill="#232b2a" font-family="Liberation Serif, Georgia, serif" font-size="36" font-weight="400">The OIBOK working model</text>
+<text x="44.00" y="131.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">Three recurring transformations, six capabilities and the connections that support organisational response.</text>
+<polyline points="44,158 1156,158" fill="none" stroke="#c9cec5" stroke-width="1"/>
+<polyline points="44,764 1156,764" fill="none" stroke="#c9cec5" stroke-width="1"/>
+<text x="44.00" y="791.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="400">Conceptual overview · Visual set 0.1 · 23 November 2026</text>
+<text x="963.26" y="791.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="400">oibok.org/diagrams/ · CC BY-SA 4.0</text>
+<text x="44.00" y="812.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400">Source: OIBOK 1.0 · Guide 0.3 · Research chapters 10 · oibok.org/diagrams/overview/</text>
+<rect x="44" y="181" width="1112" height="50" rx="0" fill="#e7ece3" stroke="#c9cec5" stroke-width="1"/>
+<text x="62.00" y="211.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="20" font-weight="700">Purpose, governance and responsible exercise</text>
+<text x="827.63" y="212.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">Authority · rights · accountability · challenge</text>
+<text x="44.00" y="261.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Contextualise connects Sense and Know, and is revisited throughout the work.</text>
+<rect x="44" y="282" width="344" height="287" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="62.00" y="321.00" fill="#232b2a" font-family="Liberation Serif, Georgia, serif" font-size="27" font-weight="400">Orient</text>
+<text x="62.00" y="346.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">Understand the situation</text>
+<rect x="60" y="366" width="312" height="82" rx="0" fill="#f6f5f0" stroke="#c9cec5" stroke-width="1"/>
+<text x="73.00" y="400.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="21" font-weight="700">Sense</text>
+<text x="73.00" y="426.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">Notice, qualify and route signals.</text>
+<rect x="60" y="463" width="312" height="82" rx="0" fill="#f6f5f0" stroke="#c9cec5" stroke-width="1"/>
+<text x="73.00" y="497.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="21" font-weight="700">Know</text>
+<text x="73.00" y="523.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">Find, check and apply knowledge.</text>
+<rect x="428" y="282" width="344" height="287" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="446.00" y="321.00" fill="#232b2a" font-family="Liberation Serif, Georgia, serif" font-size="27" font-weight="400">Coordinate</text>
+<text x="446.00" y="346.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">Commit and act together</text>
+<rect x="444" y="366" width="312" height="82" rx="0" fill="#f6f5f0" stroke="#c9cec5" stroke-width="1"/>
+<text x="457.00" y="400.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="21" font-weight="700">Choose</text>
+<text x="457.00" y="426.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">Make an authorised commitment.</text>
+<rect x="444" y="463" width="312" height="82" rx="0" fill="#f6f5f0" stroke="#c9cec5" stroke-width="1"/>
+<text x="457.00" y="497.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="21" font-weight="700">Mobilise</text>
+<text x="457.00" y="523.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">Coordinate, execute and recover.</text>
+<rect x="812" y="282" width="344" height="287" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="830.00" y="321.00" fill="#232b2a" font-family="Liberation Serif, Georgia, serif" font-size="27" font-weight="400">Improve</text>
+<text x="830.00" y="346.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">Strengthen future response</text>
+<rect x="828" y="366" width="312" height="82" rx="0" fill="#f6f5f0" stroke="#c9cec5" stroke-width="1"/>
+<text x="841.00" y="400.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="21" font-weight="700">Learn</text>
+<text x="841.00" y="426.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">Use feedback to revise understanding.</text>
+<rect x="828" y="463" width="312" height="82" rx="0" fill="#f6f5f0" stroke="#c9cec5" stroke-width="1"/>
+<text x="841.00" y="497.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="21" font-weight="700">Adapt</text>
+<text x="841.00" y="523.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">Develop or reconfigure capability.</text>
+<polyline points="1144,282 1144,271 216,271 216,282" fill="none" stroke="#a3412c" stroke-width="1.7" stroke-dasharray="5 4"/>
+<polygon points="216,282 219.6,274.0 212.4,274.0" fill="#a3412c"/>
+<polyline points="600,271 600,282" fill="none" stroke="#a3412c" stroke-width="1.7" stroke-dasharray="5 4"/>
+<polygon points="600,282 603.6,274.0 596.4,274.0" fill="#a3412c"/>
+<text x="1036.84" y="258.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="400">Feedback returns</text>
+<polyline points="389,424 425,424" fill="none" stroke="#5b6461" stroke-width="1.7"/>
+<polygon points="425,424 417.0,420.4 417.0,427.6" fill="#5b6461"/>
+<polyline points="773,424 809,424" fill="none" stroke="#5b6461" stroke-width="1.7"/>
+<polygon points="809,424 801.0,420.4 801.0,427.6" fill="#5b6461"/>
+<text x="44.00" y="601.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="700">Organisational orientation</text>
+<text x="44.00" y="625.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">Integrated understanding of situation, uncertainty</text>
+<text x="44.00" y="644.50" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">and conditions for response.</text>
+<text x="428.00" y="601.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="700">Outcomes and feedback</text>
+<text x="428.00" y="625.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">Output, consequence, observation and evaluation</text>
+<text x="428.00" y="644.50" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">create feedback for learning.</text>
+<text x="812.00" y="601.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="700">Feedback returns to the work</text>
+<text x="812.00" y="625.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">Revisit both understanding and coordinated</text>
+<text x="812.00" y="644.50" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">response as evidence changes.</text>
+<rect x="44" y="670" width="1112" height="59" rx="0" fill="#e7ece3" stroke="#c9cec5" stroke-width="1"/>
+<text x="62.00" y="701.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">Organisational memory</text>
+<text x="339.00" y="701.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Continuity across people, routines, decisions, relationships and systems.</text>
+<text x="44.00" y="754.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="400">Transformations overlap and recur. Six capabilities have equal status. AI participation is optional.</text>
+</svg>

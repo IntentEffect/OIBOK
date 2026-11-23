@@ -18,6 +18,6 @@ Each PDF is A3 landscape. [Download all nine diagrams in one PDF](OIBOK-Diagrams
 
 The fictional cases are illustrations, not empirical findings. Pending actions and persistence checks remain pending. A local vocabulary example is not a validated OIBOK ontology.
 
-Research source edition: OIBOK 1.0. Practical Toolkit: 0.1. The figures were prepared alongside illustrated Guide draft 0.3; the online Guide remains at its published version until that separate edition is released.
+Research source edition: OIBOK 1.0. Practical Toolkit: 0.1. The figures accompany the [illustrated Guide draft 0.3](https://oibok.org/guide/) and [Working Companion draft 0.3](https://oibok.org/guide/companion/). Browse the [diagram gallery](https://oibok.org/diagrams/) for SVG downloads, readable explanations and source mappings.
 
 Original diagram content is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), subject to the [publication licence scope](https://oibok.org/licensing/). Developed by the OIBOK community. Feedback: [info@oibok.org](mailto:info@oibok.org).

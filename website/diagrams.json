@@ -1,0 +1,237 @@
+{
+  "version": "0.1",
+  "guide_version": "0.3",
+  "research_version": "1.0",
+  "figures": [
+    {
+      "slug": "overview",
+      "title": "The OIBOK working model",
+      "summary": "Three recurring transformations, six capabilities and the connections that support organisational response.",
+      "kind": "Conceptual overview",
+      "guide_anchor": "1-understand-organisational-intelligence",
+      "chapters": [
+        10
+      ],
+      "tools": [
+        "guide/"
+      ],
+      "reading": [
+        "Orient brings relevant signals and knowledge into an understanding of the situation. Sense and Know are its two capabilities.",
+        "Coordinate connects authorised commitment and collective response through Choose and Mobilise.",
+        "Improve uses evaluated consequences to revise understanding and capability through Learn and Adapt.",
+        "Contextualise is a connective mechanism and organisational orientation is an integrated state. They are not additional capabilities.",
+        "Memory supplies continuity across the work. Purpose, governance and responsible exercise span every capability. Feedback can return to both Orient and Coordinate."
+      ],
+      "boundary": "The transformations overlap and recur. The six capabilities have equal status. AI participation is optional. The model is a literature-grounded working synthesis, with independent field validation pending.",
+      "version": "0.1",
+      "date": "2026-11-23"
+    },
+    {
+      "slug": "applying-oibok",
+      "title": "Applying OIBOK to one real problem",
+      "summary": "Connect investigation, work design, evaluation and retained learning around one bounded piece of work.",
+      "kind": "Practice route",
+      "guide_anchor": "quick-start",
+      "chapters": [
+        1,
+        2,
+        7,
+        10
+      ],
+      "tools": [
+        "tools/practice-review/",
+        "tools/ai-opportunity-and-work-design/",
+        "tools/outcome-and-learning/"
+      ],
+      "reading": [
+        "Define the work, desired outcome, affected people, boundary and decision owner.",
+        "Follow contrasting cases using the Practice Review. Expand its Context and Knowledge Map and Decision and Coordination Canvas where the evidence warrants it.",
+        "Compare current practice, a credible non-AI improvement and any specific AI contribution. Further inquiry or retaining current practice are legitimate decisions.",
+        "Use the AI canvas when an AI option proceeds into design. Prepare the Outcome and Learning Record before trying the selected change.",
+        "Review consequences and competing explanations, record the next decision and embed useful learning in later work. Revisit the problem or design whenever the evidence warrants it."
+      ],
+      "boundary": "This is a reading and practice aid, not a compulsory sequence of gates. Records can develop together. A non-AI change still needs authority, evaluation and later learning.",
+      "version": "0.1",
+      "date": "2026-11-23"
+    },
+    {
+      "slug": "accepted-handoff",
+      "title": "From handoff to accepted commitment",
+      "summary": "A fictional Linden Studio example of acceptance, clarification, ownership and verified effects.",
+      "kind": "Fictional worked example",
+      "guide_anchor": "4-clarify-decisions-coordination-and-execution",
+      "chapters": [
+        4,
+        5,
+        6
+      ],
+      "tools": [
+        "tools/practice-review/"
+      ],
+      "reading": [
+        "The client lead prepares the brief with scope, requested timing, dependencies and available evidence.",
+        "The delivery lead checks scope, dependencies and capacity before accepting delivery responsibility. A submitted brief does not itself confirm the commitment.",
+        "If clarification is needed, the client lead retains responsibility for correction and resubmission in this fictional arrangement. Exceptions requiring authority go to the owner.",
+        "After acceptance and required authorisation, a date can be confirmed and the work carried through. Performance and verified effects remain distinct.",
+        "An uncertain action result requires checking the real state before repeating or reversing an action. Keep unresolved work visibly owned."
+      ],
+      "boundary": "Linden Studio is wholly fictional. Its proposed change has no recorded implementation, measured benefit or persistence result. General OIBOK guidance requires an agreed owner while a handoff is waiting or disputed; it does not mandate the same owner in every organisation.",
+      "version": "0.1",
+      "date": "2026-11-23"
+    },
+    {
+      "slug": "people-and-ai",
+      "title": "People AI and authority in one workflow",
+      "summary": "A fictional Harbour Services arrangement for source-linked drafting, review, escalation and fallback.",
+      "kind": "Fictional worked example",
+      "guide_anchor": "5-design-how-people-and-ai-work-together",
+      "chapters": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        10
+      ],
+      "tools": [
+        "tools/ai-opportunity-and-work-design/"
+      ],
+      "reading": [
+        "The policy owner maintains the governing source, current version and route for resolving ambiguity.",
+        "AI retrieves approved material and prepares a draft. Its technical ability creates no permission to decide or act.",
+        "A named adviser checks the source, version, context and proposed response within their authority. Meaningful review needs evidence, expertise, time and power to reject or stop.",
+        "Missing or conflicting policy requires abstention and escalation. Excluded cases leave the standard workflow. The established manual process is the fallback.",
+        "An authorised person approves the external reply and records what happened. In this example AI cannot send replies, approve refunds, change policy or act externally."
+      ],
+      "boundary": "This is the fictional Harbour configuration, not a universal prohibition on authorised AI actions in other settings. Proposed controls require evidence that they operate as intended.",
+      "version": "0.1",
+      "date": "2026-11-23"
+    },
+    {
+      "slug": "evaluating-change",
+      "title": "Evaluating the change and AI contribution",
+      "summary": "Compare complete working arrangements and keep alternative explanations visible.",
+      "kind": "Evaluation aid",
+      "guide_anchor": "6-evaluate-the-change",
+      "chapters": [
+        7,
+        10
+      ],
+      "tools": [
+        "tools/outcome-and-learning/"
+      ],
+      "reading": [
+        "Arrangement A is current practice. Arrangement B is an improved working arrangement without AI. Arrangement C adds AI to the same improved arrangement.",
+        "A comparison of A and C examines the complete package. A comparison of B and C is relevant to the additional contribution of AI.",
+        "Use comparable definitions and observation periods. Assess beneficiary outcomes, quality, total effort, safeguards and whether the intended arrangement was used.",
+        "Consider case mix, workload, extra expert support, staff learning, concurrent changes and measurement changes as possible explanations.",
+        "Attach the conclusion to the tested setting, people, cases, period and configuration. Record the accountable decision to continue, adapt, stop or defer."
+      ],
+      "boundary": "A three-column comparison is not itself a causal evaluation design. Selection, allocation, missing outcomes and other design features determine what the evidence supports. A local workflow result does not establish organisation-wide intelligence.",
+      "version": "0.1",
+      "date": "2026-11-23"
+    },
+    {
+      "slug": "lasting-capability",
+      "title": "From a lesson to lasting capability",
+      "summary": "Connect evaluated experience to changed work and later evidence of usable organisational capability.",
+      "kind": "Learning and persistence aid",
+      "guide_anchor": "7-turn-experience-into-lasting-capability",
+      "chapters": [
+        8,
+        9,
+        10
+      ],
+      "tools": [
+        "tools/outcome-and-learning/"
+      ],
+      "reading": [
+        "Form a challengeable lesson from evaluated experience, with supporting evidence, uncertainty and conditions of applicability.",
+        "Translate it into working arrangements: guidance, decision rights, handoffs, system configuration, expertise or resources. Assign owners and completion evidence.",
+        "Place current knowledge where the next relevant decision can use it. Preserve source, scope, version, review condition and supersession.",
+        "Examine later reuse, another suitably prepared person doing the work, and relevant changed conditions. Choose safe cases or rehearsals when needed.",
+        "Retain, revise or retire arrangements in light of the evidence. Separate a completed action from capability demonstrated over the horizon of the claim."
+      ],
+      "boundary": "The three practical checks are proposed inquiry prompts, not a validated score or universal measurement threshold. A planned check remains planned until evidence is recorded. Continuity can include explicit ongoing dependencies.",
+      "version": "0.1",
+      "date": "2026-11-23"
+    },
+    {
+      "slug": "shared-vocabulary",
+      "title": "A shared vocabulary for one workflow",
+      "summary": "An illustrative relationship map connecting evidence, policy, expertise, authority, decisions and action.",
+      "kind": "Illustrative local representation",
+      "guide_anchor": "agree-a-small-shared-vocabulary",
+      "chapters": [
+        2,
+        3,
+        4
+      ],
+      "tools": [
+        "tools/practice-review/"
+      ],
+      "reading": [
+        "A case or request provides the work and purpose that the decision concerns.",
+        "Evidence supports the decision, while a policy version governs it under stated conditions. Retain provenance, currentness and uncertainty.",
+        "Relevant expertise informs the interpretation. An authorised role may commit the organisation within stated limits. These are different relationships even when one person holds both roles.",
+        "The decision permits specified action. The work state records completion, dependency, exception or an uncertain result.",
+        "Test the vocabulary against contrasting real cases, assign ownership and preserve meaningful differences. A glossary or linked table can support the same inquiry."
+      ],
+      "boundary": "This is an illustrative local representation, not a canonical or validated OIBOK ontology. A graph database is optional. The relationships must be checked against the work and its actual authority.",
+      "version": "0.1",
+      "date": "2026-11-23"
+    },
+    {
+      "slug": "connected-records",
+      "title": "One inquiry across the OIBOK tools",
+      "summary": "A fictional Harbour Services case showing what carries forward between working records.",
+      "kind": "Fictional worked example",
+      "guide_anchor": "keep-a-small-connected-record",
+      "chapters": [
+        4,
+        7,
+        8,
+        10
+      ],
+      "tools": [
+        "tools/practice-review/",
+        "tools/ai-opportunity-and-work-design/",
+        "tools/outcome-and-learning/"
+      ],
+      "reading": [
+        "Case HS-01 connects Practice Review PR-HS-01, AI design AI-HS-01 and Outcome and Learning Record OL-HS-01.",
+        "The review carries forward the problem, boundary, sources, competing explanations and knowledge or authority gaps. Its two supporting maps remain linked to that inquiry.",
+        "The work design carries the complete intervention, eligible cases, exclusions, comparison, measures, permissions and stop rules into evaluation.",
+        "The results record carries observations, missing outcomes, limitations, the decision, corrective actions and the later review into continuing practice.",
+        "The receiving owner checks usable evidence, permitted next action and unresolved conditions. Records can develop together; suitable existing organisational records can be reused."
+      ],
+      "boundary": "The case is fictional. Its adapt-and-extend decision is conditional on corrections, retesting and named reviewers. Follow-up action completion is not yet recorded and the week-eight persistence check remains pending.",
+      "version": "0.1",
+      "date": "2026-11-23"
+    },
+    {
+      "slug": "resource-comparison",
+      "title": "How review effort changes the resource case",
+      "summary": "Fictional Wattle Supply assumptions show why total work matters when comparing an AI option.",
+      "kind": "Fictional planning chart",
+      "guide_anchor": "a2-wattle-supply-business-decision",
+      "chapters": [
+        7
+      ],
+      "tools": [
+        "tools/ai-opportunity-and-work-design/",
+        "tools/outcome-and-learning/"
+      ],
+      "reading": [
+        "The comparison assumes 240 eligible catalogue entries per month. Preparation, review and correction minutes are converted to staff hours, then monthly maintenance is added.",
+        "Current practice totals 50 staff hours. The non-AI improvement totals 39. Adding AI with three-minute review totals 29. Increasing AI review to six minutes totals 41.",
+        "The AI option includes the non-AI improvements. Its setup is 30 staff hours in total, compared with 10 for the non-AI improvement, and it adds AUD 120 in monthly cash charges.",
+        "The difference represents potential released capacity, not an assumed payroll saving. Accuracy, quality, turnaround and redeployability still need evaluation.",
+        "Replace the assumptions with actual case evidence before authorising a material decision. Preserve original assumptions so later findings can challenge them."
+      ],
+      "boundary": "All volumes, times and charges are invented teaching inputs. There are no observed results. Setup effort, recurring staff-time value and cash expenditure are separate quantities.",
+      "version": "0.1",
+      "date": "2026-11-23"
+    }
+  ]
+}

@@ -83,6 +83,7 @@ export function renderLayout({ title, description = '', content, basePath = '', 
   const url = (path) => `${basePath}${path}`;
   const isBlogPost = kind === 'blog-post';
   const isModel = kind === 'interactive-model';
+  const isDiagram = kind === 'practice-diagram' || kind === 'diagram-index';
   const isDraft = status === 'draft-for-practitioner-review';
   const sectionKey = String(section).toLowerCase().replace(/\s+/g, '-');
   const sectionLabel = links.find(([key]) => key === sectionKey)?.[1] || ({methodology:'Research methodology', governance:'Governance', licensing:'Licensing', releases:'Versions and corrections', search:'Search', agents:'For agents', 'for-agents':'For agents'})[sectionKey] || section;
@@ -91,7 +92,7 @@ export function renderLayout({ title, description = '', content, basePath = '', 
   const llmsHref = /^https?:\/\//.test(siteUrl) ? `${siteUrl.replace(/\/+$/, '')}/llms.txt` : url('/llms.txt');
   const feedHref = /^https?:\/\//.test(siteUrl) ? `${siteUrl.replace(/\/+$/, '')}/blog/feed.xml` : url('/blog/feed.xml');
   const navigation = links.map(([key, label, path]) => `<a href="${url(path)}"${sectionKey === key ? ' aria-current="page"' : ''}>${label}</a>`).join('');
-  const contents = isBlogPost || isModel ? [] : toc.filter((item) => item.level === 2 || item.level === 3);
+  const contents = isBlogPost || isModel || isDiagram ? [] : toc.filter((item) => item.level === 2 || item.level === 3);
   const tocHtml = contents.length > 1 ? `<aside class="page-aside"><details class="contents" open><summary>On this page</summary><nav aria-label="On this page"><ol>${contents.map((item) => `<li class="toc-level-${item.level}"><a href="#${encodeURIComponent(item.id)}">${escape(item.text)}</a></li>`).join('')}</ol></nav></details></aside>` : '';
   const sourceUrl = sourcePath ? `https://github.com/IntentEffect/OIBOK/blob/main/${sourcePath.split('/').map(encodeURIComponent).join('/')}` : '';
   const blogMetadata = isBlogPost ? [
@@ -125,7 +126,7 @@ export function renderLayout({ title, description = '', content, basePath = '', 
   <script src="${url(assetPaths['client.js'] || '/assets/client.js')}" defer></script>
   ${isModel ? `<link rel="stylesheet" href="${url(assetPaths['model.css'] || '/assets/model.css')}"><script src="${url(assetPaths['model.js'] || '/assets/model.js')}" defer></script>` : ''}
 </head>
-<body data-base-path="${escape(basePath)}" class="${isHome ? 'home' : 'reading-page'}${isBlogPost ? ' blog-post-page' : sectionKey === 'blog' ? ' blog-index-page' : ''}${isModel ? ' model-page' : ''}">
+<body data-base-path="${escape(basePath)}" class="${isHome ? 'home' : 'reading-page'}${isBlogPost ? ' blog-post-page' : sectionKey === 'blog' ? ' blog-index-page' : ''}${isModel ? ' model-page' : ''}${isDiagram ? ' diagram-page' : ''}">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="header-inner">

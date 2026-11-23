@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 848" width="1200" height="848" role="img" aria-labelledby="title desc"><title id="title">Applying OIBOK to one real problem</title><desc id="desc">Connect investigation, work design, evaluation and retained learning around one bounded piece of work. Source: OIBOK 1.0 · Guide 0.3 · Research chapters 1, 2, 7, 10 · oibok.org/diagrams/applying-oibok/ Draft for practitioner review. CC BY-SA 4.0.</desc>
+<rect x="0" y="0" width="1200" height="848" rx="0" fill="#f6f5f0" stroke="none" stroke-width="1"/>
+<text x="44.00" y="48.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="22" font-weight="700">OIBOK</text>
+<text x="909.32" y="44.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="700">DRAFT 0.1  /  FOR PRACTITIONER REVIEW</text>
+<text x="44.00" y="105.00" fill="#232b2a" font-family="Liberation Serif, Georgia, serif" font-size="36" font-weight="400">Applying OIBOK to one real problem</text>
+<text x="44.00" y="131.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">Connect investigation, work design, evaluation and retained learning around one bounded piece of work.</text>
+<polyline points="44,158 1156,158" fill="none" stroke="#c9cec5" stroke-width="1"/>
+<polyline points="44,764 1156,764" fill="none" stroke="#c9cec5" stroke-width="1"/>
+<text x="44.00" y="791.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="400">Practice route · Visual set 0.1 · 23 November 2026</text>
+<text x="963.26" y="791.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="400">oibok.org/diagrams/ · CC BY-SA 4.0</text>
+<text x="44.00" y="812.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400">Source: OIBOK 1.0 · Guide 0.3 · Research chapters 1, 2, 7, 10 · oibok.org/diagrams/applying-oibok/</text>
+<text x="64.00" y="190.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">Use the depth and connected records that the decision needs.</text>
+<polyline points="376,273.5 444,273.5" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="444,273.5 436.0,269.9 436.0,277.1" fill="#a3412c"/>
+<polyline points="756,273.5 824,273.5" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="824,273.5 816.0,269.9 816.0,277.1" fill="#a3412c"/>
+<polyline points="980,342 980,390" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="980,390 983.6,382.0 976.4,382.0" fill="#a3412c"/>
+<text x="1000.00" y="367.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">AI option</text>
+<polyline points="980,342 980,366 790,366 790,458.5 756,458.5" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="756,458.5 764.0,462.1 764.0,454.9" fill="#a3412c"/>
+<text x="792.00" y="361.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">Change without AI</text>
+<polyline points="824,458.5 756,458.5" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="756,458.5 764.0,462.1 764.0,454.9" fill="#a3412c"/>
+<polyline points="444,458.5 376,458.5" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="376,458.5 384.0,462.1 384.0,454.9" fill="#a3412c"/>
+<polyline points="220,527 220,575" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="220,575 223.6,567.0 216.4,567.0" fill="#a3412c"/>
+<polyline points="376,643.5 444,643.5" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="444,643.5 436.0,639.9 436.0,647.1" fill="#a3412c"/>
+<polyline points="756,643.5 824,643.5" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="824,643.5 816.0,639.9 816.0,647.1" fill="#a3412c"/>
+<polyline points="64,643.5 44,643.5 44,273.5 64,273.5" fill="none" stroke="#406e7c" stroke-width="1.7" stroke-dasharray="5 4"/>
+<polygon points="64,273.5 56.0,269.9 56.0,277.1" fill="#406e7c"/>
+<text x="64.00" y="363.00" fill="#406e7c" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">Evidence may reopen the question.</text>
+<polyline points="980,575 980,549 600,549 600,527" fill="none" stroke="#406e7c" stroke-width="1.7" stroke-dasharray="5 4"/>
+<polygon points="600,527 596.4,535.0 603.6,535.0" fill="#406e7c"/>
+<text x="691.00" y="544.00" fill="#406e7c" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">Revisit design or evaluation</text>
+<rect x="64" y="205" width="312" height="137" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="80.00" y="240.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">Define one inquiry</text>
+<text x="80.00" y="267.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Practice Review.</text>
+<text x="80.00" y="289.95" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Outcome, boundary and owner.</text>
+<text x="80.00" y="312.90" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Contrasting cases and sources.</text>
+<rect x="444" y="205" width="312" height="137" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="460.00" y="240.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">Investigate actual work</text>
+<text x="460.00" y="267.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Cases, meanings and evidence.</text>
+<text x="460.00" y="289.95" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Context and Knowledge Map.</text>
+<text x="460.00" y="312.90" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Decision and Coordination Canvas.</text>
+<rect x="824" y="205" width="312" height="137" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="840.00" y="240.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">Compare credible options</text>
+<text x="840.00" y="267.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Current practice.</text>
+<text x="840.00" y="289.95" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Improvement without AI.</text>
+<text x="840.00" y="312.90" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">AI with a contribution to test.</text>
+<rect x="824" y="390" width="312" height="137" rx="0" fill="#e6eef0" stroke="#c9cec5" stroke-width="1"/>
+<text x="840.00" y="425.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">Design the AI contribution</text>
+<text x="840.00" y="452.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Task, permissions and fallback.</text>
+<text x="840.00" y="474.95" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">AI Opportunity and Work</text>
+<text x="840.00" y="497.90" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Design Canvas.</text>
+<rect x="444" y="390" width="312" height="137" rx="0" fill="#e7ece3" stroke="#c9cec5" stroke-width="1"/>
+<text x="460.00" y="425.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">Plan change and evaluation</text>
+<text x="460.00" y="452.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Work, authority and measures.</text>
+<text x="460.00" y="474.95" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Baseline and comparison.</text>
+<text x="460.00" y="497.90" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Outcome and Learning Record.</text>
+<rect x="64" y="390" width="312" height="137" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="80.00" y="425.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">Try the bounded change</text>
+<text x="80.00" y="452.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Confirm authority and conditions.</text>
+<text x="80.00" y="474.95" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Try the change within scope.</text>
+<text x="80.00" y="497.90" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Collect the agreed evidence.</text>
+<rect x="64" y="575" width="312" height="137" rx="0" fill="#e7ece3" stroke="#c9cec5" stroke-width="1"/>
+<text x="80.00" y="610.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">Review consequences</text>
+<text x="80.00" y="637.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Continue, adapt, stop or defer.</text>
+<text x="80.00" y="659.95" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Record what else could explain</text>
+<text x="80.00" y="682.90" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">the result.</text>
+<rect x="444" y="575" width="312" height="137" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="460.00" y="610.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">Retain useful changes</text>
+<text x="460.00" y="637.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Update guidance, authority,</text>
+<text x="460.00" y="659.95" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">handoffs or resources.</text>
+<text x="460.00" y="682.90" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Name an owner for retention.</text>
+<rect x="824" y="575" width="312" height="137" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="840.00" y="610.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">Check later use</text>
+<text x="840.00" y="637.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Reuse by a prepared colleague.</text>
+<text x="840.00" y="659.95" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Check changed conditions.</text>
+<text x="840.00" y="682.90" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Keep limits and gaps visible.</text>
+<text x="64.00" y="747.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="400">Further inquiry or retaining current practice can be the right next decision. These activities can recur and overlap.</text>
+</svg>

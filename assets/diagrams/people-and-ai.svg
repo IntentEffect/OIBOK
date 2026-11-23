@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 848" width="1200" height="848" role="img" aria-labelledby="title desc"><title id="title">People AI and authority in one workflow</title><desc id="desc">A fictional Harbour Services arrangement for source-linked drafting, review, escalation and fallback. Source: OIBOK 1.0 · Guide 0.3 · Research chapters 2, 3, 4, 5, 6, 10 · oibok.org/diagrams/people-and-ai/ Draft for practitioner review. CC BY-SA 4.0.</desc>
+<rect x="0" y="0" width="1200" height="848" rx="0" fill="#f6f5f0" stroke="none" stroke-width="1"/>
+<text x="44.00" y="48.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="22" font-weight="700">OIBOK</text>
+<text x="909.32" y="44.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="700">DRAFT 0.1  /  FOR PRACTITIONER REVIEW</text>
+<text x="44.00" y="105.00" fill="#232b2a" font-family="Liberation Serif, Georgia, serif" font-size="36" font-weight="400">People AI and authority in one workflow</text>
+<text x="44.00" y="131.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">A fictional Harbour Services arrangement for source-linked drafting, review, escalation and fallback.</text>
+<polyline points="44,158 1156,158" fill="none" stroke="#c9cec5" stroke-width="1"/>
+<polyline points="44,764 1156,764" fill="none" stroke="#c9cec5" stroke-width="1"/>
+<text x="44.00" y="791.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="400">Fictional worked example · Visual set 0.1 · 23 November 2026</text>
+<text x="963.26" y="791.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="400">oibok.org/diagrams/ · CC BY-SA 4.0</text>
+<text x="44.00" y="812.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400">Source: OIBOK 1.0 · Guide 0.3 · Research chapters 2, 3, 4, 5, 6, 10 · oibok.org/diagrams/people-and-ai/</text>
+<polyline points="44,309 1156,309" fill="none" stroke="#c9cec5" stroke-width="1"/>
+<polyline points="44,447 1156,447" fill="none" stroke="#c9cec5" stroke-width="1"/>
+<polyline points="44,585 1156,585" fill="none" stroke="#c9cec5" stroke-width="1"/>
+<text x="44.00" y="209.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">SOURCE</text>
+<text x="44.00" y="230.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">OWNERSHIP</text>
+<text x="44.00" y="347.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">AI</text>
+<text x="44.00" y="368.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">ASSISTANCE</text>
+<text x="44.00" y="485.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">REVIEW AND</text>
+<text x="44.00" y="506.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">AUTHORITY</text>
+<text x="44.00" y="623.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">ACTION AND</text>
+<text x="44.00" y="644.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">EVIDENCE</text>
+<polyline points="370,295 370,321" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="370,321 373.6,313.0 366.4,313.0" fill="#a3412c"/>
+<polyline points="370,433 370,459" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="370,459 373.6,451.0 366.4,451.0" fill="#a3412c"/>
+<polyline points="510,515 550,515" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="550,515 542.0,511.4 542.0,518.6" fill="#a3412c"/>
+<polyline points="690,571 690,597" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="690,597 693.6,589.0 686.4,589.0" fill="#a3412c"/>
+<polyline points="830,653 870,653" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="870,653 862.0,649.4 862.0,656.6" fill="#a3412c"/>
+<polyline points="510,361 870,361" fill="none" stroke="#406e7c" stroke-width="1.7"/>
+<polygon points="870,361 862.0,357.4 862.0,364.6" fill="#406e7c"/>
+<text x="558.00" y="347.00" fill="#406e7c" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">Missing or conflicting policy</text>
+<text x="583.00" y="397.00" fill="#406e7c" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">Abstain from the proposed response</text>
+<polyline points="490,433 490,444 850,444 850,515 870,515" fill="none" stroke="#406e7c" stroke-width="1.7" stroke-dasharray="5 4"/>
+<polygon points="870,515 862.0,511.4 862.0,518.6" fill="#406e7c"/>
+<text x="584.00" y="433.00" fill="#406e7c" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">Unavailable or unreliable</text>
+<rect x="230" y="183" width="280" height="112" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="243.00" y="215.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">Approved sources</text>
+<text x="243.00" y="243.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Current policy and version.</text>
+<text x="243.00" y="267.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Owner and scope recorded.</text>
+<rect x="550" y="183" width="606" height="112" rx="0" fill="#e7ece3" stroke="#c9cec5" stroke-width="1"/>
+<text x="563.00" y="215.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">Meaningful review</text>
+<text x="563.00" y="243.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Evidence, expertise, time and authority to reject or stop.</text>
+<text x="563.00" y="267.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Read access and permission to act are separate.</text>
+<rect x="230" y="321" width="280" height="112" rx="0" fill="#e6eef0" stroke="#c9cec5" stroke-width="1"/>
+<text x="243.00" y="353.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">Retrieve and draft</text>
+<text x="243.00" y="381.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Source-linked draft.</text>
+<text x="243.00" y="405.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">No external action.</text>
+<rect x="870" y="321" width="286" height="112" rx="0" fill="#e6eef0" stroke="#c9cec5" stroke-width="1"/>
+<text x="883.00" y="353.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">Abstain and escalate</text>
+<text x="883.00" y="381.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Supervisor resolves the issue.</text>
+<text x="883.00" y="405.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Route excluded cases onward.</text>
+<rect x="230" y="459" width="280" height="112" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="243.00" y="491.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">Review the response</text>
+<text x="243.00" y="519.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Check sources and claims.</text>
+<text x="243.00" y="543.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Correct, reject or escalate.</text>
+<rect x="550" y="459" width="280" height="112" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="563.00" y="491.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">Decide within authority</text>
+<text x="563.00" y="519.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Named person decides within</text>
+<text x="563.00" y="543.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">recorded authority.</text>
+<rect x="870" y="459" width="286" height="112" rx="0" fill="#e6eef0" stroke="#c9cec5" stroke-width="1"/>
+<text x="883.00" y="491.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">Manual fallback</text>
+<text x="883.00" y="519.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Prepared staff resume from</text>
+<text x="883.00" y="543.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">recorded state with capacity.</text>
+<rect x="230" y="597" width="280" height="112" rx="0" fill="#e7ece3" stroke="#c9cec5" stroke-width="1"/>
+<text x="243.00" y="629.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">AI limits in this case</text>
+<text x="243.00" y="657.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">No sending, refunds, policy</text>
+<text x="243.00" y="681.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">changes or external actions.</text>
+<rect x="550" y="597" width="280" height="112" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="563.00" y="629.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">Adviser sends reply</text>
+<text x="563.00" y="657.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Adviser approves the reply.</text>
+<text x="563.00" y="681.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Preserve rationale and state.</text>
+<rect x="870" y="597" width="286" height="112" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="883.00" y="629.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">Observe consequences</text>
+<text x="883.00" y="657.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Resolution, quality and effort.</text>
+<text x="883.00" y="681.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Later repeat contact.</text>
+<text x="230.00" y="747.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="400">Record the configuration and permissions tested. Review and fallback arrangements require evidence before live use.</text>
+</svg>

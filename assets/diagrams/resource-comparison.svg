@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 848" width="1200" height="848" role="img" aria-labelledby="title desc"><title id="title">How review effort changes the resource case</title><desc id="desc">Fictional Wattle Supply assumptions show why total work matters when comparing an AI option. Source: OIBOK 1.0 · Guide 0.3 · Research chapters 7 · oibok.org/diagrams/resource-comparison/ Draft for practitioner review. CC BY-SA 4.0.</desc>
+<rect x="0" y="0" width="1200" height="848" rx="0" fill="#f6f5f0" stroke="none" stroke-width="1"/>
+<text x="44.00" y="48.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="22" font-weight="700">OIBOK</text>
+<text x="909.32" y="44.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="700">DRAFT 0.1  /  FOR PRACTITIONER REVIEW</text>
+<text x="44.00" y="105.00" fill="#232b2a" font-family="Liberation Serif, Georgia, serif" font-size="36" font-weight="400">How review effort changes the resource case</text>
+<text x="44.00" y="131.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">Fictional Wattle Supply assumptions show why total work matters when comparing an AI option.</text>
+<polyline points="44,158 1156,158" fill="none" stroke="#c9cec5" stroke-width="1"/>
+<polyline points="44,764 1156,764" fill="none" stroke="#c9cec5" stroke-width="1"/>
+<text x="44.00" y="791.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="400">Fictional planning chart · Visual set 0.1 · 23 November 2026</text>
+<text x="963.26" y="791.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="400">oibok.org/diagrams/ · CC BY-SA 4.0</text>
+<text x="44.00" y="812.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400">Source: OIBOK 1.0 · Guide 0.3 · Research chapters 7 · oibok.org/diagrams/resource-comparison/</text>
+<rect x="44" y="175" width="1112" height="70" rx="0" fill="#e7ece3" stroke="#c9cec5" stroke-width="1"/>
+<text x="56.00" y="206.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">Fictional planning assumptions; no observed results</text>
+<text x="56.00" y="232.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">240 eligible entries per month. Preparation, review and correction are averaged across all entries.</text>
+<rect x="270" y="262" width="16" height="16" rx="0" fill="#232b2a" stroke="none" stroke-width="1"/>
+<text x="293.00" y="275.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">Preparation</text>
+<rect x="440" y="262" width="16" height="16" rx="0" fill="#406e7c" stroke="none" stroke-width="1"/>
+<text x="463.00" y="275.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">Review</text>
+<rect x="574" y="262" width="16" height="16" rx="0" fill="#c4cfba" stroke="none" stroke-width="1"/>
+<text x="597.00" y="275.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">Correction</text>
+<rect x="744" y="262" width="16" height="16" rx="0" fill="#a3412c" stroke="none" stroke-width="1"/>
+<text x="767.00" y="275.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">Maintenance</text>
+<text x="270.00" y="318.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="700">Monthly staff effort (hours)</text>
+<text x="913.33" y="307.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="700">Setup hours</text>
+<text x="936.65" y="327.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">one-off</text>
+<text x="1039.33" y="307.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="700">Cash / month</text>
+<text x="1074.17" y="327.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">AUD</text>
+<polyline points="270.0,337 270.0,560" fill="none" stroke="#c9cec5" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="265.83" y="584.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">0</text>
+<polyline points="382.0,337 382.0,560" fill="none" stroke="#c9cec5" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="373.66" y="584.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">10</text>
+<polyline points="494.0,337 494.0,560" fill="none" stroke="#c9cec5" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="485.66" y="584.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">20</text>
+<polyline points="606.0,337 606.0,560" fill="none" stroke="#c9cec5" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="597.66" y="584.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">30</text>
+<polyline points="718.0,337 718.0,560" fill="none" stroke="#c9cec5" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="709.66" y="584.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">40</text>
+<polyline points="830.0,337 830.0,560" fill="none" stroke="#c9cec5" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="821.66" y="584.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="400">50</text>
+<text x="44.00" y="369.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="700">Current practice</text>
+<rect x="270" y="345" width="403.2" height="35" rx="0" fill="#232b2a" stroke="#f6f5f0" stroke-width="1"/>
+<text x="463.26" y="368.00" fill="#ffffff" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">36</text>
+<rect x="673.2" y="345" width="89.6" height="35" rx="0" fill="#406e7c" stroke="#f6f5f0" stroke-width="1"/>
+<text x="713.83" y="368.00" fill="#ffffff" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">8</text>
+<rect x="762.8000000000001" y="345" width="44.8" height="35" rx="0" fill="#c4cfba" stroke="#f6f5f0" stroke-width="1"/>
+<text x="781.03" y="368.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">4</text>
+<rect x="807.6" y="345" width="22.4" height="35" rx="0" fill="#a3412c" stroke="#f6f5f0" stroke-width="1"/>
+<text x="814.63" y="368.00" fill="#ffffff" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">2</text>
+<text x="840.00" y="369.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">50</text>
+<text x="954.72" y="369.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="400">0</text>
+<text x="1084.72" y="369.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="400">0</text>
+<text x="44.00" y="426.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="700">Non-AI improvement</text>
+<rect x="270" y="402" width="268.79999999999995" height="35" rx="0" fill="#232b2a" stroke="#f6f5f0" stroke-width="1"/>
+<text x="396.06" y="425.00" fill="#ffffff" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">24</text>
+<rect x="538.8" y="402" width="89.6" height="35" rx="0" fill="#406e7c" stroke="#f6f5f0" stroke-width="1"/>
+<text x="579.43" y="425.00" fill="#ffffff" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">8</text>
+<rect x="628.4" y="402" width="44.8" height="35" rx="0" fill="#c4cfba" stroke="#f6f5f0" stroke-width="1"/>
+<text x="646.63" y="425.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">4</text>
+<rect x="673.1999999999999" y="402" width="33.599999999999994" height="35" rx="0" fill="#a3412c" stroke="#f6f5f0" stroke-width="1"/>
+<text x="685.83" y="425.00" fill="#ffffff" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">3</text>
+<text x="716.80" y="426.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">39</text>
+<text x="949.43" y="426.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="400">10</text>
+<text x="1084.72" y="426.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="400">0</text>
+<text x="44.00" y="483.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="700">AI: 3-minute review</text>
+<rect x="270" y="459" width="89.6" height="35" rx="0" fill="#232b2a" stroke="#f6f5f0" stroke-width="1"/>
+<text x="310.63" y="482.00" fill="#ffffff" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">8</text>
+<rect x="359.6" y="459" width="134.39999999999998" height="35" rx="0" fill="#406e7c" stroke="#f6f5f0" stroke-width="1"/>
+<text x="418.46" y="482.00" fill="#ffffff" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">12</text>
+<rect x="494.0" y="459" width="44.8" height="35" rx="0" fill="#c4cfba" stroke="#f6f5f0" stroke-width="1"/>
+<text x="512.23" y="482.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">4</text>
+<rect x="538.8" y="459" width="56.0" height="35" rx="0" fill="#a3412c" stroke="#f6f5f0" stroke-width="1"/>
+<text x="562.63" y="482.00" fill="#ffffff" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">5</text>
+<text x="604.80" y="483.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">29</text>
+<text x="949.43" y="483.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="400">30</text>
+<text x="1074.15" y="483.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="400">120</text>
+<text x="44.00" y="540.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="700">AI: 6-minute review</text>
+<rect x="270" y="516" width="89.6" height="35" rx="0" fill="#232b2a" stroke="#f6f5f0" stroke-width="1"/>
+<text x="310.63" y="539.00" fill="#ffffff" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">8</text>
+<rect x="359.6" y="516" width="268.79999999999995" height="35" rx="0" fill="#406e7c" stroke="#f6f5f0" stroke-width="1"/>
+<text x="485.66" y="539.00" fill="#ffffff" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">24</text>
+<rect x="628.4" y="516" width="44.8" height="35" rx="0" fill="#c4cfba" stroke="#f6f5f0" stroke-width="1"/>
+<text x="646.63" y="539.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">4</text>
+<rect x="673.1999999999999" y="516" width="56.0" height="35" rx="0" fill="#a3412c" stroke="#f6f5f0" stroke-width="1"/>
+<text x="697.03" y="539.00" fill="#ffffff" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700">5</text>
+<text x="739.20" y="540.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="700">41</text>
+<text x="949.43" y="540.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="400">30</text>
+<text x="1074.15" y="540.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="400">120</text>
+<text x="44.00" y="633.00" fill="#232b2a" font-family="Liberation Serif, Georgia, serif" font-size="23" font-weight="400">Review effort can reverse the resource preference.</text>
+<text x="44.00" y="666.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Three-minute AI review: 29 staff hours/month. Six-minute review: 41, compared with 39 for the non-AI improvement.</text>
+<text x="44.00" y="711.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">Released time is potential capacity. AI adds AUD 120 in monthly cash charges. Quality and outcomes remain to be tested.</text>
+</svg>

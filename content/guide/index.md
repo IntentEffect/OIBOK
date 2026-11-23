@@ -1,22 +1,22 @@
 # The OIBOK Guide
 
 **DRAFT · For practitioner review**  
-**Guide 0.2 · 23 November 2026**
+**Guide 0.3 · 23 November 2026**
 
 The OIBOK Guide helps leaders, practitioners and teams apply Organisational Intelligence to real work. Use it to investigate a recurring problem, examine AI proposals, clarify responsibilities, evaluate a change and retain useful learning.
 
-This is the complete draft Guide, accompanied by a Working Companion with preparation prompts, connected records and a practitioner feedback record. Both are published for review and improvement by the OIBOK community.
+This is the complete illustrated draft Guide, accompanied by a Working Companion with preparation prompts, connected records and a practitioner feedback record. Nine draft diagrams connect the concepts to practical work. The Guide, Companion and diagrams are published for review and improvement by the OIBOK community.
 
 ## Read and download
 
 - [Read the complete draft Guide online](/guide/read/).
-- [Download the draft Guide as a PDF](/downloads/guide/OIBOK-Guide-Draft-0.2.pdf).
-- [Download the editable draft Guide in Word](/downloads/guide/OIBOK-Guide-Draft-0.2.docx).
-- [Download the draft Guide in Markdown](/downloads/guide/OIBOK-Guide-Draft-0.2.md).
+- [Download the draft Guide as a PDF](/downloads/guide/OIBOK-Guide-Draft-0.3.pdf).
+- [Download the editable draft Guide in Word](/downloads/guide/OIBOK-Guide-Draft-0.3.docx).
+- [Download the draft Guide in Markdown](/downloads/guide/OIBOK-Guide-Draft-0.3.md).
 - [Read the draft Working Companion online](/guide/companion/).
-- [Download the draft Working Companion as a PDF](/downloads/guide/OIBOK-Working-Companion-Draft-0.2.pdf).
-- [Download the editable draft Working Companion in Word](/downloads/guide/OIBOK-Working-Companion-Draft-0.2.docx).
-- [Download the draft Working Companion in Markdown](/downloads/guide/OIBOK-Working-Companion-Draft-0.2.md).
+- [Download the draft Working Companion as a PDF](/downloads/guide/OIBOK-Working-Companion-Draft-0.3.pdf).
+- [Download the editable draft Working Companion in Word](/downloads/guide/OIBOK-Working-Companion-Draft-0.3.docx).
+- [Download the draft Working Companion in Markdown](/downloads/guide/OIBOK-Working-Companion-Draft-0.3.md).
 
 The [interactive OIBOK model](/model/) provides another way to explore the six capabilities, their connections and the relevant research and tools. It is also a draft.
 
@@ -24,23 +24,9 @@ The [interactive OIBOK model](/model/) provides another way to explore the six c
 
 **Visual set 0.1 · Draft for practitioner review**
 
-These nine diagrams accompany the Guide. Use them to discuss one organisational problem, clarify work and authority, plan evaluation and retain useful learning. Each PDF is A3 landscape.
-
 [Download all nine diagrams in one A3 PDF](/downloads/diagrams/OIBOK-Diagrams-Draft-0.1-A3.pdf).
 
-| Diagram | Use it to |
-| --- | --- |
-| [The OIBOK working model](/downloads/diagrams/overview.pdf) | Connect the six capabilities with context, orientation, governance and memory. |
-| [Applying OIBOK to one real problem](/downloads/diagrams/applying-oibok.pdf) | Follow one inquiry through investigation, work design, evaluation and retained learning. |
-| [From handoff to accepted commitment](/downloads/diagrams/accepted-handoff.pdf) | Make acceptance, ownership and unresolved conditions explicit. |
-| [People, AI and authority in one workflow](/downloads/diagrams/people-and-ai.pdf) | Distinguish AI assistance, human review, authority and escalation. |
-| [Evaluating the change and AI contribution](/downloads/diagrams/evaluating-change.pdf) | Compare credible options and examine competing explanations. |
-| [From a lesson to lasting capability](/downloads/diagrams/lasting-capability.pdf) | Retain a useful change and check its later use. |
-| [A shared vocabulary for one workflow](/downloads/diagrams/shared-vocabulary.pdf) | Explore the relationships between evidence, cases, decisions, policy, roles and action. |
-| [One inquiry across the OIBOK tools](/downloads/diagrams/connected-records.pdf) | Connect working records around the same inquiry. |
-| [How review effort changes the resource case](/downloads/diagrams/resource-comparison.pdf) | Examine the fictional Wattle Supply example's sensitivity to review effort. |
-
-The diagrams are working explanations. Fictional cases add no empirical evidence, pending checks remain pending, and the vocabulary example is a local illustration rather than a validated OIBOK ontology. The publication's [CC BY-SA 4.0 licence and scope](/licensing/) apply.
+Explore the [draft diagrams collection](/diagrams/) for the OIBOK overview, application map, accepted handoff, people and AI work design, evaluation comparison, lasting capability, shared vocabulary, connected records and resource comparison. Each figure has a readable explanation, source mapping, an SVG and an A3 PDF download. The illustrations are embedded beside the relevant Guide sections and included in the illustrated PDF and Word editions.
 
 ## What the Guide covers
 
@@ -67,7 +53,7 @@ Use the [AI Opportunity and Work Design Canvas](/tools/ai-opportunity-and-work-d
 
 ## Draft status and evidence boundaries
 
-Guide 0.2 and Working Companion 0.2 are **drafts for practitioner review**. External practitioner review, walkthroughs, field application and independent validation remain pending. Their publication invites feedback; it does not indicate that these activities have been completed.
+Guide 0.3 and Working Companion 0.3 are **drafts for practitioner review**. External practitioner review, walkthroughs, field application and independent validation remain pending. Their publication invites feedback; it does not indicate that these activities have been completed.
 
 The Guide is based on **OIBOK release 1.0** and **Practical Toolkit 0.1**. It is a practice companion to that literature-grounded working synthesis. Publishing this draft does not create a new research release or change the status of the existing chapters or canvases.
 

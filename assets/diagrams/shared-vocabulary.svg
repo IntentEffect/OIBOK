@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 848" width="1200" height="848" role="img" aria-labelledby="title desc"><title id="title">A shared vocabulary for one workflow</title><desc id="desc">An illustrative relationship map connecting evidence, policy, expertise, authority, decisions and action. Source: OIBOK 1.0 · Guide 0.3 · Research chapters 2, 3, 4 · oibok.org/diagrams/shared-vocabulary/ Draft for practitioner review. CC BY-SA 4.0.</desc>
+<rect x="0" y="0" width="1200" height="848" rx="0" fill="#f6f5f0" stroke="none" stroke-width="1"/>
+<text x="44.00" y="48.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="22" font-weight="700">OIBOK</text>
+<text x="909.32" y="44.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="700">DRAFT 0.1  /  FOR PRACTITIONER REVIEW</text>
+<text x="44.00" y="105.00" fill="#232b2a" font-family="Liberation Serif, Georgia, serif" font-size="36" font-weight="400">A shared vocabulary for one workflow</text>
+<text x="44.00" y="131.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="400">An illustrative relationship map connecting evidence, policy, expertise, authority, decisions and action.</text>
+<polyline points="44,158 1156,158" fill="none" stroke="#c9cec5" stroke-width="1"/>
+<polyline points="44,764 1156,764" fill="none" stroke="#c9cec5" stroke-width="1"/>
+<text x="44.00" y="791.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="400">Illustrative local representation · Visual set 0.1 · 23 November 2026</text>
+<text x="963.26" y="791.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="400">oibok.org/diagrams/ · CC BY-SA 4.0</text>
+<text x="44.00" y="812.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400">Source: OIBOK 1.0 · Guide 0.3 · Research chapters 2, 3, 4 · oibok.org/diagrams/shared-vocabulary/</text>
+<rect x="44" y="187" width="300" height="107" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="59.00" y="223.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="21" font-weight="700">Evidence</text>
+<text x="59.00" y="251.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Record, source, date, coverage</text>
+<text x="59.00" y="275.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">and uncertainty.</text>
+<rect x="450" y="187" width="300" height="107" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="465.00" y="223.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="21" font-weight="700">Case or request</text>
+<text x="465.00" y="251.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Identity, purpose, scope and the</text>
+<text x="465.00" y="275.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">work in question.</text>
+<rect x="856" y="187" width="300" height="107" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="871.00" y="223.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="21" font-weight="700">Relevant expertise</text>
+<text x="871.00" y="251.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Who can interpret this issue and</text>
+<text x="871.00" y="275.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">advise?</text>
+<rect x="44" y="415" width="300" height="115" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="59.00" y="451.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="21" font-weight="700">Policy version</text>
+<text x="59.00" y="479.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">The rule, its owner, effective date</text>
+<text x="59.00" y="503.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">and conditions.</text>
+<rect x="450" y="415" width="300" height="115" rx="0" fill="#e7ece3" stroke="#a3412c" stroke-width="1.4"/>
+<text x="465.00" y="451.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="21" font-weight="700">Decision</text>
+<text x="465.00" y="479.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">The commitment, rationale, limits</text>
+<text x="465.00" y="503.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">and unresolved conditions.</text>
+<rect x="856" y="415" width="300" height="115" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="871.00" y="451.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="21" font-weight="700">Authorised role</text>
+<text x="871.00" y="479.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Who may commit the</text>
+<text x="871.00" y="503.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">organisation, within which limits?</text>
+<rect x="450" y="626" width="300" height="107" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="465.00" y="662.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="21" font-weight="700">Specified action</text>
+<text x="465.00" y="690.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">What may be done and what</text>
+<text x="465.00" y="714.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">effect needs verification.</text>
+<rect x="856" y="626" width="300" height="107" rx="0" fill="#ffffff" stroke="#c9cec5" stroke-width="1"/>
+<text x="871.00" y="662.00" fill="#232b2a" font-family="Liberation Sans, Arial, sans-serif" font-size="21" font-weight="700">Work state</text>
+<text x="871.00" y="690.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">Completion, dependency,</text>
+<text x="871.00" y="714.30" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="18" font-weight="400">exception or uncertain result.</text>
+<polyline points="344,242 393,242 393,444 450,444" fill="none" stroke="#5b6461" stroke-width="1.7"/>
+<polygon points="450,444 442.0,440.4 442.0,447.6" fill="#5b6461"/>
+<text x="310.00" y="325.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="400">supports</text>
+<polyline points="600,294 600,415" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="600,415 603.6,407.0 596.4,407.0" fill="#a3412c"/>
+<text x="624.14" y="356.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="400">frames</text>
+<polyline points="856,242 807,242 807,444 750,444" fill="none" stroke="#5b6461" stroke-width="1.7"/>
+<polygon points="750,444 758.0,447.6 758.0,440.4" fill="#5b6461"/>
+<text x="814.00" y="325.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="400">informs</text>
+<polyline points="344,485 450,485" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="450,485 442.0,481.4 442.0,488.6" fill="#a3412c"/>
+<text x="373.88" y="471.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="400">governs</text>
+<polyline points="856,485 750,485" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="750,485 758.0,488.6 758.0,481.4" fill="#a3412c"/>
+<text x="773.01" y="471.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="400">authorises</text>
+<polyline points="600,530 600,626" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="600,626 603.6,618.0 596.4,618.0" fill="#a3412c"/>
+<text x="623.69" y="580.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="400">permits</text>
+<polyline points="750,680 856,680" fill="none" stroke="#a3412c" stroke-width="1.7"/>
+<polygon points="856,680 848.0,676.4 848.0,683.6" fill="#a3412c"/>
+<text x="784.58" y="664.00" fill="#a3412c" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="400">record</text>
+<text x="44.00" y="591.00" fill="#232b2a" font-family="Liberation Serif, Georgia, serif" font-size="20" font-weight="400">A local shared vocabulary</text>
+<text x="44.00" y="624.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">Check the relationships against real</text>
+<text x="44.00" y="648.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">cases. Keep expertise and decision</text>
+<text x="44.00" y="672.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">authority distinguishable. A glossary or</text>
+<text x="44.00" y="696.00" fill="#5b6461" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="400">linked table can be enough.</text>
+</svg>
