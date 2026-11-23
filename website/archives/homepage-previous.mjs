@@ -1,10 +1,12 @@
+import { guideVersion } from '../guide-edition.mjs';
+
 // Frozen homepage presentation before the clarity update on 23 November 2026.
 // Source commit: 2b1a70c632249a16f16dde43a1f29bbe974df616
 const escape = (value = '') => String(value).replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 
 const links = [
   ['knowledge', 'Knowledge', '/knowledge/'],
-  ['guide', 'Guide', '/guide/'],
+  ['guide', `Guide ${guideVersion}`, '/guide/'],
   ['tools', 'Tools', '/tools/'],
   ['research', 'Research', '/research/'],
   ['blog', 'Blog', '/blog/'],
@@ -43,7 +45,7 @@ export function renderHome({ basePath = '' } = {}) {
   <div class="section-heading"><p class="eyebrow">Start with the work</p><h2 id="start-title">From understanding<br>to useful practice.</h2></div>
   <div class="entry-list">
     <a class="entry" href="${url('/knowledge/')}"><span class="entry-number">01</span><span><strong>Understand the organisation</strong><span>Read ten connected chapters on signals, knowledge, decisions, coordination, learning and adaptation.</span></span>${arrow}</a>
-    <a class="entry" href="${url('/guide/')}"><span class="entry-number">02</span><span><strong>Apply the OIBOK Guide <small class="draft-label">Draft</small></strong><span>Follow the draft Guide to examine real work, compare changes, evaluate outcomes and retain learning.</span></span>${arrow}</a>
+    <a class="entry" href="${url('/guide/read/')}"><span class="entry-number">02</span><span><strong>Apply the OIBOK Guide <small class="draft-label">Draft ${guideVersion}</small></strong><span>Follow the draft Guide to examine real work, compare changes, evaluate outcomes and retain learning.</span></span>${arrow}</a>
     <a class="entry" href="${url('/research/')}"><span class="entry-number">03</span><span><strong>Examine the evidence</strong><span>Explore the research approach, supporting sources, limitations and questions still to be answered.</span></span>${arrow}</a>
   </div>
 </section>

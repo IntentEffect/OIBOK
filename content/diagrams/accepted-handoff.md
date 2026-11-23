@@ -20,7 +20,7 @@ A fictional Linden Studio example of acceptance, clarification, ownership and ve
 
 ## Use it with the Guide
 
-[Read the relevant Guide section](/guide/read/#4-clarify-decisions-coordination-and-execution). Use the diagram to support discussion, then record the actual evidence, authority, decision and unresolved conditions in your working records.
+[Read this section in the OIBOK Guide (draft 0.4)](/guide/read/#4-clarify-decisions-coordination-and-execution). Use the diagram to support discussion, then record the actual evidence, authority, decision and unresolved conditions in your working records.
 
 - [Practice review](/tools/practice-review/)
 
@@ -28,7 +28,7 @@ The detailed case is [Linden Studio](/guide/read/#a3-linden-studio-non-ai-decisi
 
 ## Sources and status
 
-This draft visual is based on OIBOK release 1.0, Guide 0.3 and Practical Toolkit 0.1. It explains the existing working synthesis and practice guidance. Independent practitioner review and field validation remain pending.
+This figure was published with the [archived OIBOK Guide (draft 0.3)](/downloads/guide/OIBOK-Guide-Draft-0.3.pdf). Its research and toolkit sources are OIBOK release 1.0 and Practical Toolkit 0.1. Independent practitioner review and field validation remain pending.
 
 - [OIBOK research Chapter 4: Decision and Authority](/knowledge/decision-and-authority/)
 - [OIBOK research Chapter 5: Coordination and Collective Action](/knowledge/coordination-and-collective-action/)

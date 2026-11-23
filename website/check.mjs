@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import { guideVersion } from './guide-edition.mjs';
 import { prepareBlogPosts } from './blog.mjs';
 import { rewritePublicationLinks } from './agents.mjs';
 import { renderModelReference, modelMetadata } from './model.mjs';
@@ -57,6 +58,51 @@ function checkLink(file,ref){
  checked++;
 }
 for(const file of htmlFiles){const html=fs.readFileSync(file,'utf8');for(const match of html.matchAll(/\b(?:href|src)="([^"]+)"/g))checkLink(file,match[1]);}
+const currentGuideRoutes = new Map([
+  ['/guide/', 'Guide'],
+  ['/guide/read/', 'Guide'],
+  ['/guide/companion/', 'Working Companion'],
+]);
+const hubDownloads = new Set();
+const publicationOrigin = new URL(info.siteUrl).origin;
+for (const file of htmlFiles) {
+  const page = path.relative(dist, file);
+  const html = fs.readFileSync(file, 'utf8');
+  for (const [, href, body] of html.matchAll(/<a\b[^>]*?\bhref="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)) {
+    const url = new URL(href, info.siteUrl + '/' + page);
+    if (url.origin !== publicationOrigin || !url.pathname.startsWith(base + '/')) continue;
+    const route = url.pathname.slice(base.length);
+    const download = route.match(/^\/downloads\/guide\/OIBOK-(Guide|Working-Companion)-Draft-([\d.]+)\.(pdf|docx|md)$/);
+    const book = download ? download[1].replace('-', ' ') : currentGuideRoutes.get(route);
+    const label = body.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+    const namedVersion = label.match(/\b\d+\.\d+(?:\.\d+)*\b/)?.[0];
+    if (!book) {
+      if (namedVersion && /\b(?:OIBOK Guide|Working Companion)\b/i.test(label) && !href.startsWith('#'))
+        errors.push(`${page}: "${label}" links outside the practitioner editions: ${href}`);
+      continue;
+    }
+    const targetVersion = download ? download[2] : guideVersion;
+    if (namedVersion && namedVersion !== targetVersion)
+      errors.push(`${page}: Guide edition in "${label}" does not match ${href}`);
+    if ((/\bWorking Companion\b/i.test(label) && book === 'Guide') || (/\bOIBOK Guide\b/i.test(label) && book === 'Working Companion'))
+      errors.push(`${page}: publication name in "${label}" does not match ${href}`);
+    if (!download) continue;
+    if (download[2] !== guideVersion && (namedVersion !== download[2] || !(page === 'releases/index.html' || /\barchived\b/i.test(label))))
+      errors.push(`${page}: previous edition needs an explicit archive reference for ${href}`);
+    if (page === 'guide/index.html') {
+      const format = {pdf: 'PDF', docx: 'Word', md: 'Markdown'}[download[3]];
+      if (namedVersion !== guideVersion || !label.includes(book) || !label.includes(format))
+        errors.push(`${page}: download label must identify ${book}, draft ${guideVersion} and ${format}`);
+      hubDownloads.add(download[1] + '.' + download[3]);
+    }
+  }
+}
+for (const book of ['Guide', 'Working-Companion']) {
+  for (const format of ['pdf', 'docx', 'md']) {
+    if (!hubDownloads.has(book + '.' + format)) errors.push(`Guide hub: missing ${book} ${format} download`);
+  }
+}
+
 const manifest=JSON.parse(fs.readFileSync(path.join(root,'sources/import-checksums.json'),'utf8'));
 for(const source of manifest.files){const data=fs.readFileSync(path.join(root,source.path));if(data.length!==source.bytes || crypto.createHash('sha256').update(data).digest('hex')!==source.sha256)errors.push(`Imported source changed: ${source.path}`);}
 const search=JSON.parse(fs.readFileSync(path.join(dist,'search-index.json'),'utf8'));
@@ -67,6 +113,13 @@ const cataloguePath=path.join(dist,'agents/manifest.json');
 const catalogue=JSON.parse(fs.readFileSync(cataloguePath,'utf8'));
 const expectedPages=['website/imported-pages.json','website/policy-pages.json','website/extra-pages.json','website/blog-posts.json'].flatMap(file=>JSON.parse(fs.readFileSync(path.join(root,file),'utf8')));
 const expectedSources=new Set(expectedPages.map(page=>page.source));
+for (const [route, book] of currentGuideRoutes) {
+  const record = expectedPages.find(page => page.path === route);
+  const stem = book.toLowerCase().replace(' ', '-');
+  const source = route === '/guide/' ? 'content/guide/index.md' : `content/guide/${stem}-draft-${guideVersion}.md`;
+  if (record?.source !== source || record?.component_version !== guideVersion || !record.title.includes(`(draft ${guideVersion})`))
+    errors.push(`Guide catalogue: expected draft ${guideVersion} from ${source} at ${route}`);
+}
 const documentIds=new Set();
 const documentSources=new Set();
 function localSource(url){

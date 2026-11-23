@@ -20,17 +20,17 @@ A fictional Harbour Services case showing what carries forward between working r
 
 ## Use it with the Guide
 
-[Read the relevant Guide section](/guide/read/#keep-a-small-connected-record). Use the diagram to support discussion, then record the actual evidence, authority, decision and unresolved conditions in your working records.
+[Read this section in the OIBOK Guide (draft 0.4)](/guide/read/#keep-a-small-connected-record). Use the diagram to support discussion, then record the actual evidence, authority, decision and unresolved conditions in your working records.
 
 - [Practice review](/tools/practice-review/)
 - [Ai opportunity and work design](/tools/ai-opportunity-and-work-design/)
 - [Outcome and learning](/tools/outcome-and-learning/)
 
-See the [Working Companion](/guide/companion/#3-carry-the-records-forward) for handoff checks and a case index.
+See the [OIBOK Working Companion (draft 0.4)](/guide/companion/#3-carry-the-records-forward) for handoff checks and a case index.
 
 ## Sources and status
 
-This draft visual is based on OIBOK release 1.0, Guide 0.3 and Practical Toolkit 0.1. It explains the existing working synthesis and practice guidance. Independent practitioner review and field validation remain pending.
+This figure was published with the [archived OIBOK Guide (draft 0.3)](/downloads/guide/OIBOK-Guide-Draft-0.3.pdf). Its research and toolkit sources are OIBOK release 1.0 and Practical Toolkit 0.1. Independent practitioner review and field validation remain pending.
 
 - [OIBOK research Chapter 4: Decision and Authority](/knowledge/decision-and-authority/)
 - [OIBOK research Chapter 7: Outcomes Feedback and Evaluation](/knowledge/outcomes-feedback-and-evaluation/)

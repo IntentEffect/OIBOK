@@ -1,4 +1,4 @@
-# The OIBOK Guide
+# OIBOK Guide (draft 0.4)
 
 **DRAFT · For practitioner review**  
 **Guide 0.4 · 24 November 2026**
@@ -11,14 +11,14 @@ This is the complete illustrated draft Guide, accompanied by a Working Companion
 
 ## Read and download
 
-- [Read the complete draft Guide online](/guide/read/).
-- [Download the draft Guide as a PDF](/downloads/guide/OIBOK-Guide-Draft-0.4.pdf).
-- [Download the editable draft Guide in Word](/downloads/guide/OIBOK-Guide-Draft-0.4.docx).
-- [Download the draft Guide in Markdown](/downloads/guide/OIBOK-Guide-Draft-0.4.md).
-- [Read the draft Working Companion online](/guide/companion/).
-- [Download the draft Working Companion as a PDF](/downloads/guide/OIBOK-Working-Companion-Draft-0.4.pdf).
-- [Download the editable draft Working Companion in Word](/downloads/guide/OIBOK-Working-Companion-Draft-0.4.docx).
-- [Download the draft Working Companion in Markdown](/downloads/guide/OIBOK-Working-Companion-Draft-0.4.md).
+- [Read the OIBOK Guide (draft 0.4) online](/guide/read/).
+- [Download the OIBOK Guide (draft 0.4) as a PDF](/downloads/guide/OIBOK-Guide-Draft-0.4.pdf).
+- [Download the OIBOK Guide (draft 0.4) in Word](/downloads/guide/OIBOK-Guide-Draft-0.4.docx).
+- [Download the OIBOK Guide (draft 0.4) in Markdown](/downloads/guide/OIBOK-Guide-Draft-0.4.md).
+- [Read the OIBOK Working Companion (draft 0.4) online](/guide/companion/).
+- [Download the OIBOK Working Companion (draft 0.4) as a PDF](/downloads/guide/OIBOK-Working-Companion-Draft-0.4.pdf).
+- [Download the OIBOK Working Companion (draft 0.4) in Word](/downloads/guide/OIBOK-Working-Companion-Draft-0.4.docx).
+- [Download the OIBOK Working Companion (draft 0.4) in Markdown](/downloads/guide/OIBOK-Working-Companion-Draft-0.4.md).
 
 The [interactive OIBOK model](/model/) provides another way to explore the six capabilities, their connections and the relevant research and tools. It is also a draft.
 

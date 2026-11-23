@@ -9,7 +9,7 @@ OIBOK is an open body of knowledge and practical toolkit for understanding how o
 ## Read and use
 
 - [Read the body of knowledge](https://oibok.org/knowledge/).
-- [Read or download the illustrated OIBOK Guide, draft 0.4](https://oibok.org/guide/).
+- [Read or download the OIBOK Guide (draft 0.4)](https://oibok.org/guide/).
 - [Explore the nine draft diagrams and download SVGs or A3 PDFs](https://oibok.org/diagrams/).
 - [Explore the interactive model, draft 0.2](https://oibok.org/model/).
 - [Explore practical tools and A3 canvases](https://oibok.org/tools/).
