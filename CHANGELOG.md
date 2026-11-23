@@ -1,5 +1,9 @@
 # Versions and corrections
 
+## Guide and Working Companion 0.4 | 24 November 2026
+
+Published the [diagnostic and practice edition](/guide/) with a practical chapter on the seven provisional failure classes, a four-stage fictional example at Silvergum Field Services and a worked decision about cross-team adoption. The [Companion](/guide/companion/) includes editable diagnostic, ownership-transfer and cross-team records. Web, Word, PDF and Markdown editions are available. Earlier downloads retain their original addresses. Research release 1.0, Toolkit 0.1 and Visual set 0.1 remain the source editions. External practitioner review and field validation are pending.
+
 ## Illustrated Guide and practical diagrams | 24 November 2026
 
 Published [Visual Set 0.1](/diagrams/) with nine draft figures: the model overview, application route, accepted handoff, people and AI workflow, evaluation comparisons, lasting capability, a shared vocabulary, connected working records and the fictional Wattle Supply resource comparison. Each figure has a readable explanation, source mapping, editable SVG and A3 PDF. A combined nine-page PDF is available.
