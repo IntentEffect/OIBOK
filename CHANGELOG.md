@@ -1,5 +1,9 @@
 # Versions and corrections
 
+## Knowledge page overview and problem routes | 25 November 2026
+
+The [Knowledge page](/knowledge/) now offers five starting problems, a booking example that explains Orient, Coordinate and Improve, and a plain-language reading of the eleven integrated propositions. The overview links to the research lineage, evidence limits and original chapters. This is a reader-facing update to the website.
+
 ## Chapter 1 reader and field pilot | 25 November 2026
 
 Published the [Chapter 1 reader draft](/knowledge/signals-and-attention/reader/), a [one-page A4 worksheet](/tools/two-case-review/) and a [pilot and independent review brief](/research/chapter-one-pilot/). These pilot materials use research release 1.0 and Guide 0.6. Field results and independent review are pending. Current publication pages identify Intent & Effect as founding steward and maintainer.
