@@ -7,6 +7,7 @@ import { renderHome, renderLayout, renderSearch } from './layout.mjs';
 import { buildAgentResources, rewritePublicationLinks } from './agents.mjs';
 import { prepareBlogPosts, renderBlogIndex, renderBlogFeed } from './blog.mjs';
 import { renderModel } from './model.mjs';
+import { formatPropositionRegister } from './proposition-register.mjs';
 import { renderHome as renderPreviousHome, renderLayout as renderPreviousLayout, archiveMetadata } from './archives/homepage-previous.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -110,6 +111,7 @@ for (const page of pages) {
   }
   if (page.path === '/blog/') content += renderBlogIndex({posts:blogPosts,basePath});
   indexPage(page, content);
+  if (page.path === '/research/propositions/') content = formatPropositionRegister(content);
   const toc = [...content.matchAll(/<h([23])\b[^>]*id="([^"]+)"[^>]*>([\s\S]*?)<\/h\1>/g)].map(m=>({level:Number(m[1]),id:m[2],text:plain(m[3])}));
   if (page.kind === 'interactive-model') content += renderModel({basePath});
   const sourceDownload = `/downloads/source/${page.source}`;

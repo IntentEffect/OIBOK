@@ -113,6 +113,18 @@ const cataloguePath=path.join(dist,'agents/manifest.json');
 const catalogue=JSON.parse(fs.readFileSync(cataloguePath,'utf8'));
 const expectedPages=['website/imported-pages.json','website/policy-pages.json','website/extra-pages.json','website/blog-posts.json'].flatMap(file=>JSON.parse(fs.readFileSync(path.join(root,file),'utf8')));
 const expectedSources=new Set(expectedPages.map(page=>page.source));
+
+// Every source chapter and stable ID must remain available in the formatted register.
+const registerPage = expectedPages.find(page => page.path === '/research/propositions/');
+const registerSource = fs.readFileSync(path.join(root, registerPage.source), 'utf8');
+const registerHtml = fs.readFileSync(path.join(dist, registerPage.path, 'index.html'), 'utf8');
+const sourceIds = [...registerSource.matchAll(/^\| (OI-PROP-[A-Z]+-\d+) \|/gm)].map(match => match[1]);
+const renderedIds = [...registerHtml.matchAll(/class="proposition-id" id="([^"]+)"/g)].map(match => match[1]);
+const chapters = [...registerSource.matchAll(/^### 8\.\d+ /gm)];
+if (!sourceIds.length || sourceIds.join('|') !== renderedIds.join('|') ||
+    (registerHtml.match(/<table class="proposition-register"/g) || []).length !== chapters.length)
+  errors.push('Proposition register: chapter tables or ordered proposition IDs differ from the source');
+
 for (const [route, book] of currentGuideRoutes) {
   const record = expectedPages.find(page => page.path === route);
   const stem = book.toLowerCase().replace(' ', '-');
