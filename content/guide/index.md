@@ -9,6 +9,8 @@ This is the complete illustrated draft Guide, accompanied by a Working Companion
 
 **New in 0.5.** Follow a complete Silvergum case pack from investigation through evaluation, exception handling, ownership transfer and a cross-team decision. Use the stage-to-worksheet route and expanded facilitation guidance. Read one chapter at a time or keep the full reading view.
 
+**Writing pilot for review.** [Read the proposed 0.6 homepage, introduction, Quick Start and Chapter 2A wording](/guide/0-6-writing-pilot/). This is a limited writing sample; the complete Guide and downloads below remain draft 0.5.
+
 ## Read and download
 
 **How this edition was prepared.** AI tools assisted with writing and editing the Guide. Independent editorial review is pending. [Research methods and AI use](/methodology/#how-ai-was-used-to-develop-oibok).

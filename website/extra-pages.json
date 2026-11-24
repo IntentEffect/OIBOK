@@ -44,6 +44,17 @@
     "status": "draft-for-practitioner-review"
   },
   {
+    "source": "content/guide/writing-pilot-0.6.md",
+    "path": "/guide/0-6-writing-pilot/",
+    "title": "Guide 0.6 writing pilot",
+    "description": "Proposed homepage, introduction, Quick Start and diagnostic chapter wording for review. Guide 0.5 remains the current complete edition.",
+    "section": "Guide",
+    "kind": "editorial-pilot",
+    "version": "Draft 0.6 wording · Writing pilot only · 24 November 2026",
+    "component_version": "0.6-pilot",
+    "status": "draft-for-practitioner-review"
+  },
+  {
     "source": "content/diagrams/index.md",
     "path": "/diagrams/",
     "title": "OIBOK diagrams",
