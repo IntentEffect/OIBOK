@@ -29,8 +29,8 @@ export function renderHome({ basePath = '' } = {}) {
     <h1 id="home-title">Make AI useful in <em>everyday organisational work.</em></h1>
     <div class="hero-intro">
       <p class="hero-summary">What is OIBOK?</p>
-      <p>OIBOK is a free, openly licensed research publication, practical Guide and toolkit for improving how organisations use knowledge, make decisions, coordinate work and learn.</p>
-      <p>It helps leaders and teams investigate the organisational gaps that can hold AI adoption back, then design and evaluate changes to the work.</p>
+      <p>OIBOK is a free, openly licensed body of research, a practical Guide and a set of tools for improving how organisations use knowledge, make decisions, coordinate work and learn.</p>
+      <p>Use it to investigate a problem in your team's work, decide what to change and check whether the change helps. It can help you examine an AI proposal or improve work without AI.</p>
     </div>
   </div>
   <div class="hero-actions">
@@ -43,33 +43,33 @@ export function renderHome({ basePath = '' } = {}) {
 <section id="problem-title" class="entry-section" aria-labelledby="practice-title">
   <div class="section-heading"><p class="eyebrow">Start with the work</p><h2 id="practice-title">From understanding<br> to useful practice.</h2></div>
   <div class="entry-list">
-    <a class="entry" href="${url('/knowledge/')}"><span class="entry-number">01</span><span><strong>Understand the organisation</strong><span>Read ten connected chapters on signals, knowledge, decisions, coordination, learning and adaptation.</span></span>${arrow}</a>
-    <a class="entry" href="${url('/guide/read/')}"><span class="entry-number">02</span><span><strong>Apply the OIBOK Guide <small class="draft-label">Draft ${guideVersion}</small></strong><span>Follow the draft Guide to examine real work, compare changes, evaluate outcomes and retain learning.</span></span>${arrow}</a>
-    <a class="entry" href="${url('/research/')}"><span class="entry-number">03</span><span><strong>Examine the evidence</strong><span>Explore the research approach, supporting sources, limitations and questions still to be answered.</span></span>${arrow}</a>
+    <a class="entry" href="${url('/knowledge/')}"><span class="entry-number">01</span><span><strong>Understand the organisation</strong><span>Explore how people notice problems, find the knowledge they need, make decisions and work together.</span></span>${arrow}</a>
+    <a class="entry" href="${url('/guide/read/')}"><span class="entry-number">02</span><span><strong>Apply the OIBOK Guide <small class="draft-label">Draft ${guideVersion}</small></strong><span>Pick one recurring problem. Follow what happens, compare possible changes and decide what to try.</span></span>${arrow}</a>
+    <a class="entry" href="${url('/research/')}"><span class="entry-number">03</span><span><strong>Examine the evidence</strong><span>Follow the sources behind the ideas, check their limits and see which questions remain open.</span></span>${arrow}</a>
   </div>
 </section>
 
 <section class="entry-section" aria-labelledby="start-title">
   <div class="section-heading"><p class="eyebrow">Research and practical resources</p><h2 id="start-title">What you can use.</h2></div>
   <div class="entry-list">
-    <a class="entry" href="${url('/knowledge/')}"><span class="entry-number">01</span><span><strong>The body of knowledge</strong><span>Ten research chapters explaining how signals, knowledge, decisions, collective action and learning connect, with supporting sources and limitations.</span></span>${arrow}</a>
-    <a class="entry" href="${url('/guide/')}"><span class="entry-number">02</span><span><strong>The OIBOK Guide <small class="draft-label">Draft ${guideVersion}</small></strong><span>A practical method for investigating a workplace problem, comparing options, designing work and evaluating a change.</span></span>${arrow}</a>
-    <a class="entry" href="${url('/tools/')}"><span class="entry-number">03</span><span><strong>Tools and canvases</strong><span>Working templates to map knowledge, clarify decisions and handoffs, design an AI contribution and record outcomes and learning.</span></span>${arrow}</a>
+    <a class="entry" href="${url('/knowledge/')}"><span class="entry-number">01</span><span><strong>The body of knowledge</strong><span>Ten connected research chapters, with sources, competing explanations and limits to the claims.</span></span>${arrow}</a>
+    <a class="entry" href="${url('/guide/')}"><span class="entry-number">02</span><span><strong>The OIBOK Guide <small class="draft-label">Draft ${guideVersion}</small></strong><span>Practical guidance and fictional worked examples to help you investigate a workplace problem and review a change.</span></span>${arrow}</a>
+    <a class="entry" href="${url('/tools/')}"><span class="entry-number">03</span><span><strong>Tools and canvases</strong><span>Worksheets for recording what you find, clarifying who can decide, planning a change and checking what happens.</span></span>${arrow}</a>
   </div>
 </section>
 
 <section class="framework-section" aria-labelledby="framework-title">
   <div class="framework-intro"><p class="eyebrow">What organisational intelligence means</p><h2 id="framework-title">Understand the situation.<br> Act together.<br> Learn and improve.</h2><p>Organisational intelligence concerns how an organisation understands a situation, coordinates a response and improves future responses over time. OIBOK connects this through three recurring transformations.<br><a class="text-link" href="${url('/model/')}">Explore the interactive model <small class="draft-label">Draft</small></a></p></div>
   <div class="transformations">
-    <div><span class="transformation-number">01 /</span><h3>Orient</h3><p>Notice relevant signals. Understand the context. Bring knowledge and expertise to the situation.</p></div>
-    <div><span class="transformation-number">02 /</span><h3>Coordinate</h3><p>Make decisions with clear authority. Connect people, systems and work. Follow through reliably.</p></div>
-    <div><span class="transformation-number">03 /</span><h3>Improve</h3><p>Evaluate outcomes. Retain what is learned. Develop the capacity to respond to what comes next.</p></div>
+    <div><span class="transformation-number">01 /</span><h3>Orient</h3><p>Notice what matters, understand the situation and bring in the knowledge and expertise needed.</p></div>
+    <div><span class="transformation-number">02 /</span><h3>Coordinate</h3><p>Make decisions with clear authority, organise the work and follow through.</p></div>
+    <div><span class="transformation-number">03 /</span><h3>Improve</h3><p>Examine the results, put useful learning into practice and check that it lasts as conditions change.</p></div>
   </div>
 </section>
 
 <section class="open-section" aria-labelledby="open-title">
   <p class="eyebrow">An open community project</p>
-  <div><h2 id="open-title">Free to use.<br>Open to improvement.</h2><p>OIBOK is developed by the OIBOK community. Read the research, try the practical resources, challenge an explanation or contribute an improvement.</p><p>The body of knowledge is a literature-grounded working synthesis. The Guide and visual model are drafts for practitioner review, and independent field validation of the complete model remains pending.</p><div class="inline-links"><a class="text-link" href="${url('/research/')}">Research and limitations</a><a class="text-link" href="${url('/contribute/')}">Contribute to OIBOK</a></div></div>
+  <div><h2 id="open-title">Free to use.<br>Open to improvement.</h2><p>OIBOK is developed by the OIBOK community. Read the research, try a worksheet, question an explanation or suggest an improvement.</p><p>The body of knowledge is a literature-grounded working synthesis. The Guide and visual model are drafts for practitioner review. Independent field validation of the complete model remains pending.</p><div class="inline-links"><a class="text-link" href="${url('/research/')}">Research and limitations</a><a class="text-link" href="${url('/contribute/')}">Contribute to OIBOK</a></div></div>
 </section>`;
 }
 

@@ -192,7 +192,7 @@ if(!discovery.startsWith('# Organisation Intelligence Body of Knowledge (OIBOK)\
 // Draft practice resources must retain their status in every published representation.
 const draftPages=expectedPages.filter(page=>page.status==='draft-for-practitioner-review');
 const diagramFigures=JSON.parse(fs.readFileSync(path.join(root,'website/diagrams.json'),'utf8')).figures;
-const expectedDraftRoutes=['/guide/','/guide/read/','/guide/companion/','/guide/silvergum/','/guide/0-6-writing-pilot/','/model/','/model/reference/','/diagrams/',...diagramFigures.map(d=>`/diagrams/${d.slug}/`)];
+const expectedDraftRoutes=['/guide/','/guide/read/','/guide/companion/','/guide/silvergum/','/model/','/model/reference/','/diagrams/',...diagramFigures.map(d=>`/diagrams/${d.slug}/`)];
 if(draftPages.length!==expectedDraftRoutes.length || expectedDraftRoutes.some(route=>!draftPages.some(page=>page.path===route)))errors.push('Draft publication: missing or unexpected draft route');
 for(const page of draftPages){
  const file=path.join(dist,page.path,'index.html');
@@ -209,7 +209,7 @@ if(modelMetadata.version!=='0.2' || modelMetadata.researchEdition!=='1.0' || mod
 const modelPage=fs.readFileSync(path.join(dist,'model/index.html'),'utf8');
 if(!/src="[^\"]*model\.[a-f0-9]+\.js"/.test(modelPage) || !/href="[^\"]*model\.[a-f0-9]+\.css"/.test(modelPage))errors.push('Interactive model: missing versioned assets');
 if(modelPage.includes('class="page-aside"') || (modelPage.match(/data-key="/g)||[]).length!==13)errors.push('Interactive model: unusable navigation or missing selectable area');
-for(const name of ['OIBOK-Guide-Draft-0.2','OIBOK-Working-Companion-Draft-0.2','OIBOK-Guide-Draft-0.3','OIBOK-Working-Companion-Draft-0.3','OIBOK-Guide-Draft-0.4','OIBOK-Working-Companion-Draft-0.4',...['Guide','Working-Companion','Silvergum-Case-Pack'].map(book=>`OIBOK-${book}-Draft-${guideVersion}`)]){
+for(const name of ['OIBOK-Guide-Draft-0.2','OIBOK-Working-Companion-Draft-0.2','OIBOK-Guide-Draft-0.3','OIBOK-Working-Companion-Draft-0.3','OIBOK-Guide-Draft-0.4','OIBOK-Working-Companion-Draft-0.4','OIBOK-Guide-Draft-0.5','OIBOK-Working-Companion-Draft-0.5','OIBOK-Silvergum-Case-Pack-Draft-0.5',...['Guide','Working-Companion','Silvergum-Case-Pack'].map(book=>`OIBOK-${book}-Draft-${guideVersion}`)]){
  for(const extension of ['pdf','docx','md']){
   const file=path.join(dist,'downloads/guide',`${name}.${extension}`);
   if(!fs.existsSync(file))errors.push(`Draft download: missing ${name}.${extension}`);

@@ -1,8 +1,8 @@
 # Versions and corrections
 
-## Guide 0.6 writing pilot | 24 November 2026
+## Guide and connected practice pack 0.6 | 24 November 2026
 
-Published a [limited writing pilot](/guide/0-6-writing-pilot/) with proposed homepage, Guide introduction, Quick Start and Chapter 2A copy. It makes the instructions more direct and uses concrete situations while preserving the seven provisional failure-class names, the three transformations, source links and evidence boundaries. The pilot is available for editorial feedback. Guide 0.5 remains the current complete edition and its downloads and chapter text are unchanged. This is not a new research release or a completed practitioner evaluation.
+Published [Guide draft 0.6](/guide/) with the approved wording for the introduction, Quick Start and Chapter 2A, and applied the homepage wording. The revised text uses direct instructions and concrete questions while preserving the diagnostic class names, research definitions, source links and evidence limits. The separate writing-pilot page has been removed. All three publications have matching web, PDF, Word and Markdown editions; the Working Companion and Silvergum case pack carry updated edition references. Earlier downloads remain available. This is an editorial release, not new research or completed independent practitioner testing.
 
 ## Guide and connected practice pack 0.5 | 24 November 2026
 
