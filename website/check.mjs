@@ -3,6 +3,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { guideVersion } from './guide-edition.mjs';
+import { guideChapters } from './guide-chapters.mjs';
 import { prepareBlogPosts } from './blog.mjs';
 import { rewritePublicationLinks } from './agents.mjs';
 import { renderModelReference, modelMetadata } from './model.mjs';
@@ -62,6 +63,7 @@ const currentGuideRoutes = new Map([
   ['/guide/', 'Guide'],
   ['/guide/read/', 'Guide'],
   ['/guide/companion/', 'Working Companion'],
+  ['/guide/silvergum/', 'Silvergum Case Pack'],
 ]);
 const hubDownloads = new Set();
 const publicationOrigin = new URL(info.siteUrl).origin;
@@ -72,8 +74,8 @@ for (const file of htmlFiles) {
     const url = new URL(href, info.siteUrl + '/' + page);
     if (url.origin !== publicationOrigin || !url.pathname.startsWith(base + '/')) continue;
     const route = url.pathname.slice(base.length);
-    const download = route.match(/^\/downloads\/guide\/OIBOK-(Guide|Working-Companion)-Draft-([\d.]+)\.(pdf|docx|md)$/);
-    const book = download ? download[1].replace('-', ' ') : currentGuideRoutes.get(route);
+    const download = route.match(/^\/downloads\/guide\/OIBOK-(Guide|Working-Companion|Silvergum-Case-Pack)-Draft-([\d.]+)\.(pdf|docx|md)$/);
+    const book = download ? download[1].replaceAll('-', ' ') : currentGuideRoutes.get(route);
     const label = body.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
     const namedVersion = label.match(/\b\d+\.\d+(?:\.\d+)*\b/)?.[0];
     if (!book) {
@@ -91,13 +93,13 @@ for (const file of htmlFiles) {
       errors.push(`${page}: previous edition needs an explicit archive reference for ${href}`);
     if (page === 'guide/index.html') {
       const format = {pdf: 'PDF', docx: 'Word', md: 'Markdown'}[download[3]];
-      if (namedVersion !== guideVersion || !label.includes(book) || !label.includes(format))
+      if (namedVersion !== guideVersion || !label.toLowerCase().includes(book.toLowerCase()) || !label.includes(format))
         errors.push(`${page}: download label must identify ${book}, draft ${guideVersion} and ${format}`);
       hubDownloads.add(download[1] + '.' + download[3]);
     }
   }
 }
-for (const book of ['Guide', 'Working-Companion']) {
+for (const book of ['Guide', 'Working-Companion', 'Silvergum-Case-Pack']) {
   for (const format of ['pdf', 'docx', 'md']) {
     if (!hubDownloads.has(book + '.' + format)) errors.push(`Guide hub: missing ${book} ${format} download`);
   }
@@ -127,7 +129,7 @@ if (!sourceIds.length || sourceIds.join('|') !== renderedIds.join('|') ||
 
 for (const [route, book] of currentGuideRoutes) {
   const record = expectedPages.find(page => page.path === route);
-  const stem = book.toLowerCase().replace(' ', '-');
+  const stem = book.toLowerCase().replaceAll(' ', '-');
   const source = route === '/guide/' ? 'content/guide/index.md' : `content/guide/${stem}-draft-${guideVersion}.md`;
   if (record?.source !== source || record?.component_version !== guideVersion || !record.title.includes(`(draft ${guideVersion})`))
     errors.push(`Guide catalogue: expected draft ${guideVersion} from ${source} at ${route}`);
@@ -190,7 +192,7 @@ if(!discovery.startsWith('# Organisation Intelligence Body of Knowledge (OIBOK)\
 // Draft practice resources must retain their status in every published representation.
 const draftPages=expectedPages.filter(page=>page.status==='draft-for-practitioner-review');
 const diagramFigures=JSON.parse(fs.readFileSync(path.join(root,'website/diagrams.json'),'utf8')).figures;
-const expectedDraftRoutes=['/guide/','/guide/read/','/guide/companion/','/model/','/model/reference/','/diagrams/',...diagramFigures.map(d=>`/diagrams/${d.slug}/`)];
+const expectedDraftRoutes=['/guide/','/guide/read/','/guide/companion/','/guide/silvergum/','/model/','/model/reference/','/diagrams/',...diagramFigures.map(d=>`/diagrams/${d.slug}/`)];
 if(draftPages.length!==expectedDraftRoutes.length || expectedDraftRoutes.some(route=>!draftPages.some(page=>page.path===route)))errors.push('Draft publication: missing or unexpected draft route');
 for(const page of draftPages){
  const file=path.join(dist,page.path,'index.html');
@@ -207,13 +209,34 @@ if(modelMetadata.version!=='0.2' || modelMetadata.researchEdition!=='1.0' || mod
 const modelPage=fs.readFileSync(path.join(dist,'model/index.html'),'utf8');
 if(!/src="[^\"]*model\.[a-f0-9]+\.js"/.test(modelPage) || !/href="[^\"]*model\.[a-f0-9]+\.css"/.test(modelPage))errors.push('Interactive model: missing versioned assets');
 if(modelPage.includes('class="page-aside"') || (modelPage.match(/data-key="/g)||[]).length!==13)errors.push('Interactive model: unusable navigation or missing selectable area');
-for(const name of ['OIBOK-Guide-Draft-0.2','OIBOK-Working-Companion-Draft-0.2','OIBOK-Guide-Draft-0.3','OIBOK-Working-Companion-Draft-0.3','OIBOK-Guide-Draft-0.4','OIBOK-Working-Companion-Draft-0.4']){
+for(const name of ['OIBOK-Guide-Draft-0.2','OIBOK-Working-Companion-Draft-0.2','OIBOK-Guide-Draft-0.3','OIBOK-Working-Companion-Draft-0.3','OIBOK-Guide-Draft-0.4','OIBOK-Working-Companion-Draft-0.4',...['Guide','Working-Companion','Silvergum-Case-Pack'].map(book=>`OIBOK-${book}-Draft-${guideVersion}`)]){
  for(const extension of ['pdf','docx','md']){
   const file=path.join(dist,'downloads/guide',`${name}.${extension}`);
   if(!fs.existsSync(file))errors.push(`Draft download: missing ${name}.${extension}`);
   else if(extension==='pdf' && fs.readFileSync(file).subarray(0,5).toString()!=='%PDF-')errors.push(`Draft download: invalid PDF ${name}`);
   else if(extension==='md' && !fs.readFileSync(file,'utf8').includes('DRAFT · For practitioner review'))errors.push(`Draft download: missing explicit status ${name}`);
  }
+}
+
+// Chapter views keep the full Guide available and preserve its headings and navigation.
+const guideHtml=fs.readFileSync(path.join(dist,'guide/read/index.html'),'utf8');
+for (const [i, chapter] of guideChapters.entries()) {
+ const file=path.join(dist,chapter.path,'index.html');
+ if(!fs.existsSync(file)){errors.push(`Guide chapter missing: ${chapter.path}`);continue;}
+ const html=fs.readFileSync(file,'utf8');
+ const following=guideChapters[i+1];
+ if(!html.includes('aria-label="Draft publication status"') || !html.includes('aria-label="Guide chapter navigation"') || !html.includes(`OIBOK-Guide-Draft-${guideVersion}.pdf`))errors.push(`Guide chapter: status or navigation missing at ${chapter.path}`);
+ if(following && !html.includes(`rel="next" href="${base}${following.path}"`))errors.push(`Guide chapter: wrong next page at ${chapter.path}`);
+ const start=chapter.id ? guideHtml.indexOf(`<h2 id="${chapter.id}">`) : guideHtml.indexOf('<h2 id="purpose-and-publication-status">');
+ const end=following?.id ? guideHtml.indexOf(`<h2 id="${following.id}">`) : guideHtml.indexOf('<p class="source-download">');
+ const section=guideHtml.slice(start,end);
+ const sectionIds=[...section.matchAll(/<h[234]\b[^>]*id="([^"]+)"/g)].map(m=>m[1]);
+ if(start<0 || end<=start || sectionIds.some(id=>!ids.get(file).has(id)))errors.push(`Guide chapter: source headings missing at ${chapter.path}`);
+}
+for (const [stem,book] of [['guide','Guide'],['working-companion','Working-Companion'],['silvergum-case-pack','Silvergum-Case-Pack']]) {
+ const source=fs.readFileSync(path.join(root,`content/guide/${stem}-draft-${guideVersion}.md`));
+ const download=fs.readFileSync(path.join(dist,`downloads/guide/OIBOK-${book}-Draft-${guideVersion}.md`));
+ if(!source.equals(download))errors.push(`Guide download differs from canonical source: ${book}`);
 }
 
 // Published figures must remain available as vectors, print files and readable sources.

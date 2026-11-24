@@ -2,34 +2,45 @@
   {
     "source": "content/guide/index.md",
     "path": "/guide/",
-    "title": "OIBOK Guide (draft 0.4)",
-    "description": "Draft 0.4 for practitioner review. Diagnose failures, follow a change into everyday use and decide what teams should share.",
+    "title": "OIBOK Guide (draft 0.5)",
+    "description": "Draft 0.5 for practitioner review. Diagnose failures, follow a change into everyday use and decide what teams should share.",
     "section": "Guide",
     "kind": "guide-index",
-    "version": "Draft 0.4 \u00b7 Diagnostic and practice edition \u00b7 For practitioner review \u00b7 24 November 2026",
-    "component_version": "0.4",
+    "version": "Draft 0.5 · Connected practice edition · For practitioner review · 24 November 2026",
+    "component_version": "0.5",
     "status": "draft-for-practitioner-review"
   },
   {
-    "source": "content/guide/guide-draft-0.4.md",
+    "source": "content/guide/guide-draft-0.5.md",
     "path": "/guide/read/",
-    "title": "Read the OIBOK Guide (draft 0.4)",
+    "title": "Read the OIBOK Guide (draft 0.5)",
     "description": "The complete draft Guide, from investigating a worthwhile problem to designing work, evaluating outcomes and retaining learning.",
     "section": "Guide",
     "kind": "practitioner-guide",
-    "version": "Draft 0.4 \u00b7 Diagnostic and practice edition \u00b7 For practitioner review \u00b7 24 November 2026",
-    "component_version": "0.4",
+    "version": "Draft 0.5 · Connected practice edition · For practitioner review · 24 November 2026",
+    "component_version": "0.5",
     "status": "draft-for-practitioner-review"
   },
   {
-    "source": "content/guide/working-companion-draft-0.4.md",
+    "source": "content/guide/working-companion-draft-0.5.md",
     "path": "/guide/companion/",
-    "title": "OIBOK Working Companion (draft 0.4)",
-    "description": "Draft preparation, handoff, evaluation, retention and feedback guidance to use alongside the OIBOK Guide (draft 0.4).",
+    "title": "OIBOK Working Companion (draft 0.5)",
+    "description": "Draft preparation, handoff, evaluation, retention and feedback guidance to use alongside the OIBOK Guide (draft 0.5).",
     "section": "Guide",
     "kind": "working-companion",
-    "version": "Draft 0.4 \u00b7 Diagnostic and practice edition \u00b7 For practitioner review \u00b7 24 November 2026",
-    "component_version": "0.4",
+    "version": "Draft 0.5 · Connected practice edition · For practitioner review · 24 November 2026",
+    "component_version": "0.5",
+    "status": "draft-for-practitioner-review"
+  },
+  {
+    "source": "content/guide/silvergum-case-pack-draft-0.5.md",
+    "path": "/guide/silvergum/",
+    "title": "Silvergum worked case pack (draft 0.5)",
+    "description": "Completed fictional Practice Review, evaluation, exception, ownership and cross-team records for one connected inquiry.",
+    "section": "Guide",
+    "kind": "worked-case-pack",
+    "version": "Draft 0.5 · For practitioner review · 24 November 2026",
+    "component_version": "0.5",
     "status": "draft-for-practitioner-review"
   },
   {
@@ -39,7 +50,7 @@
     "description": "Nine draft visual explanations for investigating work, designing people and AI contributions, evaluating change and retaining learning.",
     "section": "Guide",
     "kind": "diagram-index",
-    "version": "Draft visuals 0.1 \u00b7 For practitioner review \u00b7 23 November 2026",
+    "version": "Draft visuals 0.1 · For practitioner review · 23 November 2026",
     "component_version": "0.1",
     "status": "draft-for-practitioner-review"
   },
@@ -50,7 +61,7 @@
     "description": "Three recurring transformations, six capabilities and the connections that support organisational response.",
     "section": "Guide",
     "kind": "practice-diagram",
-    "version": "Draft visual 0.1 \u00b7 For practitioner review \u00b7 23 November 2026",
+    "version": "Draft visual 0.1 · For practitioner review · 23 November 2026",
     "component_version": "0.1",
     "status": "draft-for-practitioner-review"
   },
@@ -61,7 +72,7 @@
     "description": "Connect investigation, work design, evaluation and retained learning around one bounded piece of work.",
     "section": "Guide",
     "kind": "practice-diagram",
-    "version": "Draft visual 0.1 \u00b7 For practitioner review \u00b7 23 November 2026",
+    "version": "Draft visual 0.1 · For practitioner review · 23 November 2026",
     "component_version": "0.1",
     "status": "draft-for-practitioner-review"
   },
@@ -72,7 +83,7 @@
     "description": "A fictional Linden Studio example of acceptance, clarification, ownership and verified effects.",
     "section": "Guide",
     "kind": "practice-diagram",
-    "version": "Draft visual 0.1 \u00b7 For practitioner review \u00b7 23 November 2026",
+    "version": "Draft visual 0.1 · For practitioner review · 23 November 2026",
     "component_version": "0.1",
     "status": "draft-for-practitioner-review"
   },
@@ -83,7 +94,7 @@
     "description": "A fictional Harbour Services arrangement for source-linked drafting, review, escalation and fallback.",
     "section": "Guide",
     "kind": "practice-diagram",
-    "version": "Draft visual 0.1 \u00b7 For practitioner review \u00b7 23 November 2026",
+    "version": "Draft visual 0.1 · For practitioner review · 23 November 2026",
     "component_version": "0.1",
     "status": "draft-for-practitioner-review"
   },
@@ -94,7 +105,7 @@
     "description": "Compare complete working arrangements and keep alternative explanations visible.",
     "section": "Guide",
     "kind": "practice-diagram",
-    "version": "Draft visual 0.1 \u00b7 For practitioner review \u00b7 23 November 2026",
+    "version": "Draft visual 0.1 · For practitioner review · 23 November 2026",
     "component_version": "0.1",
     "status": "draft-for-practitioner-review"
   },
@@ -105,7 +116,7 @@
     "description": "Connect evaluated experience to changed work and later evidence of usable organisational capability.",
     "section": "Guide",
     "kind": "practice-diagram",
-    "version": "Draft visual 0.1 \u00b7 For practitioner review \u00b7 23 November 2026",
+    "version": "Draft visual 0.1 · For practitioner review · 23 November 2026",
     "component_version": "0.1",
     "status": "draft-for-practitioner-review"
   },
@@ -116,7 +127,7 @@
     "description": "An illustrative relationship map connecting evidence, policy, expertise, authority, decisions and action.",
     "section": "Guide",
     "kind": "practice-diagram",
-    "version": "Draft visual 0.1 \u00b7 For practitioner review \u00b7 23 November 2026",
+    "version": "Draft visual 0.1 · For practitioner review · 23 November 2026",
     "component_version": "0.1",
     "status": "draft-for-practitioner-review"
   },
@@ -127,7 +138,7 @@
     "description": "A fictional Harbour Services case showing what carries forward between working records.",
     "section": "Guide",
     "kind": "practice-diagram",
-    "version": "Draft visual 0.1 \u00b7 For practitioner review \u00b7 23 November 2026",
+    "version": "Draft visual 0.1 · For practitioner review · 23 November 2026",
     "component_version": "0.1",
     "status": "draft-for-practitioner-review"
   },
@@ -138,7 +149,7 @@
     "description": "Fictional Wattle Supply assumptions show why total work matters when comparing an AI option.",
     "section": "Guide",
     "kind": "practice-diagram",
-    "version": "Draft visual 0.1 \u00b7 For practitioner review \u00b7 23 November 2026",
+    "version": "Draft visual 0.1 · For practitioner review · 23 November 2026",
     "component_version": "0.1",
     "status": "draft-for-practitioner-review"
   },
@@ -149,7 +160,7 @@
     "description": "An interactive draft map of the six capabilities, their connections, people and AI participation, and relevant chapters and tools.",
     "section": "Knowledge",
     "kind": "interactive-model",
-    "version": "Draft visual 0.2 \u00b7 For practitioner review \u00b7 23 November 2026",
+    "version": "Draft visual 0.2 · For practitioner review · 23 November 2026",
     "component_version": "0.2",
     "status": "draft-for-practitioner-review"
   },
@@ -160,7 +171,7 @@
     "description": "The complete readable draft reference for the interactive model, including activities, evidence, examples, boundaries and chapter mapping.",
     "section": "Knowledge",
     "kind": "model-reference",
-    "version": "Draft visual 0.2 \u00b7 For practitioner review \u00b7 23 November 2026",
+    "version": "Draft visual 0.2 · For practitioner review · 23 November 2026",
     "component_version": "0.2",
     "status": "draft-for-practitioner-review"
   },
@@ -186,6 +197,6 @@
     "title": "Versions and corrections",
     "description": "Know which edition you are reading and what has changed.",
     "section": "releases",
-    "version": "Publication 1.0 \u00b7 Toolkit 0.1"
+    "version": "Publication 1.0 · Toolkit 0.1"
   }
 ]

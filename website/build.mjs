@@ -8,6 +8,7 @@ import { buildAgentResources, rewritePublicationLinks } from './agents.mjs';
 import { prepareBlogPosts, renderBlogIndex, renderBlogFeed } from './blog.mjs';
 import { renderModel } from './model.mjs';
 import { formatPropositionRegister } from './proposition-register.mjs';
+import { guideIndex, splitGuide } from './guide-chapters.mjs';
 import { renderHome as renderPreviousHome, renderLayout as renderPreviousLayout, archiveMetadata } from './archives/homepage-previous.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -105,6 +106,15 @@ function indexPage(page, html) {
 for (const page of pages) {
   const source = fs.readFileSync(path.join(root, page.source), 'utf8');
   let content = renderMarkdown(source);
+  if (page.kind === 'practitioner-guide') {
+    for (const chapter of splitGuide(content, basePath)) {
+      if (routes.has(chapter.path)) throw new Error(`Duplicate Guide chapter route: ${chapter.path}`);
+      routes.add(chapter.path);
+      const toc = [...chapter.sourceContent.matchAll(/<h([23])\b[^>]*id="([^"]+)"[^>]*>([\s\S]*?)<\/h\1>/g)].map(m=>({level:Number(m[1]),id:m[2],text:plain(m[3])}));
+      writePage(chapter.path, renderLayout({...page,title:chapter.title,description:`A chapter from the OIBOK Guide (${page.version.split(' · ')[0].toLowerCase()}).`,content:chapter.content,toc,sourcePath:page.source,basePath,siteUrl,markdown:`${siteUrl}/downloads/source/${page.source}`,assetPaths}));
+    }
+  }
+  if (page.path === '/guide/') content = content.replace(/<h2 id="what-the-guide-covers">/, guideIndex(basePath) + '<h2 id="what-the-guide-covers">');
   if (page.kind === 'diagram-index') {
     const gallery = `<div class="diagram-gallery">${diagrams.figures.map(d => `<a class="diagram-card" href="${basePath}/diagrams/${escape(d.slug)}/"><img src="${basePath}/assets/diagrams/${escape(d.slug)}.svg" alt="${escape(d.title)}" width="1200" height="848" loading="lazy"><span class="diagram-card-kind">${escape(d.kind)}</span><strong>${escape(d.title)}</strong><span class="diagram-card-summary">${escape(d.summary)}</span></a>`).join('')}</div>`;
     content = content.replace(/(<h2 id="browse-the-collection">[\s\S]*?<\/h2>)\s*<ul>[\s\S]*?<\/ul>/, (_, heading) => heading + gallery);

@@ -155,3 +155,5 @@
   .proposition-register details::details-content { content-visibility: visible; }
   .proposition-register summary { display: none; }
 }
+
+.guide-chapter-index{margin:2em 0;padding:1.2em 1.4em;background:var(--tint);border-left:3px solid var(--accent)}.prose .guide-chapter-index h2{margin-top:0}.guide-chapter-index ol{list-style:none;padding:0;columns:2;column-gap:2em}.guide-chapter-index li{break-inside:avoid;margin:0 0 .65em;line-height:1.5}.guide-reading-links{font-size:15px;padding-bottom:1em;border-bottom:1px solid var(--line)}@media(max-width:680px){.guide-chapter-index ol{columns:1}.guide-chapter-index{padding:1em}}

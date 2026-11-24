@@ -1,5 +1,9 @@
 # Versions and corrections
 
+## Guide and connected practice pack 0.5 | 24 November 2026
+
+Published the [OIBOK Guide (draft 0.5)](/downloads/guide/OIBOK-Guide-Draft-0.5.pdf), [Working Companion (draft 0.5)](/downloads/guide/OIBOK-Working-Companion-Draft-0.5.pdf) and [completed fictional Silvergum case pack](/guide/silvergum/). The Guide connects stages to worksheets and expands facilitation guidance with completed decision records. Individual chapter pages provide previous/next navigation, relevant tools and full-edition downloads, while retaining the full reading view and earlier anchors. All three publications have matching web, Word, PDF and Markdown editions. Chapter numbering, research release 1.0, Toolkit 0.1 and Visual set 0.1 are retained. The source-consistency pass does not constitute independent review or field validation.
+
 ## Research methods and AI use | 24 November 2026
 
 The [AI-use declaration](/methodology/#how-ai-was-used-to-develop-oibok) describes the role of AI in OIBOK research, writing and editing. Readers can find it in the website footer and beside the Guide downloads.

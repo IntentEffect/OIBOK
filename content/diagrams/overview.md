@@ -20,9 +20,9 @@ Three recurring transformations, six capabilities and the connections that suppo
 
 ## Use it with the Guide
 
-[Read this section in the OIBOK Guide (draft 0.4)](/guide/read/#1-understand-organisational-intelligence). Use the diagram to support discussion, then record the actual evidence, authority, decision and unresolved conditions in your working records.
+[Read this section in the OIBOK Guide (draft 0.5)](/guide/read/#1-understand-organisational-intelligence). Use the diagram to support discussion, then record the actual evidence, authority, decision and unresolved conditions in your working records.
 
-- [OIBOK Guide (draft 0.4) downloads](/guide/)
+- [OIBOK Guide (draft 0.5) downloads](/guide/)
 
 ## Sources and status
 
