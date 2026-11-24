@@ -10,6 +10,8 @@ It does not establish that the whole model predicts organisational performance, 
 
 ## Inspect the supporting records
 
+[Read the evidence notes for propositions 09, 07 and 02](/research/integrated-evidence-notes/). Each note traces a claim to its sources and gives an observation that could weaken a practical diagnosis.
+
 [Read the Chapter 1 field pilot and independent review brief](/research/chapter-one-pilot/). It sets out how to test one chapter against a real decision.
 
 | Record | What it provides |
