@@ -6,6 +6,8 @@ Start with one recurring decision or workflow. Use the OIBOK toolkit to investig
 
 ## Choose a starting point
 
+For a small, reversible change, [review two cases with the one-page A4 worksheet](/tools/two-case-review/). You can fill it in on screen, print it or copy the prompts into your work notes.
+
 The [OIBOK Guide (draft 0.6)](/guide/read/) connects the chapters and tools into a practical working method. [Explore the interactive model](/model/) for the six capabilities, their connections, evidence questions and chapter mapping. [Browse the diagrams](/diagrams/) for practical figures and A3 downloads. These drafts welcome feedback and remain open to review and field evaluation.
 
 **Working with an AI assistant?** [Use these tools with an AI assistant or agent](/for-agents/) for a starter prompt and a method for selecting sources, comparing explanations and drafting a practical working record.
@@ -58,4 +60,4 @@ Original guides, blank templates and worked examples are licensed under [CC BY-S
 
 [Share feedback](/contribute/) about useful or confusing prompts, adaptations, observed consequences and competing explanations. Include the tool version and obtain permission before sharing an organisational case.
 
-Founded by Intent & Effect, developed by the OIBOK community.
+Founded and maintained by Intent & Effect.

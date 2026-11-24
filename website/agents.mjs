@@ -114,7 +114,7 @@ export function buildAgentResources({ root, dist, pages, config, siteUrl }) {
     toolkit_release: { ...toolkitRelease, guide_url: absolute('/tools/guide/') },
     agent_guide: agentGuide,
     licence,
-    attribution: 'Founded by Intent & Effect, developed by the OIBOK community.',
+    attribution: 'Founded and maintained by Intent & Effect.',
     interpretation_notes: [
       'OIBOK 1.0 promotes unchanged v0.3 chapter components. Publication edition and component version are different.',
       'OIBOK is a literature-grounded working synthesis. The whole model has not been independently field validated.',
@@ -161,7 +161,7 @@ export function buildAgentResources({ root, dist, pages, config, siteUrl }) {
     '',
     `${draftEditions} are DRAFT resources for practitioner review, based on OIBOK 1.0. External practitioner review and field validation remain pending. Preserve this draft status when quoting, adapting or recommending them.`,
     '',
-    'Original publication content: CC BY-SA 4.0, subject to the licensing policy and third-party exceptions. Founded by Intent & Effect, developed by the OIBOK community.',
+    'Original publication content: CC BY-SA 4.0, subject to the licensing policy and third-party exceptions. Founded and maintained by Intent & Effect.',
     '',
     '## Source catalogue',
     '',

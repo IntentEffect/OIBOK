@@ -1,5 +1,9 @@
 # Versions and corrections
 
+## Chapter 1 reader and field pilot | 25 November 2026
+
+Published the [Chapter 1 reader draft](/knowledge/signals-and-attention/reader/), a [one-page A4 worksheet](/tools/two-case-review/) and a [pilot and independent review brief](/research/chapter-one-pilot/). These pilot materials use research release 1.0 and Guide 0.6. Field results and independent review are pending. Current publication pages identify Intent & Effect as founding steward and maintainer.
+
 ## Guide 0.6 branding update | 24 November 2026
 
 Updated the Guide's Word and PDF cover and running page headers to match the website: the OIBOK wordmark with its rust-coloured full stop, charcoal and rust typography, an ivory cover and a compact branded header on every subsequent portrait and landscape page. The Guide's content, version and pagination are unchanged.
@@ -104,6 +108,10 @@ An editorial amendment proposal dated 21 November 2026 remains under considerati
 
 ## Corrections
 
+**25 November 2026 · Research release 1.0.** Chapter 10 section 2.2 lists 429 defined terms. The [final consistency record](/research/consistency-record/) reports 432 unique terms in the [released glossary](/knowledge/glossary/). The Chapter 10 reading page now gives the corrected count beside the historical figure. All ten research reading pages put the original component metadata in a disclosure beneath their released status. The [completion record](/research/release-record/) establishes the edition. The original files remain available for citation.
+
+**25 November 2026 · Chapter 1, section 11A.** The citation after the eight proposed qualities can give the impression that Joseph et al. supplied that list. The qualities are OIBOK’s synthesis. The reader draft and the research chapter’s reading page distinguish this from the paper’s discussion of the attention-based view. [Chapter 1 source check](/knowledge/signals-and-attention/reader/#where-the-evidence-ends).
+
 [Report a correction](https://github.com/IntentEffect/OIBOK/issues/new?template=correction.yml) with the page, edition, relevant passage, supporting source and proposed correction. You can also email [info@oibok.org](mailto:info@oibok.org) with the same details. Material corrections should explain the change and preserve a record of the superseded version.
 
-Founded by Intent & Effect, developed by the OIBOK community.
+Founded and maintained by Intent & Effect.

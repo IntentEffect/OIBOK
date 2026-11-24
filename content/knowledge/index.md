@@ -8,6 +8,8 @@ This is the working definition in **OIBOK 1.0, released 15 August 2026**. It des
 
 ## Start with a question
 
+[Read Chapter 1 in the reader’s edition](/knowledge/signals-and-attention/reader/). The pilot draft follows an accepted quote from a customer’s inbox reply to the booking queue. Compare two of your own cases using the [one-page worksheet](/tools/two-case-review/).
+
 Explore the [interactive OIBOK model, draft 0.2](/model/) for a visual map of the capabilities and their connections. For practical application, read the [OIBOK Guide (draft 0.6)](/guide/read/). Both are drafts for practitioner review, based on the research release below.
 
 For an overview of the complete model, start with [Chapter 10](/knowledge/integrated-and-responsible-organisational-intelligence/), then use the [glossary](/knowledge/glossary/) for its terminology. For a practical investigation, choose a recurring decision or workflow and open the [practical toolkit](/tools/).
@@ -47,4 +49,4 @@ The original files retain the historical name **Project OI** and their component
 
 Original publication content is available under [CC BY-SA 4.0](/licensing/). Contributors retain copyright. [Suggest a correction, share evidence or challenge a claim](/contribute/).
 
-Founded by Intent & Effect, developed by the OIBOK community.
+Founded and maintained by Intent & Effect.

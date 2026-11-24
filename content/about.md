@@ -2,7 +2,7 @@
 
 The Organisation Intelligence Body of Knowledge is an open research publication and practical toolkit for understanding how organisations notice important signals, make sense of their circumstances, decide, coordinate work and learn from what happens.
 
-**Founded by Intent & Effect, developed by the OIBOK community.**
+**Founded and maintained by Intent & Effect.**
 
 ## Why this work exists
 
@@ -44,7 +44,9 @@ OIBOK does not currently provide a validated intelligence scale, maturity score,
 
 ## Origins and stewardship
 
-Intent & Effect initiated the research programme and developed the first edition. It serves as the founding steward and initial publisher, responsible for the official release, editorial infrastructure and publication integrity.
+OIBOK is the publication’s name. We use *organisational intelligence* for the field of study and the capacity the research investigates.
+
+Intent & Effect provides AI consulting and develops software for businesses. Readers can use the publication and its tools independently of those services. Intent & Effect initiated the research programme and developed the first edition. It serves as the founding steward and initial publisher, responsible for the official release, editorial infrastructure and publication integrity.
 
 OIBOK maintains its own publication identity and welcomes external contributors. Its [governance](/governance/) explains how proposals are reviewed, decisions are recorded and the work can evolve.
 

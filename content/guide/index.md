@@ -11,6 +11,8 @@ This is the complete illustrated draft Guide, accompanied by a Working Companion
 
 ## Read and download
 
+Trying the Guide on a small, reversible change? [Use the one-page pilot worksheet](/tools/two-case-review/) with a colleague who receives the work.
+
 **How this edition was prepared.** AI tools assisted with writing and editing the Guide. Independent editorial review is pending. [Research methods and AI use](/methodology/#how-ai-was-used-to-develop-oibok).
 
 - [Read the OIBOK Guide (draft 0.6) online](/guide/read/).

@@ -68,8 +68,8 @@ export function renderHome({ basePath = '' } = {}) {
 </section>
 
 <section class="open-section" aria-labelledby="open-title">
-  <p class="eyebrow">An open community project</p>
-  <div><h2 id="open-title">Free to use.<br>Open to improvement.</h2><p>OIBOK is developed by the OIBOK community. Read the research, try a worksheet, question an explanation or suggest an improvement.</p><p>The body of knowledge is a literature-grounded working synthesis. The Guide and visual model are drafts for practitioner review. Independent field validation of the complete model remains pending.</p><div class="inline-links"><a class="text-link" href="${url('/research/')}">Research and limitations</a><a class="text-link" href="${url('/contribute/')}">Contribute to OIBOK</a></div></div>
+  <p class="eyebrow">Stewardship</p>
+  <div><h2 id="open-title">Free to use.<br>Open to improvement.</h2><p>Intent &amp; Effect founded and maintains OIBOK. Read the research, try a worksheet, question an explanation or suggest an improvement.</p><p>The body of knowledge is a literature-grounded working synthesis. The Guide and visual model are drafts for practitioner review. Independent field validation of the complete model remains pending.</p><div class="inline-links"><a class="text-link" href="${url('/research/')}">Research and limitations</a><a class="text-link" href="${url('/contribute/')}">Contribute to OIBOK</a></div></div>
 </section>`;
 }
 
@@ -139,7 +139,7 @@ export function renderLayout({ title, description = '', content, basePath = '', 
   <footer class="site-footer">
     <div class="footer-top"><div><a class="brand footer-brand" href="${url('/')}">OIBOK<span class="brand-dot" aria-hidden="true">.</span></a><p class="footer-title">Organisation Intelligence<br>Body of Knowledge<br><a href="mailto:info@oibok.org">info@oibok.org</a></p></div><nav aria-label="Publication information"><a href="${url('/about/')}">About OIBOK</a><a href="${url('/blog/')}">Blog</a><a href="${url('/methodology/#how-ai-was-used-to-develop-oibok')}">Research methods and AI use</a><a href="${url('/governance/')}">Governance</a><a href="${url('/releases/')}">Versions and corrections</a><a href="${url('/licensing/')}">Licensing and attribution</a><a href="${url('/for-agents/')}">For agents</a><a class="github-link footer-github-link" href="${repositoryUrl}">${githubIcon}<span>GitHub</span> ${arrow}</a></nav></div>
     <div class="footer-bottom">
-      <div class="community-credit"><p>Developed by the OIBOK community.</p></div>
+      <div class="community-credit"><p>Founded and maintained by Intent &amp; Effect. <a href="${url('/contribute/')}">Contributions welcome.</a></p></div>
       <div class="licence-credit"><a class="licence-badge" rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" title="Creative Commons Attribution-ShareAlike 4.0 International"><img src="${url('/assets/cc-by-sa.svg')}" alt="Creative Commons Attribution-ShareAlike 4.0" width="88" height="31"></a></div>
       <p class="licence-scope">Publication content. <a href="${url('/licensing/')}">See licence scope and exceptions.</a></p>
     </div>

@@ -10,6 +10,8 @@ It does not establish that the whole model predicts organisational performance, 
 
 ## Inspect the supporting records
 
+[Read the Chapter 1 field pilot and independent review brief](/research/chapter-one-pilot/). It sets out how to test one chapter against a real decision.
+
 | Record | What it provides |
 | --- | --- |
 | [Glossary](/knowledge/glossary/) | Core and extended terms, with their conceptual status. |

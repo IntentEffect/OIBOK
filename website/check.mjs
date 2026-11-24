@@ -27,7 +27,9 @@ for(const file of htmlFiles){
  if((html.match(/<h1\b/g)||[]).length!==1)errors.push(`${path.relative(dist,file)}: expected one page h1`);
  if(!html.includes('lang="en-AU"'))errors.push(`${file}: missing page language`);
  const communityCredit=html.match(/<div class="community-credit">([\s\S]*?)<\/div>/)?.[1] || '';
- if(!communityCredit.includes('Developed by the OIBOK community.'))errors.push(`${file}: missing community attribution`);
+ const archivedHome=file===path.join(dist,'homepage-previous','index.html');
+ const expectedCredit=archivedHome?'Developed by the OIBOK community.':'Founded and maintained by Intent &amp; Effect.';
+ if(!communityCredit.includes(expectedCredit))errors.push(`${file}: missing publication attribution`);
  if(/sandbox:|oai-library:|chatgpt\.com\/api\/library|turn\d+(?:search|view)\d/.test(html))errors.push(`${file}: internal-only source reference`);
  if(rewritePublicationLinks(html,info.siteUrl,config.legacySiteUrls)!==html)errors.push(`${file}: historical publication URL remains in rendered content`);
  const relative=path.relative(dist,file).split(path.sep).join('/');
@@ -192,7 +194,7 @@ if(!discovery.startsWith('# Organisation Intelligence Body of Knowledge (OIBOK)\
 // Draft practice resources must retain their status in every published representation.
 const draftPages=expectedPages.filter(page=>page.status==='draft-for-practitioner-review');
 const diagramFigures=JSON.parse(fs.readFileSync(path.join(root,'website/diagrams.json'),'utf8')).figures;
-const expectedDraftRoutes=['/guide/','/guide/read/','/guide/companion/','/guide/silvergum/','/model/','/model/reference/','/diagrams/',...diagramFigures.map(d=>`/diagrams/${d.slug}/`)];
+const expectedDraftRoutes=['/knowledge/signals-and-attention/reader/','/tools/two-case-review/','/research/chapter-one-pilot/','/guide/','/guide/read/','/guide/companion/','/guide/silvergum/','/model/','/model/reference/','/diagrams/',...diagramFigures.map(d=>`/diagrams/${d.slug}/`)];
 if(draftPages.length!==expectedDraftRoutes.length || expectedDraftRoutes.some(route=>!draftPages.some(page=>page.path===route)))errors.push('Draft publication: missing or unexpected draft route');
 for(const page of draftPages){
  const file=path.join(dist,page.path,'index.html');

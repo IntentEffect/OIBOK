@@ -198,5 +198,38 @@
     "description": "Know which edition you are reading and what has changed.",
     "section": "releases",
     "version": "Publication 1.0 · Toolkit 0.1"
+  },
+  {
+    "source": "content/knowledge/signals-and-attention-reader.md",
+    "path": "/knowledge/signals-and-attention/reader/",
+    "title": "Signals and attention",
+    "description": "How a team can find out what happened between a customer accepting a quote and someone booking the job.",
+    "section": "Knowledge",
+    "kind": "reader-chapter",
+    "version": "Pilot draft 0.1 · 25 November 2026",
+    "component_version": "0.1",
+    "status": "draft-for-practitioner-review"
+  },
+  {
+    "source": "content/tools/two-case-review.md",
+    "path": "/tools/two-case-review/",
+    "title": "Review one recurring problem",
+    "description": "A one-page A4 worksheet for comparing two cases and recording a decision. Fill it in on screen, print it or copy the prompts below.",
+    "section": "Tools",
+    "kind": "pilot-worksheet",
+    "version": "Pilot draft 0.1 · 25 November 2026",
+    "component_version": "0.1",
+    "status": "draft-for-practitioner-review"
+  },
+  {
+    "source": "content/research/chapter-one-pilot.md",
+    "path": "/research/chapter-one-pilot/",
+    "title": "Try Chapter 1 on a real decision",
+    "description": "A field pilot for one small-business team and a separate brief for an independent subject reviewer.",
+    "section": "Research",
+    "kind": "pilot-brief",
+    "version": "Pilot draft 0.1 · 25 November 2026",
+    "component_version": "0.1",
+    "status": "draft-for-practitioner-review"
   }
 ]
