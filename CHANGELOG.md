@@ -1,5 +1,9 @@
 # Versions and corrections
 
+## Guide 0.6 branding update | 24 November 2026
+
+Updated the Guide's Word and PDF cover and running page headers to match the website: the OIBOK wordmark with its rust-coloured full stop, charcoal and rust typography, an ivory cover and a compact branded header on every subsequent portrait and landscape page. The Guide's content, version and pagination are unchanged.
+
 ## Guide and connected practice pack 0.6 | 24 November 2026
 
 Published [Guide draft 0.6](/guide/) with the approved wording for the introduction, Quick Start and Chapter 2A, and applied the homepage wording. The revised text uses direct instructions and concrete questions while preserving the diagnostic class names, research definitions, source links and evidence limits. The separate writing-pilot page has been removed. All three publications have matching web, PDF, Word and Markdown editions; the Working Companion and Silvergum case pack carry updated edition references. Earlier downloads remain available. This is an editorial release, not new research or completed independent practitioner testing.
