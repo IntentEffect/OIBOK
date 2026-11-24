@@ -1,5 +1,9 @@
 # Versions and corrections
 
+## Research methods and AI use | 24 November 2026
+
+Expanded the [AI-use declaration](/methodology/#how-ai-was-used-to-develop-oibok) with accounts of research release 1.0 and Guide 0.4, an example readers can check against its sources, and the status of independent review. The declaration is linked from the website footer and beside the Guide downloads.
+
 ## Guide and Working Companion 0.4 | 24 November 2026
 
 Published the [OIBOK Guide (draft 0.4)](/downloads/guide/OIBOK-Guide-Draft-0.4.pdf) with a practical chapter on the seven provisional failure classes, a four-stage fictional example at Silvergum Field Services and a worked decision about cross-team adoption. The [OIBOK Working Companion (draft 0.4)](/downloads/guide/OIBOK-Working-Companion-Draft-0.4.pdf) includes editable diagnostic, ownership-transfer and cross-team records. Web, Word, PDF and Markdown editions are available. Earlier downloads retain their original addresses. Research release 1.0, Toolkit 0.1 and Visual set 0.1 remain the source editions. External practitioner review and field validation are pending.
