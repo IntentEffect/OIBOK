@@ -307,3 +307,8 @@ for(let index=0;index<itemBlocks.length;index++){
 }
 if(errors.length){console.error(errors.slice(0,50).join('\n'));console.error(`${errors.length} checks failed.`);process.exit(1);}
 console.log(`Verified ${htmlFiles.length} HTML pages, ${checked} internal links and anchors, ${manifest.files.length} unchanged source files, ${search.length} searchable sections, ${catalogue.documents.length} agent source records, and ${posts.length} blog posts with RSS.`);
+
+if (process.env.GITHUB_EVENT_NAME === 'pull_request') {
+  const {execFileSync} = await import('node:child_process');
+  execFileSync('python3', ['website/verify-mobile.py'], {cwd:root, stdio:'inherit'});
+}
