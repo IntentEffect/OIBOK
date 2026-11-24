@@ -93,9 +93,23 @@ For each retained finding, summarise what changed, assess evidence quality, iden
 
 Recheck time-sensitive AI evidence before a major release and when a relevant lifecycle event occurs. Keep a clear distinction between observed capabilities in a particular study and claims about lasting organisational capability.
 
-## AI-assisted research and writing
+## How AI was used to develop OIBOK
 
-AI may assist discovery, organisation, drafting, translation and editorial checks. Material assistance should be disclosed, together with the verification undertaken. Authors and maintainers remain accountable for source accuracy, intellectual provenance, confidentiality and rights.
+**The research behind OIBOK 1.0.** Clayton Read directed the research release. ChatGPT helped assemble the release files and check the integrity of the downloadable archive. The [release record](/research/release-record/) documents how the ten chapters were checked against the research registers, which references were corrected and which older sources were carried forward. It gives no task-by-task account of who or which tool drafted each proposition or checked each paper. Independent field validation of the complete model remains open.
+
+**The practitioner Guide.** ChatGPT helped turn the research chapters and toolkit into practical guidance. In Guide 0.4 this included drafting the diagnostic guidance in Chapter 2A and the fictional Silvergum Field Services case, which follows a delayed quote through a trial and a change of owner. Preparation checks covered terminology, chapter mappings, figures in the Harbour Services example and arithmetic in the worked examples. Independent editorial and practitioner review are pending. The [Guide’s preparation note](/guide/read/#purpose-and-publication-status) records the scope of those checks.
+
+**Ongoing research.** OIBOK uses ChatGPT to look for new studies, summarise findings, suggest competing explanations and identify which chapters a finding might affect. These suggestions go into the evidence watch. Editorial maintainers decide whether the evidence warrants a correction or a change to a proposition. Intent & Effect, the founding steward, authorises official releases. See [editorial governance](/governance/).
+
+### An example readers can check
+
+Can someone working with AI produce an idea as good as a team’s? In a product innovation experiment at Procter & Gamble, individuals using AI produced proposals comparable in quality to those from two-person teams working without AI. The working paper reported 776 participants. The published article reported 791. Chapter 5 records both figures and identifies the version each came from. [Working paper](https://doi.org/10.3386/w33641) · [Published study](https://doi.org/10.1287/orsc.2025.20702)
+
+OIBOK draws a qualified conclusion in proposition **OI-PROP-COO-017**. AI can reproduce some benefits of teamwork on specific tasks. The register rates confidence as moderate to low and asks readers to consider the task, model, setting and date. For this methodology note, ChatGPT compared the study reports with the chapter and register. Readers can inspect the same sources and [propose a correction](/contribute/). [Chapter 5](/knowledge/coordination-and-collective-action/#p17--ai-can-reproduce-some-team-benefits) · [Proposition register](/research/propositions/#85-oi-bok-005--coordination-and-collective-action)
+
+### AI-assisted research and writing
+
+For new editions and contributions, name the AI tool when known, describe what it helped produce and identify the checks completed. This applies to material assistance with discovery, analysis, drafting, translation and editorial review. Authors and maintainers remain accountable for source accuracy, intellectual provenance, confidentiality and rights.
 
 Verify citations against real primary sources and check that those sources support the attributed claims. Retain uncertainty when full-text access or independent verification is unavailable. Avoid presenting generated synthesis, review or consistency checking as empirical evidence.
 
