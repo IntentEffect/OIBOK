@@ -105,7 +105,20 @@ function indexPage(page, html) {
 
 for (const page of pages) {
   const source = fs.readFileSync(path.join(root, page.source), 'utf8');
-  let content = renderMarkdown(source);
+  const chapterIndex = chapterPages.findIndex(chapter => chapter.source === page.source);
+  let readingSource = source;
+  if (page.path === '/knowledge/signals-and-attention/') {
+    readingSource = readingSource.replace('## 11A. Signals and Attention Quality', `## 11A. Signals and Attention Quality
+
+> **Editorial clarification, 25 November 2026.** OIBOK proposed the eight qualities below. Joseph et al. provide background on organisational attention. [See the source check](/knowledge/signals-and-attention/reader/#where-the-evidence-ends).`);
+  }
+  if (page.path === '/knowledge/integrated-and-responsible-organisational-intelligence/') {
+    readingSource = readingSource.replace('- 429 defined terms;', '- 429 defined terms in the original chapter. **Correction, 25 November 2026.** The [final consistency record](/research/consistency-record/) confirms **432 unique terms** in the released glossary.');
+  }
+  let content = renderMarkdown(readingSource);
+  if (chapterIndex !== -1) {
+    content = content.replace(/^(<p><strong>Artefact ID:[\s\S]*?<\/p>)\s*<hr\s*\/?>/, '<details class="chapter-metadata"><summary>Original component metadata</summary>$1</details>');
+  }
   if (page.kind === 'practitioner-guide') {
     for (const chapter of splitGuide(content, basePath)) {
       if (routes.has(chapter.path)) throw new Error(`Duplicate Guide chapter route: ${chapter.path}`);
@@ -128,9 +141,9 @@ for (const page of pages) {
   const sourceTarget = path.join(dist, sourceDownload);
   fs.mkdirSync(path.dirname(sourceTarget), {recursive:true});
   fs.copyFileSync(path.join(root,page.source),sourceTarget);
-  const chapterIndex = chapterPages.findIndex(chapter=>chapter.source===page.source);
   if (chapterIndex !== -1) {
-    content = `<aside class="publication-note" aria-label="Edition note"><strong>OIBOK 1.0 · 15 August 2026</strong><p>This chapter is part of the released working synthesis. Its original version 0.3 metadata is retained below. The <a href="${basePath}/research/release-record/">completion record</a> promotes those unchanged chapter files into the 1.0 release. The proposed model remains open to testing and revision.</p></aside>` + content;
+    const readerLink = chapterIndex === 0 ? ` <a href="${basePath}/knowledge/signals-and-attention/reader/">Read the Chapter 1 reader draft</a>.` : '';
+    content = `<aside class="publication-note" aria-label="Edition note"><strong>OIBOK 1.0 · Released working synthesis · 15 August 2026</strong><p>The <a href="${basePath}/research/release-record/">completion record</a> adopted this chapter as component 0.3.${readerLink}</p></aside>` + content;
     const previous=chapterPages[chapterIndex-1], next=chapterPages[chapterIndex+1];
     content += `<nav class="chapter-pagination" aria-label="Chapter navigation">${previous ? `<a href="${basePath}${previous.path}"><small>Previous chapter</small>${escape(previous.title)}</a>` : `<a href="${basePath}/knowledge/"><small>Explore</small>All chapters</a>`}${next ? `<a href="${basePath}${next.path}"><small>Next chapter</small>${escape(next.title)}</a>` : `<a href="${basePath}/tools/"><small>Put it into practice</small>Explore the toolkit</a>`}</nav>`;
   }

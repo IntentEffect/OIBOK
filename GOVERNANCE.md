@@ -2,11 +2,11 @@
 
 OIBOK is an open research publication with its own identity. Intent & Effect is the founding steward and initial publisher, responsible for the official publication, infrastructure, release history and initial editorial process.
 
-**Founded by Intent & Effect, developed by the OIBOK community.**
+**Founded and maintained by Intent & Effect.**
 
 ## Stewardship and participation
 
-The project welcomes external research, criticism and practical contributions. Intent & Effect authorises official releases while the community contributes evidence, corrections and development of the work. The founding relationship is disclosed wherever the publication is presented.
+The project welcomes external research, criticism and practical contributions. Intent & Effect authorises official releases. External contributors can propose evidence, corrections and changes through the contribution process. The founding relationship is disclosed wherever the publication is presented.
 
 OIBOK has not established a separate legal entity, accredited standards body or formal academic journal. A broader editorial board or community representation may be developed as participation grows; appointments and responsibilities will be published when they exist.
 

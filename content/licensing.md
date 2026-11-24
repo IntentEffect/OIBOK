@@ -22,13 +22,13 @@ The licence does not imply endorsement. It also does not override rights in mate
 
 Retain relevant supplied copyright and licence notices, credit named authors or contributors where provided, link to the source and licence, and describe changes. The following is a suggested format:
 
-> Organisation Intelligence Body of Knowledge (OIBOK), [resource or chapter title], [version], [source URL]. Founded by Intent & Effect, developed by the OIBOK community. Licensed under CC BY-SA 4.0. [Description of changes, if any.]
+> Organisation Intelligence Body of Knowledge (OIBOK), [resource or chapter title], [version], [source URL]. Founded and maintained by Intent & Effect. Licensed under CC BY-SA 4.0. [Description of changes, if any.]
 
 You may use another reasonable attribution format that meets the licence. The suggested wording does not add a separate licensing condition.
 
 The project's attribution model is:
 
-**Founded by Intent & Effect, developed by the OIBOK community.**
+**Founded and maintained by Intent & Effect.**
 
 ## Contributor copyright
 

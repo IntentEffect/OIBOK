@@ -81,5 +81,5 @@ Discuss evidence in good faith, credit other people's work and treat participant
 
 Accepted contributions are recognised through Git history, acknowledgements, contributor information or release notes, according to their nature. Substantial scholarly authorship is assessed by the actual contribution. Submitting a pull request does not automatically confer authorship of the whole publication.
 
-**Founded by Intent & Effect, developed by the OIBOK community.**
+**Founded and maintained by Intent & Effect.**
 

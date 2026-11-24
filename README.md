@@ -2,7 +2,7 @@
 
 **Organisation Intelligence Body of Knowledge**
 
-Founded by Intent & Effect, developed by the OIBOK community.
+Founded and maintained by Intent & Effect.
 
 OIBOK is an open body of knowledge and practical toolkit for understanding how organisations orient, coordinate and improve. It helps people examine how knowledge, decisions, collective action and learning fit together, including when organisations introduce AI into work.
 

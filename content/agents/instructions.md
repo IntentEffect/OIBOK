@@ -150,8 +150,8 @@ Original publication content, including this guide, is licensed under [CC BY-SA 
 
 Suggested credit:
 
-> Organisation Intelligence Body of Knowledge (OIBOK), [resource title and version], [source URL]. Founded by Intent & Effect, developed by the OIBOK community. CC BY-SA 4.0. [Changes made, if any.]
+> Organisation Intelligence Body of Knowledge (OIBOK), [resource title and version], [source URL]. Founded and maintained by Intent & Effect. CC BY-SA 4.0. [Changes made, if any.]
 
 To improve this guide or propose a research correction, use the [contribution process](https://intenteffect.github.io/OIBOK/contribute/). Identify the source version, evidence, competing explanations and proposed change. Disclose material AI assistance and the verification undertaken. Publication decisions remain subject to the [editorial governance](https://intenteffect.github.io/OIBOK/governance/) process.
 
-**Founded by Intent & Effect, developed by the OIBOK community.**
+**Founded and maintained by Intent & Effect.**
