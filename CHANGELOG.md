@@ -2,7 +2,7 @@
 
 ## Research methods and AI use | 24 November 2026
 
-Expanded the [AI-use declaration](/methodology/#how-ai-was-used-to-develop-oibok) with accounts of research release 1.0 and Guide 0.4, an example readers can check against its sources, and the status of independent review. The declaration is linked from the website footer and beside the Guide downloads.
+The [AI-use declaration](/methodology/#how-ai-was-used-to-develop-oibok) describes the role of AI in OIBOK research, writing and editing. Readers can find it in the website footer and beside the Guide downloads.
 
 ## Guide and Working Companion 0.4 | 24 November 2026
 

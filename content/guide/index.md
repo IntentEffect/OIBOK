@@ -11,7 +11,7 @@ This is the complete illustrated draft Guide, accompanied by a Working Companion
 
 ## Read and download
 
-**How this edition was prepared.** ChatGPT helped draft the diagnostic guidance and the fictional Silvergum case in Guide 0.4. Checks covered terminology, chapter mappings and worked-example figures. Independent editorial review is pending. [Research methods and AI use](/methodology/#how-ai-was-used-to-develop-oibok).
+**How this edition was prepared.** AI tools assisted with writing and editing the Guide. Independent editorial review is pending. [Research methods and AI use](/methodology/#how-ai-was-used-to-develop-oibok).
 
 - [Read the OIBOK Guide (draft 0.4) online](/guide/read/).
 - [Download the OIBOK Guide (draft 0.4) as a PDF](/downloads/guide/OIBOK-Guide-Draft-0.4.pdf).
