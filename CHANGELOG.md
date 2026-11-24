@@ -1,5 +1,9 @@
 # Versions and corrections
 
+## Evidence notes and a Chapter 6 worked decision | 25 November 2026
+
+Published [source checks for three integrated propositions](/research/integrated-evidence-notes/) and linked them beside the claims in Chapter 10 and the Knowledge overview. The [Chapter 6 web supplement](/guide/evaluate/#worked-decision-a-booking-handoff) applies the findings to a fictional trial decision. Guide 0.6 downloads preserve the issued edition.
+
 ## Knowledge page overview and problem routes | 25 November 2026
 
 The [Knowledge page](/knowledge/) now offers five starting problems, a booking example that explains Orient, Coordinate and Improve, and a plain-language reading of the eleven integrated propositions. The overview links to the research lineage, evidence limits and original chapters. This is a reader-facing update to the website.

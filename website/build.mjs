@@ -115,6 +115,21 @@ for (const page of pages) {
   if (page.path === '/knowledge/integrated-and-responsible-organisational-intelligence/') {
     readingSource = readingSource.replace('- 429 defined terms;', '- 429 defined terms in the original chapter. **Correction, 25 November 2026.** The [final consistency record](/research/consistency-record/) confirms **432 unique terms** in the released glossary.');
   }
+  if (page.path === '/knowledge/integrated-and-responsible-organisational-intelligence/') {
+    const noteSections = {
+      '009': '09--quality-of-the-connections',
+      '007': '07--persistent-learning',
+      '002': '02--selective-attention',
+    };
+    readingSource = readingSource.replace(/(^### OI-IP-(009|007|002) [^\n]+\n\n> [^\n]+)/gm,
+      (claim, passage, id) => passage + '\n\n[Read the evidence note](/research/integrated-evidence-notes/#' + noteSections[id] + ')');
+  }
+  if (page.kind === 'practitioner-guide') {
+    const supplement = fs.readFileSync(path.join(root, 'content/guide/booking-decision-supplement.md'), 'utf8')
+      .replace(/^# Worked decision: a booking handoff/, '### Worked decision: a booking handoff');
+    readingSource = readingSource.replace('## 7 Turn experience into lasting capability',
+      supplement + '\n## 7 Turn experience into lasting capability');
+  }
   let content = renderMarkdown(readingSource);
   if (chapterIndex !== -1) {
     content = content.replace(/^(<p><strong>Artefact ID:[\s\S]*?<\/p>)\s*<hr\s*\/?>/, '<details class="chapter-metadata"><summary>Original component metadata</summary>$1</details>');

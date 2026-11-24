@@ -231,5 +231,13 @@
     "version": "Pilot draft 0.1 · 25 November 2026",
     "component_version": "0.1",
     "status": "draft-for-practitioner-review"
+  },
+  {
+    "source": "content/research/integrated-evidence-notes.md",
+    "path": "/research/integrated-evidence-notes/",
+    "title": "Evidence behind three OIBOK propositions",
+    "description": "Source findings, limits and observations that could change the diagnosis in a small business.",
+    "section": "Research",
+    "version": "Editorial source check · 25 November 2026"
   }
 ]
