@@ -1,5 +1,9 @@
 # Versions and corrections
 
+## Guide 0.6 writing pilot | 24 November 2026
+
+Published a [limited writing pilot](/guide/0-6-writing-pilot/) with proposed homepage, Guide introduction, Quick Start and Chapter 2A copy. It makes the instructions more direct and uses concrete situations while preserving the seven provisional failure-class names, the three transformations, source links and evidence boundaries. The pilot is available for editorial feedback. Guide 0.5 remains the current complete edition and its downloads and chapter text are unchanged. This is not a new research release or a completed practitioner evaluation.
+
 ## Guide and connected practice pack 0.5 | 24 November 2026
 
 Published the [OIBOK Guide (draft 0.5)](/downloads/guide/OIBOK-Guide-Draft-0.5.pdf), [Working Companion (draft 0.5)](/downloads/guide/OIBOK-Working-Companion-Draft-0.5.pdf) and [completed fictional Silvergum case pack](/guide/silvergum/). The Guide connects stages to worksheets and expands facilitation guidance with completed decision records. Individual chapter pages provide previous/next navigation, relevant tools and full-edition downloads, while retaining the full reading view and earlier anchors. All three publications have matching web, Word, PDF and Markdown editions. Chapter numbering, research release 1.0, Toolkit 0.1 and Visual set 0.1 are retained. The source-consistency pass does not constitute independent review or field validation.
