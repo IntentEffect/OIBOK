@@ -20,7 +20,7 @@ Fictional Wattle Supply assumptions show why total work matters when comparing a
 
 ## Use it with the Guide
 
-[Read this section in the OIBOK Guide (draft 0.4)](/guide/read/#a2-wattle-supply-business-decision). Use the diagram to support discussion, then record the actual evidence, authority, decision and unresolved conditions in your working records.
+[Read this section in the OIBOK Guide (draft 0.5)](/guide/read/#a2-wattle-supply-business-decision). Use the diagram to support discussion, then record the actual evidence, authority, decision and unresolved conditions in your working records.
 
 - [Ai opportunity and work design](/tools/ai-opportunity-and-work-design/)
 - [Outcome and learning](/tools/outcome-and-learning/)
