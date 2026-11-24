@@ -9,6 +9,14 @@ This is the complete illustrated draft Guide, accompanied by a Working Companion
 
 **New in 0.6.** Clearer wording in the introduction, Quick Start and Chapter 2A, with direct instructions and concrete questions. The complete Silvergum case pack, connected worksheets, facilitation guidance and chapter navigation remain available. The Companion and case pack carry updated edition references.
 
+[Join the field pilot as a small-business team or independent reviewer](/research/chapter-one-pilot/#join-the-pilot).
+
+## Chapter under review
+
+Guide 0.6 is the current complete edition. We are testing a revised evaluation chapter for 0.7, including the completed booking decision.
+
+[Read the Chapter 6 review copy](/guide/chapter-six-review/) · [PDF](/downloads/review/Chapter-6-review.pdf) · [Word](/downloads/review/Chapter-6-review.docx) · [Markdown](/downloads/source/content/guide/chapter-six-review.md)
+
 ## Read and download
 
 Trying the Guide on a small, reversible change? [Use the one-page pilot worksheet](/tools/two-case-review/) with a colleague who receives the work.

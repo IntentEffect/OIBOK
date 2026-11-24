@@ -130,6 +130,12 @@ for (const page of pages) {
     readingSource = readingSource.replace('## 7 Turn experience into lasting capability',
       supplement + '\n## 7 Turn experience into lasting capability');
   }
+  if (page.path === '/tools/practice-review/') {
+    readingSource = readingSource.replace('## Improvement and handoff worksheet', '## Improvement and handoff worksheet\n\nTo compare a returned handoff with one that worked, [open the fillable A4 two-case worksheet](/tools/two-case-review/).');
+  }
+  if (page.path === '/knowledge/coordination-and-collective-action/') {
+    readingSource = readingSource.replace('## 1. Purpose', '## 1. Purpose\n\nFor work that keeps coming back, [try the improvement and handoff worksheet](/tools/practice-review/#improvement-and-handoff-worksheet).');
+  }
   let content = renderMarkdown(readingSource);
   if (chapterIndex !== -1) {
     content = content.replace(/^(<p><strong>Artefact ID:[\s\S]*?<\/p>)\s*<hr\s*\/?>/, '<details class="chapter-metadata"><summary>Original component metadata</summary>$1</details>');
