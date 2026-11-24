@@ -4,7 +4,7 @@ const escape = (value = '') => String(value).replace(/[&<>"']/g, (character) => 
 
 const links = [
   ['knowledge', 'Knowledge', '/knowledge/'],
-  ['guide', `Guide ${guideVersion}`, '/guide/'],
+  ['guide', 'Guide', '/guide/'],
   ['tools', 'Tools', '/tools/'],
   ['research', 'Research', '/research/'],
   ['blog', 'Blog', '/blog/'],
