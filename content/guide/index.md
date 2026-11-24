@@ -1,37 +1,35 @@
-# OIBOK Guide (draft 0.5)
+# OIBOK Guide (draft 0.6)
 
 **DRAFT · For practitioner review**  
-**Guide 0.5 · 24 November 2026**
+**Guide 0.6 · 24 November 2026**
 
 The OIBOK Guide helps leaders, practitioners and teams apply Organisational Intelligence to real work. Use it to investigate a recurring problem, examine AI proposals, clarify responsibilities, evaluate a change and retain useful learning.
 
 This is the complete illustrated draft Guide, accompanied by a Working Companion with preparation prompts, connected records and a practitioner feedback record. Nine draft diagrams connect the concepts to practical work. The Guide, Companion and diagrams are published for review and improvement by the OIBOK community.
 
-**New in 0.5.** Follow a complete Silvergum case pack from investigation through evaluation, exception handling, ownership transfer and a cross-team decision. Use the stage-to-worksheet route and expanded facilitation guidance. Read one chapter at a time or keep the full reading view.
-
-**Writing pilot for review.** [Read the proposed 0.6 homepage, introduction, Quick Start and Chapter 2A wording](/guide/0-6-writing-pilot/). This is a limited writing sample; the complete Guide and downloads below remain draft 0.5.
+**New in 0.6.** Clearer wording in the introduction, Quick Start and Chapter 2A, with direct instructions and concrete questions. The complete Silvergum case pack, connected worksheets, facilitation guidance and chapter navigation remain available. The Companion and case pack carry updated edition references.
 
 ## Read and download
 
 **How this edition was prepared.** AI tools assisted with writing and editing the Guide. Independent editorial review is pending. [Research methods and AI use](/methodology/#how-ai-was-used-to-develop-oibok).
 
-- [Read the OIBOK Guide (draft 0.5) online](/guide/read/).
-- [Download the OIBOK Guide (draft 0.5) as a PDF](/downloads/guide/OIBOK-Guide-Draft-0.5.pdf).
-- [Download the OIBOK Guide (draft 0.5) in Word](/downloads/guide/OIBOK-Guide-Draft-0.5.docx).
-- [Download the OIBOK Guide (draft 0.5) in Markdown](/downloads/guide/OIBOK-Guide-Draft-0.5.md).
-- [Read the OIBOK Working Companion (draft 0.5) online](/guide/companion/).
-- [Download the OIBOK Working Companion (draft 0.5) as a PDF](/downloads/guide/OIBOK-Working-Companion-Draft-0.5.pdf).
-- [Download the OIBOK Working Companion (draft 0.5) in Word](/downloads/guide/OIBOK-Working-Companion-Draft-0.5.docx).
-- [Download the OIBOK Working Companion (draft 0.5) in Markdown](/downloads/guide/OIBOK-Working-Companion-Draft-0.5.md).
+- [Read the OIBOK Guide (draft 0.6) online](/guide/read/).
+- [Download the OIBOK Guide (draft 0.6) as a PDF](/downloads/guide/OIBOK-Guide-Draft-0.6.pdf).
+- [Download the OIBOK Guide (draft 0.6) in Word](/downloads/guide/OIBOK-Guide-Draft-0.6.docx).
+- [Download the OIBOK Guide (draft 0.6) in Markdown](/downloads/guide/OIBOK-Guide-Draft-0.6.md).
+- [Read the OIBOK Working Companion (draft 0.6) online](/guide/companion/).
+- [Download the OIBOK Working Companion (draft 0.6) as a PDF](/downloads/guide/OIBOK-Working-Companion-Draft-0.6.pdf).
+- [Download the OIBOK Working Companion (draft 0.6) in Word](/downloads/guide/OIBOK-Working-Companion-Draft-0.6.docx).
+- [Download the OIBOK Working Companion (draft 0.6) in Markdown](/downloads/guide/OIBOK-Working-Companion-Draft-0.6.md).
 
 The [interactive OIBOK model](/model/) provides another way to explore the six capabilities, their connections and the relevant research and tools. It is also a draft.
 
 ## Completed Silvergum case pack
 
-- [Read the Silvergum worked case pack (draft 0.5)](/guide/silvergum/).
-- [Download the Silvergum case pack (draft 0.5) as a PDF](/downloads/guide/OIBOK-Silvergum-Case-Pack-Draft-0.5.pdf).
-- [Download the Silvergum case pack (draft 0.5) in Word](/downloads/guide/OIBOK-Silvergum-Case-Pack-Draft-0.5.docx).
-- [Download the Silvergum case pack (draft 0.5) in Markdown](/downloads/guide/OIBOK-Silvergum-Case-Pack-Draft-0.5.md).
+- [Read the Silvergum worked case pack (draft 0.6)](/guide/silvergum/).
+- [Download the Silvergum case pack (draft 0.6) as a PDF](/downloads/guide/OIBOK-Silvergum-Case-Pack-Draft-0.6.pdf).
+- [Download the Silvergum case pack (draft 0.6) in Word](/downloads/guide/OIBOK-Silvergum-Case-Pack-Draft-0.6.docx).
+- [Download the Silvergum case pack (draft 0.6) in Markdown](/downloads/guide/OIBOK-Silvergum-Case-Pack-Draft-0.6.md).
 
 All case records are fictional teaching examples. The blank Toolkit canvases remain version 0.1.
 
@@ -69,7 +67,7 @@ Use the [AI Opportunity and Work Design Canvas](/tools/ai-opportunity-and-work-d
 
 ## Draft status and evidence boundaries
 
-Guide 0.5 and Working Companion 0.5 are **drafts for practitioner review**. External practitioner review, walkthroughs, field application and independent validation remain pending. Their publication invites feedback; it does not indicate that these activities have been completed.
+Guide 0.6 and Working Companion 0.6 are **drafts for practitioner review**. External practitioner review, walkthroughs, field application and independent validation remain pending. Their publication invites feedback; it does not indicate that these activities have been completed.
 
 The Guide is based on **OIBOK release 1.0** and **Practical Toolkit 0.1**. It is a practice companion to that literature-grounded working synthesis. Publishing this draft does not create a new research release or change the status of the existing chapters or canvases.
 

@@ -6,7 +6,7 @@ Visual explanations for applying organisational intelligence to real work. Explo
 
 The collection contains five practical diagrams, three supporting visuals and a readable overview of the existing OIBOK model. Each has an accessible text explanation, source links, an editable SVG and an A3 landscape PDF.
 
-[Download all nine diagrams as one A3 PDF](/downloads/diagrams/OIBOK-Diagrams-Draft-0.1-A3.pdf) · [Read the OIBOK Guide (draft 0.5)](/guide/read/) · [Explore the interactive model](/model/)
+[Download all nine diagrams as one A3 PDF](/downloads/diagrams/OIBOK-Diagrams-Draft-0.1-A3.pdf) · [Read the OIBOK Guide (draft 0.6)](/guide/read/) · [Explore the interactive model](/model/)
 
 ## Browse the collection
 
