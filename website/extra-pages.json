@@ -239,5 +239,13 @@
     "description": "Source findings, limits and observations that could change the diagnosis in a small business.",
     "section": "Research",
     "version": "Editorial source check · 25 November 2026"
+  },
+  {
+    "source": "content/guide/chapter-six-review.md",
+    "path": "/guide/chapter-six-review/",
+    "title": "Evaluate the change",
+    "section": "Guide",
+    "description": "Chapter 6 review copy for Guide 0.7. Use the completed booking decision to test when a team should continue, adapt or stop.",
+    "version": "Chapter review · 25 November 2026"
   }
 ]

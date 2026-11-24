@@ -10,13 +10,25 @@
 
 Think of the last time it happened. Start with the question that fits that case.
 
-| What you’ve noticed | Ask someone involved | Read | Try |
-| --- | --- | --- | --- |
-| We hear about problems when the customer chases us. | Who first saw a clue, and where could they take it? | [Signals and attention, reader draft](/knowledge/signals-and-attention/reader/) | [Two-case worksheet](/tools/two-case-review/) |
-| Work keeps coming back. | What did the receiving team need before it could accept the last handoff? | [Coordination and Collective Action](/knowledge/coordination-and-collective-action/) | [Improvement and handoff worksheet](/tools/practice-review/#improvement-and-handoff-worksheet) |
-| Everyone agrees there’s a problem, but nobody can decide. | Who can authorise the change, and what evidence do they need? | [Decision and Authority](/knowledge/decision-and-authority/) | [Decision and Coordination Canvas](/tools/practice-review/#decision-and-coordination-canvas) |
-| The pilot looked promising. Did it actually help? | What changed for the people receiving the work, and what else could explain that? | [Outcomes, Feedback and Evaluation](/knowledge/outcomes-feedback-and-evaluation/) | [Evaluation plan](/tools/outcome-and-learning/#evaluation-plan) |
-| We fixed this once. Now it’s happening again. | When someone else took over, could they find and use what the team had learned? | [Organisational Memory, Reflection and Learning](/knowledge/organisational-memory-reflection-and-learning/) | [Check that learning persists](/tools/outcome-and-learning/#check-that-learning-persists) |
+**We hear about problems when the customer chases us.** Who first saw a clue, and where could they take it?
+
+[Signals and attention, reader draft](/knowledge/signals-and-attention/reader/) · [Two-case worksheet](/tools/two-case-review/)
+
+**Work keeps coming back.** What did the receiving team need before it could accept the last handoff?
+
+[Coordination and Collective Action](/knowledge/coordination-and-collective-action/) · [Improvement and handoff worksheet](/tools/practice-review/#improvement-and-handoff-worksheet)
+
+**Everyone agrees there’s a problem, but nobody can decide.** Who can authorise the change, and what evidence do they need?
+
+[Decision and Authority](/knowledge/decision-and-authority/) · [Decision and Coordination Canvas](/tools/practice-review/#decision-and-coordination-canvas)
+
+**The pilot looked promising. Did it actually help?** What changed for the people receiving the work, and what else could explain that?
+
+[Outcomes, Feedback and Evaluation](/knowledge/outcomes-feedback-and-evaluation/) · [Evaluation plan](/tools/outcome-and-learning/#evaluation-plan)
+
+**We fixed this once. Now it’s happening again.** When someone else took over, could they find and use what the team had learned?
+
+[Organisational Memory, Reflection and Learning](/knowledge/organisational-memory-reflection-and-learning/) · [Check that learning persists](/tools/outcome-and-learning/#check-that-learning-persists)
 
 ## What does OIBOK propose?
 

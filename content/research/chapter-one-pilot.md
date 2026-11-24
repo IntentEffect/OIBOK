@@ -2,6 +2,16 @@
 
 This draft pilot asks whether using [Signals and attention](/knowledge/signals-and-attention/reader/) changes how a small-business team explains a recurring problem or what it decides to do about it. We are seeking one team and one independent subject reviewer. No pilot outcomes or external reviews have been recorded for this edition.
 
+## Join the pilot
+
+**Small-business team.** Does a piece of work regularly come back for another pass? Bring one example that went smoothly and one that stalled. We’d like two colleagues to try the worksheet together, keep their own case records, and tell us whether a prompt changed their decision. [Volunteer as a team](mailto:info@oibok.org?subject=OIBOK%20small-business%20pilot).
+
+**Independent reviewer.** If you work in organisational research, attention or evaluation and had no role in drafting Chapter 1, we invite you to check one claim against its source. A specific counterexample or a narrower wording is welcome. [Volunteer to review a claim](mailto:info@oibok.org?subject=OIBOK%20independent%20review).
+
+## Finding the tool unaided
+
+Before showing the links, ask a colleague to start on the Knowledge page with the prompt “Work keeps coming back. Find something you could use with your team.” Let them choose the route. Ask them to save a worksheet with invented entries and reopen it. Record the device, where they hesitated, whether they needed a hint, and whether their entries survived. Use a phone for one attempt and keyboard navigation for another. Record any facilitator assistance alongside the result.
+
 ## For the team
 
 Choose a real, bounded decision you can revisit. An accepted quote that repeatedly stalls before booking is one possibility. Choose something the team already understands well enough to have an opinion about.

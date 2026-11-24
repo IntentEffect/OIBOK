@@ -1,5 +1,9 @@
 # Versions and corrections
 
+## Chapter 6 review copy and pilot recruitment | 25 November 2026
+
+Prepared [Chapter 6 for review](/guide/chapter-six-review/) in web, Word, PDF and Markdown. The [Guide page](/guide/) provides the downloads. The complete edition for the field pilot remains 0.6. Added [participant invitations](/research/chapter-one-pilot/#join-the-pilot) and connected the handoff worksheet to its fillable A4 working copy. The Knowledge page now presents each problem with its links together for narrow screens.
+
 ## Evidence notes and a Chapter 6 worked decision | 25 November 2026
 
 Published [source checks for three integrated propositions](/research/integrated-evidence-notes/) and linked them beside the claims in Chapter 10 and the Knowledge overview. The [Chapter 6 web supplement](/guide/evaluate/#worked-decision-a-booking-handoff) applies the findings to a fictional trial decision. Guide 0.6 downloads preserve the issued edition.

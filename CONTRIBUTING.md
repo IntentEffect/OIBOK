@@ -4,6 +4,8 @@ Help make Organisation Intelligence more useful, better evidenced and easier to 
 
 **You do not need to agree with the current model to contribute.** Contrary findings and strong alternative explanations are valuable.
 
+We are seeking one small-business team and one independent subject reviewer for the [Chapter 1 field pilot](/research/chapter-one-pilot/#join-the-pilot).
+
 ## Start with a question or a correction
 
 Use the [OIBOK issue tracker](https://github.com/IntentEffect/OIBOK/issues) to suggest research, identify a problem or propose a substantial change. Include the page or chapter, its version, and the passage or claim you want to discuss. For a small correction, you can [submit a pull request](https://github.com/IntentEffect/OIBOK/pulls) directly.
