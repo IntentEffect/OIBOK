@@ -40,7 +40,7 @@ A customer accepts a quote on Monday. By Thursday she still has no booking. In t
 
 **Improve.** The team checks subsequent bookings for delays, repeat calls and extra checking work. A shorter wait might also reflect a quieter week. They compare similar jobs and return to the question when another colleague covers sales. That later case helps them judge whether the change has become part of everyday practice.
 
-These activities can overlap. A returned booking can send the team back to its original explanation. The model names six capabilities involved in this work: **Sense, Know, Choose, Mobilise, Learn and Adapt**. The [interactive model](/model/) shows how they connect. The [OIBOK Guide (draft 0.6)](/guide/read/) explains how to investigate a case.
+These activities can overlap. A returned booking can send the team back to its original explanation. The model names six capabilities involved in this work: **Sense, Know, Choose, Mobilise, Learn and Adapt**. The [interactive model](/model/) shows how they connect. The [OIBOK Guide (draft 0.6.1)](/guide/read/) explains how to investigate a case.
 
 ### Where the ideas come from
 
@@ -68,7 +68,7 @@ The propositions play different roles. The first defines the capacity OIBOK is t
 | 08 · Adapting capability | Use that learning to decide which practices to keep, develop, combine or retire, and record why. |
 | 09 · Quality of the connections | OIBOK proposes that a weak connection can undermine strong individual capabilities. Trace where useful knowledge or authority was lost between steps. [Evidence note](/research/integrated-evidence-notes/#09--quality-of-the-connections) |
 | 10 · Responsible exercise | People affected need a voice, a way to challenge decisions and a clear account of who is answerable for the consequences. |
-| 11 · AI within organisational work | Assess an AI contribution in the workflow where people use it. Check its sources, authority limits, human oversight, outcomes and how work continues if it is withdrawn. |
+| 11 · AI within organisational work | Assess an AI contribution in the workflow where people use it. Check its sources, authority limits, human oversight, outcomes and how work continues if it is withdrawn. [Evidence note](/research/integrated-evidence-notes/#11--ai-within-organisational-work) |
 
 **Working definition · Research release 1.0, 15 August 2026.**
 

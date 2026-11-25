@@ -20,7 +20,7 @@ Connect evaluated experience to changed work and later evidence of usable organi
 
 ## Use it with the Guide
 
-[Read this section in the OIBOK Guide (draft 0.6)](/guide/read/#7-turn-experience-into-lasting-capability). Use the diagram to support discussion, then record the actual evidence, authority, decision and unresolved conditions in your working records.
+[Read this section in the OIBOK Guide (draft 0.6.1)](/guide/read/#7-turn-experience-into-lasting-capability). Use the diagram to support discussion, then record the actual evidence, authority, decision and unresolved conditions in your working records.
 
 - [Outcome and learning](/tools/outcome-and-learning/)
 

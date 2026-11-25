@@ -10,7 +10,7 @@ It does not establish that the whole model predicts organisational performance, 
 
 ## Inspect the supporting records
 
-[Read the evidence notes for propositions 09, 07 and 02](/research/integrated-evidence-notes/). Each note traces a claim to its sources and gives an observation that could weaken a practical diagnosis.
+[Read the evidence notes for propositions 09, 07, 02 and 11](/research/integrated-evidence-notes/). Each note traces a claim to its sources and gives an observation that could weaken a practical diagnosis.
 
 [Read the Chapter 1 field pilot and independent review brief](/research/chapter-one-pilot/). It sets out how to test one chapter against a real decision.
 
@@ -27,6 +27,8 @@ It does not establish that the whole model predicts organisational performance, 
 The extended registers are research resources. They are not intended to be applied as one front-line organisational assessment checklist.
 
 ## Source records
+
+[Working with AI evidence update, 25 November 2026](/research/working-with-ai/), appraises three recent studies and records their design, limitations and proposition mapping. It is a dated editorial supplement to the preserved research release.
 
 The source occurrence crosswalk records what each chapter cites. The unique-source register is provisional because compound entries and title-based matching can over-count or under-count individual works. The release reports that older references were structurally reconciled, but not every older source was independently reopened at its publisher. These limitations remain relevant when using the evidence.
 

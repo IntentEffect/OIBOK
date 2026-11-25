@@ -36,6 +36,23 @@ Report how many cases were eligible, included, completed, excluded or still awai
 
 Where quality depends on judgement, give reviewers shared criteria and examine disagreements. A changing definition or a new measurement process can produce an apparent improvement. Preserve the original definitions and explain any break in comparability. [\[O7\]](https://oibok.org/knowledge/outcomes-feedback-and-evaluation/)
 
+## Follow the constraint after a task speeds up
+
+The following proposal workflow and figures are fictional. This simple weekly capacity example assumes sufficient customer demand, comparable cases, no opening review backlog and unchanged quality. Every draft requires one review, passes that review and can then be issued. It ignores variation within the week so that the capacity constraint is easy to inspect.
+
+| Weekly measure | Before faster drafting | After faster drafting |
+| --- | --- | --- |
+| Drafts entering review | 20 | 60 |
+| Review capacity | 25 | 25 |
+| Maximum accepted proposals completed | 20 | 25 |
+| Queue growth at that completion level | 0 | 35 |
+
+At full review capacity, the queue grows by 35 proposals each week because 60 arrive and 25 are completed. The figures describe a possible capacity limit, not an observed AI effect. A real review would also record queue age, customer turnaround, returned work, defects and effort across roles. More drafts alone cannot establish that customers receive a useful proposal sooner.
+
+Inspect a waiting case before choosing a remedy. A complete, accepted case waiting for a fully occupied qualified reviewer suggests a capacity shortage. Missing information or an unaccepted transfer suggests a handoff problem. Repeated corrections suggest a quality problem. Waiting for a permitted decision suggests an authority problem. Insufficient customer demand weakens the case for producing more proposals. Several explanations may apply together; record evidence that would distinguish them before diagnosing Connection Quality. [Evidence on connection quality](https://oibok.org/research/integrated-evidence-notes/#09--quality-of-the-connections).
+
+The service owner would decide which response to test, such as controlling the release of drafts, changing review support or correcting the inputs. Record who can authorise that response and which customer outcome should improve. Compare similar work, include the extra effort and follow the next limiting stage after the change. Use the existing evaluation record and [Companion diagnostic prompts](https://oibok.org/guide/companion/#run-a-diagnostic-review). The [November 2026 evidence update](https://oibok.org/research/working-with-ai/) supplies the research rationale; these invented figures supply no field evidence.
+
 ## Compare plausible alternatives
 
 Use a baseline and, where feasible, a relevant comparison operating over the same period. Check whether workload, case complexity, staff experience, policy, incentives and available resources differ. A historical baseline may still be useful, but a before-and-after difference also contains changes that would have occurred without the intervention. [\[O7\]](https://oibok.org/knowledge/outcomes-feedback-and-evaluation/)

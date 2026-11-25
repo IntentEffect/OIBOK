@@ -1,5 +1,13 @@
 # Versions and corrections
 
+## AI evidence and practice update 0.6.1 | 25 November 2026
+
+Published a [dated research appraisal](/research/working-with-ai/) covering Anthropic’s *Working with AI*, Chen and Stratton’s software-production study and the patent-drafting expertise experiment. The [integrated evidence notes](/research/integrated-evidence-notes/) now include Organisationally Integrated AI (OI-IP-011) and a contemporary addition to Connection Quality (OI-IP-009). Source findings, OIBOK interpretation, rival explanations and limits on causal and organisational claims remain separate. Independent review is pending.
+
+[Guide 0.6.1](/guide/) and its connected practice pack add a fictional proposal-queue example, authority and participation questions, a supervised judgement-development example and maintenance/renewal prompts. Corresponding fields are included in the existing Working Companion records. Web, Markdown, Word and PDF editions carry the same current version; earlier downloads remain available with their original bytes and branding is retained. The separate Chapter 6 review copy also includes the proposal example.
+
+This is a targeted editorial evidence and practice update. Research release 1.0, its original proposition/source registers, Toolkit 0.1 and Visual set 0.1 retain their status. The wider Guide 0.7 revision still awaits the field-pilot and independent-review decision. The new examples are fictional and no field result, independent review or validation of the whole OIBOK model is claimed.
+
 ## Chapter 6 review copy and pilot recruitment | 25 November 2026
 
 Prepared [Chapter 6 for review](/guide/chapter-six-review/) in web, Word, PDF and Markdown. The [Guide page](/guide/) provides the downloads. The complete edition for the field pilot remains 0.6. Added [participant invitations](/research/chapter-one-pilot/#join-the-pilot) and connected the handoff worksheet to its fillable A4 working copy. The Knowledge page now presents each problem with its links together for narrow screens.
@@ -22,7 +30,7 @@ Updated the Guide's Word and PDF cover and running page headers to match the web
 
 ## Guide and connected practice pack 0.6 | 24 November 2026
 
-Published [Guide draft 0.6](/guide/) with the approved wording for the introduction, Quick Start and Chapter 2A, and applied the homepage wording. The revised text uses direct instructions and concrete questions while preserving the diagnostic class names, research definitions, source links and evidence limits. The separate writing-pilot page has been removed. All three publications have matching web, PDF, Word and Markdown editions; the Working Companion and Silvergum case pack carry updated edition references. Earlier downloads remain available. This is an editorial release, not new research or completed independent practitioner testing.
+Published [Guide draft 0.6](/downloads/guide/OIBOK-Guide-Draft-0.6.pdf) with the approved wording for the introduction, Quick Start and Chapter 2A, and applied the homepage wording. The revised text uses direct instructions and concrete questions while preserving the diagnostic class names, research definitions, source links and evidence limits. The separate writing-pilot page has been removed. All three publications have matching web, PDF, Word and Markdown editions; the Working Companion and Silvergum case pack carry updated edition references. Earlier downloads remain available. This is an editorial release, not new research or completed independent practitioner testing.
 
 ## Guide and connected practice pack 0.5 | 24 November 2026
 

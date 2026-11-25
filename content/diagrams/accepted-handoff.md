@@ -20,7 +20,7 @@ A fictional Linden Studio example of acceptance, clarification, ownership and ve
 
 ## Use it with the Guide
 
-[Read this section in the OIBOK Guide (draft 0.6)](/guide/read/#4-clarify-decisions-coordination-and-execution). Use the diagram to support discussion, then record the actual evidence, authority, decision and unresolved conditions in your working records.
+[Read this section in the OIBOK Guide (draft 0.6.1)](/guide/read/#4-clarify-decisions-coordination-and-execution). Use the diagram to support discussion, then record the actual evidence, authority, decision and unresolved conditions in your working records.
 
 - [Practice review](/tools/practice-review/)
 

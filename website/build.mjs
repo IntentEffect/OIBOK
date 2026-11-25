@@ -120,8 +120,9 @@ for (const page of pages) {
       '009': '09--quality-of-the-connections',
       '007': '07--persistent-learning',
       '002': '02--selective-attention',
+      '011': '11--ai-within-organisational-work',
     };
-    readingSource = readingSource.replace(/(^### OI-IP-(009|007|002) [^\n]+\n\n> [^\n]+)/gm,
+    readingSource = readingSource.replace(/(^### OI-IP-(009|007|002|011) [^\n]+\n\n> [^\n]+)/gm,
       (claim, passage, id) => passage + '\n\n[Read the evidence note](/research/integrated-evidence-notes/#' + noteSections[id] + ')');
   }
   if (page.kind === 'practitioner-guide') {
@@ -137,6 +138,9 @@ for (const page of pages) {
     readingSource = readingSource.replace('## 1. Purpose', '## 1. Purpose\n\nFor work that keeps coming back, [try the improvement and handoff worksheet](/tools/practice-review/#improvement-and-handoff-worksheet).');
   }
   let content = renderMarkdown(readingSource);
+  if (page.path === '/research/propositions/') {
+    content = `<p><strong>Editorial evidence supplement, 25 November 2026.</strong> Read the <a href="${basePath}/research/working-with-ai/">Working with AI source appraisal</a> and <a href="${basePath}/research/integrated-evidence-notes/">integrated proposition notes</a> for later evidence and its limits. The released register below preserves its original claims and evidence status.</p>` + content;
+  }
   if (chapterIndex !== -1) {
     content = content.replace(/^(<p><strong>Artefact ID:[\s\S]*?<\/p>)\s*<hr\s*\/?>/, '<details class="chapter-metadata"><summary>Original component metadata</summary>$1</details>');
   }

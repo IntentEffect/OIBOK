@@ -1,6 +1,6 @@
 # Worked decision: a booking handoff
 
-**Web supplement to Guide 0.6 · 25 November 2026.** The booking cases, figures and decision below are fictional. A service team is deciding whether to expand a trial in which the scheduler explicitly accepts each ready job or returns it with a question.
+**Web supplement to Guide 0.6.1 · 25 November 2026.** The booking cases, figures and decision below are fictional. A service team is deciding whether to expand a trial in which the scheduler explicitly accepts each ready job or returns it with a question.
 
 | Fictional trial record | Previous 10 eligible bookings | Next 10 eligible bookings |
 | --- | --- | --- |
