@@ -32,7 +32,7 @@ Select and read the relevant sources. If you cannot retrieve them, say what is u
 
 Distinguish observed evidence, source findings, OIBOK interpretation, your analysis and unknowns. Consider competing explanations and identify the evidence that could change your recommendation. If AI is being considered, compare current practice, a credible change without AI and an AI-assisted option.
 
-Use the most relevant OIBOK practical tool to draft a concrete next step. Identify the accountable owner, decision authority, dependencies, measures and review date. Stay within the access and action authority I have provided. Mark missing evidence rather than inventing results or approvals.
+Use the most relevant OIBOK practical tool to draft a concrete next step. Identify the accountable owner, decision authority, dependencies, measures and review date. If outcomes take time, specify when cases stop entering the trial, when the last outcome can be observed, and how pending cases will be reported. Stay within the access and action authority I have provided. Mark missing evidence rather than inventing results or approvals.
 
 Return: scope; sources and versions; chapter mapping; findings and alternatives; a proposed action or draft tool; evaluation and learning plan; unresolved questions and attribution. Treat OIBOK as a working synthesis and its tools as practice resources. Do not produce an invented OI score or treat fictional examples as evidence.
 ```
@@ -116,6 +116,8 @@ The Harbour Services examples are fictional. Their organisations, cases, counts,
 ## Make the next step measurable
 
 Identify the proposed action, accountable owner, decision authority, dependencies and review date. Plan evaluation before introducing a change where possible. Define the baseline or comparison, eligible cases, observation window, outcome and quality measures, missing-data treatment and relevant pause or fallback conditions.
+
+For a two-working-day target, a booking received on Friday may still be within its window at a Friday review. Show pending cases separately and set the outcome review after the final eligible case has had time to mature. [See the three-session booking trial](https://oibok.org/for-agents/booking-trial/).
 
 Keep proposed benefits separate from observed results. Distinguish the effects of the complete intervention from an AI-only effect. Record what should change in knowledge, policy, handoffs, training or system configuration, then set a later check to examine whether the learning persists across subsequent cases or different personnel.
 
