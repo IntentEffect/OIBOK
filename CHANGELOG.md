@@ -1,5 +1,9 @@
 # Versions and corrections
 
+## Agent prompt trial | 25 November 2026
+
+Published the [three-session booking handoff trial](/for-agents/booking-trial/) with the exact task, source revision, responses and editorial findings. The starter prompt now asks for the intake cutoff, outcome window and treatment of pending cases.
+
 ## AI evidence and practice update 0.6.1 | 25 November 2026
 
 Published a [dated research appraisal](/research/working-with-ai/) covering Anthropic’s *Working with AI*, Chen and Stratton’s software-production study and the patent-drafting expertise experiment. The [integrated evidence notes](/research/integrated-evidence-notes/) now include Organisationally Integrated AI (OI-IP-011) and a contemporary addition to Connection Quality (OI-IP-009). Source findings, OIBOK interpretation, rival explanations and limits on causal and organisational claims remain separate. Independent review is pending.

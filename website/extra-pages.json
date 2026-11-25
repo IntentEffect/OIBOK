@@ -256,5 +256,13 @@
     "section": "Guide",
     "description": "Separate Chapter 6 review copy for the proposed Guide 0.7, with fictional booking and proposal decisions for practitioner feedback.",
     "version": "Chapter review · 25 November 2026"
+  },
+  {
+    "source": "content/agents/booking-trial.md",
+    "path": "/for-agents/booking-trial/",
+    "title": "Testing the booking handoff prompt",
+    "description": "Three assistant responses to a fictional rollout decision, checked against OIBOK passages and the limits of the manager’s evidence.",
+    "section": "Agents",
+    "version": "Prompt trial · 25 November 2026"
   }
 ]

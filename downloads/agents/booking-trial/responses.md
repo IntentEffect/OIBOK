@@ -1,0 +1,27 @@
+# Responses from three separate assistant sessions
+
+## Session A
+
+**Defer the two-branch rollout next week.** At the trial branch, standard jobs booked within two working days rose from 12/20 (60%) to 15/20 (75%). The scheduler worked two extra shifts. Without case-level staffing comparisons, the 15-percentage-point gain cannot establish what the handoff contributed. Checking time and evidence from the second branch are also missing.
+
+One delayed job had immediate acceptance but waited for a qualified technician. In another, the missing owner record leaves open whether anyone accepted responsibility. OIBOK’s account of patient-care research supports examining coordination. Its application to repair bookings is a hypothesis to test. [Evidence behind four OIBOK propositions v0.2, §09](https://oibok.org/research/integrated-evidence-notes/) · [Completion Record v1.0, §§6–7](https://oibok.org/research/release-record/)
+
+**Proposed next step.** Record the sales lead’s explanation now. Ask for the unsupplied roster report. Have sales and scheduling compare one timely booking with a similar stalled booking under comparable staffing. Trace when complete details arrived, who accepted them, when a qualified slot opened and when the customer received confirmation. [Two-case review, draft 0.1, “Copy these prompts into your work notes”](https://oibok.org/tools/two-case-review/)
+
+You alone can approve a rollout. If you authorise a further trial, track all standard jobs next week, including two-day bookings, checking minutes and rework. Review on 9 December after the booking window closes. Persistent delays after prompt acceptance favour addressing capacity. Gains under comparable staffing with manageable checking time would justify a second-branch pilot. [Agent guide 0.1, “Make the next step measurable”](https://oibok.org/for-agents/)
+
+## Session B
+
+**Defer next week’s rollout to both branches.** You alone can approve it, and nothing has been approved. Standard jobs booked within two working days rose from 12/20 (60%) to 15/20 (75%). That is three more timely bookings. Two extra scheduler shifts could explain some or all of the gain. We lack staffing comparisons by case, checking-time records and evidence from the second branch. Please supply the roster report through an authorised channel. [Agent guide 0.1, “Assess evidence and competing explanations”](https://oibok.org/for-agents/)
+
+One delayed booking was accepted immediately, then waited for a qualified technician. A second had no recorded receiving owner. Ask who actually received it before concluding it was missed. OIBOK suggests tracing each booking through to the customer outcome. Its research baseline is a working synthesis. [Evidence behind four OIBOK propositions v0.2, §09](https://oibok.org/research/integrated-evidence-notes/) · [Body of Knowledge Completion Record v1.0, §§1–2](https://oibok.org/research/release-record/)
+
+**Proposed review on 4 December.** Ask sales and scheduling to trace one timely and one stalled standard job on comparably staffed shifts. Record the sales lead’s explanation first. For each subsequent standard job next week, record the receiving owner, acceptance time, technician availability, booking time and minutes spent checking. Flag missing entries. At review, consider a reversible second-branch pilot only if gains persist under comparable staffing without added checking burden. If delays cluster after acceptance, investigate technician coverage first. [Two-case review, draft 0.1, “Copy these prompts into your work notes”](https://oibok.org/tools/two-case-review/)
+
+## Session C
+
+**Defer the two-branch rollout next week.** Standard jobs booked within two working days rose from 12/20 (60%) to 15/20 (75%). Three more jobs met the target, but the scheduler worked two extra shifts. Without case-level staffing comparisons, we cannot tell how much the handoff contributed. The other branch supplied no data. You alone can approve rollout, and approval remains pending. [Agent guide 0.1, “Authority, access and organisational records”](https://oibok.org/for-agents/)
+
+Immediate acceptance followed by a wait for a qualified technician points to a capacity constraint in one delayed case. The other case lacked a recorded receiving owner. Ask who actually received it before diagnosing a missed handoff. OIBOK suggests tracing both explanations. Its research baseline is a literature-grounded working synthesis. [Evidence behind four OIBOK propositions 0.2, §09](https://oibok.org/research/integrated-evidence-notes/) · [Body of Knowledge Completion Record 1.0, §§6–7](https://oibok.org/research/release-record/)
+
+**Proposed review for 11 December:** Ask sales and scheduling to record their current explanation, then trace one timely and one comparable delayed booking from sales submission through acceptance to customer confirmation. Request the unsupplied roster. For the next two weeks, record staffing, qualified-slot availability, owner, checking minutes (currently unknown) and two-day outcomes for standard jobs at both branches. Compare similarly staffed shifts and check whether another scheduler can use the handoff. Consider expansion if gains persist at comparable capacity without excessive checking. If delays follow technician availability, address coverage first. [Two-case review, draft 0.1, “Copy these prompts into your work notes”](https://oibok.org/tools/two-case-review/)
