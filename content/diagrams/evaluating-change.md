@@ -20,7 +20,7 @@ Compare complete working arrangements and keep alternative explanations visible.
 
 ## Use it with the Guide
 
-[Read this section in the OIBOK Guide (draft 0.6.1)](/guide/read/#6-evaluate-the-change). Use the diagram to support discussion, then record the actual evidence, authority, decision and unresolved conditions in your working records.
+[Read this section in the OIBOK Guide (draft 0.6.2)](/guide/read/#6-evaluate-the-change). Use the diagram to support discussion, then record the actual evidence, authority, decision and unresolved conditions in your working records.
 
 - [Outcome and learning](/tools/outcome-and-learning/)
 

@@ -40,7 +40,7 @@ A customer accepts a quote on Monday. By Thursday she still has no booking. In t
 
 **Improve.** The team checks subsequent bookings for delays, repeat calls and extra checking work. A shorter wait might also reflect a quieter week. They compare similar jobs and return to the question when another colleague covers sales. That later case helps them judge whether the change has become part of everyday practice.
 
-These activities can overlap. A returned booking can send the team back to its original explanation. The model names six capabilities involved in this work: **Sense, Know, Choose, Mobilise, Learn and Adapt**. The [interactive model](/model/) shows how they connect. The [OIBOK Guide (draft 0.6.1)](/guide/read/) explains how to investigate a case.
+These activities can overlap. A returned booking can send the team back to its original explanation. The model names six capabilities involved in this work: **Sense, Know, Choose, Mobilise, Learn and Adapt**. The [interactive model](/model/) shows how they connect. The [OIBOK Guide (draft 0.6.2)](/guide/read/) explains how to investigate a case.
 
 ### Where the ideas come from
 

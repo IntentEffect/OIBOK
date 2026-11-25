@@ -1,6 +1,8 @@
 # Working with AI: evidence and implications for OIBOK
 
-**Editorial evidence supplement 0.1 · 25 November 2026**
+**Editorial evidence supplement 0.2 · 26 November 2026**
+
+The source appraisal and initial decision below were recorded on 25 November 2026. This revision adds a workforce-development application and a prepared pilot. It introduces no new empirical finding or field result.
 
 This update examines evidence relevant to the gap between improving a task and improving the work around it. It adds source appraisals and practical tests to the [integrated evidence notes](/research/integrated-evidence-notes/). The research baseline remains OIBOK 1.0; its released propositions and source registers retain their original wording and bytes. Independent review of this supplement is pending.
 
@@ -78,6 +80,18 @@ Where experienced judgement remains necessary, specify how someone will acquire 
 Compare the questions raised through OIBOK with the team's usual review, using comparable cases and a similar time allowance. Record whether the OIBOK prompts reveal a consequential issue, distinguish explanations or change a decision. Also record occasions when they add burden without useful insight. This addresses the [construct-validity expectations](/knowledge/integrated-and-responsible-organisational-intelligence/#25-construct-validity-and-falsification-expectations) already present in Chapter 10.
 
 ## Scope and change record
+
+### Practice extension on 26 November 2026
+
+Guide 0.6.2 connects changes to recruitment, entry roles and opportunities to practise with the organisation's future need for experienced people. The [workforce-development pilot](/research/workforce-development-pilot/) and [editable review records](/tools/workforce-development-review/) make this a question to investigate. The work draws on the existing WAI-01 appraisal and research Chapters [3](/knowledge/knowledge-and-expertise/), [8](/knowledge/organisational-memory-reflection-and-learning/) and [9](/knowledge/capability-development-and-adaptation/).
+
+Reduced hiring and changes to learning arrangements raise a question about the future supply of expertise. WAI-01 does not establish a long-term effect on junior careers or retained organisational capability. The pilot therefore examines observable practice opportunities, supervision, the judgement required in later cases and workflow outcomes. Longer-term workforce effects remain open.
+
+The protocol keeps two evaluations separate. First, compare what OIBOK adds to the team's usual review, with comparable case information, review time and support. Then evaluate the selected work change against its declared outcome and quality conditions. A successful work change would not by itself establish OIBOK's added value. A second review may benefit from extra attention, coaching or prior exposure to the cases; report those differences and the limits they impose.
+
+**Editorial decision.** Include as proposed practice in Guide 0.6.2 and a separate pilot supplement 0.1. Intent & Effect remains the editorial steward. Preparation used AI-assisted drafting and consistency review under the existing methodology; independent subject review and field results are pending. The authorised scope is guidance and a prepared protocol. No participant, independent reviewer or observed outcome is invented. The preserved research propositions and registers remain unchanged.
+
+### Initial disposition on 25 November 2026
 
 | Record | Disposition on 25 November 2026 |
 | --- | --- |

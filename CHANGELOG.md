@@ -1,5 +1,13 @@
 # Versions and corrections
 
+## Workforce development and pilot update 0.6.2 | 26 November 2026
+
+Published [Guide 0.6.2](/guide/) and its connected practice pack. New guidance asks how changes to entry roles, recruitment and practice opportunities affect the development of experienced successors. It links the required judgement to supervision, review capacity, later cases and existing ownership records. The Silvergum pack carries current edition references; its fictional case records remain unchanged.
+
+Published a [workforce-development pilot](/research/workforce-development-pilot/) and [editable review records](/tools/workforce-development-review/). The protocol separates a comparison of OIBOK with usual review from evaluation of the work change. It requires comparable information and time, declared intake and outcome windows, complete case counts, visible supervision and reporting of no added value, additional burdens and pending outcomes. Word, PDF and Markdown copies accompany the web resources.
+
+This is a prepared practice update with no recruited participants or field results. The earlier Chapter 1 pilot and the separate Guide 0.7 review decision remain open. Research release 1.0, the historical proposition and source registers, Toolkit 0.1 and the visual sets retain their status. Previous Guide editions remain available. The evidence supplement records this as an application to test, without claiming that reduced hiring causes a loss of expertise or that the pilot validates OIBOK.
+
 ## Agent prompt trial | 25 November 2026
 
 Published the [three-session booking handoff trial](/for-agents/booking-trial/) with the exact task, source revision, responses and editorial findings. The starter prompt now asks for the intake cutoff, outcome window and treatment of pending cases.
@@ -8,7 +16,7 @@ Published the [three-session booking handoff trial](/for-agents/booking-trial/) 
 
 Published a [dated research appraisal](/research/working-with-ai/) covering Anthropic’s *Working with AI*, Chen and Stratton’s software-production study and the patent-drafting expertise experiment. The [integrated evidence notes](/research/integrated-evidence-notes/) now include Organisationally Integrated AI (OI-IP-011) and a contemporary addition to Connection Quality (OI-IP-009). Source findings, OIBOK interpretation, rival explanations and limits on causal and organisational claims remain separate. Independent review is pending.
 
-[Guide 0.6.1](/guide/) and its connected practice pack add a fictional proposal-queue example, authority and participation questions, a supervised judgement-development example and maintenance/renewal prompts. Corresponding fields are included in the existing Working Companion records. Web, Markdown, Word and PDF editions carry the same current version; earlier downloads remain available with their original bytes and branding is retained. The separate Chapter 6 review copy also includes the proposal example.
+[Archived Guide 0.6.1](/downloads/guide/OIBOK-Guide-Draft-0.6.1.pdf) and its connected practice pack add a fictional proposal-queue example, authority and participation questions, a supervised judgement-development example and maintenance/renewal prompts. Corresponding fields are included in the existing Working Companion records. Web, Markdown, Word and PDF editions carry the same current version; earlier downloads remain available with their original bytes and branding is retained. The separate Chapter 6 review copy also includes the proposal example.
 
 This is a targeted editorial evidence and practice update. Research release 1.0, its original proposition/source registers, Toolkit 0.1 and Visual set 0.1 retain their status. The wider Guide 0.7 revision still awaits the field-pilot and independent-review decision. The new examples are fictional and no field result, independent review or validation of the whole OIBOK model is claimed.
 

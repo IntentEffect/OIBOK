@@ -1,6 +1,6 @@
 # Evidence behind four OIBOK propositions
 
-Editorial evidence notes, version 0.2, 25 November 2026. Each quoted claim comes from research release 1.0. This targeted check examines the specific sources and sections identified below. Independent review is pending. This revision extends note 09 and adds note 11, with a separate [source appraisal and editorial decision](/research/working-with-ai/). The practice example in [Guide Chapter 6](/guide/evaluate/#worked-decision-a-booking-handoff) shows how much turns on choosing between competing explanations.
+Editorial evidence notes, version 0.3, 26 November 2026. Each quoted claim comes from research release 1.0. This targeted check examines the specific sources and sections identified below. Independent review is pending. Version 0.2 extended note 09 and added note 11; this revision links a prepared workforce-development pilot to note 07 without changing the source findings. The separate [source appraisal and editorial decision](/research/working-with-ai/) records the scope. The practice example in [Guide Chapter 6](/guide/evaluate/#worked-decision-a-booking-handoff) shows how much turns on choosing between competing explanations.
 
 ## 09 · Quality of the connections
 
@@ -49,6 +49,8 @@ For an AI-assisted workflow, compare accepted completions, queue age, quality an
 **Where OIBOK extends it.** A revised procedure shows that someone recorded a lesson. Its author recalling the fix shows individual retention. A colleague finding and applying the fix on a later case gives stronger evidence that the team can draw on it. This sequence is OIBOK’s proposed field check. The franchise study measured production costs, so it cannot tell us which individual retrieved a particular lesson. It offers relevant service-setting evidence, with uncertain transfer to a standalone small firm.
 
 **What could change the judgement?** Follow the same workflow across shifts. If the cover worker needs the author to intervene, qualify the claim of team learning. If the worker succeeds, ask how they knew what to do. Prior experience, an easier case or a supervisor’s private prompt could also explain success. A colleague independently applying a shared verbal routine is relevant evidence even where no written procedure exists.
+
+**Workforce-development application, 26 November 2026.** The [prepared pilot](/research/workforce-development-pilot/) asks how changed entry roles and practice opportunities affect the development of required judgement. It records supervision and assistance, later performance on a different case and reuse by another person separately. A short pilot can inform a local learning arrangement; it cannot establish the long-term supply of experienced practitioners. The [review records](/tools/workforce-development-review/) also separate OIBOK's contribution to the diagnosis from the effects of the chosen intervention.
 
 ## 02 · Selective attention
 

@@ -14,6 +14,8 @@ It does not establish that the whole model predicts organisational performance, 
 
 [Read the Chapter 1 field pilot and independent review brief](/research/chapter-one-pilot/). It sets out how to test one chapter against a real decision.
 
+[Read the workforce-development pilot](/research/workforce-development-pilot/). It separates the usefulness of OIBOK prompts from the effects of a work change, with later checks of required judgement and blank [review records](/tools/workforce-development-review/). The protocol is prepared for field use; results are pending.
+
 | Record | What it provides |
 | --- | --- |
 | [Glossary](/knowledge/glossary/) | Core and extended terms, with their conceptual status. |
@@ -28,7 +30,7 @@ The extended registers are research resources. They are not intended to be appli
 
 ## Source records
 
-[Working with AI evidence update, 25 November 2026](/research/working-with-ai/), appraises three recent studies and records their design, limitations and proposition mapping. It is a dated editorial supplement to the preserved research release.
+[Working with AI evidence update, with practice extension dated 26 November 2026](/research/working-with-ai/), appraises three recent studies and records their design, limitations and proposition mapping. It is a dated editorial supplement to the preserved research release.
 
 The source occurrence crosswalk records what each chapter cites. The unique-source register is provisional because compound entries and title-based matching can over-count or under-count individual works. The release reports that older references were structurally reconciled, but not every older source was independently reopened at its publisher. These limitations remain relevant when using the evidence.
 

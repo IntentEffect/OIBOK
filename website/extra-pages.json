@@ -2,45 +2,45 @@
   {
     "source": "content/guide/index.md",
     "path": "/guide/",
-    "title": "OIBOK Guide (draft 0.6.1)",
-    "description": "Draft 0.6.1 for practitioner review. Follow workflow constraints, clarify authority and participation, and test how expertise develops.",
+    "title": "OIBOK Guide (draft 0.6.2)",
+    "description": "Draft 0.6.2 for practitioner review. Plan how people develop expertise as work changes, and test the workflow and OIBOK contribution.",
     "section": "Guide",
     "kind": "guide-index",
-    "version": "Draft 0.6.1 · Work design and evidence edition · For practitioner review · 25 November 2026",
-    "component_version": "0.6.1",
+    "version": "Draft 0.6.2 · Workforce development and pilot edition · For practitioner review · 26 November 2026",
+    "component_version": "0.6.2",
     "status": "draft-for-practitioner-review"
   },
   {
-    "source": "content/guide/guide-draft-0.6.1.md",
+    "source": "content/guide/guide-draft-0.6.2.md",
     "path": "/guide/read/",
-    "title": "Read the OIBOK Guide (draft 0.6.1)",
+    "title": "Read the OIBOK Guide (draft 0.6.2)",
     "description": "The complete draft Guide, from investigating a worthwhile problem to designing work, evaluating outcomes and retaining learning.",
     "section": "Guide",
     "kind": "practitioner-guide",
-    "version": "Draft 0.6.1 · Work design and evidence edition · For practitioner review · 25 November 2026",
-    "component_version": "0.6.1",
+    "version": "Draft 0.6.2 · Workforce development and pilot edition · For practitioner review · 26 November 2026",
+    "component_version": "0.6.2",
     "status": "draft-for-practitioner-review"
   },
   {
-    "source": "content/guide/working-companion-draft-0.6.1.md",
+    "source": "content/guide/working-companion-draft-0.6.2.md",
     "path": "/guide/companion/",
-    "title": "OIBOK Working Companion (draft 0.6.1)",
-    "description": "Draft preparation, handoff, evaluation, retention and feedback guidance to use alongside the OIBOK Guide (draft 0.6.1).",
+    "title": "OIBOK Working Companion (draft 0.6.2)",
+    "description": "Draft preparation, handoff, evaluation, retention and feedback guidance to use alongside the OIBOK Guide (draft 0.6.2).",
     "section": "Guide",
     "kind": "working-companion",
-    "version": "Draft 0.6.1 · Work design and evidence edition · For practitioner review · 25 November 2026",
-    "component_version": "0.6.1",
+    "version": "Draft 0.6.2 · Workforce development and pilot edition · For practitioner review · 26 November 2026",
+    "component_version": "0.6.2",
     "status": "draft-for-practitioner-review"
   },
   {
-    "source": "content/guide/silvergum-case-pack-draft-0.6.1.md",
+    "source": "content/guide/silvergum-case-pack-draft-0.6.2.md",
     "path": "/guide/silvergum/",
-    "title": "Silvergum worked case pack (draft 0.6.1)",
+    "title": "Silvergum worked case pack (draft 0.6.2)",
     "description": "Completed fictional Practice Review, evaluation, exception, ownership and cross-team records for one connected inquiry.",
     "section": "Guide",
     "kind": "worked-case-pack",
-    "version": "Draft 0.6.1 · For practitioner review · 25 November 2026",
-    "component_version": "0.6.1",
+    "version": "Draft 0.6.2 · For practitioner review · 26 November 2026",
+    "component_version": "0.6.2",
     "status": "draft-for-practitioner-review"
   },
   {
@@ -238,7 +238,7 @@
     "title": "Evidence behind four OIBOK propositions",
     "description": "Source findings, OIBOK interpretations and observations that could weaken claims about attention, learning, connection quality and AI integration.",
     "section": "Research",
-    "version": "Editorial source check · 25 November 2026"
+    "version": "Editorial source check 0.3 · Practice extension 26 November 2026"
   },
   {
     "source": "content/research/working-with-ai-evidence-update.md",
@@ -247,7 +247,7 @@
     "description": "A dated appraisal of new research on AI, workflow constraints and retained expertise, with bounded implications for OIBOK.",
     "section": "Research",
     "kind": "editorial-evidence-update",
-    "version": "Editorial evidence update 0.1 · 25 November 2026"
+    "version": "Editorial evidence update 0.2 · Practice extension 26 November 2026"
   },
   {
     "source": "content/guide/chapter-six-review.md",
@@ -264,5 +264,27 @@
     "description": "Three assistant responses to a fictional rollout decision, checked against OIBOK passages and the limits of the manager’s evidence.",
     "section": "Agents",
     "version": "Prompt trial · 25 November 2026"
+  },
+  {
+    "source": "content/research/workforce-development-pilot.md",
+    "path": "/research/workforce-development-pilot/",
+    "title": "Test work design and future expertise",
+    "description": "A prepared field pilot for workflow outcomes, the judgement people need and the contribution of OIBOK compared with usual review.",
+    "section": "Research",
+    "kind": "pilot-brief",
+    "version": "Pilot draft 0.1 · 26 November 2026",
+    "component_version": "0.1",
+    "status": "draft-for-practitioner-review"
+  },
+  {
+    "source": "content/tools/workforce-development-review.md",
+    "path": "/tools/workforce-development-review/",
+    "title": "Record a work design and learning pilot",
+    "description": "Editable records for the pilot plan, case outcomes, review comparison, supervised practice and later decisions.",
+    "section": "Tools",
+    "kind": "pilot-worksheet",
+    "version": "Pilot draft 0.1 · 26 November 2026",
+    "component_version": "0.1",
+    "status": "draft-for-practitioner-review"
   }
 ]

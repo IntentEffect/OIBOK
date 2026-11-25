@@ -8,7 +8,7 @@ Start with one recurring decision or workflow. Use the OIBOK toolkit to investig
 
 For a small, reversible change, [review two cases with the one-page A4 worksheet](/tools/two-case-review/). You can fill it in on screen, print it or copy the prompts into your work notes.
 
-The [OIBOK Guide (draft 0.6.1)](/guide/read/) connects the chapters and tools into a practical working method. [Explore the interactive model](/model/) for the six capabilities, their connections, evidence questions and chapter mapping. [Browse the diagrams](/diagrams/) for practical figures and A3 downloads. These drafts welcome feedback and remain open to review and field evaluation.
+The [OIBOK Guide (draft 0.6.2)](/guide/read/) connects the chapters and tools into a practical working method. [Explore the interactive model](/model/) for the six capabilities, their connections, evidence questions and chapter mapping. [Browse the diagrams](/diagrams/) for practical figures and A3 downloads. These drafts welcome feedback and remain open to review and field evaluation.
 
 **Working with an AI assistant?** [Use these tools with an AI assistant or agent](/for-agents/) for a starter prompt and a method for selecting sources, comparing explanations and drafting a practical working record.
 
@@ -21,6 +21,10 @@ The [OIBOK Guide (draft 0.6.1)](/guide/read/) connects the chapters and tools in
 | Outcome and Learning Record | Plan evaluation before the change, review effects and retain learning. | [Read the record and worked example](/tools/outcome-and-learning/) |
 
 The tools can be revisited as understanding changes. If the proposed intervention contains no AI, connect the Practice Review directly to the Outcome and Learning Record.
+
+## Test workforce development as work changes
+
+Use the [workforce development review records](/tools/workforce-development-review/) with the [prepared field pilot](/research/workforce-development-pilot/). These draft 0.1 records connect changes to entry roles and practice opportunities with supervision, workflow outcomes and a comparison of OIBOK with usual review. They are a separate pilot supplement; the five Toolkit 0.1 canvases retain their existing editions.
 
 ## Download the A3 canvases
 

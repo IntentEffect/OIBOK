@@ -194,7 +194,7 @@ if(!discovery.startsWith('# Organisation Intelligence Body of Knowledge (OIBOK)\
 // Draft practice resources must retain their status in every published representation.
 const draftPages=expectedPages.filter(page=>page.status==='draft-for-practitioner-review');
 const diagramFigures=JSON.parse(fs.readFileSync(path.join(root,'website/diagrams.json'),'utf8')).figures;
-const expectedDraftRoutes=['/knowledge/signals-and-attention/reader/','/tools/two-case-review/','/research/chapter-one-pilot/','/guide/','/guide/read/','/guide/companion/','/guide/silvergum/','/model/','/model/reference/','/diagrams/',...diagramFigures.map(d=>`/diagrams/${d.slug}/`)];
+const expectedDraftRoutes=['/knowledge/signals-and-attention/reader/','/tools/two-case-review/','/research/chapter-one-pilot/','/research/workforce-development-pilot/','/tools/workforce-development-review/','/guide/','/guide/read/','/guide/companion/','/guide/silvergum/','/model/','/model/reference/','/diagrams/',...diagramFigures.map(d=>`/diagrams/${d.slug}/`)];
 if(draftPages.length!==expectedDraftRoutes.length || expectedDraftRoutes.some(route=>!draftPages.some(page=>page.path===route)))errors.push('Draft publication: missing or unexpected draft route');
 for(const page of draftPages){
  const file=path.join(dist,page.path,'index.html');
