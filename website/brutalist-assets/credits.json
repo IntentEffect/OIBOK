@@ -1,0 +1,30 @@
+{
+  "hero": {
+    "number": "01",
+    "file": "hirshhorn-oculus.jpg",
+    "title": "Hirshhorn Museum",
+    "creator": "Bravodelnorte",
+    "source": "https://commons.wikimedia.org/wiki/File:Center_of_Hirshhorn_Museum_looking_up_towards_the_sky,_2023.jpg",
+    "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Center_of_Hirshhorn_Museum_looking_up_towards_the_sky%2C_2023.jpg/1280px-Center_of_Hirshhorn_Museum_looking_up_towards_the_sky%2C_2023.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "width": 1280,
+    "height": 960,
+    "alt": "Looking up through the circular concrete courtyard of the Hirshhorn Museum into a clear sky.",
+    "treatment": "Wikimedia Commons web-sized reproduction, cropped for display with CSS. Original colours retained."
+  },
+  "detail": {
+    "number": "02",
+    "file": "national-theatre-stair.jpg",
+    "title": "National Theatre, London",
+    "creator": "Tom Parnell",
+    "source": "https://commons.wikimedia.org/wiki/File:National_Theatre_-_detail_of_exterior_stair.jpg",
+    "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/National_Theatre_-_detail_of_exterior_stair.jpg/960px-National_Theatre_-_detail_of_exterior_stair.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "width": 960,
+    "height": 1440,
+    "alt": "A curved concrete stair enclosure and sharply shadowed steps at London's National Theatre.",
+    "treatment": "Wikimedia Commons web-sized reproduction, cropped for display with CSS. Original colours retained."
+  }
+}

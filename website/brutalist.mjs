@@ -7,6 +7,13 @@ const excludedRoutes = new Set(['/homepage-previous/', '/404.html']);
 const escape = (value) => String(value).replace(/[&<>"']/g, (c) => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]));
 const digest = (data) => crypto.createHash('sha256').update(data).digest('hex');
 
+function renderPhoto(photo, assetUrl, variant) {
+  return `<figure class="brutalist-photo brutalist-photo-${variant}">
+    <img src="${escape(assetUrl)}" width="${photo.width}" height="${photo.height}" alt="${escape(photo.alt)}" loading="${variant === 'hero' ? 'eager' : 'lazy'}" decoding="async">
+    <figcaption><span class="brutalist-photo-place">${photo.number} / <a href="${escape(photo.source)}">${escape(photo.title)}</a></span><span class="brutalist-photo-credit">${escape(photo.creator)} · <a href="${escape(photo.licenceUrl)}" rel="license">${escape(photo.licence)}</a> · Cropped for display</span></figcaption>
+  </figure>`;
+}
+
 function snapshot(directory, prefix = '') {
   const files = new Map();
   for (const entry of fs.readdirSync(directory, {withFileTypes:true})) {
@@ -20,7 +27,7 @@ function snapshot(directory, prefix = '') {
 }
 
 // Recompose the homepage's existing copy; the publication text remains the source.
-function renderPreviewHero(html) {
+function renderPreviewHero(html, photograph) {
   const hero = html.match(/<section class="hero" aria-labelledby="home-title">([\s\S]*?)<\/section>/);
   if (!hero) throw new Error('Brutalist preview: the publication homepage hero is missing.');
   const field = (expression, label) => {
@@ -34,10 +41,16 @@ function renderPreviewHero(html) {
   const actions = field(/<div class="hero-actions">([\s\S]*?)<\/div>/, 'links');
   const access = field(/<p class="hero-access">([\s\S]*?)<\/p>/, 'licensing statement');
   return html.replace(hero[0], `<section class="brutalist-hero" aria-labelledby="home-title">
-    <div class="brutalist-hero-title"><p class="eyebrow">${eyebrow}</p><h1 id="home-title">Start<br>with the<br>work<span class="brand-dot">.</span></h1></div>
+    <div class="brutalist-hero-title"><p class="eyebrow">${eyebrow}</p><h1 id="home-title">Start<br>with the<br>work<span class="brand-dot">.</span></h1>${photograph}</div>
     <div class="brutalist-hero-copy"><h2>${heading}</h2><div class="hero-intro">${intro}</div><div class="hero-actions">${actions}</div></div>
     <p class="hero-access">${access}</p>
   </section>`);
+}
+
+function renderPreviewStewardship(html, photograph) {
+  const section = html.match(/<section class="open-section" aria-labelledby="open-title">([\s\S]*?)<\/section>/);
+  if (!section) throw new Error('Brutalist preview: the publication stewardship section is missing.');
+  return html.replace(section[0], `<section class="open-section brutalist-open-with-photo" aria-labelledby="open-title">${section[1]}${photograph}</section>`);
 }
 
 /** Add a presentation of the complete publication without changing its normal output. */
@@ -65,12 +78,19 @@ export function buildBrutalistPreview({root, dist, basePath, siteUrl, pageRecord
 
   const assetUrls = {};
   fs.mkdirSync(path.join(previewDirectory, 'assets'), {recursive:true});
-  for (const filename of ['brutalist.css', 'brutalist-client.js']) {
-    const data = fs.readFileSync(path.join(root, 'website', filename));
+  function copyAsset(filename, data) {
     const extension = path.extname(filename);
     const versioned = `${path.basename(filename, extension)}.${digest(data).slice(0, 12)}${extension}`;
     fs.writeFileSync(path.join(previewDirectory, 'assets', versioned), data);
     assetUrls[filename] = `${previewBase}/assets/${versioned}`;
+  }
+  for (const filename of ['brutalist.css', 'brutalist-client.js']) {
+    copyAsset(filename, fs.readFileSync(path.join(root, 'website', filename)));
+  }
+  const photoDirectory = path.join(root, 'website', 'brutalist-assets');
+  const photos = JSON.parse(fs.readFileSync(path.join(photoDirectory, 'credits.json'), 'utf8'));
+  for (const photo of Object.values(photos)) {
+    copyAsset(photo.file, fs.readFileSync(path.join(photoDirectory, photo.file)));
   }
 
   for (const page of pages) {
@@ -86,7 +106,10 @@ export function buildBrutalistPreview({root, dist, basePath, siteUrl, pageRecord
     html = html.replace(/<meta property="og:url" content="[^"]+">/, `<meta property="og:url" content="${escape(siteUrl + previewPath + page.path)}">`);
     html = html.replace('</head>', `  <meta name="robots" content="noindex,follow">\n  <link rel="stylesheet" href="${assetUrls['brutalist.css']}">\n  <script src="${assetUrls['brutalist-client.js']}" defer></script>\n</head>`);
     html = html.replace('<header class="site-header">', `<div class="brutalist-preview-bar" aria-label="Design preview"><span>Brutalist preview</span><a data-standard-view href="${escape(basePath + page.path)}">View standard website</a></div>\n  <header class="site-header">`);
-    if (page.path === '/') html = renderPreviewHero(html);
+    if (page.path === '/') {
+      html = renderPreviewHero(html, renderPhoto(photos.hero, assetUrls[photos.hero.file], 'hero'));
+      html = renderPreviewStewardship(html, renderPhoto(photos.detail, assetUrls[photos.detail.file], 'detail'));
+    }
     const target = path.join(previewDirectory, page.file);
     fs.mkdirSync(path.dirname(target), {recursive:true});
     fs.writeFileSync(target, html);
