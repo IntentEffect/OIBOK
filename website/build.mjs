@@ -8,6 +8,7 @@ import { buildAgentResources, rewritePublicationLinks } from './agents.mjs';
 import { prepareBlogPosts, renderBlogIndex, renderBlogFeed } from './blog.mjs';
 import { renderModel } from './model.mjs';
 import { formatPropositionRegister } from './proposition-register.mjs';
+import { buildBrutalistPreview } from './brutalist.mjs';
 import { guideIndex, splitGuide } from './guide-chapters.mjs';
 import { renderHome as renderPreviousHome, renderLayout as renderPreviousLayout, archiveMetadata } from './archives/homepage-previous.mjs';
 
@@ -196,3 +197,4 @@ fs.writeFileSync(path.join(dist,'blog/feed.xml'),renderBlogFeed({posts:blogPosts
 const agents = buildAgentResources({root,dist,pages,config,siteUrl});
 fs.writeFileSync(path.join(dist,'build-info.json'),JSON.stringify({basePath,siteUrl,pages:pageRecords.length,searchEntries:search.length,sourceCommit:agents.sourceCommit,agentDocuments:agents.documents,blogPosts:blogPosts.length},null,2)+'\n');
 console.log(`Built ${pageRecords.length} pages and ${search.length} search sections at ${basePath || '/'}.`);
+buildBrutalistPreview({root, dist, basePath, siteUrl, pageRecords});
