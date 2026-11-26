@@ -52,11 +52,11 @@ body.brutalist-preview .small-square { display: none; }
 
 /* The homepage retains the publication's wording and links within the mockup's grid. */
 body.brutalist-preview .brutalist-hero { display: grid; grid-template-columns: 1.35fr 1fr; }
-body.brutalist-preview .brutalist-hero-title { min-width: 0; padding: 1.75rem 1.75rem 2.2rem; }
-body.brutalist-preview .brutalist-hero-title .eyebrow { margin-bottom: 2rem; max-width: 30rem; }
+body.brutalist-preview .brutalist-hero-title { min-width: 0; padding: 1.75rem 1.75rem 1.5rem; }
+body.brutalist-preview .brutalist-hero-title .eyebrow { margin-bottom: 1.4rem; max-width: 30rem; }
 body.brutalist-preview .brutalist-hero h1 {
   margin: 0;
-  font: 900 clamp(4rem, 9.15vw, 8.25rem)/.89 var(--sans);
+  font: 900 clamp(4rem, 7.65vw, 6.875rem)/.89 var(--sans);
   letter-spacing: -.065em;
   text-transform: uppercase;
   text-wrap: initial;
@@ -122,6 +122,36 @@ body.brutalist-preview .open-section { grid-template-columns: 1fr 1.7fr; gap: 1.
 body.brutalist-preview .open-section .eyebrow { margin-top: 0; }
 body.brutalist-preview .open-section > div > p { max-width: 65ch; line-height: 1.65; color: var(--ink); }
 body.brutalist-preview .inline-links { gap: .6rem 1.7rem; }
+
+/* Architectural photographs act as quiet details within the editorial grid. */
+body.brutalist-preview .brutalist-photo { min-width: 0; margin: 0; }
+body.brutalist-preview .brutalist-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  background: var(--tint);
+}
+body.brutalist-preview .brutalist-photo figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: .2rem 1rem;
+  padding-top: .6rem;
+  margin-top: .65rem;
+  border-top: 1px solid var(--ink);
+  color: var(--muted);
+  font: .8125rem/1.5 var(--sans);
+}
+body.brutalist-preview .brutalist-photo-place { color: var(--ink); }
+body.brutalist-preview .brutalist-photo a { text-decoration-thickness: 1px; }
+body.brutalist-preview .brutalist-photo-hero { width: min(100%, 30rem); margin-top: 1.5rem; }
+body.brutalist-preview .brutalist-photo-hero img { aspect-ratio: 2 / 1; object-position: 50% 25%; }
+body.brutalist-preview .brutalist-open-with-photo { grid-template-rows: auto 1fr; align-items: start; row-gap: 1.2rem; }
+body.brutalist-preview .brutalist-open-with-photo > .eyebrow { grid-column: 1; grid-row: 1; margin: 0; }
+body.brutalist-preview .brutalist-open-with-photo > div { grid-column: 2; grid-row: 1 / 3; min-width: 0; }
+body.brutalist-preview .brutalist-photo-detail { grid-column: 1; grid-row: 2; width: min(100%, 18.5rem); }
+body.brutalist-preview .brutalist-photo-detail img { aspect-ratio: 4 / 5; object-position: 50% 35%; }
 
 /* The reading view keeps all publication material, citations and navigation. */
 body.brutalist-preview .page-header { max-width: none; padding: 2rem 1.75rem; border-bottom: 3px solid var(--ink); }
@@ -196,7 +226,7 @@ body.brutalist-preview .licence-badge img { background: #f4f2e9; }
   body.brutalist-preview .brand { font-size: 2.7rem; }
   body.brutalist-preview .primary-navigation { column-gap: 1rem; }
   body.brutalist-preview .brutalist-hero { grid-template-columns: 1.15fr 1fr; }
-  body.brutalist-preview .brutalist-hero h1 { font-size: clamp(4rem, 8.8vw, 6rem); }
+  body.brutalist-preview .brutalist-hero h1 { font-size: clamp(4rem, 7.65vw, 6rem); }
   body.brutalist-preview .reading-layout.has-toc { grid-template-columns: 210px minmax(0, 1fr); gap: 1.5rem; }
   body.brutalist-preview .page-aside { padding-inline: 1.35rem; }
 }
@@ -229,6 +259,12 @@ body.brutalist-preview .licence-badge img { background: #f4f2e9; }
   body.brutalist-preview .transformations { grid-template-columns: 1fr; gap: 1.4rem; }
   body.brutalist-preview .transformations p { max-width: 60ch; }
   body.brutalist-preview .open-section { grid-template-columns: 1fr; padding: 1.7rem 1.35rem 2rem; gap: .5rem; }
+  body.brutalist-preview .brutalist-open-with-photo { grid-template-rows: auto; }
+  body.brutalist-preview .brutalist-open-with-photo > .eyebrow,
+  body.brutalist-preview .brutalist-open-with-photo > div,
+  body.brutalist-preview .brutalist-photo-detail { grid-column: 1; grid-row: auto; }
+  body.brutalist-preview .brutalist-photo-detail { width: min(100%, 28rem); margin-top: 1.2rem; }
+  body.brutalist-preview .brutalist-photo-detail img { aspect-ratio: 4 / 3; }
   body.brutalist-preview .page-header { padding: 1.6rem 1.35rem; }
   body.brutalist-preview .page-header h1 { font-size: clamp(2.3rem, 6.5vw, 3rem); }
   body.brutalist-preview .reading-layout { padding: 1.7rem 1.35rem 2.7rem; }
@@ -277,4 +313,5 @@ body.brutalist-preview .licence-badge img { background: #f4f2e9; }
   body.brutalist-preview .brutalist-hero { display: block; }
   body.brutalist-preview .brutalist-hero h1 { font-size: 40pt; }
   body.brutalist-preview .brutalist-hero-copy { background: none; color: #000; }
+  body.brutalist-preview .brutalist-photo { max-width: 16rem; break-inside: avoid; margin-block: 1rem; }
 }
