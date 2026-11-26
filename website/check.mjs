@@ -18,6 +18,15 @@ const all=[];
 function walk(dir){for(const item of fs.readdirSync(dir,{withFileTypes:true})){const name=path.join(dir,item.name);if(item.isDirectory())walk(name);else all.push(name);}}
 walk(dist);
 const htmlFiles=all.filter(file=>file.endsWith('.html'));
+const previewPrefix='/brutalist';
+const previewBase=base+previewPrefix;
+const relativeHtmlPath=file=>path.relative(dist,file).split(path.sep).join('/');
+const htmlRoute=relative=>relative==='index.html'?'/':relative.endsWith('/index.html')?`/${relative.slice(0,-10)}`:`/${relative}`;
+const standardRoute=route=>route.startsWith(previewPrefix+'/')?route.slice(previewPrefix.length):route;
+const previewFiles=htmlFiles.filter(file=>relativeHtmlPath(file).startsWith('brutalist/'));
+const standardFiles=htmlFiles.filter(file=>!relativeHtmlPath(file).startsWith('brutalist/'));
+const mirroredFiles=standardFiles.filter(file=>!['homepage-previous/index.html','404.html'].includes(relativeHtmlPath(file)));
+const mirroredRoutes=new Set(mirroredFiles.map(file=>htmlRoute(relativeHtmlPath(file))));
 const ids=new Map();
 for(const file of htmlFiles){
  const html=fs.readFileSync(file,'utf8');
@@ -32,9 +41,11 @@ for(const file of htmlFiles){
  if(!communityCredit.includes(expectedCredit))errors.push(`${file}: missing publication attribution`);
  if(/sandbox:|oai-library:|chatgpt\.com\/api\/library|turn\d+(?:search|view)\d/.test(html))errors.push(`${file}: internal-only source reference`);
  if(rewritePublicationLinks(html,info.siteUrl,config.legacySiteUrls)!==html)errors.push(`${file}: historical publication URL remains in rendered content`);
- const relative=path.relative(dist,file).split(path.sep).join('/');
- const route=relative==='index.html'?'/':relative.endsWith('/index.html')?`/${relative.slice(0,-10)}`:`/${relative}`;
- if(html.match(/<link rel="canonical" href="([^"]+)"/)?.[1]!==info.siteUrl+route)errors.push(`${relative}: incorrect canonical URL`);
+ const relative=relativeHtmlPath(file);
+ const route=htmlRoute(relative);
+ // The alternate presentation refers to the same publication, not a new edition.
+ const canonicalRoute=relative.startsWith('brutalist/')?standardRoute(route):route;
+ if(html.match(/<link rel="canonical" href="([^"]+)"/)?.[1]!==info.siteUrl+canonicalRoute)errors.push(`${relative}: incorrect canonical URL`);
 }
 let checked=0;
 function checkLink(file,ref){
@@ -67,15 +78,19 @@ const currentGuideRoutes = new Map([
   ['/guide/companion/', 'Working Companion'],
   ['/guide/silvergum/', 'Silvergum Case Pack'],
 ]);
-const hubDownloads = new Set();
+const hubDownloads = new Map([
+  ['guide/index.html', new Set()],
+  ['brutalist/guide/index.html', new Set()],
+]);
 const publicationOrigin = new URL(info.siteUrl).origin;
 for (const file of htmlFiles) {
-  const page = path.relative(dist, file);
+  const page = relativeHtmlPath(file);
+  const publicationPage = page.startsWith('brutalist/') ? page.slice('brutalist/'.length) : page;
   const html = fs.readFileSync(file, 'utf8');
   for (const [, href, body] of html.matchAll(/<a\b[^>]*?\bhref="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)) {
     const url = new URL(href, info.siteUrl + '/' + page);
     if (url.origin !== publicationOrigin || !url.pathname.startsWith(base + '/')) continue;
-    const route = url.pathname.slice(base.length);
+    const route = standardRoute(url.pathname.slice(base.length));
     const download = route.match(/^\/downloads\/guide\/OIBOK-(Guide|Working-Companion|Silvergum-Case-Pack)-Draft-([\d.]+)\.(pdf|docx|md)$/);
     const book = download ? download[1].replaceAll('-', ' ') : currentGuideRoutes.get(route);
     const label = body.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
@@ -91,19 +106,21 @@ for (const file of htmlFiles) {
     if ((/\bWorking Companion\b/i.test(label) && book === 'Guide') || (/\bOIBOK Guide\b/i.test(label) && book === 'Working Companion'))
       errors.push(`${page}: publication name in "${label}" does not match ${href}`);
     if (!download) continue;
-    if (download[2] !== guideVersion && (namedVersion !== download[2] || !(page === 'releases/index.html' || /\barchived\b/i.test(label))))
+    if (download[2] !== guideVersion && (namedVersion !== download[2] || !(publicationPage === 'releases/index.html' || /\barchived\b/i.test(label))))
       errors.push(`${page}: previous edition needs an explicit archive reference for ${href}`);
-    if (page === 'guide/index.html') {
+    if (publicationPage === 'guide/index.html') {
       const format = {pdf: 'PDF', docx: 'Word', md: 'Markdown'}[download[3]];
       if (namedVersion !== guideVersion || !label.toLowerCase().includes(book.toLowerCase()) || !label.includes(format))
         errors.push(`${page}: download label must identify ${book}, draft ${guideVersion} and ${format}`);
-      hubDownloads.add(download[1] + '.' + download[3]);
+      hubDownloads.get(page)?.add(download[1] + '.' + download[3]);
     }
   }
 }
-for (const book of ['Guide', 'Working-Companion', 'Silvergum-Case-Pack']) {
-  for (const format of ['pdf', 'docx', 'md']) {
-    if (!hubDownloads.has(book + '.' + format)) errors.push(`Guide hub: missing ${book} ${format} download`);
+for (const [hub, downloads] of hubDownloads) {
+  for (const book of ['Guide', 'Working-Companion', 'Silvergum-Case-Pack']) {
+    for (const format of ['pdf', 'docx', 'md']) {
+      if (!downloads.has(book + '.' + format)) errors.push(`${hub}: missing ${book} ${format} download`);
+    }
   }
 }
 
@@ -111,6 +128,98 @@ const manifest=JSON.parse(fs.readFileSync(path.join(root,'sources/import-checksu
 for(const source of manifest.files){const data=fs.readFileSync(path.join(root,source.path));if(data.length!==source.bytes || crypto.createHash('sha256').update(data).digest('hex')!==source.sha256)errors.push(`Imported source changed: ${source.path}`);}
 const search=JSON.parse(fs.readFileSync(path.join(dist,'search-index.json'),'utf8'));
 for(const result of search){if(!result.title || typeof result.text!=='string' || !result.url)errors.push('Invalid search entry');else checkLink(path.join(dist,'index.html'),result.url);}
+
+// The alternate presentation must cover the actual publication and preserve its prose.
+const expectedPreviewPaths=new Set(mirroredFiles.map(file=>'brutalist/'+relativeHtmlPath(file)));
+const actualPreviewPaths=new Set(previewFiles.map(relativeHtmlPath));
+for(const relative of expectedPreviewPaths)if(!actualPreviewPaths.has(relative))errors.push(`Brutalist preview: missing ${relative}`);
+for(const relative of actualPreviewPaths)if(!expectedPreviewPaths.has(relative))errors.push(`Brutalist preview: unexpected page ${relative}`);
+if(!previewFiles.length)errors.push('Brutalist preview: no alternate pages were generated');
+const attribute=(tag,name)=>tag?.match(new RegExp(`\\b${name}="([^"]*)"`))?.[1];
+const tagWith=(html,name,key,value)=>[...html.matchAll(new RegExp(`<${name}\\b[^>]*>`,'g'))].map(match=>match[0]).find(tag=>attribute(tag,key)===value);
+const previewStyles=new Set();
+for(const file of previewFiles){
+ const relative=relativeHtmlPath(file);
+ const html=fs.readFileSync(file,'utf8');
+ const body=html.match(/<body\b[^>]*>/)?.[0];
+ if(!attribute(body,'class')?.split(/\s+/).includes('brutalist-preview'))errors.push(`${relative}: missing scoped brutalist body class`);
+ if(attribute(body,'data-base-path')!==previewBase)errors.push(`${relative}: incorrect alternate navigation base path`);
+ const robots=attribute(tagWith(html,'meta','name','robots'),'content')?.split(',').map(value=>value.trim().toLowerCase());
+ if(!robots?.includes('noindex') || !robots.includes('follow'))errors.push(`${relative}: alternate presentation must be noindex,follow`);
+ const ogUrl=attribute(tagWith(html,'meta','property','og:url'),'content');
+ if(ogUrl!==info.siteUrl+htmlRoute(relative))errors.push(`${relative}: incorrect alternate sharing URL`);
+ const styles=[...html.matchAll(/<link\b[^>]*>/g)].map(match=>match[0]).filter(tag=>attribute(tag,'rel')==='stylesheet').map(tag=>attribute(tag,'href')).filter(href=>href?.startsWith(previewBase+'/assets/brutalist.'));
+ if(styles.length!==1 || !/\/brutalist\.[a-f0-9]{12}\.css$/.test(styles[0]))errors.push(`${relative}: missing versioned brutalist stylesheet`);
+ else previewStyles.add(styles[0]);
+ const model=tagWith(html,'div','id','oibok-detailed-model');
+ if(model && attribute(model,'data-base-path')!==previewBase)errors.push(`${relative}: model links do not use the alternate presentation`);
+}
+for(const file of standardFiles){
+ const html=fs.readFileSync(file,'utf8');
+ const body=html.match(/<body\b[^>]*>/)?.[0];
+ if(attribute(body,'class')?.split(/\s+/).includes('brutalist-preview') || html.includes(`${previewBase}/assets/brutalist.`))errors.push(`${relativeHtmlPath(file)}: alternate styling leaked into the standard publication`);
+}
+if(previewStyles.size!==1)errors.push('Brutalist preview: pages must share one versioned stylesheet');
+for(const href of previewStyles){
+ const file=path.join(dist,href.slice(base.length));
+ if(!fs.existsSync(file))continue; // The general link check reports a missing asset.
+ const css=fs.readFileSync(file);
+ const version=crypto.createHash('sha256').update(css).digest('hex').slice(0,12);
+ if(!href.endsWith(`/brutalist.${version}.css`))errors.push('Brutalist preview: stylesheet filename does not match its contents');
+ if(!css.toString('utf8').includes('.brutalist-preview'))errors.push('Brutalist preview: stylesheet lacks the scoped presentation selector');
+}
+function articleMarkup(html){
+ const opening=html.match(/<article\b[^>]*\bclass="[^"]*\bprose\b[^"]*"[^>]*>/);
+ if(!opening)return null;
+ const tags=html.slice(opening.index).matchAll(/<\/?article\b[^>]*>/g);
+ let depth=0;
+ for(const tag of tags){
+  depth+=tag[0].startsWith('</')?-1:1;
+  if(depth===0)return html.slice(opening.index,opening.index+tag.index+tag[0].length);
+ }
+ return null;
+}
+function standardArticleReferences(markup){
+ return markup.replace(/\b(href|src|data-base-path)="([^"]*)"/g,(match,name,value)=>{
+  if(name==='data-base-path')return value===previewBase?`${name}="${base}"`:match;
+  for(const prefix of [previewBase,publicationOrigin+previewBase,'//'+new URL(info.siteUrl).host+previewBase]){
+   if(!value.startsWith(prefix+'/'))continue;
+   const rest=value.slice(prefix.length);
+   if(mirroredRoutes.has(rest.split(/[?#]/)[0]))return `${name}="${prefix.slice(0,-previewPrefix.length)}${rest}"`;
+  }
+  return match;
+ });
+}
+for(const file of mirroredFiles){
+ const relative=relativeHtmlPath(file);
+ if(relative==='index.html')continue; // The homepage is the only presentation-specific composition.
+ const alternate=path.join(dist,'brutalist',relative);
+ if(!fs.existsSync(alternate))continue;
+ const original=articleMarkup(fs.readFileSync(file,'utf8'));
+ const rendered=articleMarkup(fs.readFileSync(alternate,'utf8'));
+ if(!original || !rendered || original!==standardArticleReferences(rendered))errors.push(`${relative}: alternate article differs from the publication beyond route references`);
+}
+const previewSearchPath=path.join(dist,'brutalist/search-index.json');
+if(!fs.existsSync(previewSearchPath))errors.push('Brutalist preview: missing alternate search index');
+else{
+ let previewSearch;
+ try{previewSearch=JSON.parse(fs.readFileSync(previewSearchPath,'utf8'));}
+ catch{errors.push('Brutalist preview: malformed alternate search index');}
+ if(!Array.isArray(previewSearch))errors.push('Brutalist preview: alternate search index must be an array');
+ else{
+  if(previewSearch.length!==search.length)errors.push('Brutalist preview: search coverage differs from the publication');
+  for(let index=0;index<previewSearch.length;index++){
+   const actual=previewSearch[index],source=search[index];
+   if(!actual || typeof actual!=='object'){errors.push(`Brutalist preview: invalid search entry ${index+1}`);continue;}
+   if(!source)continue;
+   const expectedUrl=previewBase+source.url.slice(base.length);
+   const expected={...source,url:expectedUrl};
+   if(Object.keys(actual).length!==Object.keys(expected).length || Object.entries(expected).some(([key,value])=>actual[key]!==value))errors.push(`Brutalist preview: search entry ${index+1} changed beyond its destination`);
+   if(typeof actual.url!=='string' || !actual.url.startsWith(previewBase+'/'))errors.push(`Brutalist preview: search entry ${index+1} leaves the alternate presentation`);
+   else checkLink(path.join(dist,'brutalist/index.html'),actual.url);
+  }
+ }
+}
 
 // Check the independently consumable agent sources, not just their HTML links.
 const cataloguePath=path.join(dist,'agents/manifest.json');

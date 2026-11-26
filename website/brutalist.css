@@ -1,0 +1,280 @@
+/* The alternative presentation is deliberately confined to /brutalist/ pages. */
+body.brutalist-preview {
+  color-scheme: light dark;
+  --paper: light-dark(#f4f2e9, #21251f);
+  --ink: light-dark(#20241f, #f4f2e9);
+  --muted: light-dark(#555c50, #c2c7ba);
+  --accent: light-dark(#b4472d, #ee9779);
+  --line: light-dark(#20241f, #c2c7ba);
+  --tint: light-dark(#e5e2d7, #343a31);
+  --white: light-dark(#fffaf0, #21251f);
+  --serif: Arial, Helvetica, sans-serif;
+  --sans: Arial, Helvetica, sans-serif;
+  --width: 1440px;
+  background: var(--paper);
+  color: var(--ink);
+  font: 1rem/1.6 var(--sans);
+}
+
+body.brutalist-preview :is(button, input, select, textarea) { border-radius: 0; }
+body.brutalist-preview :is(a, button, summary, input):focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+body.brutalist-preview [hidden] { display: none !important; }
+body.brutalist-preview :is(.site-header, .main-content, .site-footer, .brutalist-preview-bar) {
+  width: min(var(--width), 100%);
+  margin-inline: auto;
+}
+body.brutalist-preview .brutalist-preview-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .4rem 1.5rem;
+  padding: .55rem 1.75rem;
+  border-bottom: 1px solid var(--ink);
+  font: .875rem/1.45 "Courier New", monospace;
+}
+body.brutalist-preview .brutalist-preview-bar p { margin: 0; }
+body.brutalist-preview .brutalist-preview-bar a { font-family: var(--sans); }
+body.brutalist-preview .site-header { border-bottom: 3px solid var(--ink); }
+body.brutalist-preview .header-inner { min-height: 104px; padding: 1.35rem 1.75rem; gap: 2rem; }
+body.brutalist-preview .brand { font-size: 3.2rem; font-weight: 900; letter-spacing: -.085em; }
+body.brutalist-preview .primary-navigation { min-width: 0; flex-wrap: wrap; justify-content: flex-end; gap: 0 1.35rem; font-size: .875rem; font-weight: 700; }
+body.brutalist-preview .primary-navigation > a { border-bottom: 2px solid transparent; padding: .6rem 0 .45rem; }
+body.brutalist-preview .primary-navigation > a:hover { border-bottom-color: var(--accent); }
+body.brutalist-preview .primary-navigation [aria-current="page"] { border-bottom-color: var(--accent); box-shadow: none; }
+body.brutalist-preview .primary-navigation .search-link { margin-left: 0; }
+body.brutalist-preview .primary-navigation > .github-link { padding: .6rem; }
+body.brutalist-preview .eyebrow { font: 500 .875rem/1.45 "Courier New", monospace; letter-spacing: .025em; text-transform: uppercase; }
+body.brutalist-preview .small-square { display: none; }
+
+/* The homepage retains the publication's wording and links within the mockup's grid. */
+body.brutalist-preview .brutalist-hero { display: grid; grid-template-columns: 1.35fr 1fr; }
+body.brutalist-preview .brutalist-hero-title { min-width: 0; padding: 1.75rem 1.75rem 2.2rem; }
+body.brutalist-preview .brutalist-hero-title .eyebrow { margin-bottom: 2rem; max-width: 30rem; }
+body.brutalist-preview .brutalist-hero h1 {
+  margin: 0;
+  font: 900 clamp(4rem, 9.15vw, 8.25rem)/.89 var(--sans);
+  letter-spacing: -.065em;
+  text-transform: uppercase;
+  text-wrap: initial;
+}
+body.brutalist-preview .brutalist-hero-copy {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 1.5rem;
+  padding: 2rem 1.75rem;
+  background: var(--ink);
+  color: var(--paper);
+}
+body.brutalist-preview .brutalist-hero-copy h2 { margin: 0; font: 700 clamp(1.7rem, 2.4vw, 2.25rem)/1.08 var(--sans); letter-spacing: -.035em; text-wrap: initial; }
+body.brutalist-preview .brutalist-hero-copy h2 em { font-style: normal; }
+body.brutalist-preview .brutalist-hero-copy .hero-intro { display: block; padding: 0; }
+body.brutalist-preview .brutalist-hero-copy .hero-summary { font: .875rem/1.5 "Courier New", monospace; letter-spacing: .02em; text-transform: uppercase; margin: 0 0 .8rem; }
+body.brutalist-preview .brutalist-hero-copy .hero-intro > p:not(.hero-summary) { max-width: 43ch; color: inherit; font-size: 1rem; line-height: 1.6; margin-bottom: 1rem; }
+body.brutalist-preview .brutalist-hero-copy .hero-intro > p:last-child { margin-bottom: 0; }
+body.brutalist-preview .brutalist-hero-copy .hero-actions { display: flex; align-items: stretch; flex-direction: column; gap: .8rem; margin: auto 0 0; }
+body.brutalist-preview .button { min-height: 50px; padding: .8rem 1.2rem; border: 2px solid var(--ink); background: var(--ink); color: var(--paper); font-size: .9375rem; font-weight: 700; }
+body.brutalist-preview .button:hover { background: var(--accent); border-color: var(--accent); color: var(--white); }
+body.brutalist-preview .brutalist-hero-copy .button { background: var(--paper); border-color: var(--paper); color: var(--ink); justify-content: center; }
+body.brutalist-preview .brutalist-hero-copy .button:hover { background: var(--accent); border-color: var(--accent); color: var(--white); }
+body.brutalist-preview .brutalist-hero-copy .text-link { color: inherit; justify-content: space-between; text-decoration: underline; text-underline-offset: .35em; }
+body.brutalist-preview .brutalist-hero-copy .text-link:hover { color: var(--accent); }
+body.brutalist-preview .brutalist-hero-copy .draft-label { color: inherit; }
+body.brutalist-preview .brutalist-hero .hero-access { grid-column: 1 / -1; margin: 0; padding: .9rem 1.75rem; border-block: 3px solid var(--ink); background: var(--accent); color: var(--white); font-size: .875rem; line-height: 1.6; }
+body.brutalist-preview .brutalist-hero .hero-access a:hover { color: inherit; text-decoration-thickness: 2px; }
+body.brutalist-preview .text-link { font-size: .9375rem; font-weight: 700; }
+body.brutalist-preview .entry-section { display: block; padding: 0; border-bottom: 3px solid var(--ink); }
+body.brutalist-preview .section-heading { display: grid; grid-template-columns: 1fr 1.7fr; align-items: end; gap: 1.5rem; padding: 2rem 1.75rem 1.65rem; }
+body.brutalist-preview .section-heading .eyebrow { margin: 0; }
+body.brutalist-preview :is(.section-heading h2, .framework-intro h2, .open-section h2) { font: 900 clamp(1.9rem, 3.15vw, 2.7rem)/1.04 var(--sans); letter-spacing: -.045em; }
+body.brutalist-preview .entry-list { border: 0; }
+body.brutalist-preview .entry { display: block; padding: 1.5rem 1.75rem; border-top: 1px solid var(--ink); border-bottom: 0; }
+body.brutalist-preview .entry:hover { background: var(--tint); color: var(--ink); }
+body.brutalist-preview .entry > .entry-number,
+body.brutalist-preview .entry > span[aria-hidden="true"] { display: none; }
+body.brutalist-preview .entry > span:nth-child(2) { display: grid; grid-template-columns: 1fr 1.7fr; gap: 1.5rem; align-items: start; }
+body.brutalist-preview .entry strong { margin: 0; font-size: 1.45rem; font-weight: 700; line-height: 1.18; letter-spacing: -.03em; }
+body.brutalist-preview .entry > span > span { max-width: 65ch; font-size: 1rem; line-height: 1.6; color: var(--ink); }
+body.brutalist-preview .draft-label { font-size: .8125rem; letter-spacing: .035em; }
+body.brutalist-preview .framework-section { padding: 2rem 1.75rem; margin: 0; border-bottom: 3px solid var(--ink); background: var(--tint); }
+body.brutalist-preview .framework-intro { grid-template-columns: 1fr 1fr; gap: 1.5rem 2rem; }
+body.brutalist-preview .framework-intro .eyebrow { margin: 0; }
+body.brutalist-preview .framework-intro > p:last-child { max-width: 57ch; line-height: 1.65; }
+body.brutalist-preview .transformations { gap: 2rem; margin-top: 2rem; }
+body.brutalist-preview .transformations > div { display: block; padding-top: 1.1rem; border-top: 2px solid var(--ink); min-width: 0; }
+body.brutalist-preview .transformation-number { display: none; }
+body.brutalist-preview .transformations h3 { margin: 0 0 .9rem; font: 900 clamp(1.7rem, 3vw, 2.6rem)/1.05 var(--sans); letter-spacing: -.045em; text-transform: uppercase; }
+body.brutalist-preview .transformations p { max-width: 38ch; color: var(--ink); font-size: 1rem; line-height: 1.65; }
+body.brutalist-preview .brutalist-model-tabs { display: flex; flex-wrap: wrap; gap: .65rem 2rem; margin-top: 2rem; border-bottom: 1px solid var(--ink); }
+body.brutalist-preview .brutalist-model-tab { padding: .5rem 0 1rem; background: transparent; color: var(--ink); border: 0; border-bottom: 3px solid transparent; font: 900 clamp(1.5rem, 3vw, 2.5rem)/1.1 var(--sans); letter-spacing: -.045em; text-transform: uppercase; }
+body.brutalist-preview .brutalist-model-tab[aria-selected="true"] { border-bottom-color: var(--accent); color: var(--accent); }
+body.brutalist-preview .brutalist-model-panel { max-width: 75ch; padding-top: 1rem; font-size: 1.0625rem; line-height: 1.65; }
+body.brutalist-preview .transformations.brutalist-model-enhanced { display: block; }
+body.brutalist-preview .transformations.brutalist-model-enhanced > .brutalist-model-tabs { display: flex; width: 100%; margin: 0; padding: 0; border-top: 0; }
+body.brutalist-preview .transformations.brutalist-model-enhanced > .brutalist-model-panel { min-height: 5.5rem; padding: 1.1rem 0 0; border-top: 0; }
+body.brutalist-preview .transformations.brutalist-model-enhanced .brutalist-model-panel h3 { display: none; }
+body.brutalist-preview .transformations.brutalist-model-enhanced .brutalist-model-panel p { max-width: none; font-size: 1.0625rem; }
+body.brutalist-preview .open-section { grid-template-columns: 1fr 1.7fr; gap: 1.5rem; padding: 2rem 1.75rem 2.4rem; border-top: 0; }
+body.brutalist-preview .open-section .eyebrow { margin-top: 0; }
+body.brutalist-preview .open-section > div > p { max-width: 65ch; line-height: 1.65; color: var(--ink); }
+body.brutalist-preview .inline-links { gap: .6rem 1.7rem; }
+
+/* The reading view keeps all publication material, citations and navigation. */
+body.brutalist-preview .page-header { max-width: none; padding: 2rem 1.75rem; border-bottom: 3px solid var(--ink); }
+body.brutalist-preview .breadcrumb { flex-wrap: wrap; margin-bottom: 1.5rem; font-size: .875rem; }
+body.brutalist-preview .page-header h1 { max-width: 24ch; font: 900 clamp(2.3rem, 4.6vw, 4rem)/1.02 var(--sans); letter-spacing: -.05em; text-wrap: initial; }
+body.brutalist-preview .page-introduction { max-width: 76ch; color: var(--ink); font-size: 1.125rem; line-height: 1.6; }
+body.brutalist-preview .page-meta { gap: .75rem 1.5rem; font-size: .875rem; }
+body.brutalist-preview .page-meta a { text-decoration: underline; }
+body.brutalist-preview .page-meta a > span[aria-hidden="true"] { display: none; }
+body.brutalist-preview .reading-layout { padding: 2rem 1.75rem 3.5rem; max-width: 56rem; margin-inline: auto; }
+body.brutalist-preview .reading-layout.has-toc { grid-template-columns: minmax(190px, 245px) minmax(0, 1fr); max-width: none; gap: 2rem; margin: 0; padding: 0 1.75rem 0 0; }
+body.brutalist-preview .page-aside { padding: 1.75rem 1.35rem 1.75rem 1.75rem; top: 0; max-height: 100vh; border-right: 2px solid var(--ink); }
+body.brutalist-preview .contents summary { font: 700 .9375rem/1.4 var(--sans); letter-spacing: 0; text-transform: none; }
+body.brutalist-preview .contents ol { border: 0; }
+body.brutalist-preview .contents li { border-top: 1px solid var(--ink); }
+body.brutalist-preview .contents a { border: 0; margin: 0; padding: .7rem 0; line-height: 1.45; color: var(--ink); }
+body.brutalist-preview .contents .toc-level-3 { font-size: .875rem; }
+body.brutalist-preview .contents .toc-level-3 a { padding-left: .8rem; }
+body.brutalist-preview .contents a:hover { color: var(--accent); text-decoration: underline; }
+body.brutalist-preview .reading-layout.has-toc > .prose { padding: 1.8rem 0 3.5rem; }
+body.brutalist-preview .prose { min-width: 0; width: 100%; max-width: 85ch; font-size: 1.0625rem; line-height: 1.75; }
+body.brutalist-preview .prose h2 { font: 700 clamp(1.55rem, 2.6vw, 2rem)/1.15 var(--sans); letter-spacing: -.035em; margin: 1.5em 0 .65em; }
+body.brutalist-preview .prose h3 { font-size: 1.25rem; line-height: 1.3; font-weight: 700; letter-spacing: -.02em; }
+body.brutalist-preview .prose h4 { font-size: 1.0625rem; }
+body.brutalist-preview .prose a { color: var(--accent); }
+body.brutalist-preview .prose blockquote { margin: 1.6em 0; padding: 1.35rem 1.5rem; border-left: 4px solid var(--ink); background: var(--tint); font: 500 1.2rem/1.6 var(--sans); }
+body.brutalist-preview .prose :is(table, pre) { font-size: 1rem; line-height: 1.65; }
+body.brutalist-preview .prose pre { background: var(--tint); border: 1px solid var(--ink); }
+body.brutalist-preview .prose th { background: var(--ink); color: var(--paper); font-weight: 700; }
+body.brutalist-preview .prose th a { color: inherit; }
+body.brutalist-preview .prose th, body.brutalist-preview .prose td { border-bottom-color: var(--ink); }
+body.brutalist-preview .prose hr { border-top: 2px solid var(--ink); }
+body.brutalist-preview .table-scroll { width: 100%; max-width: 100%; }
+body.brutalist-preview .prose .footnotes { font-size: .9375rem; line-height: 1.65; }
+body.brutalist-preview .publication-note { background: var(--tint); border: 1px solid var(--ink); border-left: 4px solid var(--accent); color: var(--ink); }
+body.brutalist-preview .chapter-pagination { gap: 1.5rem; border-top: 2px solid var(--ink); }
+body.brutalist-preview .chapter-pagination small { font-size: .875rem; }
+body.brutalist-preview .prose .source-download { font-size: .875rem; border-top: 2px solid var(--ink); }
+body.brutalist-preview .guide-chapter-index { border: 1px solid var(--ink); border-left: 4px solid var(--accent); }
+body.brutalist-preview .guide-figure { border: 2px solid var(--ink); }
+body.brutalist-preview .guide-figure figcaption { color: var(--ink); }
+body.brutalist-preview .proposition-register tbody th { background: transparent; color: var(--ink); }
+body.brutalist-preview .diagram-card { border-bottom-width: 2px; }
+body.brutalist-preview .diagram-card strong { font-size: 1.6rem; font-weight: 700; }
+body.brutalist-preview .search-field input { background: var(--paper); border: 2px solid var(--ink); color: var(--ink); }
+body.brutalist-preview .search-status { font-size: .875rem; }
+body.brutalist-preview .search-results li { border-top: 2px solid var(--ink); }
+body.brutalist-preview .search-results h2 { font-size: 1.5rem; line-height: 1.25; }
+body.brutalist-preview .search-results .result-section { font-size: .875rem; }
+body.brutalist-preview .blog-summary { border-top: 2px solid var(--ink); }
+body.brutalist-preview .blog-summary .blog-meta { font-size: .875rem; }
+body.brutalist-preview .prose .blog-summary h2 { font-weight: 700; letter-spacing: -.035em; }
+body.brutalist-preview.blog-index-page .reading-layout { max-width: 70rem; }
+body.brutalist-preview.blog-post-page .reading-layout { max-width: 56rem; }
+body.brutalist-preview:is(.model-page, .diagram-page) .reading-layout { max-width: 75rem; }
+body.brutalist-preview:is(.model-page, .diagram-page) .prose { max-width: none; }
+body.brutalist-preview #oibok-detailed-model :is(h2, h3) { font-family: var(--sans); font-weight: 700; }
+body.brutalist-preview #oibok-detailed-model .oi-button { border-width: 2px; }
+body.brutalist-preview #oibok-detailed-model .oi-button-quiet { border-color: transparent; }
+
+body.brutalist-preview .site-footer { padding: 2rem 1.75rem 1.5rem; border-top: 3px solid var(--ink); background: var(--ink); color: var(--paper); }
+body.brutalist-preview .footer-brand { font-size: 2.65rem; }
+body.brutalist-preview .footer-top { padding-bottom: 2rem; }
+body.brutalist-preview .footer-top nav { gap: .75rem 2.5rem; }
+body.brutalist-preview .site-footer :is(.footer-title, .community-credit > p, .licence-scope) { color: inherit; font-size: .875rem; }
+body.brutalist-preview .footer-bottom { border-top: 1px solid currentColor; }
+body.brutalist-preview .site-footer a:hover { color: inherit; text-decoration: underline; }
+body.brutalist-preview .licence-badge img { background: #f4f2e9; }
+
+@media (max-width: 1080px) {
+  body.brutalist-preview .header-inner { gap: 1.5rem; }
+  body.brutalist-preview .brand { font-size: 2.7rem; }
+  body.brutalist-preview .primary-navigation { column-gap: 1rem; }
+  body.brutalist-preview .brutalist-hero { grid-template-columns: 1.15fr 1fr; }
+  body.brutalist-preview .brutalist-hero h1 { font-size: clamp(4rem, 8.8vw, 6rem); }
+  body.brutalist-preview .reading-layout.has-toc { grid-template-columns: 210px minmax(0, 1fr); gap: 1.5rem; }
+  body.brutalist-preview .page-aside { padding-inline: 1.35rem; }
+}
+
+@media (max-width: 800px) {
+  body.brutalist-preview .brutalist-preview-bar { padding-inline: 1.35rem; }
+  body.brutalist-preview .header-inner { min-height: 90px; padding: 1.1rem 1.35rem; gap: 1rem; }
+  body.brutalist-preview .menu-toggle { font-weight: 700; }
+  body.brutalist-preview .primary-navigation { justify-content: flex-start; margin-top: 0; padding: .4rem 0 0; border-top: 1px solid var(--ink); }
+  body.brutalist-preview .primary-navigation > a { flex-basis: calc(33.333% - 1rem); padding-block: .8rem; }
+  body.brutalist-preview .primary-navigation > .github-link { justify-content: flex-start; padding: .8rem 0; }
+  body.brutalist-preview .primary-navigation [aria-current="page"] { border-bottom-color: transparent; color: var(--accent); }
+  body.brutalist-preview .brutalist-hero { grid-template-columns: 1fr; }
+  body.brutalist-preview .brutalist-hero-title { padding: 1.6rem 1.35rem 2rem; }
+  body.brutalist-preview .brutalist-hero-title .eyebrow { margin-bottom: 1.5rem; }
+  body.brutalist-preview .brutalist-hero h1 { font-size: clamp(4rem, 15.8vw, 7.5rem); }
+  body.brutalist-preview .brutalist-hero-copy { padding: 1.6rem 1.35rem; gap: 1.3rem; }
+  body.brutalist-preview .brutalist-hero-copy h2 { max-width: 25ch; font-size: 2rem; }
+  body.brutalist-preview .brutalist-hero-copy .hero-intro > p:not(.hero-summary) { max-width: 62ch; }
+  body.brutalist-preview .brutalist-hero-copy .hero-actions { align-items: flex-start; }
+  body.brutalist-preview .brutalist-hero-copy .hero-actions .button { width: 100%; }
+  body.brutalist-preview .brutalist-hero .hero-access { padding-inline: 1.35rem; }
+  body.brutalist-preview .section-heading { grid-template-columns: 1fr; gap: .8rem; padding: 1.7rem 1.35rem 1.4rem; }
+  body.brutalist-preview .section-heading h2 { font-size: 2.25rem; }
+  body.brutalist-preview .entry { padding: 1.4rem 1.35rem; }
+  body.brutalist-preview .entry > span:nth-child(2) { grid-template-columns: 1fr 1.3fr; gap: 1.5rem; }
+  body.brutalist-preview .framework-section { padding: 1.7rem 1.35rem; }
+  body.brutalist-preview .framework-intro { grid-template-columns: 1fr; gap: 1.3rem; }
+  body.brutalist-preview .framework-intro h2 { max-width: 22ch; }
+  body.brutalist-preview .transformations { grid-template-columns: 1fr; gap: 1.4rem; }
+  body.brutalist-preview .transformations p { max-width: 60ch; }
+  body.brutalist-preview .open-section { grid-template-columns: 1fr; padding: 1.7rem 1.35rem 2rem; gap: .5rem; }
+  body.brutalist-preview .page-header { padding: 1.6rem 1.35rem; }
+  body.brutalist-preview .page-header h1 { font-size: clamp(2.3rem, 6.5vw, 3rem); }
+  body.brutalist-preview .reading-layout { padding: 1.7rem 1.35rem 2.7rem; }
+  body.brutalist-preview .reading-layout.has-toc { display: block; padding: 0; }
+  body.brutalist-preview .page-aside { position: static; max-height: none; margin: 0; padding: 1.3rem 1.35rem; border: 0; border-bottom: 2px solid var(--ink); }
+  body.brutalist-preview .contents { padding: 0; border: 0; }
+  body.brutalist-preview .contents ol { gap: 0 1.5rem; }
+  body.brutalist-preview .reading-layout.has-toc > .prose { padding: 1.7rem 1.35rem 2.7rem; max-width: none; }
+  body.brutalist-preview .prose { font-size: 1rem; line-height: 1.75; }
+  body.brutalist-preview .site-footer { padding: 1.7rem 1.35rem; }
+  body.brutalist-preview .footer-top { gap: 2rem; }
+  body.brutalist-preview .footer-top nav { column-gap: 1.5rem; }
+}
+
+@media (max-width: 540px) {
+  body.brutalist-preview .brutalist-preview-bar { font-size: .8125rem; gap: .35rem 1rem; }
+  body.brutalist-preview .brutalist-hero h1 { font-size: 17.8vw; }
+  body.brutalist-preview .brutalist-hero-copy h2 { font-size: 1.85rem; }
+  body.brutalist-preview .entry > span:nth-child(2) { grid-template-columns: 1fr; gap: .75rem; }
+  body.brutalist-preview .entry strong { font-size: 1.5rem; }
+  body.brutalist-preview .entry .draft-label { margin-left: 0; display: block; margin-top: .5rem; }
+  body.brutalist-preview .brutalist-model-tabs { flex-direction: column; align-items: flex-start; gap: .6rem; padding-bottom: .6rem; }
+  body.brutalist-preview .brutalist-model-tab { padding-bottom: .4rem; font-size: 1.9rem; }
+  body.brutalist-preview .page-header h1 { font-size: 2.3rem; }
+  body.brutalist-preview .page-introduction { font-size: 1rem; }
+  body.brutalist-preview .breadcrumb { column-gap: .5rem; }
+  body.brutalist-preview .prose blockquote { padding: 1rem 1.1rem; font-size: 1.1rem; }
+  body.brutalist-preview .chapter-pagination { grid-template-columns: 1fr; }
+  body.brutalist-preview .chapter-pagination a:last-child { text-align: left; }
+  body.brutalist-preview .site-footer .footer-top { display: block; }
+  body.brutalist-preview .footer-title { margin-bottom: 1.75rem; }
+  body.brutalist-preview .footer-top nav { grid-template-columns: 1fr 1fr; gap: .9rem 1.2rem; }
+}
+
+@media print {
+  body.brutalist-preview { --paper: #fff; --ink: #000; --muted: #333; --accent: #000; --line: #333; --tint: #f1f1f1; background: #fff; color: #000; }
+  body.brutalist-preview .brutalist-preview-bar { display: none; }
+  body.brutalist-preview .main-content { width: 100%; }
+  body.brutalist-preview .page-header { padding: 0 0 1rem; }
+  body.brutalist-preview .page-header h1 { font-size: 28pt; }
+  body.brutalist-preview .reading-layout, body.brutalist-preview .reading-layout.has-toc { display: block; max-width: none; padding: 1rem 0 0; }
+  body.brutalist-preview .reading-layout.has-toc > .prose { padding: 0; }
+  body.brutalist-preview .prose { max-width: none; font-size: 10.5pt; line-height: 1.5; }
+  body.brutalist-preview .prose h2 { font-size: 19pt; }
+  body.brutalist-preview .prose h3 { font-size: 14pt; }
+  body.brutalist-preview .brutalist-hero { display: block; }
+  body.brutalist-preview .brutalist-hero h1 { font-size: 40pt; }
+  body.brutalist-preview .brutalist-hero-copy { background: none; color: #000; }
+}
