@@ -2,45 +2,45 @@
   {
     "source": "content/guide/index.md",
     "path": "/guide/",
-    "title": "OIBOK Guide (draft 0.6.2)",
-    "description": "Draft 0.6.2 for practitioner review. Plan how people develop expertise as work changes, and test the workflow and OIBOK contribution.",
+    "title": "OIBOK Guide (draft 0.6.3)",
+    "description": "Draft 0.6.3 for practitioner review. Examine coordination, useful knowledge, compatible understanding and lasting learning in real work.",
     "section": "Guide",
     "kind": "guide-index",
-    "version": "Draft 0.6.2 · Workforce development and pilot edition · For practitioner review · 26 November 2026",
-    "component_version": "0.6.2",
+    "version": "Draft 0.6.3 · Coordination and knowledge evidence edition · For practitioner review · 28 November 2026",
+    "component_version": "0.6.3",
     "status": "draft-for-practitioner-review"
   },
   {
-    "source": "content/guide/guide-draft-0.6.2.md",
+    "source": "content/guide/guide-draft-0.6.3.md",
     "path": "/guide/read/",
-    "title": "Read the OIBOK Guide (draft 0.6.2)",
+    "title": "Read the OIBOK Guide (draft 0.6.3)",
     "description": "The complete draft Guide, from investigating a worthwhile problem to designing work, evaluating outcomes and retaining learning.",
     "section": "Guide",
     "kind": "practitioner-guide",
-    "version": "Draft 0.6.2 · Workforce development and pilot edition · For practitioner review · 26 November 2026",
-    "component_version": "0.6.2",
+    "version": "Draft 0.6.3 · Coordination and knowledge evidence edition · For practitioner review · 28 November 2026",
+    "component_version": "0.6.3",
     "status": "draft-for-practitioner-review"
   },
   {
-    "source": "content/guide/working-companion-draft-0.6.2.md",
+    "source": "content/guide/working-companion-draft-0.6.3.md",
     "path": "/guide/companion/",
-    "title": "OIBOK Working Companion (draft 0.6.2)",
-    "description": "Draft preparation, handoff, evaluation, retention and feedback guidance to use alongside the OIBOK Guide (draft 0.6.2).",
+    "title": "OIBOK Working Companion (draft 0.6.3)",
+    "description": "Draft preparation, handoff, evaluation, retention and feedback guidance to use alongside the OIBOK Guide (draft 0.6.3).",
     "section": "Guide",
     "kind": "working-companion",
-    "version": "Draft 0.6.2 · Workforce development and pilot edition · For practitioner review · 26 November 2026",
-    "component_version": "0.6.2",
+    "version": "Draft 0.6.3 · Coordination and knowledge evidence edition · For practitioner review · 28 November 2026",
+    "component_version": "0.6.3",
     "status": "draft-for-practitioner-review"
   },
   {
-    "source": "content/guide/silvergum-case-pack-draft-0.6.2.md",
+    "source": "content/guide/silvergum-case-pack-draft-0.6.3.md",
     "path": "/guide/silvergum/",
-    "title": "Silvergum worked case pack (draft 0.6.2)",
+    "title": "Silvergum worked case pack (draft 0.6.3)",
     "description": "Completed fictional Practice Review, evaluation, exception, ownership and cross-team records for one connected inquiry.",
     "section": "Guide",
     "kind": "worked-case-pack",
-    "version": "Draft 0.6.2 · For practitioner review · 26 November 2026",
-    "component_version": "0.6.2",
+    "version": "Draft 0.6.3 · For practitioner review · 28 November 2026",
+    "component_version": "0.6.3",
     "status": "draft-for-practitioner-review"
   },
   {
@@ -238,7 +238,7 @@
     "title": "Evidence behind four OIBOK propositions",
     "description": "Source findings, OIBOK interpretations and observations that could weaken claims about attention, learning, connection quality and AI integration.",
     "section": "Research",
-    "version": "Editorial source check 0.3 · Practice extension 26 November 2026"
+    "version": "Editorial source check 0.4 · 28 November 2026"
   },
   {
     "source": "content/research/working-with-ai-evidence-update.md",
@@ -286,5 +286,14 @@
     "version": "Pilot draft 0.1 · 26 November 2026",
     "component_version": "0.1",
     "status": "draft-for-practitioner-review"
+  },
+  {
+    "source": "content/research/evidence-watch-2026-11-27.md",
+    "path": "/research/evidence-watch-2026-11-27/",
+    "title": "27 November evidence watch: coordination, knowledge and learning",
+    "description": "A source appraisal and bounded practice update on coordination mechanisms, useful knowledge, shared understanding and learning after disruption.",
+    "section": "Research",
+    "kind": "editorial-evidence-update",
+    "version": "Editorial evidence supplement 0.1 · 28 November 2026"
   }
 ]

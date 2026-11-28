@@ -1,6 +1,6 @@
 # Evidence behind four OIBOK propositions
 
-Editorial evidence notes, version 0.3, 26 November 2026. Each quoted claim comes from research release 1.0. This targeted check examines the specific sources and sections identified below. Independent review is pending. Version 0.2 extended note 09 and added note 11; this revision links a prepared workforce-development pilot to note 07 without changing the source findings. The separate [source appraisal and editorial decision](/research/working-with-ai/) records the scope. The practice example in [Guide Chapter 6](/guide/evaluate/#worked-decision-a-booking-handoff) shows how much turns on choosing between competing explanations.
+Editorial evidence notes, version 0.4, 28 November 2026. Each quoted claim comes from research release 1.0. This targeted check examines the specific sources and sections identified below. Independent review is pending. This revision adds bounded applications from the [27 November evidence watch](/research/evidence-watch-2026-11-27/) to notes 09, 11 and 07. The [earlier AI source appraisal](/research/working-with-ai/) and workforce-development application remain in place. Released proposition wording and evidence status are preserved. The practice example in [Guide Chapter 6](/guide/evaluate/#worked-decision-a-booking-handoff) shows how much turns on choosing between competing explanations.
 
 ## 09 · Quality of the connections
 
@@ -17,6 +17,8 @@ Editorial evidence notes, version 0.3, 26 November 2026. Each quoted claim comes
 **What could change the judgement?** Take a delayed booking as the unit of inquiry. Trace when sales sent sufficient information, when scheduling accepted it, who could allocate a slot and what the customer experienced. Compare with a similar booking on a shift with similar capacity. Timely acceptance followed by a documented wait for the only qualified technician weakens a handoff diagnosis. Across many comparable cases, reliable outcomes despite repeatedly broken handoffs would challenge the broader proposition. Look for a compensating route, such as an experienced dispatcher making calls.
 
 For an AI-assisted workflow, compare accepted completions, queue age, quality and total effort before and after the change, allowing for case mix and demand. If review capacity explains the wait while the handoff is usable and authorised, narrow the diagnosis to capacity. If additional output has no recipient or demand, examine the purpose of producing it. If outcomes improve because of extra expert support, do not attribute the improvement to connection quality alone. The [Guide's evaluation chapter](/guide/evaluate/) develops a worked comparison.
+
+**Coordination qualification, 28 November 2026.** The [EW-01 appraisal](/research/evidence-watch-2026-11-27/#ew-01-coordination-mechanisms) gives bounded reasons to examine which function explicit and implicit coordination perform in the case. OIBOK's proposed check is to trace the actual route to usable, timely action before diagnosing a missing connection. Compare ordinary and unfamiliar cases, changes of personnel and the effort of keeping the arrangement reliable. An absent meeting or formal handoff record is insufficient by itself to establish failure. Preserve required authority, approvals and records. Connection Quality remains a provisional hypothesis; these checks do not turn coordination style into a validated score.
 
 ## 11 · AI within organisational work
 
@@ -38,6 +40,8 @@ For an AI-assisted workflow, compare accepted completions, queue age, quality an
 
 **Practical implication to test.** Give the work an accountable owner, identify who may change it, ask who receives the benefits and burdens, and plan how required judgement and source material will remain usable. The depth should match the case. Role broadening, shared data and particular technical architectures remain options to assess. An ontology, knowledge graph or centralised system is not established as a necessary solution by these sources.
 
+**Context and knowledge application, 28 November 2026.** The [EW-02](/research/evidence-watch-2026-11-27/#ew-02-useful-knowledge) and [EW-03](/research/evidence-watch-2026-11-27/#ew-03-compatible-understanding) appraisals inform further checks in [Guide Chapter 3](/guide/work-and-knowledge/). Keep information availability, semantic representation, usable organisational knowledge and organisational capability distinct. Ask the people using a representation to reconstruct the same consequential case, explain its meaning and identify unresolved differences. Evaluate whether it helps the work, what it gets wrong and what it takes to repair and maintain. This is an application to test, not new validation of OI-IP-011. The [EW-04 candidate](/research/evidence-watch-2026-11-27/#ew-04-cognitive-ambidexterity-candidate) is deferred and contributes no stronger evidence claim.
+
 ## 07 · Persistent learning
 
 **Released claim · OI-IP-007**
@@ -51,6 +55,8 @@ For an AI-assisted workflow, compare accepted completions, queue age, quality an
 **What could change the judgement?** Follow the same workflow across shifts. If the cover worker needs the author to intervene, qualify the claim of team learning. If the worker succeeds, ask how they knew what to do. Prior experience, an easier case or a supervisor’s private prompt could also explain success. A colleague independently applying a shared verbal routine is relevant evidence even where no written procedure exists.
 
 **Workforce-development application, 26 November 2026.** The [prepared pilot](/research/workforce-development-pilot/) asks how changed entry roles and practice opportunities affect the development of required judgement. It records supervision and assistance, later performance on a different case and reuse by another person separately. A short pilot can inform a local learning arrangement; it cannot establish the long-term supply of experienced practitioners. The [review records](/tools/workforce-development-review/) also separate OIBOK's contribution to the diagnosis from the effects of the chosen intervention.
+
+**Recovery and adaptation application, 28 November 2026.** The supplementary [EW-05 appraisal](/research/evidence-watch-2026-11-27/#ew-05-recovery-and-learning) informs a further distinction in [Guide Chapter 7](/guide/retain-learning/): restored service, a lesson that remains usable, and evidence of adaptation in a later episode are separate observations. Record the later case and who used the learning, including failed reuse. Keep resources, supplier support and changed demand visible as possible explanations. The study does not establish an AI effect or validate OIBOK's persistence proposition.
 
 ## 02 · Selective attention
 
@@ -67,3 +73,5 @@ For an AI-assisted workflow, compare accepted completions, queue age, quality an
 ## Scope of the check
 
 The Gittell, Levitt–March and Darr comparisons use the published abstracts. The attention check uses the opening theoretical argument in Ocasio and the introduction in Joseph et al. The [25 November source register](/research/working-with-ai/#source-register) states the inspected sections and access limits for the new AI studies. These notes distinguish a local explanation that can be contradicted by case records from the broader organisation-level claim, which needs comparisons across cases and settings. Definitions and governance principles elsewhere in the register call for different kinds of scrutiny.
+
+The [27 November watch supplement](/research/evidence-watch-2026-11-27/#source-appraisals), assessed on 28 November, records the full-text scope for EW-01, EW-02, EW-03 and EW-05, the abstract-only limit and deferred disposition for EW-04, and the out-of-period status of EW-05. Its applications extend the questions asked here without changing the research 1.0 quotations or claiming a new research release.

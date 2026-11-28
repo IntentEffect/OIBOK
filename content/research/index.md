@@ -30,6 +30,8 @@ The extended registers are research resources. They are not intended to be appli
 
 ## Source records
 
+[27 November 2026 evidence watch, assessed and applied 28 November](/research/evidence-watch-2026-11-27/), records four bounded updates on coordination, useful knowledge, compatible understanding and learning. A fifth source remains a candidate pending full-text appraisal. The supplement maps the changes to research chapters and Guide 0.6.3, while preserving the research baseline.
+
 [Working with AI evidence update, with practice extension dated 26 November 2026](/research/working-with-ai/), appraises three recent studies and records their design, limitations and proposition mapping. It is a dated editorial supplement to the preserved research release.
 
 The source occurrence crosswalk records what each chapter cites. The unique-source register is provisional because compound entries and title-based matching can over-count or under-count individual works. The release reports that older references were structurally reconciled, but not every older source was independently reopened at its publisher. These limitations remain relevant when using the evidence.

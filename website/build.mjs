@@ -55,6 +55,16 @@ for (const file of ['styles.css', 'client.js', 'model.css', 'model.js']) {
 const search = [];
 const pageRecords = [];
 const chapterPages = pages.filter(page => /^content\/knowledge\/Project-OI-BOK-\d{3}-/.test(page.source));
+const evidenceWatch = '/research/evidence-watch-2026-11-27/';
+const laterEvidence = {
+  '/knowledge/organisational-context/': `Examine the common meaning needed for action while retaining useful specialist differences. [Read the compatible-understanding appraisal](${evidenceWatch}#ew-03-compatible-understanding) and [Guide practice checks](/guide/work-and-knowledge/#check-that-different-views-can-work-together).`,
+  '/knowledge/knowledge-and-expertise/': `Distinguish access to information, represented meaning, usable knowledge and sustained capability. [Read the knowledge appraisal](${evidenceWatch}#ew-02-useful-knowledge) and [Guide evaluation checks](/guide/work-and-knowledge/#check-what-the-representation-actually-enables).`,
+  '/knowledge/coordination-and-collective-action/': `Assess which coordination function an arrangement performs and the conditions it depends on. [Read the bounded explicit/implicit coordination finding](${evidenceWatch}#ew-01-coordination-mechanisms) and [Guide practice checks](/guide/decisions-and-handoffs/#choose-coordination-that-serves-the-work).`,
+  '/knowledge/outcomes-feedback-and-evaluation/': `Compare knowledge representations through their contribution to the selected work, accuracy, repair and total effort. [Read the appraisal and its limits](${evidenceWatch}#ew-02-useful-knowledge).`,
+  '/knowledge/organisational-memory-reflection-and-learning/': `Record restored service, retained learning and later adaptive response separately. [Read the supplementary resilience appraisal](${evidenceWatch}#ew-05-recovery-and-learning) and [Guide follow-up questions](/guide/retain-learning/#separate-recovery-learning-and-adaptation).`,
+  '/knowledge/capability-development-and-adaptation/': `Examine what persists when people or conditions change, including the coordination support on which it depends. [Read the coordination and learning update](${evidenceWatch}) and [Guide follow-up questions](/guide/retain-learning/#separate-recovery-learning-and-adaptation).`,
+  '/knowledge/integrated-and-responsible-organisational-intelligence/': `The [27 November evidence watch](${evidenceWatch}) adds bounded practice qualifications. The core definition, transformations, capabilities and provisional status of Connection Quality are retained. [Read the updated connection evidence note](/research/integrated-evidence-notes/#09--quality-of-the-connections).`,
+};
 
 function writePage(pagePath, html) {
   const filename = pagePath.endsWith('/') ? path.join(dist, pagePath, 'index.html') : path.join(dist, pagePath);
@@ -138,9 +148,16 @@ for (const page of pages) {
   if (page.path === '/knowledge/coordination-and-collective-action/') {
     readingSource = readingSource.replace('## 1. Purpose', '## 1. Purpose\n\nFor work that keeps coming back, [try the improvement and handoff worksheet](/tools/practice-review/#improvement-and-handoff-worksheet).');
   }
+  if (laterEvidence[page.path]) {
+    if (!readingSource.includes('## 1. Purpose')) throw new Error(`Missing editorial-note location: ${page.path}`);
+    readingSource = readingSource.replace('## 1. Purpose', `## 1. Purpose\n\n> **Editorial evidence and practice update, 28 November 2026.** ${laterEvidence[page.path]} The released chapter below preserves its original wording.`);
+  }
   let content = renderMarkdown(readingSource);
   if (page.path === '/research/propositions/') {
-    content = `<p><strong>Editorial evidence supplement, 25 November 2026.</strong> Read the <a href="${basePath}/research/working-with-ai/">Working with AI source appraisal</a> and <a href="${basePath}/research/integrated-evidence-notes/">integrated proposition notes</a> for later evidence and its limits. The released register below preserves its original claims and evidence status.</p>` + content;
+    content = `<p><strong>Editorial evidence supplements, updated 28 November 2026.</strong> Read the <a href="${basePath}/research/working-with-ai/">Working with AI source appraisal</a>, <a href="${basePath}${evidenceWatch}">27 November evidence watch</a> and <a href="${basePath}/research/integrated-evidence-notes/">integrated proposition notes</a> for later evidence and its limits. The released register below preserves its original claims and evidence status.</p>` + content;
+  }
+  if (['/research/diagnostic-index/', '/research/traceability/', '/research/open-questions/', '/knowledge/glossary/'].includes(page.path)) {
+    content = `<p><strong>Later evidence and practice, 28 November 2026.</strong> The <a href="${basePath}${evidenceWatch}#change-map-and-disposition">evidence-watch change map</a> records the affected concepts, chapter mappings, qualifications and open questions. The historical research record below remains part of release 1.0.</p>` + content;
   }
   if (chapterIndex !== -1) {
     content = content.replace(/^(<p><strong>Artefact ID:[\s\S]*?<\/p>)\s*<hr\s*\/?>/, '<details class="chapter-metadata"><summary>Original component metadata</summary>$1</details>');

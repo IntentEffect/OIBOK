@@ -1,8 +1,16 @@
 # Versions and corrections
 
+## Coordination and knowledge evidence update 0.6.3 | 28 November 2026
+
+Published the [27 November evidence-watch appraisal](/research/evidence-watch-2026-11-27/) for the 20–26 November reporting period. Four sources support bounded practice additions: context-dependent coordination mechanisms, useful knowledge representations, compatible understanding across teams, and separate recovery, learning and adaptation claims. The 18 November supply-chain paper is explicitly supplementary. The contextual-judgement paper remains a candidate pending full-text appraisal; it introduces no new substantive claim or requirement.
+
+[Guide draft 0.6.3](/guide/) and Working Companion 0.6.3 incorporate the practical checks and working prompts. The Guide, Companion and Silvergum pack have matching web, Markdown, Word and PDF editions. The Silvergum pack carries current edition references, with its fictional cases, figures, decisions and pending checks unchanged. Previous editions remain available.
+
+Updated [integrated evidence notes 0.4](/research/integrated-evidence-notes/) and linked the appraisal beside the relevant research chapters and registers. Source findings, OIBOK interpretation, alternatives and limits remain distinguishable. The research definition, Orient/Coordinate/Improve, six capabilities and provisional Connection Quality status are retained. OIBOK research release 1.0, its source bytes, Toolkit 0.1, visual versions and the pending Guide 0.7 review retain their status. No field result or independent subject review is claimed.
+
 ## Workforce development and pilot update 0.6.2 | 26 November 2026
 
-Published [Guide 0.6.2](/guide/) and its connected practice pack. New guidance asks how changes to entry roles, recruitment and practice opportunities affect the development of experienced successors. It links the required judgement to supervision, review capacity, later cases and existing ownership records. The Silvergum pack carries current edition references; its fictional case records remain unchanged.
+Published [Guide 0.6.2](/downloads/guide/OIBOK-Guide-Draft-0.6.2.pdf) and its connected practice pack. New guidance asks how changes to entry roles, recruitment and practice opportunities affect the development of experienced successors. It links the required judgement to supervision, review capacity, later cases and existing ownership records. The Silvergum pack carries current edition references; its fictional case records remain unchanged.
 
 Published a [workforce-development pilot](/research/workforce-development-pilot/) and [editable review records](/tools/workforce-development-review/). The protocol separates a comparison of OIBOK with usual review from evaluation of the work change. It requires comparable information and time, declared intake and outcome windows, complete case counts, visible supervision and reporting of no added value, additional burdens and pending outcomes. Word, PDF and Markdown copies accompany the web resources.
 
