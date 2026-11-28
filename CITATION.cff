@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: >-
+  Cite the research publication below when referring to the OIBOK research
+  baseline. For a Guide, tool, article or editorial supplement, use its own
+  title and displayed edition with the citation on that page.
+  The preferred citation's licence applies to publication content; website
+  software and official marks have separate treatment at oibok.org/licensing/.
+title: OIBOK publication website
+authors:
+  - name: Intent & Effect
+repository-code: https://github.com/IntentEffect/OIBOK
+url: https://oibok.org/
+preferred-citation:
+  type: book
+  title: Organisation Intelligence Body of Knowledge (OIBOK)
+  authors:
+    - name: Intent & Effect
+  version: '1.0'
+  year: 2026
+  date-published: '2026-08-15'
+  publisher:
+    name: Intent & Effect
+  url: https://oibok.org/research/
+  license: CC-BY-SA-4.0

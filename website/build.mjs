@@ -41,6 +41,7 @@ if (pandocVersion.error || pandocVersion.status !== 0) throw new Error('Install 
 fs.rmSync(dist, { recursive: true, force: true });
 fs.mkdirSync(dist, { recursive: true });
 for (const folder of ['assets', 'downloads']) fs.cpSync(path.join(root, folder), path.join(dist, folder), { recursive: true });
+fs.copyFileSync(path.join(root, 'CITATION.cff'), path.join(dist, 'CITATION.cff'));
 const assetPaths = {};
 for (const file of ['styles.css', 'client.js', 'model.css', 'model.js']) {
   const data = fs.readFileSync(path.join(root, 'website', file));
@@ -128,15 +129,22 @@ for (const page of pages) {
   }
   if (page.path === '/knowledge/integrated-and-responsible-organisational-intelligence/') {
     const noteSections = {
+      '001': '01--persistent-organisational-capacity',
+      '003': '03--evidence-bearing-orientation',
+      '004': '04--authorised-commitment',
+      '005': '05--mobilisation-and-execution',
+      '006': '06--consequence-and-evaluative-feedback',
+      '008': '08--capability-and-coherent-adaptation',
+      '010': '10--responsible-exercise',
       '009': '09--quality-of-the-connections',
       '007': '07--persistent-learning',
       '002': '02--selective-attention',
       '011': '11--ai-within-organisational-work',
     };
-    readingSource = readingSource.replace(/(^### OI-IP-(009|007|002|011) [^\n]+\n\n> [^\n]+)/gm,
+    readingSource = readingSource.replace(/(^### OI-IP-(00[1-9]|01[01]) [^\n]+\n\n> [^\n]+)/gm,
       (claim, passage, id) => passage + '\n\n[Read the evidence note](/research/integrated-evidence-notes/#' + noteSections[id] + ')');
   }
-  if (page.kind === 'practitioner-guide') {
+  if (page.kind === 'practitioner-guide' && !readingSource.includes('### Worked decision: a booking handoff')) {
     const supplement = fs.readFileSync(path.join(root, 'content/guide/booking-decision-supplement.md'), 'utf8')
       .replace(/^# Worked decision: a booking handoff/, '### Worked decision: a booking handoff');
     readingSource = readingSource.replace('## 7 Turn experience into lasting capability',
@@ -153,6 +161,9 @@ for (const page of pages) {
     readingSource = readingSource.replace('## 1. Purpose', `## 1. Purpose\n\n> **Editorial evidence and practice update, 28 November 2026.** ${laterEvidence[page.path]} The released chapter below preserves its original wording.`);
   }
   let content = renderMarkdown(readingSource);
+  if (page.path === '/guide/chapter-six-review/') {
+    content = `<p class="publication-note"><strong>Historical review copy.</strong> On 28 November 2026 this draft was accepted with editorial changes for <a href="${basePath}/guide/evaluate/">Guide 0.7 Chapter 6</a>. The text and original review downloads below preserve the 25 November draft. This decision records no independent reviewer verdict or field result.</p>` + content;
+  }
   if (page.path === '/research/propositions/') {
     content = `<p><strong>Editorial evidence supplements, updated 28 November 2026.</strong> Read the <a href="${basePath}/research/working-with-ai/">Working with AI source appraisal</a>, <a href="${basePath}${evidenceWatch}">27 November evidence watch</a> and <a href="${basePath}/research/integrated-evidence-notes/">integrated proposition notes</a> for later evidence and its limits. The released register below preserves its original claims and evidence status.</p>` + content;
   }
@@ -167,10 +178,13 @@ for (const page of pages) {
       if (routes.has(chapter.path)) throw new Error(`Duplicate Guide chapter route: ${chapter.path}`);
       routes.add(chapter.path);
       const toc = [...chapter.sourceContent.matchAll(/<h([23])\b[^>]*id="([^"]+)"[^>]*>([\s\S]*?)<\/h\1>/g)].map(m=>({level:Number(m[1]),id:m[2],text:plain(m[3])}));
-      writePage(chapter.path, renderLayout({...page,title:chapter.title,description:`A chapter from the OIBOK Guide (${page.version.split(' · ')[0].toLowerCase()}).`,content:chapter.content,toc,sourcePath:page.source,basePath,siteUrl,markdown:`${siteUrl}/downloads/source/${page.source}`,assetPaths}));
+      writePage(chapter.path, renderLayout({...page,path:chapter.path,title:chapter.title,description:`A chapter from the OIBOK Guide (${page.version.split(' · ')[0].toLowerCase()}).`,content:chapter.content,toc,sourcePath:page.source,basePath,siteUrl,markdown:`${siteUrl}/downloads/source/${page.source}`,assetPaths}));
     }
   }
-  if (page.path === '/guide/') content = content.replace(/<h2 id="what-the-guide-covers">/, guideIndex(basePath) + '<h2 id="what-the-guide-covers">');
+  if (page.path === '/guide/') {
+    content = content.replace(/<h2 id="what-the-guide-covers">/, guideIndex(basePath) + '<h2 id="what-the-guide-covers">');
+    content = content.replace(/<h2 id="chapter-6-review-decision">/, '<span id="chapter-under-review" aria-hidden="true"></span><h2 id="chapter-6-review-decision">');
+  }
   if (page.kind === 'diagram-index') {
     const gallery = `<div class="diagram-gallery">${diagrams.figures.map(d => `<a class="diagram-card" href="${basePath}/diagrams/${escape(d.slug)}/"><img src="${basePath}/assets/diagrams/${escape(d.slug)}.svg" alt="${escape(d.title)}" width="1200" height="848" loading="lazy"><span class="diagram-card-kind">${escape(d.kind)}</span><strong>${escape(d.title)}</strong><span class="diagram-card-summary">${escape(d.summary)}</span></a>`).join('')}</div>`;
     content = content.replace(/(<h2 id="browse-the-collection">[\s\S]*?<\/h2>)\s*<ul>[\s\S]*?<\/ul>/, (_, heading) => heading + gallery);

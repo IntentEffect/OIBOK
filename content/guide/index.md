@@ -1,13 +1,15 @@
-# OIBOK Guide (draft 0.6.3)
+# OIBOK Guide (draft 0.7)
 
 **DRAFT · For practitioner review**  
-**Guide 0.6.3 · 28 November 2026**
+**Guide 0.7 · 28 November 2026**
 
 The OIBOK Guide helps leaders, practitioners and teams apply Organisational Intelligence to real work. Use it to investigate a recurring problem, examine AI proposals, clarify responsibilities, evaluate a change and retain useful learning.
 
 This is the complete illustrated draft Guide, accompanied by a Working Companion with preparation prompts, connected records and a practitioner feedback record. Nine draft diagrams connect the concepts to practical work. The Guide, Companion and diagrams are published for review and improvement by the OIBOK community.
 
-**New in 0.6.3.** Check which coordination arrangements actually support the work, distinguish a knowledge representation from usable knowledge, compare its usefulness and upkeep, and make different team interpretations visible. The learning guidance separates restoring service from retained learning and later adaptation. The Working Companion carries these questions into existing records. [Read the 27 November evidence watch and its editorial decisions](/research/evidence-watch-2026-11-27/).
+**New in 0.7.** Chapters 3–8 use clearer instructions built around cases, decisions and working records. Responsibilities are described consistently, and the complete booking decision now appears in every edition. The separate Chapter 6 review copy has been accepted with editorial changes. External review and field findings remain pending.
+
+**Retained from 0.6.3.** Check which coordination arrangements actually support the work, distinguish a knowledge representation from usable knowledge, compare its usefulness and upkeep, and make different team interpretations visible. The learning guidance separates restoring service from retained learning and later adaptation. The Working Companion carries these questions into existing records. [Read the 27 November evidence watch and its editorial decisions](/research/evidence-watch-2026-11-27/).
 
 **Retained from 0.6.2.** Plan how people will gain experience when entry roles, recruitment or the tasks used for practice change. The Guide and Companion connect supervision, opportunities to practise and the development of experienced successors. A [prepared field pilot](/research/workforce-development-pilot/) and [editable records](/tools/workforce-development-review/) help teams compare their usual review with OIBOK, then follow the chosen change through outcomes and later judgement checks. No participants, field results or independent review are claimed.
 
@@ -15,11 +17,11 @@ The earlier workflow, authority, participation and maintenance guidance remains.
 
 [Join the field pilot as a small-business team or independent reviewer](/research/chapter-one-pilot/#join-the-pilot).
 
-## Chapter under review
+## Chapter 6 review decision
 
-Guide 0.6.3 is the current complete edition. The separate Chapter 6 reading draft remains under review for the proposed 0.7 revision. Its fictional booking and proposal examples support that review; publishing 0.6.3 does not indicate that the field pilot or independent review has been completed.
+Guide 0.7 is the current complete edition. On 28 November 2026, the Chapter 6 review copy was accepted with editorial changes and reconciled with the later evidence updates. Its booking example is included in the web and downloadable Guide. This is an editorial decision; it does not record a completed field pilot or independent reviewer verdict.
 
-[Read the Chapter 6 review copy](/guide/chapter-six-review/) · [PDF](/downloads/review/Chapter-6-review.pdf) · [Word](/downloads/review/Chapter-6-review.docx) · [Markdown](/downloads/source/content/guide/chapter-six-review.md)
+[Read the archived Chapter 6 review copy](/guide/chapter-six-review/) · [PDF](/downloads/review/Chapter-6-review.pdf) · [Word](/downloads/review/Chapter-6-review.docx) · [Markdown](/downloads/source/content/guide/chapter-six-review.md)
 
 ## Read and download
 
@@ -27,23 +29,23 @@ Trying the Guide on a small, reversible change? [Use the one-page pilot workshee
 
 **How this edition was prepared.** AI tools assisted with writing and editing the Guide. Independent editorial review is pending. [Research methods and AI use](/methodology/#how-ai-was-used-to-develop-oibok).
 
-- [Read the OIBOK Guide (draft 0.6.3) online](/guide/read/).
-- [Download the OIBOK Guide (draft 0.6.3) as a PDF](/downloads/guide/OIBOK-Guide-Draft-0.6.3.pdf).
-- [Download the OIBOK Guide (draft 0.6.3) in Word](/downloads/guide/OIBOK-Guide-Draft-0.6.3.docx).
-- [Download the OIBOK Guide (draft 0.6.3) in Markdown](/downloads/guide/OIBOK-Guide-Draft-0.6.3.md).
-- [Read the OIBOK Working Companion (draft 0.6.3) online](/guide/companion/).
-- [Download the OIBOK Working Companion (draft 0.6.3) as a PDF](/downloads/guide/OIBOK-Working-Companion-Draft-0.6.3.pdf).
-- [Download the OIBOK Working Companion (draft 0.6.3) in Word](/downloads/guide/OIBOK-Working-Companion-Draft-0.6.3.docx).
-- [Download the OIBOK Working Companion (draft 0.6.3) in Markdown](/downloads/guide/OIBOK-Working-Companion-Draft-0.6.3.md).
+- [Read the OIBOK Guide (draft 0.7) online](/guide/read/).
+- [Download the OIBOK Guide (draft 0.7) as a PDF](/downloads/guide/OIBOK-Guide-Draft-0.7.pdf).
+- [Download the OIBOK Guide (draft 0.7) in Word](/downloads/guide/OIBOK-Guide-Draft-0.7.docx).
+- [Download the OIBOK Guide (draft 0.7) in Markdown](/downloads/guide/OIBOK-Guide-Draft-0.7.md).
+- [Read the OIBOK Working Companion (draft 0.7) online](/guide/companion/).
+- [Download the OIBOK Working Companion (draft 0.7) as a PDF](/downloads/guide/OIBOK-Working-Companion-Draft-0.7.pdf).
+- [Download the OIBOK Working Companion (draft 0.7) in Word](/downloads/guide/OIBOK-Working-Companion-Draft-0.7.docx).
+- [Download the OIBOK Working Companion (draft 0.7) in Markdown](/downloads/guide/OIBOK-Working-Companion-Draft-0.7.md).
 
 The [interactive OIBOK model](/model/) provides another way to explore the six capabilities, their connections and the relevant research and tools. It is also a draft.
 
 ## Completed Silvergum case pack
 
-- [Read the Silvergum worked case pack (draft 0.6.3)](/guide/silvergum/).
-- [Download the Silvergum case pack (draft 0.6.3) as a PDF](/downloads/guide/OIBOK-Silvergum-Case-Pack-Draft-0.6.3.pdf).
-- [Download the Silvergum case pack (draft 0.6.3) in Word](/downloads/guide/OIBOK-Silvergum-Case-Pack-Draft-0.6.3.docx).
-- [Download the Silvergum case pack (draft 0.6.3) in Markdown](/downloads/guide/OIBOK-Silvergum-Case-Pack-Draft-0.6.3.md).
+- [Read the Silvergum worked case pack (draft 0.7)](/guide/silvergum/).
+- [Download the Silvergum case pack (draft 0.7) as a PDF](/downloads/guide/OIBOK-Silvergum-Case-Pack-Draft-0.7.pdf).
+- [Download the Silvergum case pack (draft 0.7) in Word](/downloads/guide/OIBOK-Silvergum-Case-Pack-Draft-0.7.docx).
+- [Download the Silvergum case pack (draft 0.7) in Markdown](/downloads/guide/OIBOK-Silvergum-Case-Pack-Draft-0.7.md).
 
 All case records are fictional teaching examples. The blank Toolkit canvases remain version 0.1.
 
@@ -81,7 +83,7 @@ Use the [AI Opportunity and Work Design Canvas](/tools/ai-opportunity-and-work-d
 
 ## Draft status and evidence boundaries
 
-Guide 0.6.3 and Working Companion 0.6.3 are **drafts for practitioner review**. External practitioner review, walkthroughs, field application and independent validation remain pending. Their publication invites feedback; it does not indicate that these activities have been completed.
+Guide 0.7 and Working Companion 0.7 are **drafts for practitioner review**. External practitioner review, walkthroughs, field application and independent validation remain pending. Their publication invites feedback; it does not indicate that these activities have been completed.
 
 The Guide is based on **OIBOK release 1.0** and **Practical Toolkit 0.1**. It is a practice companion to that literature-grounded working synthesis. Publishing this draft does not create a new research release or change the status of the existing chapters or canvases.
 

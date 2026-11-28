@@ -34,4 +34,4 @@ The publication passages support the method. The booking numbers and authority a
 
 ## What changed in the instructions
 
-We added one instruction to the starter prompt: specify when cases stop entering the trial, when the last outcome can be observed, and how pending cases will be reported. The detailed evaluation guidance now illustrates the point with a Friday booking. This was a single-case editorial check on 25 November 2026. The three published responses used the earlier wording; the effect of the revision has yet to be tested.
+We added one instruction to the starter prompt: specify when cases stop entering the trial, when the last outcome can be observed, and how pending cases will be reported. The detailed evaluation guidance now illustrates the point with a Friday booking. This was a single-case editorial check on 25 November 2026. The three replies above used the earlier wording. A [28 November retest](/for-agents/booking-retest/) now records three fresh responses using the revised instruction, with its source snapshot, results and limits.

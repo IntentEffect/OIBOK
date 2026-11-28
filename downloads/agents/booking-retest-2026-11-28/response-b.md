@@ -1,0 +1,9 @@
+**Defer both-branch rollout next week.** You retain sole approval authority; nothing is approved.
+
+**Evidence:** 12/20 to 15/20 is 60% to 75% (+15 percentage points), but two extra scheduler shifts confound causation. Immediate acceptance followed by technician unavailability supports a capacity explanation. No recorded owner does not prove nobody received the work. Small samples, missing staffing comparisons, checking time and branch-two data limit attribution and transfer. [Evidence behind four OIBOK propositions v0.4, §09](https://oibok.org/research/integrated-evidence-notes/).
+
+**Proposed next step:** On 30 November, you own a review with sales and scheduling. Record the original “faster booking proves success” explanation and intended rollout; compare one successful case with both delays, tracing receipt, acceptance, ownership, allocation and outcome. Please supply the uninspected roster report. [Two-case review draft 0.1, “Copy these prompts”](https://oibok.org/tools/two-case-review/).
+
+Subject to your approval, pilot in the original branch, 30 November–4 December, comparing usual versus revised handoffs on similar jobs with comparable staffing. Record two-day booking, checking effort, rework, technician availability and extra shifts. Stop entries 4 December; observe outcomes through 8 December, assuming Monday–Friday working; review 9 December, separating pending/missing cases. Pause for unresolved ownership or increased rework. Reconsider expansion only if gains survive staffing comparison without worse quality/effort; test another colleague and obtain second-branch evidence. [Agent guide 0.1, “Make the next step measurable”](https://oibok.org/for-agents/).
+
+Mapping: chapters 4–7,9 (guide mapping; chapters uninspected). OIBOK remains a working synthesis, not validated effectiveness evidence. [Body of Knowledge Completion Record 1.0, §§1,7](https://oibok.org/research/release-record/).

@@ -519,7 +519,7 @@ Examine whether meaning, authority, state, evidence and accountability survive t
 
 ## Use, review and contribute
 
-Use the [OIBOK Guide (draft 0.6.3)](/guide/read/) to connect this model to an organisational problem, a bounded change and an evaluation plan. Suitable existing organisational records can be reused.
+Use the [OIBOK Guide (draft 0.7)](/guide/read/) to connect this model to an organisational problem, a bounded change and an evaluation plan. Suitable existing organisational records can be reused.
 
 Send feedback to [info@oibok.org](mailto:info@oibok.org) or [contribute through GitHub](https://github.com/IntentEffect/OIBOK/issues). Include “Model draft 0.2”, the area you reviewed, the issue and your suggested change. Keep confidential organisational information out of public contributions.
 

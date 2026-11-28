@@ -1,0 +1,9 @@
+**Defer rollout to both branches.** Two-day bookings rose from 12/20 (60%) to 15/20 (75%), but two extra scheduler shifts confound attribution. Faster booking does not prove the handoff worked.
+
+OIBOK suggests testing alternatives: immediate acceptance followed by technician unavailability weakens a handoff diagnosis; missing ownership documentation does not prove absent ownership ([Evidence behind four OIBOK propositions, editorial notes 0.4, §09](https://oibok.org/research/integrated-evidence-notes/)). Underlying studies were not inspected.
+
+**Proposal:** the scheduler leads a 30 November review with sales and you. Preserve the original explanation; compare a successful booking with each delay, tracing information, acceptance, authority, capacity and outcomes ([Two-case review, draft 0.1, “Copy these prompts into your work notes”](https://oibok.org/tools/two-case-review/)). Request the unsupplied roster and second-branch evidence; case-level staffing comparisons and checking time remain unknown.
+
+You alone approve changes. If approved, compare current and new handoffs within one branch under similar staffing and job mix. Confirm receiving owners and technician coverage; measure two-day bookings, checking minutes and rework. Admit cases 30 November–4 December; observe through 8 December; review 9 December, assuming Monday–Friday working days. Report pending cases separately. Expansion requires repeatable gains without unacceptable burden or errors, including with another colleague ([Use OIBOK with an AI agent, 0.1, “Make the next step measurable”](https://oibok.org/for-agents/)).
+
+Mapping: chapters 4–6 address authority/coordination/execution; 7–9 evaluation/learning/adaptation (guide, “Choose the relevant chapters”); chapters were not supplied. OIBOK remains a working synthesis, not empirical validation ([Body of Knowledge Completion Record, 1.0, §§1,7](https://oibok.org/research/release-record/)).

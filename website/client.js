@@ -21,6 +21,32 @@
   const contents = document.querySelector('.contents');
   if (contents && window.matchMedia('(max-width: 800px)').matches) contents.removeAttribute('open');
 
+  const citationButton = document.querySelector('[data-copy-citation]');
+  const citationText = document.querySelector('#page-citation-text');
+  const citationStatus = document.querySelector('#citation-status');
+  if (citationButton && citationText && citationStatus) {
+    citationButton.hidden = false;
+    citationButton.addEventListener('click', async () => {
+      let copied = false;
+      try {
+        if (navigator.clipboard?.writeText) {
+          await navigator.clipboard.writeText(citationText.value);
+          copied = true;
+        }
+      } catch {
+        // Selection below keeps the citation available when copying is blocked.
+      }
+      if (!copied) {
+        citationText.focus({preventScroll:true});
+        citationText.select();
+        try { copied = typeof document.execCommand === 'function' && document.execCommand('copy'); }
+        catch { copied = false; }
+      }
+      citationStatus.textContent = copied ? 'Citation copied.' : 'Citation selected. Use your browser’s Copy command.';
+      if (copied) citationButton.focus({preventScroll:true});
+    });
+  }
+
   const basePath = document.body.dataset.basePath || '';
   const pagePath = String(window.location.pathname || '').replace(/\/index\.html$/, '').replace(/\/+$/, '');
   if (pagePath === `${basePath}/for-agents`) {

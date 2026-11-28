@@ -1,0 +1,22 @@
+{
+  "source_commit": "5b224e76ad5450241bec6708c9a462092f825fa4",
+  "date": "2026-11-28",
+  "sources": [
+    {
+      "path": "content/agents/instructions.md",
+      "sha256": "b150c7b80e46bdb332491dcbda0d29b8b997b62f998fa3003e95be58ca04a159"
+    },
+    {
+      "path": "content/tools/two-case-review.md",
+      "sha256": "34efca2e1f7a5b99075709fa9f8bae5e499cd83ee4906f446eff3bbd806f7e12"
+    },
+    {
+      "path": "content/research/integrated-evidence-notes.md",
+      "sha256": "e3cfefebdbf871ba2fe2e3d99d67ea39fb92d6c74a4d726a0baf8e0e36ce21df"
+    },
+    {
+      "path": "content/research/Project-OI-BOK-RELEASE-001-Body-of-Knowledge-Completion-Record-v1.0.md",
+      "sha256": "dd8fe8e908d5b05375587b5e8a9e43684ab94ff616f651aafd63529b48c92366"
+    }
+  ]
+}

@@ -9,7 +9,7 @@ This supplement records the assessment and implementation of the five items in t
 
 Accept EW-01, EW-02, EW-03 and EW-05 for the limited uses recorded below. Defer substantive use of EW-04 pending inspection of the complete paper. These decisions refine questions to investigate; they do not establish a new organisational intelligence measure or validate the complete OIBOK model.
 
-The core definition, **Orient, Coordinate and Improve**, and **Sense, Know, Choose, Mobilise, Learn and Adapt** remain unchanged. Connection Quality retains its status as a provisional integrative hypothesis. Research release 1.0, its chapter components and historical registers preserve their original wording and bytes. The changes are published in this supplement, the [integrated evidence notes](/research/integrated-evidence-notes/) and [Guide draft 0.6.3](/guide/), with corresponding working records.
+The core definition, **Orient, Coordinate and Improve**, and **Sense, Know, Choose, Mobilise, Learn and Adapt** remain unchanged. Connection Quality retains its status as a provisional integrative hypothesis. Research release 1.0, its chapter components and historical registers preserve their original wording and bytes. The changes are published in this supplement, the [integrated evidence notes](/research/integrated-evidence-notes/) and [archived Guide draft 0.6.3](/downloads/guide/OIBOK-Guide-Draft-0.6.3.pdf), with corresponding working records.
 
 ## Source appraisals
 

@@ -1,0 +1,301 @@
+{
+  "version": "0.1",
+  "assessment_date": "2026-11-28",
+  "scope": "Targeted primary-source appraisals for seven additional proposition notes; not a systematic review or full bibliography audit.",
+  "preparation": "AI-assisted source inspection and editorial consistency review. Independent subject review remains pending.",
+  "sources": [
+    {
+      "authors": [
+        "Mary M. Crossan",
+        "Henry W. Lane",
+        "Roderick E. White"
+      ],
+      "year": 1999,
+      "title": "An Organizational Learning Framework: From Intuition to Institution",
+      "doi": "10.5465/amr.1999.2202135",
+      "publication_url": "https://doi.org/10.5465/amr.1999.2202135",
+      "propositions": [
+        "OI-IP-001"
+      ],
+      "inspected_copies": [
+        {
+          "url": "https://skat.ihmc.us/rid=1222355636953_663250744_13307/OrganizationalLearningFrameworkFromIntuitiontoInstitution.pdf",
+          "access": "selected full-text passages",
+          "locations": "pp. 523–525, 529–530, 534–535",
+          "limits": "Published article reproduction held by IHMC; no data replication."
+        }
+      ],
+      "id": "EPN-2026-11-28-01"
+    },
+    {
+      "authors": [
+        "Gary Johns"
+      ],
+      "year": 2006,
+      "title": "The Essential Impact of Context on Organizational Behavior",
+      "doi": "10.5465/amr.2006.20208687",
+      "publication_url": "https://doi.org/10.5465/amr.2006.20208687",
+      "propositions": [
+        "OI-IP-003"
+      ],
+      "inspected_copies": [
+        {
+          "url": "https://journals.aom.org/doi/10.5465/amr.2006.20208687",
+          "access": "publisher abstract from indexed publisher result",
+          "locations": "abstract",
+          "limits": "Publisher full-text request and Pretoria PDF returned 403; no full-text review claimed."
+        }
+      ],
+      "id": "EPN-2026-11-28-02"
+    },
+    {
+      "authors": [
+        "Samer Faraj",
+        "Lee Sproull"
+      ],
+      "year": 2000,
+      "title": "Coordinating Expertise in Software Development Teams",
+      "doi": "10.1287/mnsc.46.12.1554.12072",
+      "publication_url": "https://doi.org/10.1287/mnsc.46.12.1554.12072",
+      "propositions": [
+        "OI-IP-003"
+      ],
+      "inspected_copies": [
+        {
+          "url": "https://pubsonline.informs.org/doi/10.1287/mnsc.46.12.1554.12072",
+          "access": "publisher abstract",
+          "locations": "abstract",
+          "limits": "PDF route returned abstract page; detailed methods and results not inspected."
+        }
+      ],
+      "id": "EPN-2026-11-28-03"
+    },
+    {
+      "authors": [
+        "Philippe Aghion",
+        "Jean Tirole"
+      ],
+      "year": 1997,
+      "title": "Formal and Real Authority in Organizations",
+      "doi": "10.1086/262063",
+      "publication_url": "https://doi.org/10.1086/262063",
+      "propositions": [
+        "OI-IP-004"
+      ],
+      "inspected_copies": [
+        {
+          "url": "https://people.duke.edu/~qc2/BA532/1997%20JPE%20Aghion%20and%20Tirole.pdf",
+          "access": "selected full-text passages",
+          "locations": "introduction/model, pp. 1–8; summary, pp. 27–28",
+          "limits": "Duke-hosted published reproduction; metadata cross-checked against Harvard DASH. Model proofs not independently rederived."
+        }
+      ],
+      "id": "EPN-2026-11-28-04"
+    },
+    {
+      "authors": [
+        "Mark Bovens"
+      ],
+      "year": 2007,
+      "title": "Analysing and Assessing Accountability: A Conceptual Framework",
+      "doi": "10.1111/j.1468-0386.2007.00378.x",
+      "publication_url": "https://doi.org/10.1111/j.1468-0386.2007.00378.x",
+      "propositions": [
+        "OI-IP-004",
+        "OI-IP-010"
+      ],
+      "inspected_copies": [
+        {
+          "url": "https://library.bpk.go.id/storage/files/digital_libraries/2026/03/2.%20Bovens,%20Mark.%202007.%20Analysing%20and%20Assessing%20Accountability.pdf",
+          "access": "selected full-text passages",
+          "locations": "pp. 450–452",
+          "limits": "Government-library reproduction checked; author bibliography confirms publication. Also used briefly by proposition10 appraisal."
+        },
+        {
+          "url": "https://library.bpk.go.id/storage/files/digital_libraries/2026/03/2.%20Bovens,%20Mark.%202007.%20Analysing%20and%20Assessing%20Accountability.pdf",
+          "access": "full publisher paper reproduced by public audit library; selected sections inspected",
+          "locations": [
+            "Accountability as a Social Relation, pp. 450–453",
+            "Assessing Accountability and conclusion, pp. 462–468"
+          ],
+          "limits": "Not a causal test, not a complete framework of rights or organisational responsibility. Author-repository downloads returned403; metadata and abstract verified at publisher and Utrecht."
+        }
+      ],
+      "id": "EPN-2026-11-28-05"
+    },
+    {
+      "authors": [
+        "Gerardo A. Okhuysen",
+        "Beth A. Bechky"
+      ],
+      "year": 2009,
+      "title": "Coordination in Organizations: An Integrative Perspective",
+      "doi": "10.5465/19416520903047533",
+      "publication_url": "https://doi.org/10.5465/19416520903047533",
+      "propositions": [
+        "OI-IP-005"
+      ],
+      "inspected_copies": [
+        {
+          "url": "https://www.researchgate.net/publication/232913984_10Coordination_in_Organizations_An_Integrative_Perspective",
+          "access": "author-uploaded full text, selected sections",
+          "locations": "integrative conditions and discussion, pp. 483–492",
+          "limits": "Author upload by Beth A. Bechky, 21 June 2017; publication metadata cross-checked with publisher. Uses current AOM DOI rather than earlier Taylor & Francis prefix."
+        }
+      ],
+      "id": "EPN-2026-11-28-06"
+    },
+    {
+      "authors": [
+        "Beth A. Bechky",
+        "Gerardo A. Okhuysen"
+      ],
+      "year": 2011,
+      "title": "Expecting the Unexpected? How SWAT Officers and Film Crews Handle Surprises",
+      "doi": "10.5465/amj.2011.60263060",
+      "publication_url": "https://doi.org/10.5465/amj.2011.60263060",
+      "propositions": [
+        "OI-IP-005"
+      ],
+      "inspected_copies": [
+        {
+          "url": "https://www.researchgate.net/profile/Beth-Bechky/publication/276054537_Expecting_the_Unexpected_How_SWAT_Officers_and_Film_Crews_Handle_Surprises/links/594ae7f8458515225a831685/Expecting-the-Unexpected-How-SWAT-Officers-and-Film-Crews-Handle-Surprises.pdf",
+          "access": "author-uploaded full text, selected sections",
+          "locations": "methods, pp. 241–244; findings/discussion, pp. 249, 256–259",
+          "limits": "Author-uploaded article; published metadata confirmed. Underlying field data not independently audited."
+        }
+      ],
+      "id": "EPN-2026-11-28-07"
+    },
+    {
+      "authors": [
+        "Christopher Carroll",
+        "Malcolm Patterson",
+        "Stephen Wood",
+        "Andrew Booth",
+        "Jo Rick",
+        "Shashi Balain"
+      ],
+      "year": 2007,
+      "title": "A conceptual framework for implementation fidelity",
+      "doi": "10.1186/1748-5908-2-40",
+      "publication_url": "https://doi.org/10.1186/1748-5908-2-40",
+      "propositions": [
+        "OI-IP-006"
+      ],
+      "inspected_copies": [
+        {
+          "url": "https://link.springer.com/article/10.1186/1748-5908-2-40",
+          "access": "full text; selected methodological and concluding sections",
+          "locations": [
+            "Background",
+            "Conceptualisations of implementation fidelity and their limitations",
+            "A conceptual framework: Background and Rationale",
+            "Measurement",
+            "Summary"
+          ],
+          "limits": "No new OIBOK test or causal estimate; intervention settings and conceptual framework differ from the complete OIBOK synthesis."
+        }
+      ],
+      "id": "EPN-2026-11-28-08"
+    },
+    {
+      "authors": [
+        "James G. March",
+        "Robert I. Sutton"
+      ],
+      "year": 1997,
+      "title": "Crossroads—Organizational Performance as a Dependent Variable",
+      "doi": "10.1287/orsc.8.6.698",
+      "publication_url": "https://doi.org/10.1287/orsc.8.6.698",
+      "propositions": [
+        "OI-IP-006"
+      ],
+      "inspected_copies": [
+        {
+          "url": "https://pubsonline.informs.org/doi/abs/10.1287/orsc.8.6.698",
+          "access": "publisher abstract only",
+          "locations": [
+            "Abstract, p. 698"
+          ],
+          "limits": "Full paper could not be read from the publisher PDF viewer; no claims about detailed argument beyond the abstract."
+        }
+      ],
+      "id": "EPN-2026-11-28-09"
+    },
+    {
+      "authors": [
+        "Sidney G. Winter"
+      ],
+      "year": 2003,
+      "title": "Understanding dynamic capabilities",
+      "doi": "10.1002/smj.318",
+      "publication_url": "https://doi.org/10.1002/smj.318",
+      "propositions": [
+        "OI-IP-008"
+      ],
+      "inspected_copies": [
+        {
+          "url": "https://web.mit.edu/rgibbons/www/nano2004/lecture2/Understanding_dynamic_capabilities_winter.pdf",
+          "access": "full text; inspected pp. 991–994",
+          "locations": [
+            "Routines and capabilities",
+            "There are many ways to change",
+            "Contrasting cost structures",
+            "No rule for riches here"
+          ],
+          "limits": "No new causal empirical test or universal duration threshold; competitive-firm focus does not establish OIBOK-wide validity."
+        }
+      ],
+      "id": "EPN-2026-11-28-10"
+    },
+    {
+      "authors": [
+        "Nelson P. Repenning",
+        "John D. Sterman"
+      ],
+      "year": 2002,
+      "title": "Capability Traps and Self-Confirming Attribution Errors in the Dynamics of Process Improvement",
+      "doi": "10.2307/3094806",
+      "publication_url": "https://doi.org/10.2307/3094806",
+      "propositions": [
+        "OI-IP-008"
+      ],
+      "inspected_copies": [
+        {
+          "url": "https://mitmgmtfaculty.mit.edu/jsterman/capabilitytraps/",
+          "access": "author-hosted and publisher abstracts only",
+          "locations": [
+            "Abstract"
+          ],
+          "limits": "Detailed methods, model assumptions and complete evidence were not inspected. Institutional working-paper PDF fetch returned429; no general causal estimate asserted."
+        }
+      ],
+      "id": "EPN-2026-11-28-11"
+    },
+    {
+      "authors": [
+        "Elham Tabassi"
+      ],
+      "year": 2023,
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "doi": "10.6028/NIST.AI.100-1",
+      "publication_url": "https://doi.org/10.6028/NIST.AI.100-1",
+      "propositions": [
+        "OI-IP-010"
+      ],
+      "inspected_copies": [
+        {
+          "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+          "access": "official full text; selected sections inspected",
+          "locations": [
+            "Executive Summary, p.2",
+            "GOVERN2.1,3.2,5.1–5.2, pp.23–24"
+          ],
+          "limits": "Not causal proof of effectiveness, legal compliance or a sufficient set of OIBOK controls. Appraisal concerns the cited2023edition."
+        }
+      ],
+      "id": "EPN-2026-11-28-12"
+    }
+  ]
+}

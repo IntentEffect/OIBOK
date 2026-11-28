@@ -44,7 +44,7 @@ Return: scope; sources and versions; chapter mapping; findings and alternatives;
 | **OIBOK 1.0** | The research baseline released on 15 August 2026. It is a literature-grounded working synthesis. |
 | **Chapter components 0.3** | The ten source chapter files promoted into OIBOK 1.0. Their component version is not a separate research edition. |
 | **Practical Toolkit 0.1** | Practice resources dated 22 November 2026, intended for piloting in organisational work. |
-| [OIBOK Guide (draft 0.6.3)](https://oibok.org/guide/read/) and [OIBOK Working Companion (draft 0.6.3)](https://oibok.org/guide/companion/) | Practice guidance and worksheets for practitioner review. |
+| [OIBOK Guide (draft 0.7)](https://oibok.org/guide/read/) and [OIBOK Working Companion (draft 0.7)](https://oibok.org/guide/companion/) | Practice guidance and worksheets for practitioner review. |
 | **Agent guide 0.1** | Guidance for using the publication and toolkit with an agent. It does not amend the research baseline. |
 | **Proposed OIBOK 1.1 amendments** | Proposals under consideration, not a released research edition. |
 
@@ -117,7 +117,7 @@ The Harbour Services examples are fictional. Their organisations, cases, counts,
 
 Identify the proposed action, accountable owner, decision authority, dependencies and review date. Plan evaluation before introducing a change where possible. Define the baseline or comparison, eligible cases, observation window, outcome and quality measures, missing-data treatment and relevant pause or fallback conditions.
 
-For a two-working-day target, a booking received on Friday may still be within its window at a Friday review. Show pending cases separately and set the outcome review after the final eligible case has had time to mature. [See the three-session booking trial](https://oibok.org/for-agents/booking-trial/).
+For a two-working-day target, a booking received on Friday may still be within its window at a Friday review. Show pending cases separately and set the outcome review after the final eligible case has had time to mature. [See the original booking trial](https://oibok.org/for-agents/booking-trial/) and the [28 November retest of the revised instruction](https://oibok.org/for-agents/booking-retest/).
 
 Keep proposed benefits separate from observed results. Distinguish the effects of the complete intervention from an AI-only effect. Record what should change in knowledge, policy, handoffs, training or system configuration, then set a later check to examine whether the learning persists across subsequent cases or different personnel.
 

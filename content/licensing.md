@@ -30,6 +30,12 @@ The project's attribution model is:
 
 **Founded and maintained by Intent & Effect.**
 
+## Cite a resource
+
+Open **Cite this page** at the end of a reading page to copy its title, edition and address. Add a section or page number when referring to a particular passage. Use the edition you actually consulted: the research baseline, Guide drafts, articles and editorial supplements have separate version records.
+
+The [CITATION.cff metadata](/CITATION.cff) provides the preferred citation for research release 1.0. Page-specific citations identify the relevant resource instead. These citation aids accompany the attribution guidance above and do not change the licence terms or the separate treatment of website software and official marks.
+
 ## Contributor copyright
 
 Contributors retain copyright in their original work. They grant a non-exclusive CC BY-SA 4.0 licence for original publication contributions intentionally submitted for inclusion. They can continue using their work elsewhere; no copyright assignment to Intent & Effect is required.

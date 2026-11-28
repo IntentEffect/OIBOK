@@ -4,7 +4,7 @@
 
 Download the [editable Word records](/downloads/pilots/OIBOK-Workforce-Development-Records-0.1.docx), [printable PDF](/downloads/pilots/OIBOK-Workforce-Development-Records-0.1.pdf) or [Markdown](/downloads/pilots/OIBOK-Workforce-Development-Records-0.1.md).
 
-Use these records with the [pilot protocol](/research/workforce-development-pilot/) and [Guide 0.6.3](/guide/). They connect the team's starting decision, the review comparison, workflow outcomes and later judgement. Copy the records into an authorised workspace or use the editable download. Link to existing records instead of entering the same information twice.
+Use these records with the [pilot protocol](/research/workforce-development-pilot/) and [Guide 0.7](/guide/). They connect the team's starting decision, the review comparison, workflow outcomes and later judgement. Copy the records into an authorised workspace or use the editable download. Link to existing records instead of entering the same information twice.
 
 All response cells are intentionally blank. No participant, case or result has been entered. Use case and role references where possible; keep identifiable source material in its authorised location. Expand the response space as needed. Use “not observed”, “not applicable” or “pending”, with a reason, when that is the accurate entry.
 

@@ -9,7 +9,7 @@ OIBOK is an open body of knowledge and practical toolkit for understanding how o
 ## Read and use
 
 - [Read the body of knowledge](https://oibok.org/knowledge/).
-- [Read or download the OIBOK Guide (draft 0.6.3)](https://oibok.org/guide/).
+- [Read or download the OIBOK Guide (draft 0.7)](https://oibok.org/guide/).
 - [Explore the nine draft diagrams and download SVGs or A3 PDFs](https://oibok.org/diagrams/).
 - [Explore the interactive model, draft 0.2](https://oibok.org/model/).
 - [Explore practical tools and A3 canvases](https://oibok.org/tools/).
@@ -32,7 +32,7 @@ Agent guidance 0.1 is a website and practice addition. It does not change the OI
 
 ## Publication status
 
-**Guide 0.6.3, Working Companion 0.6.3, Visual Model 0.2 and Visual set 0.1 are drafts for practitioner review.** The illustrated Guide and Companion, interactive model, readable reference and nine diagrams are published with explicit draft notices. External practitioner review and field validation remain pending. They provide guidance based on OIBOK 1.0 and do not amend the research release.
+**Guide 0.7, Working Companion 0.7, Visual Model 0.2 and Visual set 0.1 are drafts for practitioner review.** The illustrated Guide and Companion, interactive model, readable reference and nine diagrams are published with explicit draft notices. External practitioner review and field validation remain pending. They provide guidance based on OIBOK 1.0 and do not amend the research release.
 
 **OIBOK 1.0**, released 15 August 2026, is a literature-grounded working synthesis. Its ten chapter files preserve component version 0.3, as promoted by the release completion record. The whole model has not been independently field validated.
 

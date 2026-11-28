@@ -1,6 +1,8 @@
 # Try Chapter 1 on a real decision
 
-This draft pilot asks whether using [Signals and attention](/knowledge/signals-and-attention/reader/) changes how a small-business team explains a recurring problem or what it decides to do about it. We are seeking one team and one independent subject reviewer. No pilot outcomes or external reviews have been recorded for this edition.
+This draft pilot asks whether using [Signals and attention](/knowledge/signals-and-attention/reader/) changes how a small-business team explains a recurring problem or what it decides to do about it. The maintainer has reported that the recruitment step has been handled. No pilot outcomes or external reviews have been recorded for this edition.
+
+**Status reconciled, 28 November 2026.** Recruitment and returned findings are separate steps. The invitations below remain as a description of the participating roles and a route for additional expressions of interest. Editorial improvements can proceed while field findings remain pending.
 
 ## Join the pilot
 
@@ -38,4 +40,4 @@ Choose a reviewer with experience in organisational attention, organisational re
 
 Send the resource title, draft 0.1, role, time spent and a short account of what to keep or change to [info@oibok.org](mailto:info@oibok.org). Keep customer names, case files and identifiable staff details in the organisation. The team can return a de-identified summary. The steward will ask separately before publishing any case details, reviewer comments or names.
 
-After both reviews, record what changed in the team’s decision, where the chapter overreached, and what remains uncertain. Use those findings to choose whether to revise this chapter, test it with a second team or extend the reader format. The decision about the wider Guide 0.7 revision follows that review. The focused [Guide 0.6.3 practice update](/guide/) is available meanwhile. A separate [workforce-development pilot](/research/workforce-development-pilot/) examines learning arrangements and workflow outcomes; it does not replace this Chapter 1 review. Record the exact edition used and keep it stable within a comparison; no pilot result is claimed by this editorial update.
+When review findings are available, record what changed in the team’s decision, where the chapter overreached, and what remains uncertain. Use those findings to choose whether to revise this chapter, test it with a second team or extend the reader format. The [Guide 0.7 editorial revision](/guide/) proceeds with its draft and evidence limits stated; publication does not imply that these reviews have been completed. A separate [workforce-development pilot](/research/workforce-development-pilot/) examines learning arrangements and workflow outcomes; it does not replace this Chapter 1 review. Record the exact edition used and keep it stable within a comparison; no pilot result is claimed by this editorial update.

@@ -1,4 +1,5 @@
 import { guideVersion } from './guide-edition.mjs';
+import { renderCitation } from './citation.mjs';
 
 const escape = (value = '') => String(value).replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 
@@ -77,7 +78,7 @@ export function renderSearch({ basePath = '' } = {}) {
   return `<section class="search-panel" data-search-root aria-label="Search the publication"><form class="site-search" role="search"><label for="search-query">Search OIBOK</label><div class="search-field"><input id="search-query" type="search" name="q" autocomplete="off" placeholder="Search a concept, question or chapter"><button class="button" type="submit">Search</button></div></form><p class="search-status" role="status" aria-live="polite">Enter a word or phrase to search the publication.</p><ol class="search-results"></ol><noscript><p>Search requires JavaScript. You can also browse the <a href="${basePath}/knowledge/">body of knowledge</a>.</p></noscript></section>`;
 }
 
-export function renderLayout({ title, description = '', content, basePath = '', section = '', toc = [], sourcePath = '', version = '', isHome = false, markdown = '', siteUrl = '', assetPaths = {}, kind = '', author = '', published = '', published_at = '', category = '', status = '' }) {
+export function renderLayout({ title, description = '', content, basePath = '', section = '', toc = [], sourcePath = '', version = '', isHome = false, markdown = '', siteUrl = '', assetPaths = {}, kind = '', author = '', published = '', published_at = '', category = '', status = '', path: pagePath = '' }) {
   const url = (path) => `${basePath}${path}`;
   const isBlogPost = kind === 'blog-post';
   const isModel = kind === 'interactive-model';
@@ -103,6 +104,7 @@ export function renderLayout({ title, description = '', content, basePath = '', 
   const blogFooter = isBlogPost ? `<nav class="blog-post-footer" aria-label="More from OIBOK"><a class="blog-all-link" href="${url('/blog/')}">All articles</a><div><a href="${url('/methodology/')}">Research methodology</a><a href="${url('/licensing/')}">Licensing and attribution</a></div></nav>` : '';
   const searchPanel = sectionKey === 'search' && !String(content).includes('data-search-root') ? renderSearch({ basePath }) : '';
   const draftNote = isDraft ? `<aside class="publication-note draft-note" aria-label="Draft publication status"><strong>DRAFT · For practitioner review</strong><p>This resource is an evolving draft based on OIBOK 1.0. External practitioner review and field validation remain pending. <a href="${url('/contribute/')}">Feedback and corrections are welcome</a>, or email <a href="mailto:info@oibok.org">info@oibok.org</a> with the resource name and version.</p></aside>` : '';
+  const citation = renderCitation({title, version, author, published, pagePath, siteUrl, sourcePath});
   return `<!doctype html>
 <html lang="en-AU">
 <head>
@@ -113,6 +115,15 @@ export function renderLayout({ title, description = '', content, basePath = '', 
   <meta property="og:type" content="${isBlogPost ? 'article' : 'website'}">
   <meta property="og:title" content="${escape(title)} | OIBOK">
   <meta property="og:description" content="${escape(description)}">
+  <meta property="og:image" content="${escape(siteUrl)}/assets/social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="OIBOK. Understand the situation. Act together. Learn and improve.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="${escape(siteUrl)}/assets/social-preview.png">
+  <link rel="icon" href="${url('/assets/favicon.svg')}" type="image/svg+xml">
+  <link rel="icon" href="${url('/assets/favicon-32.png')}" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="${url('/assets/apple-touch-icon.png')}" sizes="180x180">
   ${isBlogPost && author ? `<meta name="author" content="${escape(author)}">` : ''}
   ${isBlogPost && published_at ? `<meta property="article:published_time" content="${escape(published_at)}">` : ''}
   ${isBlogPost && category ? `<meta property="article:section" content="${escape(category)}">` : ''}
@@ -134,7 +145,7 @@ export function renderLayout({ title, description = '', content, basePath = '', 
     </div>
   </header>
   <main id="main" class="main-content" tabindex="-1">
-    ${isHome ? content : `<div class="page-header"><nav class="breadcrumb" aria-label="Breadcrumb">${breadcrumb}</nav><h1>${escape(title)}</h1>${description ? `<p class="page-introduction">${escape(description)}</p>` : ''}${metadata}</div><div class="reading-layout${tocHtml ? ' has-toc' : ''}">${tocHtml}<article class="prose">${draftNote}${searchPanel}${content}${blogFooter}</article></div>`}
+    ${isHome ? content : `<div class="page-header"><nav class="breadcrumb" aria-label="Breadcrumb">${breadcrumb}</nav><h1>${escape(title)}</h1>${description ? `<p class="page-introduction">${escape(description)}</p>` : ''}${metadata}</div><div class="reading-layout${tocHtml ? ' has-toc' : ''}">${tocHtml}<article class="prose">${draftNote}${searchPanel}${content}${blogFooter}${citation}</article></div>`}
   </main>
   <footer class="site-footer">
     <div class="footer-top"><div><a class="brand footer-brand" href="${url('/')}">OIBOK<span class="brand-dot" aria-hidden="true">.</span></a><p class="footer-title">Organisation Intelligence<br>Body of Knowledge<br><a href="mailto:info@oibok.org">info@oibok.org</a></p></div><nav aria-label="Publication information"><a href="${url('/about/')}">About OIBOK</a><a href="${url('/blog/')}">Blog</a><a href="${url('/methodology/#how-ai-was-used-to-develop-oibok')}">Research methods and AI use</a><a href="${url('/governance/')}">Governance</a><a href="${url('/releases/')}">Versions and corrections</a><a href="${url('/licensing/')}">Licensing and attribution</a><a href="${url('/for-agents/')}">For agents</a><a class="github-link footer-github-link" href="${repositoryUrl}">${githubIcon}<span>GitHub</span> ${arrow}</a></nav></div>

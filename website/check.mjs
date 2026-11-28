@@ -46,7 +46,16 @@ for(const file of htmlFiles){
  // The alternate presentation refers to the same publication, not a new edition.
  const canonicalRoute=relative.startsWith('brutalist/')?standardRoute(route):route;
  if(html.match(/<link rel="canonical" href="([^"]+)"/)?.[1]!==info.siteUrl+canonicalRoute)errors.push(`${relative}: incorrect canonical URL`);
+ if(!archivedHome){
+  if(!html.includes(`content="${info.siteUrl}/assets/social-preview.png"`) || !html.includes('name="twitter:card" content="summary_large_image"'))errors.push(`${relative}: missing sharing image metadata`);
+  if(!html.includes('rel="icon"') || !html.includes('/assets/favicon.svg'))errors.push(`${relative}: missing browser icon`);
+ }
+ const citation=html.match(/<textarea id="page-citation-text"[^>]*>([\s\S]*?)<\/textarea>/)?.[1];
+ if(citation && !citation.includes(info.siteUrl+canonicalRoute))errors.push(`${relative}: citation points to the wrong publication page`);
 }
+const sharingImage=fs.readFileSync(path.join(dist,'assets/social-preview.png'));
+if(sharingImage.subarray(1,4).toString()!=='PNG' || sharingImage.readUInt32BE(16)!==1200 || sharingImage.readUInt32BE(20)!==630)errors.push('Sharing image: expected a 1200x630 PNG');
+if(!fs.readFileSync(path.join(root,'CITATION.cff')).equals(fs.readFileSync(path.join(dist,'CITATION.cff'))))errors.push('Citation metadata: published file differs from source');
 let checked=0;
 function checkLink(file,ref){
  if(/^(?:mailto:|tel:|data:)/i.test(ref))return;
@@ -331,6 +340,16 @@ for(const name of ['OIBOK-Guide-Draft-0.2','OIBOK-Working-Companion-Draft-0.2','
 
 // Chapter views keep the full Guide available and preserve its headings and navigation.
 const guideHtml=fs.readFileSync(path.join(dist,'guide/read/index.html'),'utf8');
+const notesSource=fs.readFileSync(path.join(root,'content/research/integrated-evidence-notes.md'),'utf8');
+const chapterTen=expectedPages.find(page=>page.path==='/knowledge/integrated-and-responsible-organisational-intelligence/');
+const releasedClaims=fs.readFileSync(path.join(root,chapterTen.source),'utf8');
+for(let number=1;number<=11;number++){
+ const id=String(number).padStart(3,'0');
+ const released=releasedClaims.match(new RegExp(`^### OI-IP-${id} [^\\n]+\\n\\n> ([^\\n]+)`,'m'))?.[1]?.replace(/^\*\*|\*\*$/g,'');
+ const quoted=notesSource.match(new RegExp(`\\*\\*Released claim · OI-IP-${id}\\*\\*\\n\\n> ([^\\n]+)`))?.[1];
+ if(!released || released!==quoted)errors.push(`Evidence note ${id}: released proposition quotation missing or changed`);
+}
+if((guideHtml.match(/id="worked-decision-a-booking-handoff"/g)||[]).length!==1)errors.push('Guide booking decision: expected one complete worked example');
 for (const [i, chapter] of guideChapters.entries()) {
  const file=path.join(dist,chapter.path,'index.html');
  if(!fs.existsSync(file)){errors.push(`Guide chapter missing: ${chapter.path}`);continue;}

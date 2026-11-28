@@ -1,10 +1,24 @@
 # Versions and corrections
 
+## Plain-language practice edition 0.7 | 28 November 2026
+
+Published [Guide draft 0.7](/guide/) with a substantive readability pass through Chapters 3–8 and consistent responsibility descriptions. The Chapter 6 review copy is accepted with editorial changes; its complete fictional booking decision now appears in web, Word, PDF and Markdown editions. The outcome comparison follows the final eligible booking’s completed observation window. Companion 0.7 aligns its preparation and handoff instructions. The Silvergum pack carries current edition references and retains its completed fictional records.
+
+The [proposition evidence notes 0.5](/research/integrated-evidence-notes/) now cover all eleven propositions. Seven added appraisals inspect twelve primary publications or authoritative frameworks, distinguish empirical, conceptual and normative claims, and record selected full-text or abstract-only access. This is targeted source work, not completion of the whole bibliography audit. Research release 1.0, its original claims and protected source bytes are retained; the proposed research 1.1 release remains undecided.
+
+Published the [booking-prompt retest](/for-agents/booking-retest/) with three fresh replies, the fixed task, source hashes and assessment checks. All three distinguished intake, the final outcome window and pending cases. The report states the single-case and uncontrolled-comparison limits, including the calendar assumption that one reply left implicit.
+
+Added page-specific citations with a copy control, research-baseline `CITATION.cff` metadata, browser icons and a social-preview image using the existing OIBOK wordmark and colours. These additions do not register a DOI or replace the current logo.
+
+**Recruitment status correction.** The maintainer had reported that the recruitment step was handled. The Chapter 1 pilot page now separates that report from the absence of recorded review findings. The new Companion removes the unsupported statement that no reviewer had been contacted. The earlier recruitment wording should not be read as proof that no invitations were made. No participant identities, independent reviewer verdicts or field outcomes are introduced. Editorial improvements proceed while empirical evaluation remains deferred.
+
+Previous Guide editions and the dated Chapter 6 review materials remain available. The new Guide remains a draft for practitioner review. This release records authorised AI-assisted editorial work, with external review and field validation still pending.
+
 ## Coordination and knowledge evidence update 0.6.3 | 28 November 2026
 
 Published the [27 November evidence-watch appraisal](/research/evidence-watch-2026-11-27/) for the 20–26 November reporting period. Four sources support bounded practice additions: context-dependent coordination mechanisms, useful knowledge representations, compatible understanding across teams, and separate recovery, learning and adaptation claims. The 18 November supply-chain paper is explicitly supplementary. The contextual-judgement paper remains a candidate pending full-text appraisal; it introduces no new substantive claim or requirement.
 
-[Guide draft 0.6.3](/guide/) and Working Companion 0.6.3 incorporate the practical checks and working prompts. The Guide, Companion and Silvergum pack have matching web, Markdown, Word and PDF editions. The Silvergum pack carries current edition references, with its fictional cases, figures, decisions and pending checks unchanged. Previous editions remain available.
+[Guide draft 0.6.3](/downloads/guide/OIBOK-Guide-Draft-0.6.3.pdf) and Working Companion 0.6.3 incorporate the practical checks and working prompts. The Guide, Companion and Silvergum pack have matching web, Markdown, Word and PDF editions. The Silvergum pack carries current edition references, with its fictional cases, figures, decisions and pending checks unchanged. Previous editions remain available.
 
 Updated [integrated evidence notes 0.4](/research/integrated-evidence-notes/) and linked the appraisal beside the relevant research chapters and registers. Source findings, OIBOK interpretation, alternatives and limits remain distinguishable. The research definition, Orient/Coordinate/Improve, six capabilities and provisional Connection Quality status are retained. OIBOK research release 1.0, its source bytes, Toolkit 0.1, visual versions and the pending Guide 0.7 review retain their status. No field result or independent subject review is claimed.
 

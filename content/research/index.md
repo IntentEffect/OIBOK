@@ -10,7 +10,7 @@ It does not establish that the whole model predicts organisational performance, 
 
 ## Inspect the supporting records
 
-[Read the evidence notes for propositions 09, 07, 02 and 11](/research/integrated-evidence-notes/). Each note traces a claim to its sources and gives an observation that could weaken a practical diagnosis.
+[Read the evidence notes for all eleven propositions](/research/integrated-evidence-notes/). Each note distinguishes source findings from OIBOK’s interpretation and identifies ways to challenge a practical judgement. Access limits and the difference between empirical, conceptual and normative claims remain explicit.
 
 [Read the Chapter 1 field pilot and independent review brief](/research/chapter-one-pilot/). It sets out how to test one chapter against a real decision.
 

@@ -6,7 +6,7 @@ This pilot helps a team examine one change to a recurring workflow, the judgemen
 
 Download the [protocol in Word](/downloads/pilots/OIBOK-Workforce-Development-Pilot-0.1.docx), [PDF](/downloads/pilots/OIBOK-Workforce-Development-Pilot-0.1.pdf) or [Markdown](/downloads/pilots/OIBOK-Workforce-Development-Pilot-0.1.md).
 
-Use the [working records](/tools/workforce-development-review/) alongside [Guide 0.6.3](/guide/). Keep completed records in the organisation's authorised workspace. The records can be added to an existing improvement review; there is no need to establish a separate reporting process.
+Use the [working records](/tools/workforce-development-review/) alongside [Guide 0.7](/guide/). Keep completed records in the organisation's authorised workspace. The records can be added to an existing improvement review; there is no need to establish a separate reporting process.
 
 ## Choose the decision and the people
 
